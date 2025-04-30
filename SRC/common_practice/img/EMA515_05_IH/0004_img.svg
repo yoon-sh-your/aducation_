@@ -1,4 +1,5 @@
 <svg width="981" height="402" viewBox="0 0 981 402" fill="none" xmlns="http://www.w3.org/2000/svg">
+<<<<<<< HEAD
 <g clip-path="url(#clip0_278_7708)">
 <path d="M690.695 162.488C655.379 115.883 514.471 81.0684 345.985 81.0684C177.5 81.0684 36.6208 115.883 1.30469 162.488" stroke="#07BBA9" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
 </g>
@@ -6,11 +7,21 @@
 <path d="M1.84776 253.512C51.8619 300.117 251.415 334.932 490.021 334.932C728.628 334.932 928.138 300.117 978.152 253.512" stroke="#07BBA9" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
 </g>
 <g clip-path="url(#clip2_278_7708)">
+=======
+<g clip-path="url(#clip0_144_5754)">
+<path d="M690.695 162.488C655.379 115.883 514.471 81.0684 345.985 81.0684C177.5 81.0684 36.6208 115.883 1.30469 162.488" stroke="#07BBA9" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+</g>
+<g clip-path="url(#clip1_144_5754)">
+<path d="M1.84776 253.512C51.8619 300.117 251.415 334.932 490.021 334.932C728.628 334.932 928.138 300.117 978.152 253.512" stroke="#07BBA9" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+</g>
+<g clip-path="url(#clip2_144_5754)">
+>>>>>>> b1dd6843 (초기 커밋)
 <path d="M980.453 162.488C965.653 115.883 906.602 81.0684 835.994 81.0684C765.386 81.0684 706.347 115.883 691.547 162.488" stroke="#07BBA9" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="4 4"/>
 </g>
 <rect x="1" y="162" width="690" height="90" fill="#CEECD1" stroke="black" stroke-width="2"/>
 <rect x="692" y="162" width="288" height="90" fill="#FFD6DC" stroke="black" stroke-width="2"/>
 <rect width="82" height="132" transform="translate(305 15)" fill="white"/>
+<<<<<<< HEAD
 <rect width="42" height="112" transform="translate(325 25)" fill="white"/>
 <path d="M345.938 60.3125C340.969 60.3125 337.406 57.5781 337.312 53.625H342.062C342.141 55.3125 343.781 56.4219 345.969 56.4375C348.219 56.4219 349.828 55.1719 349.812 53.3438C349.828 51.5 348.188 50.2031 345.531 50.1875H343.438V46.7188H345.531C347.766 46.7188 349.328 45.5 349.312 43.7188C349.328 41.9844 348 40.7969 346 40.8125C344 40.7969 342.359 41.9219 342.281 43.6562H337.781C337.859 39.7656 341.359 37.0625 346 37.0625C350.719 37.0625 353.859 39.8594 353.844 43.4375C353.859 45.9688 352.094 47.7656 349.562 48.2188V48.4062C352.891 48.8125 354.719 50.8281 354.688 53.6562C354.719 57.5312 351.047 60.3125 345.938 60.3125Z" fill="#222222"/>
 <path d="M325 81H367" stroke="#222222" stroke-width="2" stroke-linecap="square"/>
@@ -40,5 +51,19 @@
 <clipPath id="clip4_278_7708">
 <rect width="36" height="48" fill="white" transform="translate(472 344)"/>
 </clipPath>
+=======
+<rect width="82" height="132" transform="translate(795 15)" fill="white"/>
+<rect width="82" height="132" transform="translate(449 270)" fill="white"/>
+<defs>
+<clipPath id="clip0_144_5754">
+<rect width="692" height="83" fill="white" transform="translate(0 80)"/>
+</clipPath>
+<clipPath id="clip1_144_5754">
+<rect width="980" height="82.9999" fill="white" transform="translate(980 336) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip2_144_5754">
+<rect width="290" height="83" fill="white" transform="translate(691 80)"/>
+</clipPath>
+>>>>>>> b1dd6843 (초기 커밋)
 </defs>
 </svg>

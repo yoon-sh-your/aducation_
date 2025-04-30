@@ -160,6 +160,38 @@
 .ema511_06_su_0004 .connection_line {
   stroke: rgba(0, 160, 233, 1);
 }
+<<<<<<< HEAD
+=======
+.ema511_06_su_0004 .label_1 {
+  color: #e4007f;
+  border: 2px solid #e4007f;
+}
+.ema511_06_su_0004 .line_1 {
+  stroke: #e4007f;
+}
+.ema511_06_su_0004 .label_2 {
+  color: rgba(0, 160, 233, 1);
+  border: 2px solid rgba(0, 160, 233, 1);
+}
+.ema511_06_su_0004 .line_2 {
+  stroke: rgba(0, 160, 233, 1);
+}
+.ema511_06_su_0004 .label_3 {
+  color: rgba(34, 178, 76, 1);
+  border: 2px solid rgba(34, 178, 76, 1);
+}
+.ema511_06_su_0004 .line_3 {
+  stroke: rgba(34, 178, 76, 1);
+}
+.ema511_06_su_0004 .label_4 {
+  color: rgba(233, 113, 50, 1);
+  border: 2px solid rgba(233, 113, 50, 1);
+}
+.ema511_06_su_0004 .line_4 {
+  stroke: rgba(233, 113, 50, 1);
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 
 /*ema511_06_su_0005_s*/
 .ema511_06_su_0005 .contents {
@@ -190,6 +222,7 @@ label {
   font-weight: 700;
   position: relative;
 }
+<<<<<<< HEAD
 .ema511_06_su_0005 .problem_generator .option_group input[type='radio']:checked + label::after {
   content: '';
   width: 100%;
@@ -204,6 +237,41 @@ label {
   height: 50px;
   border: 4px solid rgba(34, 34, 34, 1);
   top: -6px;
+=======
+.ema511_06_su_0005 .problem_generator .option_group input[type='radio'] + label::after{
+  content: '';
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--secondary-red);
+  border-radius: 50%;
+  position: absolute; 
+  left: 0;
+  cursor: pointer; 
+  top: -10px;
+  border: 4px solid transparent;
+}
+.ema511_06_su_0005 .problem_generator .option_group input[type='radio']:checked + label::after {
+  border: 4px solid rgba(34, 34, 34, 1);
+}
+.ema511_06_su_0005 .problem_generator .option_group input[type='radio'] + label:hover::after {
+  border-color: var(--primary-blue-300);
+}
+
+.ema511_06_su_0005 #fruit1 + label::after{
+  left: 30px;
+}
+.ema511_06_su_0005 #fruit1 + label::after{
+  left: 30px;
+}
+.ema511_06_su_0005 #fruit2 + label::after{
+  left: -6px;
+}
+.ema511_06_su_0005 #snack1 + label::after{
+  left: -6px;
+}
+.ema511_06_su_0005 #snack2 + label::after{
+  left: 10px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema511_06_su_0005 .question_box {
@@ -326,6 +394,7 @@ label {
   width: fit-content;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   gap: 12px;
   background-color: var(--primary-blue-50);
   color: var(--primary-blue);
@@ -347,3 +416,13 @@ label {
   font-weight: 700;
   border-radius: 12px;
 }
+=======
+  gap: 12px; 
+  color: var(--font-negative);
+  font-weight: 700;
+  padding: 24px 28px;
+  left: 50%;
+  top:calc(50% + 10px);
+  transform: translateX(-50%);
+} 
+>>>>>>> b1dd6843 (초기 커밋)

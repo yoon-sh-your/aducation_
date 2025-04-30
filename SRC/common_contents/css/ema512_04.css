@@ -492,11 +492,22 @@
   position: relative;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   transform: translate(-8px, -195px);
+=======
+  transform: translate(-8px, -140px);
+>>>>>>> b1dd6843 (초기 커밋)
   padding: 0;
   background: transparent;
 }
 
+<<<<<<< HEAD
+=======
+.ema512_04_su_0006 .page_5 .summarize .reveal_btn{
+  /* padding: 0; */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema512_04_su_0006 .page_5 .example_img .summarize>div {
   font-size: 30px;
 }

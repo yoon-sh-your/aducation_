@@ -13,7 +13,10 @@
 .ema525_09_ih_0001 .img_box .txt_wrap [class^="txt"] {display:block; position:relative; width:68px; height:68px; padding:0; background:none; font-size:20px; font-weight:normal;}
 .ema525_09_ih_0001 .img_box .txt_wrap [class^="txt"] span {position:absolute; bottom:0; left:50%; transform:translateX(-50%); white-space:nowrap;}
 .ema525_09_ih_0001 .solve_area .conts_solve img {display:inline-block; vertical-align:middle;}
+<<<<<<< HEAD
 .ema525_09_ih_0001 .pop_area {height:100vh;}
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema525_09_ih_0001 .image_zoom_wrap .img_box {align-items:flex-start !important; width:auto !important}
 .ema525_09_ih_0001 .image_zoom_wrap .img_wrap {position:relative;}
 

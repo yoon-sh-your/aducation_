@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 .title h2[data-head] .fraction_box {
   margin-left: 0;
 }
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .line_height_1 {
   line-height: 1;
 }
@@ -11,10 +15,13 @@ math-field.w_80 {
   width: 80px !important;
 }
 
+<<<<<<< HEAD
 .fraction_box.pos_custom > .input_wrap + span {
   transform: translateY(-20px);
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .solve_area .bracket,
 .solve_area .fraction_box {
   vertical-align: middle;
@@ -42,9 +49,12 @@ math-field.w_80 {
   min-width: 0;
   width: 100%;
 }
+<<<<<<< HEAD
 .fraction_box:has(.input_wrap) span {
   line-height: 60px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box > .flex:first-child .input_wrap .text_hint,
 .fraction_box > .input_wrap:first-child .text_hint {
   top: -36px;
@@ -53,10 +63,16 @@ math-field.w_80 {
 h3.title:before {
   margin-top: 2px;
 }
+<<<<<<< HEAD
 .fraction_box_wrap {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+=======
+.mixed_fraction {
+  display: inline-flex;
+  align-items: center;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .fraction_box_wrap .fraction_box {
   min-width: 0;
@@ -126,6 +142,16 @@ h3.title:before {
   background: url(../img/EMA515_06_IH/0001_bg.svg) no-repeat;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+.ema515_06_ih_0001 .boolean_count_wrap.bigAll{
+  height: 160px;
+}
+.ema515_06_ih_0001 .boolean_count_wrap.bigAll  button{
+  width: 100%;;
+  height: 100%;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema515_06_ih_0002 .bogi_box {
   width: 880px;
@@ -215,6 +241,12 @@ h3.title:before {
 /* .ema515_06_ih_0005 .input_wrap {
   width: 228px;
 } */
+<<<<<<< HEAD
+=======
+.ema515_06_ih_0005 .solve_area .conts_solve > div:not(.fraction_box) + div:not(.fraction_box){
+  margin-top: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema515_06_ih_0006 .img_box {
   position: relative;
@@ -243,6 +275,7 @@ h3.title:before {
   left: 457px;
 }
 .ema515_06_ih_0006 .img_box .txt1 {
+<<<<<<< HEAD
   top: 51px;
   left: 143px;
 }
@@ -253,6 +286,16 @@ h3.title:before {
 .ema515_06_ih_0006 .img_box .fraction_box {
   line-height: 1;
   gap: 4px;
+=======
+  top: 56px;
+  left: 145px;
+}
+.ema515_06_ih_0006 .img_box .txt2 {
+  top: 64px;
+  left: 514px;
+}
+.ema515_06_ih_0006 .img_box .fraction_box {
+>>>>>>> b1dd6843 (초기 커밋)
   vertical-align: middle;
 }
 .ema515_06_ih_0006 .label_gray {
@@ -351,8 +394,22 @@ h3.title:before {
   height: 112px;
   gap: 4px;
 }
+<<<<<<< HEAD
 .ema515_06_ih_0007 .img_box .txt_group > div:nth-child(n + 3) {
   width: 153px;
+=======
+.ema515_06_ih_0007 .img_box .txt_group > div:nth-child(1) {
+  transform: translate(59px, 5px);
+}
+.ema515_06_ih_0007 .img_box .txt_group > div:nth-child(2) {
+  transform: translate(118px, 5px);
+}
+.ema515_06_ih_0007 .img_box .txt_group > div:nth-child(3) {
+  transform: translate(-104px, 136px);
+}
+.ema515_06_ih_0007 .img_box .txt_group > div:nth-child(4) {
+  transform: translate(-30px, 136px);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_06_ih_0007 .img_box .txt_group .fraction_box {
   gap: 8px;

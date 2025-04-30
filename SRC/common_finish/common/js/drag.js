@@ -2,6 +2,10 @@ import { checkAnswerPop } from './common.js';
 
 export function setupDragAndDrop() {
   let scale = 1;
+<<<<<<< HEAD
+=======
+  let selectedDraggable = null;
+>>>>>>> b1dd6843 (초기 커밋)
 
   function getScale() {
     const transform = $('#scaleWrapper').css('transform');
@@ -20,6 +24,7 @@ export function setupDragAndDrop() {
 
   let originalPosition = {};
 
+<<<<<<< HEAD
   $('.draggable').draggable({
     revert: function (isValidDrop) {
       if (!isValidDrop) {
@@ -28,6 +33,95 @@ export function setupDragAndDrop() {
         playSound('x');
       }
       return false; // 기본 revert 막고 커스텀 처리
+=======
+  // 문서 전체에 클릭 이벤트 추가
+  $(document).on('click', function (e) {
+    // 드래그 요소나 드롭 영역이 아닌 곳을 클릭했을 때
+    if (!$(e.target).closest('.draggable').length && !$(e.target).closest('.droppable').length) {
+      if (selectedDraggable) {
+        selectedDraggable.removeClass('selected');
+        selectedDraggable = null;
+        $('.droppable').removeClass('highlight');
+      }
+    }
+  });
+
+  // 드래그 가능한 요소에 클릭 이벤트 추가
+  $('.draggable').on('click', function (e) {
+    e.stopPropagation(); // 이벤트 버블링 방지
+
+    if ($(this).hasClass('disabled')) return;
+
+    if (selectedDraggable) {
+      selectedDraggable.removeClass('selected');
+      $('.droppable').removeClass('highlight');
+    }
+
+    selectedDraggable = $(this);
+    selectedDraggable.addClass('selected');
+
+    // 선택된 드래그 요소와 매칭되는 드롭 영역 하이라이트
+    const userAnswer = selectedDraggable.attr('aria-label');
+    $('.droppable').each(function () {
+      const answer = $(this).data('answer');
+      if (String(answer) === String(userAnswer)) {
+        $(this).addClass('highlight');
+      }
+    });
+  });
+
+  // 드롭 가능한 영역에 클릭 이벤트 추가
+  $('.droppable').on('click', function (e) {
+    e.stopPropagation(); // 이벤트 버블링 방지
+
+    if (!selectedDraggable || $(this).hasClass('disabled')) return;
+
+    const $dropZone = $(this);
+    const $dragItem = selectedDraggable;
+
+    const answer = $dropZone.data('answer');
+    const userAnswer = $dragItem.attr('aria-label');
+
+    if (String(answer) === String(userAnswer)) {
+      $dropZone.addClass('disabled');
+      $dragItem.css({ top: 0, left: 0 }).addClass('disabled');
+
+      let $clone = $dragItem.clone();
+      $(this).append($clone);
+      if ($('.page.on .btnReset').hasClass('disable')) {
+        $('.page.on .btnReset').removeClass('disable');
+        $('.page.on .btnReset').removeClass('disable');
+      }
+      playSound('o');
+
+      let dropCnt = $('.page.on .droppable');
+      let droppableCnt = $('.page.on .droppable.disabled');
+
+      if (dropCnt.length === droppableCnt.length) {
+        $('.page.on .droppable').parents('.qe_area').addClass('disabled');
+        checkAnswerPop();
+      }
+    } else {
+      playSound('x');
+      checkAnswerPop();
+    }
+
+    selectedDraggable.removeClass('selected');
+    selectedDraggable = null;
+    $('.droppable').removeClass('highlight');
+
+    let currentPage = $('.pagination button.on').index() + 1;
+    checkPageAnswerStates(currentPage);
+  });
+
+  $('.draggable').draggable({
+    revert: function (isValidDrop) {
+      if (!isValidDrop) {
+        $(this).animate({ top: 0, left: 0 }, 200);
+        playSound('x');
+      }
+      return false;
+>>>>>>> b1dd6843 (초기 커밋)
     },
     start: function (event, ui) {
       scale = getScale();
@@ -52,6 +146,7 @@ export function setupDragAndDrop() {
 
       if (String(answer) === String(userAnswer)) {
         $dropZone.addClass('disabled');
+<<<<<<< HEAD
         $dragItem
           .css({ top: 0, left: 0 }) // 위치만 초기화
           .addClass('disabled');
@@ -60,11 +155,27 @@ export function setupDragAndDrop() {
         // $clone.removeAttr('style');
         $(this).append($clone);
         // ui.helper.remove();
+=======
+        $dragItem.css({ top: 0, left: 0 }).addClass('disabled');
+
+        let $clone = $dragItem.clone();
+        $(this).append($clone);
+
+        if ($('.page.on .btnReset').hasClass('disable')) {
+          $('.page.on .btnReset').removeClass('disable');
+          $('.page.on .btnReset').removeClass('disable dd');
+        }
+
+        playSound('o');
+>>>>>>> b1dd6843 (초기 커밋)
 
         let dropCnt = $('.page.on .droppable');
         let droppableCnt = $('.page.on .droppable.disabled');
 
+<<<<<<< HEAD
         playSound('o');
+=======
+>>>>>>> b1dd6843 (초기 커밋)
         if (dropCnt.length === droppableCnt.length) {
           $('.page.on .droppable').parents('.qe_area').addClass('disabled');
           checkAnswerPop();
@@ -74,6 +185,10 @@ export function setupDragAndDrop() {
         playSound('x');
         checkAnswerPop();
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
       let currentPage = $('.pagination button.on').index() + 1;
       checkPageAnswerStates(currentPage);
     },

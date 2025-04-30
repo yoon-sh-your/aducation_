@@ -4,9 +4,17 @@
 .ema512_04_ih_0001 .question_box .text_bullet {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   gap: 12px;
 }
 
+=======
+}
+.ema512_04_ih_0001 .question_box .text_bullet .flex,
+.ema512_04_ih_0001 .question_box .text_bullet .input_wrap {
+  margin-left: 12px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema512_04_ih_0002 .question_box {
   justify-content: space-around;
   position: relative;
@@ -35,6 +43,11 @@
 }
 .ema512_04_ih_0002 .question_block.left .top {
   gap: 28px;
+<<<<<<< HEAD
+=======
+  padding-left: 60px;
+  margin-bottom: 40px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema512_04_ih_0002 .question_block.left .top .row {
   gap: 12px;
@@ -188,3 +201,9 @@
 .ema512_04_ih_0007 .bottom .input_wrap math-field {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+.ema512_04_ih_0007 .question_box .flex {
+  padding: 0 0 40px 40px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

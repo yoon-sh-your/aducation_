@@ -49,19 +49,38 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
   }
 
 
+<<<<<<< HEAD
   function createDot(label, area, x = null, y = null, isGenerated = false, hideDot = false) {
+=======
+  function createDot(label, area, x = null, y = null, isGenerated = false, hideDot = false, parent1 = null, parent2 = null) {
+>>>>>>> b1dd6843 (초기 커밋)
     const dot = document.createElement("div");
     dot.classList.add("dot", `dot_${label}`);
     dot.dataset.index = label;
     dot.dataset.generated = isGenerated ? "true" : "false";
+<<<<<<< HEAD
     if (hideDot) {
       dot.style.visibility = "hidden";
+=======
+    if (isGenerated) {
+        // 부모 점 인덱스 저장
+        if (parent1 !== null) dot.dataset.parent1 = parent1;
+        if (parent2 !== null) dot.dataset.parent2 = parent2;
+    }
+    if (hideDot) {
+        dot.style.visibility = "hidden";
+>>>>>>> b1dd6843 (초기 커밋)
     }
     area.appendChild(dot);
 
     if (x !== null && y !== null) {
+<<<<<<< HEAD
       dot.style.left = `${x}px`;
       dot.style.top = `${y}px`;
+=======
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+>>>>>>> b1dd6843 (초기 커밋)
     }
 
     availableDots.set(label, dot);
@@ -141,11 +160,22 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
 
     // ✅ 같은 X축에 위치한 점 중에서 **이동해야 할 점을 찾음**
     if (shouldAdjustX) {
+<<<<<<< HEAD
       const targetDot = selectedDots.find(dot => dot.dataset.generated === "true");
 
       if (targetDot) {
         let targetDrawingArea = targetDot.closest(".drawing_area");
         targetLabels = Array.from(targetDrawingArea.querySelectorAll(".connection_label"))
+=======
+      // selectedDots는 클릭 컨텍스트에서만 유효하므로 여기서는 직접 사용 불가.
+      // 대신 endDot이 생성된 점인지 확인해야 함.
+      const targetDot = (endDot.dataset.generated === "true") ? endDot : null;
+      // const targetDot = selectedDots.find(dot => dot.dataset.generated === "true"); // 이 방식은 클릭 시에만 유효
+
+      if (targetDot) {
+        let targetDrawingArea = targetDot.closest(".drawing_area");
+        const targetLabels = Array.from(targetDrawingArea.querySelectorAll(".connection_label"))
+>>>>>>> b1dd6843 (초기 커밋)
           .filter(label => label.dataset.labelIndex === targetDot.dataset.index);
 
         let moveX = (startX >= endX) ? offsetX : -offsetX;
@@ -164,6 +194,7 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
       }
     }
 
+<<<<<<< HEAD
     let maxExistingY = lowerY;
     existingBends.forEach(bend => {
       if ((bend.startX >= Math.min(startX, endX) && bend.startX <= Math.max(startX, endX)) ||
@@ -184,6 +215,69 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
           V ${midY} 
           H ${midX} 
           H ${endX} 
+=======
+    // --- Bend 높이 결정 로직 수정 ---
+    const parent1 = parseInt(startDot.dataset.index); // 부모1 인덱스
+    const parent2 = parseInt(endDot.dataset.index); // 부모2 인덱스
+    const newLabel = parseInt([...new Set([...parent1.toString(), ...parent2.toString()])].sort((a, b) => a - b).join('')); // 생성될 점 인덱스 (bend ID로 사용)
+
+    let reusedBend = null;
+    let lowestInactiveY = Infinity;
+
+    // 1. 겹치는 구간 내 비활성(active: false) bend 찾기
+    existingBends.forEach(bend => {
+        if (!bend.active &&
+            ((bend.startX >= Math.min(startX, endX) && bend.startX <= Math.max(startX, endX)) ||
+             (bend.endX >= Math.min(startX, endX) && bend.endX <= Math.max(startX, endX))) &&
+            bend.y < lowestInactiveY) {
+            lowestInactiveY = bend.y;
+            reusedBend = bend;
+        }
+    });
+
+    if (reusedBend) {
+        // 2. 비활성 bend 재활용
+        midY = reusedBend.y;
+        reusedBend.active = true;
+        reusedBend.id = newLabel; // ID 업데이트 (새로 연결되는 점 기준)
+        reusedBend.startX = startX; // 혹시 모를 좌표 업데이트
+        reusedBend.endX = endX;
+    } else {
+        // 3. 재활용할 bend 없으면 새로 생성
+        let maxExistingY = lowerY;
+        existingBends.forEach(bend => {
+            if (bend.active &&
+                ((bend.startX >= Math.min(startX, endX) && bend.startX <= Math.max(startX, endX)) ||
+                 (bend.endX >= Math.min(startX, endX) && bend.endX <= Math.max(startX, endX)))) {
+                maxExistingY = Math.max(maxExistingY, bend.y);
+            }
+        });
+
+        midY = maxExistingY + bendHeight;
+        existingBends.push({
+            id: newLabel, // 생성된 점 index를 ID로 사용
+            startX,
+            endX,
+            y: midY,
+            active: true
+        });
+    }
+    // --- Bend 높이 결정 로직 수정 끝 ---
+
+    // ✅ 라벨 번호 결정 로직: 사용 가능한 가장 작은 번호 찾기
+    const existingLabelElements = area.querySelectorAll('.connection_label');
+    const usedNumbers = new Set(Array.from(existingLabelElements).map(label => parseInt(label.textContent)).filter(num => !isNaN(num)));
+    let nextLabelNumber = 1;
+    while (usedNumbers.has(nextLabelNumber)) {
+        nextLabelNumber++;
+    }
+
+    const pathData = `
+          M ${startX} ${startY}
+          V ${midY}
+          H ${midX}
+          H ${endX}
+>>>>>>> b1dd6843 (초기 커밋)
           V ${endY}
       `;
 
@@ -192,6 +286,7 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
     path.setAttribute("stroke", "#000");
     path.setAttribute("stroke-width", lineWidth);
     path.setAttribute("fill", "none");
+<<<<<<< HEAD
     path.classList.add("connection_line", `line_${connectionCount}`);
 
     // 힌트 라인 추가 (클릭 영역을 넓히기 위한 투명한 선)
@@ -263,24 +358,153 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
     connectionLabel.classList.add("connection_label", `label_${labelIndex}`);
     connectionLabel.dataset.labelIndex = newLabel;
     connectionLabel.textContent = connectionCount;
+=======
+    path.classList.add("connection_line", `line_${nextLabelNumber}`);
+    path.dataset.generatedDotIndex = newLabel; // ✅ 생성된 점 인덱스 정보 추가
+
+
+    const hintPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    hintPath.setAttribute("d", pathData);
+    hintPath.setAttribute("stroke", "transparent");
+    hintPath.setAttribute("stroke-width", "20");
+    hintPath.setAttribute("fill", "none");
+    hintPath.classList.add("hint_line", `hint_${nextLabelNumber}`);
+    hintPath.dataset.generatedDotIndex = newLabel; // ✅ 생성된 점 인덱스 정보 추가
+
+    // 4. 선 클릭 핸들러 수정
+    hintPath.addEventListener("click", () => {
+        // 선 제거 (path와 hintPath 자체) - 재귀 함수에서 처리하므로 여기선 제거 안 함
+
+        // 연결된 원래 점들 다시 사용 가능하게 (제거 로직 안으로 이동 고려)
+        // availableDots.set(parent1, startDot); // 재귀 함수 내에서 필요시 처리
+        // availableDots.set(parent2, endDot);
+
+        // 생성된 점(newLabel)과 그 자손들 재귀적으로 제거
+        removeDotAndDescendants(newLabel); // ✅ 새 재귀 함수 호출
+
+        // 연결 정보 업데이트 (userConnections) - 재귀적으로 처리되지 않으므로 여기서 유지
+        let userConnections = JSON.parse(svg.dataset.userConnections || "[]");
+         // newLabel의 부모인 parent1, parent2 쌍만 제거
+         const sortedParents = [parent1, parent2].sort((a,b) => a-b);
+         userConnections = userConnections.filter(conn =>
+             !(conn[0] === sortedParents[0] && conn[1] === sortedParents[1])
+         );
+        svg.dataset.userConnections = JSON.stringify(userConnections);
+
+        // bend 정보 제거는 removeDotAndDescendants 내부에서 처리됨
+
+        audioManager.playSound('click');
+    });
+
+
+    svg.appendChild(path);
+    svg.appendChild(hintPath);
+
+    availableDots.delete(parent1);
+    availableDots.delete(parent2);
+
+    const connectionLabel = document.createElement("div");
+    connectionLabel.classList.add("connection_label", `label_${nextLabelNumber}`);
+    connectionLabel.dataset.labelIndex = newLabel;
+    connectionLabel.textContent = nextLabelNumber;
+>>>>>>> b1dd6843 (초기 커밋)
     connectionLabel.style.position = "absolute";
     connectionLabel.style.left = `${midX}px`;
     connectionLabel.style.top = `${midY + offsetY}px`;
     connectionLabel.style.transform = "translate(-50%, -50%)";
     area.appendChild(connectionLabel);
 
+<<<<<<< HEAD
     if (availableDots.size === 0) {
       createDot(newLabel, area, midX, midY + offsetY * 2, true, true);
     } else {
       createDot(newLabel, area, midX, midY + offsetY * 2, true, false);
+=======
+    // createDot 호출 시 부모 정보 전달
+    if (availableDots.size === 0) {
+      createDot(newLabel, area, midX, midY + offsetY * 2, true, true, parent1, parent2);
+    } else {
+      createDot(newLabel, area, midX, midY + offsetY * 2, true, false, parent1, parent2);
+>>>>>>> b1dd6843 (초기 커밋)
     }
 
     let userConnections = JSON.parse(svg.dataset.userConnections || "[]");
     userConnections.push([parent1, parent2].sort((a, b) => a - b));
     svg.dataset.userConnections = JSON.stringify(userConnections);
 
+<<<<<<< HEAD
     connectionCount++;
   }
+=======
+}
+
+// 3. 재귀적 제거 함수 구현 (forEach 루프 안으로 이동)
+function removeDotAndDescendants(dotIndexToRemove) {
+    // drawingArea와 svg는 클로저를 통해 접근 가능하므로 document.querySelector 제거
+    // const drawingArea = document.querySelector('.drawing_area'); // 제거
+    // const svg = drawingArea.querySelector(".connection_lines"); // 제거
+
+    const dotToRemove = drawingArea.querySelector(`.dot[data-index="${dotIndexToRemove}"]`);
+
+    // Base case: 점이 없거나 생성된 점이 아니면 종료
+    if (!dotToRemove || dotToRemove.dataset.generated !== "true") {
+        return;
+    }
+
+    // 해당 점을 생성한 부모 점들을 찾아 다시 available로 만들기 (옵션 - 필요시 활성화)
+    const parent1Index = parseInt(dotToRemove.dataset.parent1);
+    const parent2Index = parseInt(dotToRemove.dataset.parent2);
+    if (!isNaN(parent1Index)) {
+        const parent1Dot = drawingArea.querySelector(`.dot[data-index="${parent1Index}"]`);
+        // 부모가 다른 생성된 점에 의해 아직 사용 중인지 확인 후 available로 변경
+        const isParent1Used = Array.from(drawingArea.querySelectorAll(`.dot[data-generated="true"]:not([data-index="${dotIndexToRemove}"])`)).some(d => d.dataset.parent1 == parent1Index || d.dataset.parent2 == parent1Index);
+        // availableDots는 클로저 변수 사용
+        if (parent1Dot && !isParent1Used) availableDots.set(parent1Index, parent1Dot);
+    }
+    if (!isNaN(parent2Index)) {
+        const parent2Dot = drawingArea.querySelector(`.dot[data-index="${parent2Index}"]`);
+        const isParent2Used = Array.from(drawingArea.querySelectorAll(`.dot[data-generated="true"]:not([data-index="${dotIndexToRemove}"])`)).some(d => d.dataset.parent1 == parent2Index || d.dataset.parent2 == parent2Index);
+        // availableDots는 클로저 변수 사용
+        if (parent2Dot && !isParent2Used) availableDots.set(parent2Index, parent2Dot);
+    }
+
+
+    // 연결된 요소 찾기 (제거 전)
+    const labelToRemove = drawingArea.querySelector(`.connection_label[data-label-index="${dotIndexToRemove}"]`);
+    // svg는 클로저 변수 사용
+    const pathsToRemove = Array.from(svg.querySelectorAll(`path[data-generated-dot-index="${dotIndexToRemove}"]`));
+
+    // Bend 정보 비활성화
+    const bendIdToRemove = dotIndexToRemove; // 제거 대상 점의 인덱스가 bend의 ID
+    const bendToDeactivate = existingBends.find(bend => bend.id === bendIdToRemove && bend.active);
+    if (bendToDeactivate) {
+        bendToDeactivate.active = false;
+    }
+
+    // 요소 제거
+    if (labelToRemove) labelToRemove.remove();
+    pathsToRemove.forEach(p => p.remove());
+    dotToRemove.remove();
+
+    // 상태 업데이트
+    // availableDots는 클로저 변수 사용
+    availableDots.delete(dotIndexToRemove);
+
+    // 자식 점들 찾기
+    const childrenDots = Array.from(drawingArea.querySelectorAll(
+        `.dot[data-generated="true"][data-parent1="${dotIndexToRemove}"], .dot[data-generated="true"][data-parent2="${dotIndexToRemove}"]`
+    ));
+
+    // 자식 점들에 대해 재귀 호출 (함수는 이미 로컬 스코프에 있음)
+    childrenDots.forEach(childDot => {
+        const childIndex = parseInt(childDot.dataset.index);
+        if (!isNaN(childIndex)) {
+            removeDotAndDescendants(childIndex);
+        }
+    });
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 
   function resetDrawingArea() {
     while (svg.firstChild) {
@@ -295,7 +519,10 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
 
     selectedDots = [];
     cancelButton.style.display = "none";
+<<<<<<< HEAD
     connectionCount = 1;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
     availableDots.clear();
     existingBends = [];
     svg.dataset.userConnections = JSON.stringify([]);
@@ -345,6 +572,7 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
     }
   });
 
+<<<<<<< HEAD
   function removeConnectedLines(generatedDotIndex, area, svg) {
     // 생성된 점과 연결된 모든 선 찾기
     const connectedPaths = Array.from(svg.querySelectorAll('.connection_line')).filter(path => {
@@ -394,6 +622,8 @@ document.querySelectorAll(".drawing_area").forEach(drawingArea => {
     });
   }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   initializeDots();
 });
 
@@ -798,7 +1028,11 @@ document.querySelectorAll('.connect_wrap').forEach(wrap => {
           }
       });
   } catch (e) {
+<<<<<<< HEAD
       console.error("Error parsing initial connections for connect_wrap:", e);
+=======
+      // console.error("Error parsing initial connections for connect_wrap:", e);
+>>>>>>> b1dd6843 (초기 커밋)
   }
 
 });
@@ -819,7 +1053,11 @@ function drawAnswerConnections(connectWrap) {
     answerPairs = JSON.parse(answerRaw).map(pair => pair.slice().sort());
     userPairs = JSON.parse(userRaw || "[]").map(pair => pair.slice().sort());
   } catch (e) {
+<<<<<<< HEAD
     console.warn("❌ JSON 파싱 오류:", e);
+=======
+    // console.warn("❌ JSON 파싱 오류:", e);
+>>>>>>> b1dd6843 (초기 커밋)
     return;
   }
 
@@ -868,7 +1106,10 @@ function drawAnswerConnections(connectWrap) {
       highlightLine.setAttribute("y1", y1);
       highlightLine.setAttribute("x2", x2);
       highlightLine.setAttribute("y2", y2);
+<<<<<<< HEAD
       highlightLine.setAttribute("stroke", "#0066cc"); // 파란색
+=======
+>>>>>>> b1dd6843 (초기 커밋)
       highlightLine.setAttribute("stroke-width", connectLineWidth * 3); // 더 두껍게 (기존 * 2)
       highlightLine.setAttribute("stroke-linecap", "round");
       highlightLine.classList.add("correct_highlight", "correct_line"); // 클래스 추가
@@ -888,7 +1129,10 @@ function drawAnswerConnections(connectWrap) {
       answerLine.setAttribute("y1", y1);
       answerLine.setAttribute("x2", x2);
       answerLine.setAttribute("y2", y2);
+<<<<<<< HEAD
       answerLine.setAttribute("stroke", "red"); // 빨간색
+=======
+>>>>>>> b1dd6843 (초기 커밋)
       answerLine.setAttribute("stroke-width", connectLineWidth * 3); // 두껍게
       answerLine.setAttribute("stroke-linecap", "round");
       answerLine.classList.add("answer_line", "correct_line"); // 클래스 추가
@@ -905,6 +1149,7 @@ function drawAnswerConnections(connectWrap) {
   });
 }
 
+<<<<<<< HEAD
 // CSS 스타일 추가
 const style = document.createElement('style');
 style.textContent = `
@@ -930,6 +1175,8 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 
 /**
  * 격자 그리기
@@ -945,7 +1192,11 @@ function createGridPointsForElement(el) {
 
     // 요소 크기 확인
     if (el.offsetWidth === 0 || el.offsetHeight === 0) {
+<<<<<<< HEAD
         console.warn('Grid creation skipped: Element has zero dimensions', el.id);
+=======
+        // console.warn('Grid creation skipped: Element has zero dimensions', el.id);
+>>>>>>> b1dd6843 (초기 커밋)
         return;
     }
 
@@ -961,7 +1212,11 @@ function createGridPointsForElement(el) {
     const cols = Math.floor(width / currentGridSize);
     const rows = Math.floor(height / currentGridSize);
 
+<<<<<<< HEAD
     console.log(`Creating grid for ${el.id}: ${cols}x${rows} (size: ${width}x${height})`); // 로그 추가
+=======
+    // console.log(`Creating grid for ${el.id}: ${cols}x${rows} (size: ${width}x${height})`); // 로그 추가
+>>>>>>> b1dd6843 (초기 커밋)
 
     for (let i = 0; i <= rows; i++) {
         for (let j = 0; j <= cols; j++) {
@@ -989,6 +1244,11 @@ function createGridPointsForElement(el) {
 
     // 샘플 라인 그리기
     drawSampleLine(el);
+<<<<<<< HEAD
+=======
+    // 초기 정답 라인 그리기 (새로운 빨간 선)
+    drawInitialAnswerLines(el);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 // 초기 샘플 라인 그리기 함수 (별도 정의 또는 createGridPointsForElement 내부에 포함)
@@ -1023,11 +1283,63 @@ function drawSampleLine(el) {
                 }
             }
         } catch (e) {
+<<<<<<< HEAD
             console.error("Error parsing or drawing sample line:", e, el);
+=======
+            // console.error("Error parsing or drawing sample line:", e, el);
+>>>>>>> b1dd6843 (초기 커밋)
         }
     }
 }
 
+<<<<<<< HEAD
+=======
+// ✅ 초기 정답 선 그리기 함수 추가
+function drawInitialAnswerLines(el) {
+  const svgCanvas = el.querySelector('.line_canvas');
+  const answerRaw = el.dataset.answerSingle;
+
+  if (!svgCanvas || !answerRaw) {
+    // SVG 캔버스가 없거나 정답 데이터가 없으면 실행 안 함
+    return;
+  }
+
+  // 기존에 그려진 배경 정답 선 제거 (중복 방지 - 초기화 시점에만 필요할 수 있음)
+  el.querySelectorAll('.answer_bg_line').forEach(line => line.remove());
+
+  try {
+    const answerGroups = JSON.parse(answerRaw);
+    if (Array.isArray(answerGroups)) {
+      answerGroups.forEach(group => {
+        if (Array.isArray(group) && group.length > 1) {
+          for (let i = 0; i < group.length - 1; i++) {
+            const startPoint = group[i];
+            const endPoint = group[i + 1];
+
+            const answerBgLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            answerBgLine.classList.add('answer_bg_line'); // 배경 정답 선 클래스 추가
+            answerBgLine.setAttribute('x1', startPoint.x);
+            answerBgLine.setAttribute('y1', startPoint.y);
+            answerBgLine.setAttribute('x2', endPoint.x);
+            answerBgLine.setAttribute('y2', endPoint.y);
+            // 스타일은 CSS로 정의
+
+            // 생성된 선을 SVG의 맨 앞에 추가 (다른 선들 아래에 그려지도록)
+            if (svgCanvas.firstChild) {
+              svgCanvas.insertBefore(answerBgLine, svgCanvas.firstChild);
+            } else {
+              svgCanvas.appendChild(answerBgLine);
+            }
+          }
+        }
+      });
+    }
+  } catch (e) {
+    // console.error("Error parsing or drawing initial answer lines:", e, el);
+  }
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /**
  * 두 좌표 배열을 정렬하여 비교하는 함수
  * @param {Array<Array<Object>>} arr1 - 첫 번째 좌표 배열 [[{x, y}, ...], [{x, y}, ...]]
@@ -1077,7 +1389,11 @@ function comparePointArrays(arr1, arr2) {
 }
 
 function createPoint(x, y, el) {
+<<<<<<< HEAD
   console.log(`Point created at: (${x}, ${y})`);
+=======
+  // console.log(`Point created at: (${x}, ${y})`);
+>>>>>>> b1dd6843 (초기 커밋)
 
   // points 배열 초기화 확인
   let points = pointsMap.get(el);
@@ -1156,7 +1472,11 @@ function createPoint(x, y, el) {
     const isCorrect = comparePointArrays(nonEmptyGroups, answerData);
     el.dataset.correction = isCorrect;
   } catch (e) {
+<<<<<<< HEAD
     console.error("Error comparing points:", e);
+=======
+    // console.error("Error comparing points:", e);
+>>>>>>> b1dd6843 (초기 커밋)
     el.removeAttribute('data-correction');
   }
 
@@ -1212,7 +1532,11 @@ function resetDrawing(el) {
   // 리셋 이벤트 발생
   const resetEvent = new CustomEvent('gridAreaReset', { bubbles: true, detail: { element: el } });
   el.dispatchEvent(resetEvent);
+<<<<<<< HEAD
   console.log('gridAreaReset event dispatched for', el);
+=======
+  // console.log('gridAreaReset event dispatched for', el);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 // Intersection Observer 설정
@@ -1227,7 +1551,11 @@ const gridObserverCallback = (entries, observer) => {
     if (entry.isIntersecting) {
       const el = entry.target;
       // 해당 요소에 대해 그리드 생성 함수 호출
+<<<<<<< HEAD
       console.log('Element is intersecting, creating grid for:', el.id);
+=======
+      // console.log('Element is intersecting, creating grid for:', el.id);
+>>>>>>> b1dd6843 (초기 커밋)
       createGridPointsForElement(el);
       // 한 번 생성 후 관찰 중지 (필요한 경우)
       // observer.unobserve(el);

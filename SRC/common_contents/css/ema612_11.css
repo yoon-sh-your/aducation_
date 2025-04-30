@@ -317,6 +317,10 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+  margin-bottom: 30px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema612_11_su_0008 .question_box {
   position: absolute;

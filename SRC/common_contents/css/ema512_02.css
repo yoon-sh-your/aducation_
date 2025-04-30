@@ -266,8 +266,13 @@
   position: absolute;
   right: -20px;
   bottom: 40px;
+<<<<<<< HEAD
   right: 0;
   bottom: 56px;
+=======
+  right: -16px;
+  bottom: 45px;
+>>>>>>> b1dd6843 (초기 커밋)
   display: none;
 }
 .ema512_02_su_0004 .etc_img p {

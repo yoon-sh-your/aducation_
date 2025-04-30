@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .question_box {
   white-space: normal;
 }
@@ -88,6 +91,12 @@
 .example_box.small p {
   color: var(--font-negative);
 }
+<<<<<<< HEAD
+=======
+.ema526_04_ih_0002 .conts_solve > p > img {
+  display: inline-block;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema526_04_ih_0003 .table_wrap {
   width: 950px;
@@ -99,8 +108,17 @@
   width: 190px;
 }
 
+<<<<<<< HEAD
 .ema526_04_ih_0004 .question_box {align-items:normal;}
 .ema526_04_ih_0004 .wrap_table {width:440px;}
+=======
+.ema526_04_ih_0004 .question_box {
+  align-items: normal;
+}
+.ema526_04_ih_0004 .wrap_table {
+  width: 440px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema526_04_ih_0005 .btn.calculator {
   display: inline-flex;

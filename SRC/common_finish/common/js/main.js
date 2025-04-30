@@ -1,4 +1,5 @@
 // main.js
+<<<<<<< HEAD
 import "./resize.js";
 import "./questionTypes.js";
 import "./keypad.js";
@@ -8,6 +9,18 @@ import "./lineMatching.js";
 // import './lineMatching2.js';
 import { setupDragAndDrop } from "./drag.js";
 import { setupPagingHandlers } from "./common.js";
+=======
+import './resize.js';
+import './questionTypes.js';
+import './keypad.js';
+
+import './lineMatching.js';
+// import './lineMatching1.js';
+// import './lineMatching2.js';
+import { setupDragAndDrop } from './drag.js';
+import { setupPagingHandlers } from './common.js';
+import { setCirclePos } from './lineMatching.js';
+>>>>>>> b1dd6843 (초기 커밋)
 
 jQuery(function ($) {
   setupPagingHandlers();
@@ -18,6 +31,7 @@ jQuery(function ($) {
   // $('.pagination .p2').click();
 
   // 시작하기 버튼 클릭 시 intro 숨기고 q1 show
+<<<<<<< HEAD
   $(".intro_btn").on("click", function () {
     $("#intro").hide();
     $("#quest").show();
@@ -46,6 +60,58 @@ jQuery(function ($) {
 
   $(".bg")
     .not(".withKeypad")
+=======
+  $('.intro_btn').on('click', function () {
+    $('#intro').hide();
+    $('#quest').show();
+    playSound('click');
+
+    window.visitedPages[1] = true;
+
+    setCirclePos();
+
+    if ($(`#q1 .answer`).first().parents('.frac_ans').length > 0) {
+      const parentAns0 = $(`#q1 .answer`).first().parents('.frac_ans').find('.answer')[0];
+      const parentAns = $(`#q1 .answer`).first().parents('.frac_ans').find('.answer')[1];
+      $(`#q1 .answer`).removeClass('active');
+      if (parentAns) {
+        $(parentAns).addClass('active');
+      } else {
+        $(parentAns0).addClass('active');
+      }
+    }
+  });
+
+  // 개발 모드
+  let devMode = false;
+  if (devMode) {
+    $('#intro').hide();
+    $('#quest').show();
+  } else {
+    const tutorialKey = 'hideTutorialUntil';
+    const hideUntil = localStorage.getItem(tutorialKey);
+    const now = new Date().getTime();
+    const fileName = window.location.pathname.split('/').pop();
+    const match = fileName.match(/_(\d+)_SU_0100\.html$/);
+    if (!hideUntil || now > parseInt(hideUntil, 10)) {
+      if (match && match[1] === '02') {
+        setTutorial();
+      }
+    }
+  }
+
+  // 선긋기 게임 좌측(output-field) 이미지 우측정렬
+  if (!window.disableImageAlign1 && document.getElementById('svg1')) {
+    rightAlignImagesInSVG('svg1'); // 기본 여유 50
+  }
+  if (!window.disableImageAlign2 && document.getElementById('svg2')) {
+    // rightAlignImagesInSVG('svg2', 30); 여유 30px로 조정
+    rightAlignImagesInSVG('svg2');
+  }
+
+  $('.bg')
+    .not('.withKeypad')
+>>>>>>> b1dd6843 (초기 커밋)
     .each(function () {
       const $button = $(`
         <button type="button" class="btnReset disable" aria-label="결과 지우기">
@@ -54,6 +120,17 @@ jQuery(function ($) {
       `);
       $(this).append($button);
     });
+<<<<<<< HEAD
+=======
+
+  $('.withKeypad').each(function () {
+    if ($(this).hasClass('txt')) {
+      $(this).find('.calc_result_input').attr('inputmode', 'text');
+    } else {
+      $(this).find('.calc_result_input').attr('inputmode', 'decimal');
+    }
+  });
+>>>>>>> b1dd6843 (초기 커밋)
 });
 
 function rightAlignImagesInSVG(svgId, marginRight = 50) {
@@ -61,6 +138,7 @@ function rightAlignImagesInSVG(svgId, marginRight = 50) {
   if (!svg) return;
 
   const portX = 430; // 포트 중심 x좌표 기준 (공통값)
+<<<<<<< HEAD
   const outputFields = svg.querySelectorAll(".output-field"); // output만!
 
   outputFields.forEach((field) => {
@@ -70,11 +148,26 @@ function rightAlignImagesInSVG(svgId, marginRight = 50) {
     const imageWidth = parseFloat(image.getAttribute("width")) || image.getBBox().width;
     const x = portX - imageWidth - marginRight;
     image.setAttribute("x", x);
+=======
+  const outputFields = svg.querySelectorAll('.output-field'); // output만!
+
+  outputFields.forEach((field) => {
+    const image = field.querySelector('image');
+    if (!image) return;
+
+    const imageWidth = parseFloat(image.getAttribute('width')) || image.getBBox().width;
+    const x = portX - imageWidth - marginRight;
+    image.setAttribute('x', x);
+>>>>>>> b1dd6843 (초기 커밋)
   });
 }
 
 function setTutorial() {
+<<<<<<< HEAD
   $("#quest").prepend(`
+=======
+  $('#quest').prepend(`
+>>>>>>> b1dd6843 (초기 커밋)
     <div id="tutorial">
       <div class="nav">
         <div class="pagination">
@@ -95,30 +188,59 @@ function setTutorial() {
           </button>
         </div>
         <div class="center">
+<<<<<<< HEAD
           <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+=======
+          <button type="button" class="submit disable"><img src="../../common_selvasai/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+>>>>>>> b1dd6843 (초기 커밋)
         </div>
       </div>
 
       <ul class="txts">
+<<<<<<< HEAD
         <li>1. 풀고 있는 문제를 확인해요</li>
         <li>2. 답안을 입력해요.</li>
         <li>3. 작성한 답안을 지우거나 정답을 확인해요.</li>
         <li>4. 제출을 눌러 선생님께 결과를 전송해요.</li>
+=======
+        <li>1. 풀고 있는 문제를 확인해요.</li>
+        <li>2. 제출을 눌러 선생님께 결과를 전송해요.</li>
+>>>>>>> b1dd6843 (초기 커밋)
       </ul>
 
       <div class="bt_area">
         <label class="chk_wrap">
+<<<<<<< HEAD
           <input type="checkbox" />
           <span class="chk"></span>
           <span>다시보지 않기</span>
+=======
+          <input type="checkbox" id="dontShowAgain"/>
+          <span class="chk"></span>
+          <span>다시 보지 않기</span>
+>>>>>>> b1dd6843 (초기 커밋)
         </label>
 
         <button type="button" class="btn_start">시작</button>
       </div>
     </div>`);
 
+<<<<<<< HEAD
   $(document).on("click", "#tutorial .btn_start", function () {
     $("#tutorial").addClass("hidden");
     playSound("click");
+=======
+  $(document).on('click', '#tutorial .btn_start', function () {
+    $('#tutorial').addClass('hidden');
+    playSound('click');
+
+    if ($('#dontShowAgain').is(':checked')) {
+      const tutorialKey = 'hideTutorialUntil';
+      const now = new Date().getTime();
+      const hideUntilTime = now + 24 * 60 * 60 * 1000; // 24시간 후 시간 저장
+      localStorage.setItem(tutorialKey, hideUntilTime);
+      $('#tutorial').hide();
+    }
+>>>>>>> b1dd6843 (초기 커밋)
   });
 }

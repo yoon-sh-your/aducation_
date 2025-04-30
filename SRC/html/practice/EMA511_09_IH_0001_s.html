@@ -73,11 +73,18 @@
                         <path class="load7"
                             d="M295.999 318.501C300.333 320.167 313.999 321.501 333.999 313.501C358.999 303.501 396.999 273.501 408.499 308.001C419.999 342.501 367.999 371.001 359.499 373.001C350.999 375.001 253.499 398.501 315.999 430.001C322.5 432.001 341.5 439.001 379.5 426.501C391 423.001 409 430.501 418.5 442.501"
                             stroke="none" />
+<<<<<<< HEAD
                         <image id="obj_move" href="../../common_practice/img/EMA511_09_IH/0001_obj1.png" x="25" y="10"
                             width="90" height="78" />
                     </svg>
                     <span class="obj_arrival"><img src="../../common_practice/img/EMA511_09_IH/0001_obj2.png"
                             alt="도착 이미지"></span>
+=======
+                        <image id="obj_move" href="../../common_practice/img/EMA511_09_IH/0001_obj1.png" x="25" y="10" width="90" height="78" />
+                        <image id="obj_move_blink" href="../../common_practice/img/EMA511_09_IH/0001_obj1_dashed.png" x="25" y="10" width="90" height="78" />
+                    </svg>
+                    <span class="obj_arrival"><img src="../../common_practice/img/EMA511_09_IH/0001_obj2.png" alt="도착 이미지"></span>
+>>>>>>> b1dd6843 (초기 커밋)
 
                 </div>
             </div>
@@ -88,13 +95,35 @@
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const obj = document.getElementById("obj_move");
+<<<<<<< HEAD
+=======
+                const objBlink = document.getElementById("obj_move_blink"); // 추가된 깜박이 이미지
+                const btnReset = document.querySelector(".btnReset"); //리셋 버튼 활성화를 위해 추가
+>>>>>>> b1dd6843 (초기 커밋)
                 const pathElements = document.querySelectorAll("svg path[class^='load']");
                 let currentPathIndex = 0;
                 let state = "ready"; // ready, moving, quiz
 
+<<<<<<< HEAD
                 function moveAlongPath(pathEl) {
                     state = "moving";
 
+=======
+                 // 처음엔 깜박이 이미지만 보이고, 기본 이미지는 숨긴다
+                obj.style.display = "block";
+                objBlink.style.display = "block";
+
+                function moveAlongPath(pathEl) {
+                    state = "moving";
+
+                    // 이동 시작하면 깜박이 이미지를 숨기고 정상 이미지를 보여준다
+                    objBlink.style.display = "none";
+                    obj.style.display = "block";
+
+                    // 이동 시작할 때 리셋 버튼 활성화
+                    btnReset.classList.add("active");
+
+>>>>>>> b1dd6843 (초기 커밋)
                     const pathLength = pathEl.getTotalLength();
                     const speed = 200;
                     const duration = (pathLength / speed) * 1000;
@@ -120,10 +149,30 @@
                         if (step > steps) {
                             clearInterval(interval);
                             state = "quiz"; // 이동 완료 후 퀴즈 대기
+<<<<<<< HEAD
                         }
                     }, 1000 / fps);
                 }
 
+=======
+
+                            if (pathEl.dataset.quiz) {
+                                showQuiz(pathEl); // 문제 있을 때만 showQuiz
+                            } else {
+                                // 마지막 도착 path는 문제 없이 바로 도착 처리
+                                document.querySelector(".map_area")?.classList.add("result");
+                                state = "done";
+
+                                obj.classList.add("bounce"); // 통통 뛰기
+                                obj.addEventListener("animationend", () => {
+                                    obj.classList.remove("bounce");
+                                }, { once: true });
+                            }
+                        }
+                    }, 1000 / fps);
+                }
+                
+>>>>>>> b1dd6843 (초기 커밋)
                 function renderFractionHTML(str) {
                     return str
                         .split("+")
@@ -155,6 +204,10 @@
                         .join('<span class="operator">+</span>');
                 }
 
+<<<<<<< HEAD
+=======
+                //문제 보여주기 팝업
+>>>>>>> b1dd6843 (초기 커밋)
                 function showQuiz(pathEl) {
                     const quiz = pathEl.dataset.quiz;
                     const left = pathEl.dataset.left;
@@ -167,6 +220,12 @@
                         <div class="quiz_pop">
                             <button type="button" class="close" style="display: none;"></button>
                             <div class="inner_pop quiz${currentPathIndex + 1}">
+<<<<<<< HEAD
+=======
+                                <div class="quiz_instruction">
+                                    계산을 하여 계산 결과를 선택하세요.
+                                </div>
+>>>>>>> b1dd6843 (초기 커밋)
                                 <div class="txt_quiz">${renderFractionHTML(quiz)}</div>
                                 <div class="question_box">
                                     <button type="button" class="left" data-answer-single="${left === correct}">
@@ -192,6 +251,10 @@
                     rightBtn.addEventListener("click", checkAnswer);
                 }
 
+<<<<<<< HEAD
+=======
+                //정답 체크
+>>>>>>> b1dd6843 (초기 커밋)
                 function checkAnswer(e) {
                     const selected = e.currentTarget;
                     const isCorrect = selected.dataset.answerSingle === "true";
@@ -199,6 +262,7 @@
                     const quizPop = document.querySelector(".quiz_pop");
 
                     if (isCorrect) {
+<<<<<<< HEAD
                         quizPop.classList.remove("error");
                         quizPop.classList.add("result");
 
@@ -216,6 +280,56 @@
                             }
                         });
                     } else {
+=======
+                        audioManager.playSound("correct"); //정답 소리 재생
+
+                        quizPop.classList.remove("error");
+                        quizPop.classList.add("result");
+
+                        //팝업 자동으로 show 및 close 기능 추가로 팝업의 닫기 버튼 불필요
+                        //const closeBtn = quizPop.querySelector(".close");
+                        //closeBtn.style.display = "block";
+
+                    //     closeBtn.addEventListener("click", () => {
+                    //         document.querySelector(".pop_area")?.remove();
+                    //         currentPathIndex++;
+                    //         if (currentPathIndex < pathElements.length) {
+                    //             moveAlongPath(pathElements[currentPathIndex]);
+                    //         } else {
+                    //             document.querySelector(".map_area")?.classList.add("result");
+                    //             state = "done";
+                    //         }
+                    //     });
+                    // } else {
+                    //     quizPop.classList.remove("result");
+                    //     quizPop.classList.add("error");
+                    //     setTimeout(() => {
+                    //         quizPop.classList.remove("error");
+                    //     }, 1000);
+                    // }
+
+                    // 팝업 자동으로 Show & 정답 체크시 Close
+                        setTimeout(() => {
+                            document.querySelector(".pop_area")?.remove(); // 팝업 닫기
+                            currentPathIndex++;
+                            if (currentPathIndex < pathElements.length) {
+                                moveAlongPath(pathElements[currentPathIndex]); // 다음 이동
+                            } else {
+                                document.querySelector(".map_area")?.classList.add("result");
+                                state = "done";
+                                //도착했을 때 다람쥐 튀는 애니메이션 실행
+                                    obj.classList.add("bounce");
+
+                                //애니메이션이 끝나면 bounce 클래스 제거
+                                obj.addEventListener("animationend", () => {
+                                    obj.classList.remove("bounce");
+                                }, { once: true });
+                            }
+                        }, 500); // 약간의 지연으로 부드럽게
+                    } else {
+                        audioManager.playSound("incorrect"); // 오답 소리 재생
+
+>>>>>>> b1dd6843 (초기 커밋)
                         quizPop.classList.remove("result");
                         quizPop.classList.add("error");
                         setTimeout(() => {
@@ -224,6 +338,15 @@
                     }
                 }
 
+<<<<<<< HEAD
+=======
+                objBlink.addEventListener("click", () => {
+                    if (state === "ready" && currentPathIndex < pathElements.length) {
+                        moveAlongPath(pathElements[currentPathIndex]);
+                    }
+                });
+
+>>>>>>> b1dd6843 (초기 커밋)
                 obj.addEventListener("click", () => {
                     if (state === "ready" && currentPathIndex < pathElements.length) {
                         moveAlongPath(pathElements[currentPathIndex]);
@@ -231,10 +354,45 @@
                         showQuiz(pathElements[currentPathIndex]);
                     }
                 });
+<<<<<<< HEAD
             });
         </script>
 
 
+=======
+
+                btnReset.addEventListener("click", () => {
+                    // state 초기화
+                    currentPathIndex = 0;
+                    state = "ready";
+
+                    // 이동용 드론(obj) 숨기고, 깜박이는 드론(objBlink) 다시 보여주기
+                    obj.style.display = "none";
+                    objBlink.style.display = "block";
+
+                    // 출발 위치로 이동 (x, y 좌표 초기화)
+                    const startX = 25;  // 처음 x 좌표 (너가 <image> 태그에 준 초기값)
+                    const startY = 10;  // 처음 y 좌표
+
+                    obj.setAttribute("x", startX);
+                    obj.setAttribute("y", startY);
+
+                    objBlink.setAttribute("x", startX);
+                    objBlink.setAttribute("y", startY);
+
+                    // 리셋 버튼 비활성화
+                    btnReset.classList.remove("active");
+
+                    // 열려있는 팝업이 있다면 삭제
+                    document.querySelector(".pop_area")?.remove();
+
+                    // 지도에 결과 표시된 것도 제거
+                    document.querySelector(".map_area")?.classList.remove("result");
+                });
+
+            });
+        </script>
+>>>>>>> b1dd6843 (초기 커밋)
     </div>
 </body>
 

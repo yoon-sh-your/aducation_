@@ -16,7 +16,11 @@
     gap: 10px;
     .group {
       span {
+<<<<<<< HEAD
         font-family: "Pretendard";
+=======
+        font-family: 'Pretendard';
+>>>>>>> b1dd6843 (초기 커밋)
         font-size: 24px;
         font-weight: 600;
         letter-spacing: -2px;
@@ -47,20 +51,34 @@
   top: 122px;
   left: 198px;
   z-index: 10;
+<<<<<<< HEAD
   content: "";
   width: 200px;
   height: 90px;
   background: url("../common/img/bg_intro_cloud1.svg") no-repeat center / 100%;
+=======
+  content: '';
+  width: 200px;
+  height: 90px;
+  background: url('../common/img/bg_intro_cloud1.svg') no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .intro::after {
   position: absolute;
   bottom: 112.18px;
   left: 578px;
   z-index: 10;
+<<<<<<< HEAD
   content: "";
   width: 193.24px;
   height: 79.82px;
   background: url("../common/img/bg_intro_cloud2.svg") no-repeat center / 100%;
+=======
+  content: '';
+  width: 193.24px;
+  height: 79.82px;
+  background: url('../common/img/bg_intro_cloud2.svg') no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .intro,
 .outro {
@@ -88,23 +106,38 @@
       z-index: 10;
     }
     &::before {
+<<<<<<< HEAD
       content: "";
       width: 100px;
       height: 524px;
       background: url("../common/img/bg_intro_string.svg") no-repeat center /
         100%;
+=======
+      content: '';
+      width: 100px;
+      height: 524px;
+      background: url('../common/img/bg_intro_string.svg') no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
       position: absolute;
       top: 50%;
       left: -35px;
       transform: translateY(-50%);
     }
     &::after {
+<<<<<<< HEAD
       content: "";
       display: block;
       width: 411.3px;
       height: 531.01px;
       background: url("../common/img/charactor_math_cloud.svg") no-repeat center /
         100%;
+=======
+      content: '';
+      display: block;
+      width: 411.3px;
+      height: 531.01px;
+      background: url('../common/img/charactor_math_cloud.svg') no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
       position: absolute;
       bottom: -110px;
       right: 50px;
@@ -134,23 +167,38 @@
     }
 
     &::before {
+<<<<<<< HEAD
       content: "";
       width: 100px;
       height: 524px;
       background: url("../common/img/bg_outro_string.svg") no-repeat center /
         100%;
+=======
+      content: '';
+      width: 100px;
+      height: 524px;
+      background: url('../common/img/bg_outro_string.svg') no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
       position: absolute;
       top: 50%;
       left: -35px;
       transform: translateY(-50%);
     }
     &::after {
+<<<<<<< HEAD
       content: "";
       display: block;
       width: 480px;
       height: 480px;
       background: url("../common/img/charactor_math_02.svg") no-repeat center /
         100%;
+=======
+      content: '';
+      display: block;
+      width: 480px;
+      height: 480px;
+      background: url('../common/img/charactor_math_02.svg') no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
       position: absolute;
       bottom: -136px;
       right: -15px;
@@ -176,12 +224,20 @@
       /* line-height: 32px; */
       position: relative;
       &::before {
+<<<<<<< HEAD
         content: "";
         display: block;
         width: 40px;
         height: 40px;
         background: url("../common/img/icon_book_3.svg") no-repeat center left /
           40px;
+=======
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url('../common/img/icon_book_3.svg') no-repeat center left / 40px;
+>>>>>>> b1dd6843 (초기 커밋)
         position: absolute;
         top: 0;
         left: 0;
@@ -232,12 +288,20 @@
           height: 72px; */
       z-index: 10;
       &::before {
+<<<<<<< HEAD
         content: "";
         display: block;
         width: 152.02px;
         height: 72px;
         background: url("../common/img/bg_intro_tag.svg") no-repeat center/
           contain;
+=======
+        content: '';
+        display: block;
+        width: 152.02px;
+        height: 72px;
+        background: url('../common/img/bg_intro_tag.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
         position: absolute;
         top: -10px;
         left: -50px;
@@ -256,13 +320,18 @@
   h2 {
     position: relative;
     margin-left: 20px;
+<<<<<<< HEAD
     font-family: "Pretendard" !important;
+=======
+    font-family: 'Pretendard' !important;
+>>>>>>> b1dd6843 (초기 커밋)
     font-size: 32px;
     font-weight: 700 !important;
     letter-spacing: -1px;
     line-height: 48px;
     .title-play,
     .title-ready {
+<<<<<<< HEAD
       text-shadow: 2px 2px 0 white, 1px 2px 0 white, 2px 1px 0 white,
         1px 1px 0 white, 0 2px 0 white, 0 1px 0 white, 2px 0 0 white,
         1px 0 0 white;
@@ -270,12 +339,23 @@
 
     &::before {
       content: "";
+=======
+      text-shadow: 2px 2px 0 white, 1px 2px 0 white, 2px 1px 0 white, 1px 1px 0 white, 0 2px 0 white, 0 1px 0 white, 2px 0 0 white, 1px 0 0 white;
+    }
+
+    &::before {
+      content: '';
+>>>>>>> b1dd6843 (초기 커밋)
       display: block;
       width: 70px;
       height: 70px;
       /* border:1px solid red; */
+<<<<<<< HEAD
       background: white url("../common/img/title_mid_6.svg") no-repeat center/
         contain;
+=======
+      background: white url('../common/img/title_mid_6.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
       position: absolute;
       top: -10px;
       left: -20px;
@@ -307,7 +387,11 @@
           line-height: 36px;
           letter-spacing: -0.5px;
           &::before {
+<<<<<<< HEAD
             content: "";
+=======
+            content: '';
+>>>>>>> b1dd6843 (초기 커밋)
             display: block;
             width: 32px;
             height: 33px;
@@ -319,16 +403,24 @@
         &:nth-of-type(1) {
           p {
             &::before {
+<<<<<<< HEAD
               background: url("../common/img/icon_ready_num_1.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_ready_num_1.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
         }
         &:nth-of-type(2) {
           p {
             &::before {
+<<<<<<< HEAD
               background: url("../common/img/icon_ready_num_2.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_ready_num_2.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
         }
@@ -339,16 +431,24 @@
         &:nth-of-type(1) {
           p {
             &::before {
+<<<<<<< HEAD
               background: url("../common/img/icon_ready_num_3.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_ready_num_3.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
         }
         &:nth-of-type(2) {
           p {
             &::before {
+<<<<<<< HEAD
               background: url("../common/img/icon_ready_num_4.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_ready_num_4.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
         }
@@ -373,7 +473,11 @@
     }
   }
   &.ema515_09_su_0002 {
+<<<<<<< HEAD
     &[data-current-page="page_1"] {
+=======
+    &[data-current-page='page_1'] {
+>>>>>>> b1dd6843 (초기 커밋)
       .paging_layout {
         padding: 0 95px;
       }
@@ -390,7 +494,11 @@
         }
       }
     }
+<<<<<<< HEAD
     &[data-current-page="page_2"] {
+=======
+    &[data-current-page='page_2'] {
+>>>>>>> b1dd6843 (초기 커밋)
       h2 {
         display: none;
       }
@@ -408,11 +516,18 @@
         position: absolute;
         z-index: -1;
         left: 0;
+<<<<<<< HEAD
         content: "";
         width: 106px;
         height: 38px;
         background: url("../../common_contents/img/EMA615_10_SU/0002_icon.svg")
           no-repeat center/ contain;
+=======
+        content: '';
+        width: 106px;
+        height: 38px;
+        background: url('../../common_contents/img/EMA615_10_SU/0002_icon.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
       }
     }
   }
@@ -427,7 +542,11 @@
       top: 5px;
       left: 3px;
       z-index: -1;
+<<<<<<< HEAD
       content: "";
+=======
+      content: '';
+>>>>>>> b1dd6843 (초기 커밋)
       /* margin: -30px; */
       background-color: #888;
       color: white;
@@ -451,9 +570,13 @@
   color: #5fd1fd;
   font-weight: 600;
   background-color: #98cf8e;
+<<<<<<< HEAD
   text-shadow: 2px 2px 0 #5b6f8b, 1px 2px 0 #5b6f8b, 2px 1px 0 #5b6f8b,
     1px 1px 0 #5b6f8b, 0 2px 0 #5b6f8b, 0 1px 0 #5b6f8b, 2px 0 0 #5b6f8b,
     1px 0 0 #5b6f8b;
+=======
+  text-shadow: 2px 2px 0 #5b6f8b, 1px 2px 0 #5b6f8b, 2px 1px 0 #5b6f8b, 1px 1px 0 #5b6f8b, 0 2px 0 #5b6f8b, 0 1px 0 #5b6f8b, 2px 0 0 #5b6f8b, 1px 0 0 #5b6f8b;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* -------------------------------- 놀이방법 페이지 -------------------------------- */
@@ -479,45 +602,73 @@
           position: absolute;
           left: 20px;
           top: 5px;
+<<<<<<< HEAD
           content: "";
+=======
+          content: '';
+>>>>>>> b1dd6843 (초기 커밋)
           display: block;
           width: 41.14px;
           height: 41.14px;
         }
         &.num1 {
           &::before {
+<<<<<<< HEAD
             background: url("../common/img/icon_howto_num_1.svg") no-repeat
               center/ contain;
+=======
+            background: url('../common/img/icon_howto_num_1.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
           }
         }
         &.num2 {
           &::before {
+<<<<<<< HEAD
             background: url("../common/img/icon_howto_num_2.svg") no-repeat
               center/ contain;
+=======
+            background: url('../common/img/icon_howto_num_2.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
           }
         }
         &.num3 {
           &::before {
+<<<<<<< HEAD
             background: url("../common/img/icon_howto_num_3.svg") no-repeat
               center/ contain;
+=======
+            background: url('../common/img/icon_howto_num_3.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
           }
         }
         &.num4 {
           &::before {
+<<<<<<< HEAD
             background: url("../common/img/icon_howto_num_4.svg") no-repeat
               center/ contain;
+=======
+            background: url('../common/img/icon_howto_num_4.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
           }
         }
         &.num5 {
           &::before {
+<<<<<<< HEAD
             background: url("../common/img/icon_howto_num_5.svg") no-repeat
               center/ contain;
+=======
+            background: url('../common/img/icon_howto_num_5.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
           }
         }
         &.num6 {
           &::before {
+<<<<<<< HEAD
             background: url("../common/img/icon_howto_num_6.svg") no-repeat
               center/ contain;
+=======
+            background: url('../common/img/icon_howto_num_6.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
           }
         }
         &:has(img) {
@@ -536,7 +687,11 @@
             position: absolute;
             left: 0;
             top: 2px;
+<<<<<<< HEAD
             content: "";
+=======
+            content: '';
+>>>>>>> b1dd6843 (초기 커밋)
             display: block;
             width: 34px;
             height: 34px;
@@ -544,36 +699,56 @@
           &.num_s1 {
             &::before {
               /* left: 10px; */
+<<<<<<< HEAD
               background: url("../common/img/icon_howto_num_s1.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_howto_num_s1.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
           &.num_s2 {
             &::before {
               /* left: 10px; */
+<<<<<<< HEAD
               background: url("../common/img/icon_howto_num_s2.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_howto_num_s2.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
           &.num_s3 {
             &::before {
               /* left: 10px; */
+<<<<<<< HEAD
               background: url("../common/img/icon_howto_num_s3.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_howto_num_s3.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
           &.num_s4 {
             /* left: -40px; */
             &::before {
+<<<<<<< HEAD
               background: url("../common/img/icon_howto_num_s4.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_howto_num_s4.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
           &.num_s5 {
             /* left: -40px; */
             &::before {
+<<<<<<< HEAD
               background: url("../common/img/icon_howto_num_s5.svg") no-repeat
                 center/ contain;
+=======
+              background: url('../common/img/icon_howto_num_s5.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
             }
           }
         }
@@ -647,12 +822,20 @@
         }
       }
     }
+<<<<<<< HEAD
     &[data-current-page="page_5"] h2::before {
+=======
+    &[data-current-page='page_5'] h2::before {
+>>>>>>> b1dd6843 (초기 커밋)
       display: none;
     }
   }
   &.ema513_07_su_0002 {
+<<<<<<< HEAD
     &[data-current-page="page_6"] {
+=======
+    &[data-current-page='page_6'] {
+>>>>>>> b1dd6843 (초기 커밋)
       .title {
         h2 {
           letter-spacing: -1.5px;
@@ -662,7 +845,11 @@
     }
   }
   &.ema516_09_su_0003 {
+<<<<<<< HEAD
     &[data-current-page="page_5"] {
+=======
+    &[data-current-page='page_5'] {
+>>>>>>> b1dd6843 (초기 커밋)
       h2 {
         .title-play {
           font-size: 0;
@@ -698,14 +885,22 @@
       background-color: #c8d96c;
       &:before {
         /* display: inline-block; */
+<<<<<<< HEAD
         content: "한 번 쉬기";
+=======
+        content: '한 번 쉬기';
+>>>>>>> b1dd6843 (초기 커밋)
         color: #336d40;
       }
     }
     .item2 {
       background-color: #f4c3be;
       &:before {
+<<<<<<< HEAD
         content: "원하는 땅 한 칸 색칠하기";
+=======
+        content: '원하는 땅 한 칸 색칠하기';
+>>>>>>> b1dd6843 (초기 커밋)
         color: #a03a33;
       }
     }
@@ -722,7 +917,11 @@
   }
   .gray,
   button:disabled {
+<<<<<<< HEAD
     background: var(--bg-disabled);
+=======
+    background-color: var(--bg-disabled);
+>>>>>>> b1dd6843 (초기 커밋)
     color: var(--btn-disabled);
   }
 }
@@ -749,12 +948,20 @@ body:has(#app_wrap.teacher) {
   width: 26px;
   height: 26px;
   &::before {
+<<<<<<< HEAD
     content: "";
     display: block;
     width: 26px;
     height: 26px;
     background: url("../../common_contents/img/EMA512_09_SU/0002_icon_x.svg")
       no-repeat center/ contain;
+=======
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url('../../common_contents/img/EMA512_09_SU/0002_icon_x.svg') no-repeat center/ contain;
+>>>>>>> b1dd6843 (초기 커밋)
     position: absolute;
     top: 2px;
     left: 0;
@@ -791,7 +998,11 @@ html {
 }
 
 .speech-bubble::after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   position: absolute;
   width: 0;
   height: 0;
@@ -821,6 +1032,7 @@ html {
 }
 
 .page_3 > div {
+<<<<<<< HEAD
     position: absolute;
     top: 195px; 
     left: 430px; 
@@ -831,3 +1043,15 @@ html {
     width: 600px; 
     height: 200px;
 }
+=======
+  position: absolute;
+  top: 195px;
+  left: 430px;
+  background: #fff;
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

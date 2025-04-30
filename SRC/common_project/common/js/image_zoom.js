@@ -20,6 +20,7 @@ function createZoomPopup(targetPicture) {
   if (document.querySelector('.pop_area')) return; // 중복 실행 방지
 
   const titleText = document.querySelector('section.title h2');
+<<<<<<< HEAD
   const pureText = Array.from(titleText.childNodes)
     .filter((node) => node.nodeType === 3 || 
             (node.nodeType === 1 && (node.classList.contains('fraction_box') || 
@@ -36,6 +37,18 @@ function createZoomPopup(targetPicture) {
       return '';
     })
     .join(' ');
+=======
+
+  // 🔹 .heading 클래스를 제외한 HTML 구조를 포함하도록 수정
+  let pureText = '';
+  if (titleText) {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = titleText.innerHTML;
+    // .heading 클래스를 가진 모든 요소를 찾아 제거
+    tempDiv.querySelectorAll('.heading').forEach(headingEl => headingEl.remove());
+    pureText = tempDiv.innerHTML.trim();
+  }
+>>>>>>> b1dd6843 (초기 커밋)
 
   const dataHead = targetPicture.dataset.head || '';
   const dataTit = targetPicture.dataset.tit || pureText;

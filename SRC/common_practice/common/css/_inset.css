@@ -10,7 +10,11 @@
 }
 
 /* .contents h3::before {margin-top:20px;} */
+<<<<<<< HEAD
 .contents h3:has(.fraction_box) {
+=======
+.contents h3:not(:has(.fraction_txt_wrap)):has(.fraction_box) {
+>>>>>>> b1dd6843 (초기 커밋)
   margin-top: 20px;
 }
 

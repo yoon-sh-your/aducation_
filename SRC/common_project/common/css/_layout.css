@@ -1,13 +1,21 @@
 /* 스크롤 디자인 전체 적용 */
 textarea::-webkit-scrollbar,
+<<<<<<< HEAD
 math-field.textarea::part(content)::-webkit-scrollbar,
+=======
+math-field.textarea::-webkit-scrollbar,
+>>>>>>> b1dd6843 (초기 커밋)
 div::-webkit-scrollbar,
 .example_box::-webkit-scrollbar {
   width: 20px;
 }
 
 textarea::-webkit-scrollbar-track,
+<<<<<<< HEAD
 math-field.textarea::part(content)::-webkit-scrollbar-track,
+=======
+math-field.textarea::-webkit-scrollbar-track,
+>>>>>>> b1dd6843 (초기 커밋)
 div::-webkit-scrollbar-track,
 .example_box::-webkit-scrollbar-track {
   border-radius: 20px;
@@ -16,7 +24,11 @@ div::-webkit-scrollbar-track,
 }
 
 textarea::-webkit-scrollbar-thumb,
+<<<<<<< HEAD
 math-field.textarea::part(content)::-webkit-scrollbar-thumb,
+=======
+math-field.textarea::-webkit-scrollbar-thumb,
+>>>>>>> b1dd6843 (초기 커밋)
 div::-webkit-scrollbar-thumb,
 .example_box::-webkit-scrollbar-thumb {
   border-radius: 20px;
@@ -147,8 +159,13 @@ section.title.type2 + section.contents {
 }
 
 /* 250415 추가 */
+<<<<<<< HEAD
 .contents h3:has(.fraction_box)::before {
   top: 27px;
+=======
+.contents h3:not(:has(.fraction_txt_wrap)):has(.fraction_box)::before {
+  top: 26px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .contents:not(.paging_layout) > .input_area:first-child:has(h3) {
@@ -250,6 +267,29 @@ section.title.type2 + section.contents {
   left: -90px;
 }
 
+<<<<<<< HEAD
+=======
+.title h2[data-head].is_star::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 45px;
+  height: 45px;
+  background: url(../img/title_number_star.svg) no-repeat;
+}
+
+.title h2[data-head].is_star2::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 45px;
+  height: 45px;
+  background: url(../img/title_number_star1.svg) no-repeat;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ico_round {
   width: 32px;
   height: 32px;
@@ -303,6 +343,13 @@ section.title.type2 + section.contents {
   transform: rotate(15deg);
 }
 
+<<<<<<< HEAD
+=======
+.title.creative_plus > h2 {
+  flex: 1;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /**************************************/
 /* 글머리 디자인 */
 i.ex1 {
@@ -354,6 +401,12 @@ i.ex1 {
 .fraction_box:has(.input_wrap) {
   gap: 8px;
 }
+<<<<<<< HEAD
+=======
+/*.fraction_box math-field {
+    width: 88px !important;
+}*/
+>>>>>>> b1dd6843 (초기 커밋)
 
 .fraction_box:has(.input_wrap) > span {
   height: 60px;
@@ -391,26 +444,53 @@ i.ex1 {
   gap: 0;
 }
 
+<<<<<<< HEAD
 .title h2:has(.fraction_box):not(.fraction-line-1) {
+=======
+.title h2:has(.fraction_box):not(.fraction-line-1):not(.fraction_box_title) {
+>>>>>>> b1dd6843 (초기 커밋)
   line-height: 1;
   margin-top: -8px;
 }
 
+<<<<<<< HEAD
 .title h2:has(.fraction_box):not(.fraction-line-1) .heading {
   top: 8px !important;
 }
 
 .title h2:has(.fraction_box)[data-text='생각 깨우기'] .title_head {
+=======
+.title h2:has(.fraction_box):not(.fraction-line-1):not(.fraction_box_title) .heading {
+  top: 8px !important;
+}
+
+.title h2:not(.fraction_box_title):has(.fraction_box)[data-text='생각 깨우기'] .title_head {
+>>>>>>> b1dd6843 (초기 커밋)
   margin-top: 13px;
   margin-right: 14px;
 }
 
 .title h2 .mixed_fraction,
+<<<<<<< HEAD
 .title h2 .fraction_box {
   margin: 0 2px 0 10px;
 }
 
 .contents h3:has(.fraction_box) {
+=======
+.title h2 .fraction_box, 
+.image_zoom_wrap .title h3 .mixed_fraction,
+.image_zoom_wrap .title h3 .fraction_box {
+  margin: 0 2px 0 10px;
+}
+
+.title h2 .mixed_fraction .fraction_box,
+.image_zoom_wrap .title h3 .mixed_fraction .fraction_box {
+  margin: 0;
+}
+
+.contents h3:not(:has(.fraction_txt_wrap)):has(.fraction_box) {
+>>>>>>> b1dd6843 (초기 커밋)
   line-height: 1;
   margin-top: -8px;
 }
@@ -420,10 +500,27 @@ i.ex1 {
   margin: 0 2px 0 10px;
 }
 
+<<<<<<< HEAD
 .example_box .mixed_fraction,
 .example_box .fraction_box {
   font-size: 20px;
   margin: 0 2px 0 8px;
+=======
+.contents h3 .mixed_fraction .fraction_box {
+  margin: 0;
+}
+
+.example_box .mixed_fraction,
+.example_box .fraction_box {
+  /* font-size: 20px; */
+  margin: 0 2px 0 8px;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.example_box .mixed_fraction .fraction_box {
+  margin: 0;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .example_box .fraction_box::before {
@@ -445,6 +542,13 @@ i.ex1 {
   top: calc(50% - 1px);
 }
 
+<<<<<<< HEAD
+=======
+.letCheck li .mixed_fraction {
+  gap: 0;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 드래그 포인터 설정 */
 .draggable {
   cursor: grab;
@@ -587,7 +691,11 @@ i.ex1 {
 .img_row .video_wrap + .input_area .input_wrap math-field.textarea,
 .img_row .picture_wrap + .input_area .input_wrap math-field.textarea {
   /* height: 322px !important; */
+<<<<<<< HEAD
   flex: 1;
+=======
+  /* flex: 1; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* 단원 첫 페이지 */
@@ -816,12 +924,214 @@ i.ex1 {
 }
 
 /* 버튼 포함 발문 스타일 정의 (250422) */
+<<<<<<< HEAD
 .title h2[data-head] button,
 .contents h3 button {
   display: inline-block;
+=======
+.title h2 button,
+.contents h3 button {
+  display: inline-flex;
+>>>>>>> b1dd6843 (초기 커밋)
   vertical-align: middle;
   margin-top: -10px;
   margin-bottom: -10px;
   position: relative;
   top: -3px;
+<<<<<<< HEAD
+=======
+}
+
+/* 보기, 규칙 라벨 */
+.label_bogi,
+.label_rule {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: var(--secondary-red);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.label_bogi.pink {
+  background-color: #b7598f;
+}
+
+.label_rule {
+  background-color: #c15840;
+}
+
+.label_bogi_box {
+  border: 3px solid var(--secondary-red) !important;
+  border-radius: 20px !important;
+  position: relative;
+}
+
+.label_bogi_box.pink {
+  border-color: #b7598f !important;
+}
+
+.label_rule_box {
+  border: 3px solid #c15840;
+  border-radius: 20px;
+  position: relative;
+}
+
+.label_bogi_box .label_bogi,
+.label_rule_box .label_rule {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  transform: translateY(-50%);
+}
+
+.title h2 div > span .label_bogi,
+.title h2 div > span .label_rule {
+  position: relative;
+  top: -5px;
+}
+
+/* 괄호 스타일 (250423) form.css - multiple_hint 괄호와 gap, margin 제외 스타일 동일 */
+.pare_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.pare_wrap:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 40px;
+  background: url(../img/pare_ico1_black.svg) no-repeat center / 100%;
+  margin-right: -2px !important;
+}
+.pare_wrap:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 40px;
+  background: url(../img/pare_ico2_black.svg) no-repeat center / 100%;
+  margin-left: -2px !important;
+}
+
+.pare_wrap:has(.fraction_box)::before {
+  width: 14px;
+  height: 76px;
+  background-image: url("../img/pare_ico1_big_black.svg");
+  margin-right: -5px !important;
+}
+
+.pare_wrap:has(.fraction_box)::after {
+  width: 14px;
+  height: 76px;
+  background-image: url("../img/pare_ico2_big_black.svg");
+  margin-left: -5px !important;
+}
+
+.title h2 .nemo_blank,
+.title h2 .t_circle_blank {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 2px #3B71FE;
+  padding: 0;
+  margin: 0 8px 0 10px;
+}
+
+.title h2 .t_circle_blank {
+  border-radius: 32px;
+}
+
+.title h2 > .title_row {
+  font-size: 0;
+}
+
+.title h2 > .title_row > span {
+  display: inline;
+  vertical-align: middle;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+
+.title h2:has(.fraction_box):not(.fraction-line-1) > .title_row > span {
+  line-height: 1;
+}
+
+.title h2 > .title_row > div {
+  vertical-align: middle;
+}
+
+.title h2 > .title_row .nemo_blank,
+.title h2 > .title_row .t_circle_blank {
+  display: inline-block;
+}
+
+.title h2 > .title_row .mixed_fraction,
+.title h2 > .title_row .fraction_box {
+  display: inline-flex;
+}
+
+.title h2 > .title_row .nemo_blank:first-child,
+.title h2 > .title_row .t_circle_blank:first-child {
+  margin-left: 0;
+}
+
+.title h2 .title_row .icon_inequality {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title h2 .title_row .icon_inequality.icon_inequality_gt {
+  background-image: url("../img/icon_arrow_right.svg");
+}
+
+.title h2 .title_row .icon_inequality.icon_inequality_equal {
+  background-image: url("../img/icon_equal.svg");
+}
+
+.title h2 .title_row .icon_inequality.icon_inequality_lt {
+  background-image: url("../img/icon_arrow_left.svg");
+}
+
+/* 분수 포함 텍스트트 공통 스타일 재정의 (250424) */
+.fraction_txt_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.fraction_txt_wrap .fraction_txt {
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+}
+
+/* 계산식 표현 추가 (250425) */
+.operation_box {
+  display: inline-flex;
+  align-items: center;
+}
+
+.operation_box .mixed_fraction,
+.operation_box .fraction_box {
+  margin: 0 !important;
+}
+
+h2 .operation_box {
+  margin: 0 2px 0 10px;
+}
+
+h3 .operation_box {
+  margin: 0 2px 0 8px;
+>>>>>>> b1dd6843 (초기 커밋)
 }

@@ -28,6 +28,10 @@ function getScaleValue(element) {
 // 전역 등록
 window.pageStates = {};
 window.submissionStates = {};
+<<<<<<< HEAD
+=======
+window.enterActive = true;
+>>>>>>> b1dd6843 (초기 커밋)
 
 // 초기 상태 세팅 (모든 문제 상태를 "미제출"로 초기화)
 window.questionTypes.forEach((type, index) => {
@@ -168,6 +172,12 @@ window.disableAnswerEditing = function (page) {
 $(document).on('click', '.btnReset', function (e, keepWrongCnt) {
   const preserveWrongCnt = keepWrongCnt ?? false;
   const currentPage = $('.pagination button.on').index() + 1;
+<<<<<<< HEAD
+=======
+
+  // const allReset = window.visitedPages[currentPage] === 2;
+
+>>>>>>> b1dd6843 (초기 커밋)
   playSound('click');
   $(this).addClass('disable');
   $(`.pagination .p${currentPage}`).removeClass('x-icon o-icon');
@@ -178,15 +188,28 @@ $(document).on('click', '.btnReset', function (e, keepWrongCnt) {
   $('.page.on .draggable.disabled').removeClass('disabled');
   $('.page.on .droppable.disabled .draggable').remove();
   $('.page.on .droppable.disabled').removeClass('disabled');
+<<<<<<< HEAD
   $('.page.on svg circle').css('pointer-events', 'all');
   $('.page.on svg line').remove();
   $('.page.on .dot').removeClass('on done');
+=======
+  $('.page.on .draggable').removeClass('is-answer');
+  $('.page.on .droppable .hint').remove();
+  $('.page.on svg circle').css('pointer-events', 'all').removeClass('disabled');
+  $('.page.on svg line').remove();
+  $('.page.on .dot').removeClass('on done correct ans');
+
+  $('.page.on .item').removeClass('is-answer');
+>>>>>>> b1dd6843 (초기 커밋)
 
   if (!preserveWrongCnt) {
     window.visitedPages[currentPage] = false;
     window.wrongCnt[currentPage] = 0;
+<<<<<<< HEAD
     console.log(window.wrongCnt);
     console.log(window.visitedPages);
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   }
 });
 // 제출 버튼 클릭 시
@@ -255,7 +278,10 @@ $('.submit').on('click', function () {
   // $('#submitModal').data('currentPage', currentPage);
   // $('#submitModal').data('isCorrect', isCorrect);
 
+<<<<<<< HEAD
   console.log('window.pageStates', window.pageStates);
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   const values = Object.values(window.pageStates);
   const hasItems = values.length > 0;
   const allCompleted = hasItems && values.every((value) => value === true);
@@ -294,10 +320,14 @@ export function checkAnswerPop() {
     // 이중 배열이면 곱하기나 나누기 문제, 둘 중에 맞는 정답이 없다면 첫번쨰 배열을 넣어 오답 처리
     let doubleArrayAnswer = [];
     if (Array.isArray(correctAnswers) && Array.isArray(correctAnswers[0])) {
+<<<<<<< HEAD
       const matchedIndex = correctAnswers.findIndex(candidate =>
         candidate.length === userAnswers.length &&
         candidate.every((val, i) => String(val) === String(userAnswers[i]))
       );
+=======
+      const matchedIndex = correctAnswers.findIndex((candidate) => candidate.length === userAnswers.length && candidate.every((val, i) => String(val) === String(userAnswers[i])));
+>>>>>>> b1dd6843 (초기 커밋)
       doubleArrayAnswer = matchedIndex > -1 ? correctAnswers[matchedIndex] : correctAnswers[0];
       correctAnswers = doubleArrayAnswer;
     }
@@ -316,7 +346,10 @@ export function checkAnswerPop() {
         $(input).addClass('is-incorrect');
       }
     });
+<<<<<<< HEAD
     console.log(userAnswers, '//', correctAnswers);
+=======
+>>>>>>> b1dd6843 (초기 커밋)
     correctAnswers = doubleArrayAnswer.length ? doubleArrayAnswer : window.correctAnswers[currentPage].map(String);
 
     // $(`#q${currentPage} .answer`).each(function () {
@@ -360,7 +393,10 @@ export function checkAnswerPop() {
       userAnswers = false;
     }
   }
+<<<<<<< HEAD
   console.log('questionType', questionType);
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   const isCorrect = JSON.stringify(userAnswers) === JSON.stringify(correctAnswers);
   window.submissionStates[currentPage].answered = true;
   window.submissionStates[currentPage].isCorrect = isCorrect;
@@ -376,19 +412,30 @@ export function checkAnswerPop() {
     }
 
     const wrongCount = window.wrongCnt[currentPage];
+<<<<<<< HEAD
     console.log(wrongCount);
+=======
+>>>>>>> b1dd6843 (초기 커밋)
     // 메시지 설정
     let messageText = '';
     if (isPositive) {
       messageText = '정답이에요!';
       $('.page.on .qe_area').addClass('disabled');
+<<<<<<< HEAD
       $('.page.on .keypad').addClass('disabled');
+=======
+      $('.page.on .keypad .calc_num, .page.on .keypad .calc_check').addClass('disabled');
+>>>>>>> b1dd6843 (초기 커밋)
     } else {
       messageText = wrongCount >= 2 ? '정답을 확인해 보세요.' : '한 번 더 생각해 보세요.';
     }
     if (wrongCount >= 2) {
       $('.page.on .qe_area').addClass('disabled');
+<<<<<<< HEAD
       $('.page.on .keypad').addClass('disabled');
+=======
+      $('.page.on .keypad .calc_num, .page.on .keypad .calc_check').addClass('disabled');
+>>>>>>> b1dd6843 (초기 커밋)
     }
 
     const $message = $('<p>').text(messageText);
@@ -410,6 +457,10 @@ export function checkAnswerPop() {
 
     setTimeout(() => {
       $('#submitModal').fadeOut(300, function () {
+<<<<<<< HEAD
+=======
+        window.enterActive = true;
+>>>>>>> b1dd6843 (초기 커밋)
         // 버튼 다시 보이게
         $('#submitModal .modal-buttons').removeClass('hidden');
         $('#submitModal .modal-content').removeClass('good bad'); // 스타일도 원복
@@ -420,14 +471,36 @@ export function checkAnswerPop() {
         if (wrongCount >= 2) {
           if (questionType === 2 || questionType === 3) {
             $(`#q${currentPage} input[type="checkbox"]:checked`).prop('checked', false).closest('.item').removeClass('selected');
+<<<<<<< HEAD
             window.correctAnswers[currentPage].forEach(val => {
+=======
+            window.correctAnswers[currentPage].forEach((val) => {
+>>>>>>> b1dd6843 (초기 커밋)
               const $checkbox = $(`#q${currentPage} input[type="checkbox"][value="${val}"]`);
               $checkbox.prop('checked', true); // 체크박스 체크
               $checkbox.closest('.item').addClass('is-answer'); // 가장 가까운 .item 부모에 클래스 추가
             });
           } else if (questionType === 4) {
+<<<<<<< HEAD
             $(`#q${currentPage} [data-answer]`).each(function () {
               $(`#q${currentPage} span.draggable[aria-label="${$(this).data('answer')}"]`).addClass('is-answer');
+=======
+            $(`#q${currentPage} .droppable`).each(function () {
+              const dragItem = $(`#q${currentPage} .draggable-items .draggable[aria-label="${$(this).data('answer')}"]`);
+              dragItem.addClass('is-answer');
+              if (!$(this).find('.draggable')[0]) {
+                let ans = dragItem.html();
+                if (dragItem.attr('aria-label') === '크다') {
+                  $(this).append(`<span class="hint">&gt;</span>`);
+                } else if (dragItem.attr('aria-label') === '같다') {
+                  $(this).append(`<span class="hint">=</span>`);
+                } else if (dragItem.attr('aria-label') === '작다') {
+                  $(this).append(`<span class="hint">&lt;</span>`);
+                } else {
+                  $(this).append(`<span class="hint">${ans}</span>`);
+                }
+              }
+>>>>>>> b1dd6843 (초기 커밋)
             });
           } else if (questionType === 5) {
             const pairs = {};
@@ -437,11 +510,19 @@ export function checkAnswerPop() {
               const n = $circle.attr('n');
               const cx = $circle.attr('cx');
               const cy = $circle.attr('cy');
+<<<<<<< HEAD
             
               if (!pairs[n]) pairs[n] = [];
               pairs[n].push({ cx, cy });
             });
             
+=======
+
+              if (!pairs[n]) pairs[n] = [];
+              pairs[n].push({ cx, cy });
+            });
+
+>>>>>>> b1dd6843 (초기 커밋)
             // 각 n에 대해 짝이 두 개 있을 때만 <line> 만들어서 추가
             Object.entries(pairs).forEach(([n, points]) => {
               if (points.length === 2 && points[0].cx && points[0].cy && points[1].cx && points[1].cy) {
@@ -452,10 +533,29 @@ export function checkAnswerPop() {
             $(`#q${currentPage} .dot_area .wrap .dot`).addClass('ans');
           }
         } else {
+<<<<<<< HEAD
           $('.calc_reset').trigger('click');
           $('.btnReset').trigger('click', [true]);
           $(`#q${currentPage} input[type="checkbox"]:checked`).prop('checked', false);
           $(`#q${currentPage} input.answer`).val('').removeClass('active').first().focus().addClass('active');
+=======
+          $('.page.on .calc_reset').trigger('click');
+          $('.page.on .btnReset').trigger('click', [true]);
+          $(`#q${currentPage} input[type="checkbox"]:checked`).prop('checked', false);
+          $(`#q${currentPage} input.answer`).val('').removeClass('active is-incorrect is-correct');
+
+          if ($(`#q${currentPage} .answer`).first().parents('.frac_ans').length > 0) {
+            const parentAns0 = $(`#q${currentPage} .answer`).first().parents('.frac_ans').find('.answer')[0];
+            const parentAns = $(`#q${currentPage} .answer`).first().parents('.frac_ans').find('.answer')[1];
+            if (parentAns) {
+              $(parentAns).addClass('active');
+            } else {
+              $(parentAns0).addClass('active');
+            }
+          } else {
+            $(`#q${currentPage} .answer`).first().addClass('active');
+          }
+>>>>>>> b1dd6843 (초기 커밋)
         }
       }
     }, 2000);
@@ -490,9 +590,24 @@ export function setupPagingHandlers() {
     $('.page').addClass('hidden');
     $(`#q${newPage}`).removeClass('hidden');
 
+<<<<<<< HEAD
     $('.answer').removeClass('active');
     $(`#q${newPage} .answer`).first().addClass('active');
 
+=======
+    $(`#q${newPage} .answer`).removeClass('active');
+    if ($(`#q${newPage} .answer`).first().parents('.frac_ans').length > 0) {
+      const parentAns0 = $(`#q${newPage} .answer`).first().parents('.frac_ans').find('.answer')[0];
+      const parentAns = $(`#q${newPage} .answer`).first().parents('.frac_ans').find('.answer')[1];
+      if (parentAns) {
+        $(parentAns).addClass('active');
+      } else {
+        $(parentAns0).addClass('active');
+      }
+    } else {
+      $(`#q${newPage} .answer`).first().addClass('active');
+    }
+>>>>>>> b1dd6843 (초기 커밋)
     // window.checkPageAnswerStates(newPage);
 
     // hover 효과 추가
@@ -500,7 +615,11 @@ export function setupPagingHandlers() {
 
     if (window.submissionStates?.[newPage]?.answered) {
       $('.submit').addClass('disable');
+<<<<<<< HEAD
       window.disableAnswerEditing?.(newPage);
+=======
+      // window.disableAnswerEditing?.(newPage);
+>>>>>>> b1dd6843 (초기 커밋)
     }
     window.updateSubmitButton();
 

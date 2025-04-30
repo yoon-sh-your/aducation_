@@ -64,6 +64,10 @@ runAfterAppReady(function () {
 
   const $droppables = $(".drop_group .figure_triangle");
   const $draggables = $(".drag_group .drag_item");
+<<<<<<< HEAD
+=======
+  
+>>>>>>> b1dd6843 (초기 커밋)
 
   // 드래그 설정
   $draggables.draggable({
@@ -135,6 +139,7 @@ runAfterAppReady(function () {
           "data-value": $original.attr("data-value")
         });
 
+<<<<<<< HEAD
         const rotation = parseInt($original.attr("data-rotation")) || 0;
         $clone.css({
           transform: `rotate(${rotation}deg)`
@@ -143,6 +148,28 @@ runAfterAppReady(function () {
       $drop.append($clone);
       makeDraggable($clone);
       bindRotation($clone);
+=======
+         // 드롭된 후 처리
+        const rotation = parseFloat($original.attr("data-rotation")) || 0;
+
+        // 원본 초기화
+        $original.attr("data-rotation", "0");
+        $original.find(".rotate_wrap").css({
+          transform: "rotate(0deg)",
+          transformOrigin: "center center"
+        });
+
+        // 복제본 회전값 유지
+        $clone.attr("data-rotation", rotation);
+        $clone.find(".rotate_wrap").css({
+          transform: `rotate(${rotation}deg)`,
+          transformOrigin: "center center"
+        });
+
+        $drop.append($clone);
+        makeDraggable($clone);
+        bindRotation($clone);
+>>>>>>> b1dd6843 (초기 커밋)
     } else {
       $clone = $original;
   
@@ -181,6 +208,7 @@ runAfterAppReady(function () {
       cursor: "grabbing",
       zIndex: 1000,
       containment: "document",
+<<<<<<< HEAD
       stop: function (event, ui) {
         const offset = $(this).offset();
         const $dragGroup = $(".drag_group");
@@ -218,6 +246,99 @@ runAfterAppReady(function () {
     });
   }
 
+=======
+  
+      start: function () {
+        if (isRotating) return false;
+      },
+  
+      stop: function (event, ui) {
+        const $dragItem = $(this);
+        const offset = $dragItem.offset();
+        const $dropGroup = $(".page.on .drop_group");
+        const $dragGroup = $(".page.on .drag_group");
+  
+        const dropOffset = $dropGroup.offset();
+        const dropWidth = $dropGroup.outerWidth();
+        const dropHeight = $dropGroup.outerHeight();
+  
+        const insideDrop =
+          offset.left > dropOffset.left &&
+          offset.left < dropOffset.left + dropWidth &&
+          offset.top > dropOffset.top &&
+          offset.top < dropOffset.top + dropHeight;
+  
+        if (!insideDrop && $dragItem.hasClass("from-drop")) {
+          const dataValue = $dragItem.attr("data-value");
+  
+          // ✅ 원본 찾고 used/disabled 해제
+          const $original = $dragGroup.find(`.drag_item[data-value="${dataValue}"]`);
+          $original.removeClass("used disabled");
+  
+          // ✅ 복제 도형 제거
+          $dragItem.remove();
+        }
+  
+        $(".btn_area button").addClass("active");
+      }
+    });
+  }
+  
+  
+  //let isRotating = false; // 전역에 위치
+
+  function bindRotation($elem) {
+    $elem.find(".btn_rotation").on("mousedown.rotate touchstart.rotate", function (e) {
+      e.stopPropagation();
+      const $dragItem = $(this).closest(".drag_item");
+      const $rotateWrap = $dragItem.find(".rotate_wrap");
+  
+      const rect = $rotateWrap[0].getBoundingClientRect();
+      const center = {
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2
+      };
+  
+      const pageX = e.pageX || e.originalEvent.touches?.[0]?.pageX;
+      const pageY = e.pageY || e.originalEvent.touches?.[0]?.pageY;
+  
+      const startAngle = Math.atan2(pageY - center.y, pageX - center.x) * (180 / Math.PI);
+      const initialRotation = parseFloat($dragItem.attr("data-rotation") || "0");
+      isRotating = true;
+  
+      $(document).on("mousemove.rotate touchmove.rotate", function (e) {
+        if (!isRotating) return;
+  
+        const moveX = e.pageX || e.originalEvent.touches?.[0]?.pageX;
+        const moveY = e.pageY || e.originalEvent.touches?.[0]?.pageY;
+        const currentAngle = Math.atan2(moveY - center.y, moveX - center.x) * (180 / Math.PI);
+        const rotation = (initialRotation + currentAngle - startAngle + 360) % 360;
+  
+        $dragItem.attr("data-rotation", rotation);
+  
+        $rotateWrap.css({
+          transform: `rotate(${rotation}deg)`,
+          transformOrigin: "center center"
+        });
+
+          // 로그 확인
+          console.log("▶ rotateWrap 회전 적용:", rotation);
+          console.log("▶ btn_rotation 반대 회전 적용:", -rotation);
+
+          const $button = $rotateWrap.find(".btn_rotation");
+          $button.css({
+            transform: `rotate(${-rotation}deg)`
+          });
+      });
+  
+      $(document).on("mouseup.rotate touchend.rotate", function () {
+        isRotating = false;
+        $(document).off(".rotate");
+      });
+    });
+  }
+  
+>>>>>>> b1dd6843 (초기 커밋)
   function getCurrentPageDropItems() {
     return $(".page.on .drop_group .figure_triangle");
   }
@@ -293,6 +414,17 @@ runAfterAppReady(function () {
   
       $drop.removeAttr("data-correction");
     });
+<<<<<<< HEAD
+=======
+
+    $(".page.on .drag_group .drag_item").each(function () {
+      $(this).attr("data-rotation", "0");
+      $(this).find(".rotate_wrap").css({
+        transform: "rotate(0deg)",
+        transformOrigin: "center center"
+      });
+    });
+>>>>>>> b1dd6843 (초기 커밋)
   
     // 현재 페이지의 drag_item만 초기화
     $(".page.on .drag_group .drag_item").removeClass("used disabled");

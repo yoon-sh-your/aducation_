@@ -6,6 +6,7 @@
   gap: 8px;
 }
 
+<<<<<<< HEAD
 /* .ema621_02_su_0001 */
 .ema621_02_su_0001 .to_be .main p.what_do_txt {
   font-size: 32px;
@@ -14,11 +15,16 @@
   font-weight: 400;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 /* .ema621_02_su_0002 */
 .ema621_02_su_0002 .fraction_inn,
 .ema621_02_su_0003 .fraction_inn {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema621_02_su_0002 .video_wrap {
   background: url(../img/EMA621_02_SU/0002_content.png) no-repeat center / 101%;
@@ -57,11 +63,20 @@
   height: 27px;
 }
 .ema621_02_su_0003 .page_2 .boolean_count_wrap button.selected {
+<<<<<<< HEAD
   background-color: var(--font-main-300);
 }
 .ema621_02_su_0003 .page_2 .boolean_count_wrap button.correct {
   background-color: #eef9ff;
   border: 3px solid #3b71fe;
+=======
+  background-color: var(--font-main-500);
+}
+.ema621_02_su_0003 .page_2 .boolean_count_wrap button.correct {
+    /* border: 5px solid var(--primary-blue);
+  background-color: #C4D4FF; */
+  background-color: var(--primary-blue);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema621_02_su_0003 .page_2 .box {
@@ -317,6 +332,7 @@
 .ema621_02_su_0006 .boolean_count_wrap .btn5 { transform: rotate(288deg); }
 
 .ema621_02_su_0006 .boolean_count_wrap button.selected {
+<<<<<<< HEAD
   background-color: #9E9E9E;
 }
 .ema621_02_su_0006 .boolean_count_wrap.hint button.correct {
@@ -324,6 +340,15 @@
   border: 2px solid #FF0000;
 }
 .ema621_02_su_0006 .boolean_count_wrap.hint button.correct:after {
+=======
+  background-color: var(--font-main-500);
+}
+.ema621_02_su_0006 .boolean_count_wrap.hint button.correct {
+  background-color: rgba(237, 28, 36, 0.3);
+  border-color: var(--stroke-wrong);  
+}
+/* .ema621_02_su_0006 .boolean_count_wrap.hint button.correct:after {
+>>>>>>> b1dd6843 (초기 커밋)
   content: '';
   display: block;
   width: 2px;
@@ -331,6 +356,7 @@
   position: absolute;
   top: 67px;
   left: 92px;
+<<<<<<< HEAD
   background-color: #FF0000;
   transform: rotate(72deg);
   z-index: 10;
@@ -340,6 +366,17 @@
   border: 2px solid #3B71FE;
 }
 .ema621_02_su_0006 .boolean_count_wrap.correct button.selected:after {
+=======
+  background-color: var(--stroke-wrong);
+  transform: rotate(72deg);
+  z-index: 10;
+} */
+.ema621_02_su_0006 .boolean_count_wrap.correct button.selected {
+  background-color: #EEF9FF;
+  border-color: var(--primary-blue);
+}
+/* .ema621_02_su_0006 .boolean_count_wrap.correct button.selected:after {
+>>>>>>> b1dd6843 (초기 커밋)
   content: '';
   display: block;
   width: 2px;
@@ -347,10 +384,17 @@
   position: absolute;
   top: 67px;
   left: 92px;
+<<<<<<< HEAD
   background-color: #3B71FE;
   transform: rotate(72deg);
   z-index: 10;
 }
+=======
+  background-color: var(--primary-blue);
+  transform: rotate(72deg);
+  z-index: 10;
+} */
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema621_02_su_0006 .question_box {
   position: relative;
@@ -365,7 +409,11 @@
   left: calc(50% - 368px);
   width: 44px;
   height: 44px;
+<<<<<<< HEAD
   background-color: #3B71FE;
+=======
+  background-color: var(--primary-blue);
+>>>>>>> b1dd6843 (초기 커밋)
   border-radius: 14px;
   font-size: 26px;
   color: #fff;

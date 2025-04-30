@@ -57,6 +57,13 @@ function onIncorrectCustom() {
 // 두번째 틀렸을 때
 function onIncorrectTwiceCustom () {
     addResult();
+<<<<<<< HEAD
+=======
+    // hint 숨기기 추가
+    document.querySelectorAll('.hint').forEach(function(hint) {
+        hint.style.display = 'none';
+    });
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 // 빈칸일 때

@@ -210,7 +210,11 @@ body.failed .ema526_06_ih_0003 .title h2[data-head]:after {
   width: auto;
   height: auto;
   aspect-ratio: unset;
+<<<<<<< HEAD
   padding: 0 0 0 54px;
+=======
+  padding: 0 0 0 10px;
+>>>>>>> b1dd6843 (초기 커밋)
   border: none;
   border-radius: 0;
   background: none !important;
@@ -227,8 +231,13 @@ body.failed .ema526_06_ih_0003 .title h2[data-head]:after {
 
 .ema526_06_ih_0003 .boolean_wrap button:after {
   position: absolute;
+<<<<<<< HEAD
   top: -20px;
   left: -40px;
+=======
+  top: -4px;
+  left: -31px;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 50px;
   height: 50px;
   background: url(../common/img/icon_checked_round.svg) no-repeat center center / contain;
@@ -264,7 +273,10 @@ body.failed .ema526_06_ih_0003 .title h2[data-head]:after {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+<<<<<<< HEAD
   border: 2px solid #222;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -301,8 +313,13 @@ body.failed .ema526_06_ih_0003 .title h2[data-head]:after {
 
 .ema526_06_ih_0004 .boolean_wrap button:after {
   position: absolute;
+<<<<<<< HEAD
   top: -20px;
   left: -35px;
+=======
+  top: -10px;
+  left: -25px;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 50px;
   height: 50px;
   background: url(../common/img/icon_checked_round.svg) no-repeat center center / contain;
@@ -437,3 +454,10 @@ body.failed .ema526_06_ih_0003 .title h2[data-head]:after {
 .ema526_06_ih_0005 .slice.green {
   fill: #27ae60;
 }
+<<<<<<< HEAD
+=======
+
+.ema526_06_ih_0005.completed .question_box {
+  pointer-events: none;
+}
+>>>>>>> b1dd6843 (초기 커밋)

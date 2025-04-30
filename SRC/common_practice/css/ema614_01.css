@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .circle {
   display: inline-block;
   width: 64px;
@@ -27,7 +30,11 @@
 }
 
 .up_hint.input_wrap .text_hint {
+<<<<<<< HEAD
   top: calc(-100% + 15px);
+=======
+  top: -50%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .right_hint.input_wrap .text_hint {
@@ -57,11 +64,19 @@
 }
 
 .ema614_item_flex .box + .box {
+<<<<<<< HEAD
   border-left: 1px dotted #000;
 }
 
 .ema614_item_flex .box:nth-child(2n) + .box {
   border-left: 2px solid #000;
+=======
+  border-left: 1px dashed #000;
+}
+
+.ema614_item_flex .box:nth-child(2n) + .box {
+  border-left: 2px dashed #000;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema614_item math-field {
@@ -122,10 +137,20 @@
 .ema614_01 .only_input math-field {
   width: 100%;
 }
+<<<<<<< HEAD
 
 .ema614_0004 {
 }
 
+=======
+.ema614_item_txt.bottom_txt .item:nth-child(3) .text_hint,
+.ema614_item_txt.bottom_txt .item:nth-child(10) .text_hint {
+  margin: 0 16px;
+}
+.ema614_02.ema614_02_0006 .input_wrap .example_box::before {
+  top: 29px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema614_0004 .input_are {
   gap: 70px;
   align-items: center;
@@ -161,6 +186,13 @@
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
+.ema614_02 .example_box .fraction_box span {
+  font-size: 24px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema614_02 .input_wrap.fraction_wrap {
   min-width: 80px;
 }
@@ -285,11 +317,18 @@
   color: #fff;
 }
 
+<<<<<<< HEAD
 .ena614_02_ck_img .boolean_wrap button.selected,
 .ena614_02_ck_img .boolean_wrap button:hover {
   background: rgba(59, 113, 254, 0.3);
   border: 6px solid var(--primary-blue);
 }
+=======
+/* .ena614_02_ck_img .boolean_wrap button:hover {
+  background: rgba(59, 113, 254, 0.3);
+  border: 6px solid var(--primary-blue);
+} */
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ena614_02_ck_img .boolean_wrap button + button {
   right: 0;
@@ -353,16 +392,29 @@
   font-size: 25px;
   position: absolute;
   left: 25%;
+<<<<<<< HEAD
   top: 25%;
+=======
+  top: 50%;
+  transform: translateY(-40%);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ena614_02_ck_txt p + p {
   left: auto;
   right: 25%;
+<<<<<<< HEAD
   top: 22%;
+=======
+  top: 47%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ena614_03 .contents h3::before {
   margin-top: 5px;
+<<<<<<< HEAD
+=======
+  display: none;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .input_wrap.fraction_wrap math-field::part(content) {
@@ -455,11 +507,38 @@
   border-radius: 12px;
   line-height: 30px;
 }
+<<<<<<< HEAD
 
 .ema614_03_0005 .box .input_wrap .example_box {
   opacity: 1;
 }
 
+=======
+.ema614_03_0005 .img_area {
+  position: relative;
+  width: 100%;
+  height: 266px;
+  background: url(../img/EMA614_03_IH/0005.png) no-repeat 0 center;
+}
+.ema614_03_0005 .img_area .item {
+  position: absolute;
+  bottom: 36px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+}
+.ema614_03_0005 .img_area .item span {
+  display: inline-block;
+  width: 100%;
+  color: #222;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ena614_04 .table_wrap {
   max-width: 970px;
   margin: 0 auto;
@@ -562,6 +641,12 @@
   padding: 10px;
   border-bottom: 1px solid #222;
 }
+<<<<<<< HEAD
+=======
+.ena614_04 .right_hint.rh1 .text_hint {
+  right: calc(-80% + 0px);
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema614_04_0005 {
   max-width: 889px;
@@ -583,10 +668,13 @@
   min-width: 247px;
 }
 
+<<<<<<< HEAD
 .ema614_04_0005 .input_wrap .example_box {
   opacity: 1;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ena614_05 p {
   font-weight: bold;
   font-size: 32px;
@@ -621,12 +709,15 @@
   color: #fff;
 }
 
+<<<<<<< HEAD
 .ena614_05_0003 .boolean_wrap button.selected,
 .ena614_05_0003 .boolean_wrap button:hover {
   background: rgba(59, 113, 254, 0.3);
   border: 6px solid var(--primary-blue);
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ena614_05_0003 .boolean_wrap button + button {
   right: 15%;
   top: 30%;
@@ -687,12 +778,17 @@
   position: absolute;
   width: 110px;
   height: 110px;
+<<<<<<< HEAD
   top: 0%;
+=======
+  top: -13px;
+>>>>>>> b1dd6843 (초기 커밋)
   right: 30%;
   background: transparent;
   font-size: 25px;
   color: #fff;
 }
+<<<<<<< HEAD
 
 .ena614_05_0004 .boolean_wrap button.selected,
 .ena614_05_0004 .boolean_wrap button:hover {
@@ -703,6 +799,11 @@
 .ena614_05_0004 .boolean_wrap button + button {
   right: 5%;
   top: 0%;
+=======
+.ena614_05_0004 .boolean_wrap button + button {
+  right: 3.7%;
+  top: -13px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: auto;
 }
 
@@ -883,8 +984,12 @@
 }
 
 .ema_614_06_0005 .box .input_wrap .example_box {
+<<<<<<< HEAD
   opacity: 1;
   max-width: 300px;
+=======
+  max-width: 360px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema_614_06_0005 .box .input_wrap .example_box .fraction_box {
@@ -910,6 +1015,18 @@
 .ena614_06 .solve_area label.sen {
   background: #8e8ec5;
 }
+<<<<<<< HEAD
+=======
+.ena614_06 .ico_arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 12px 10px;
+  background: url(../img/EMA614_06_IH/arrow.png) no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ena614_07 .contents h3::before {
   margin-top: 5px;
@@ -983,6 +1100,13 @@
   font-size: 32px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+.ema614_07_0003 .custom_select {
+  width: 160px;
+  margin: 0 5px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema614_07_0005 p {
   font-size: 32px;
@@ -1006,7 +1130,14 @@
   right: 35px;
   top: 25px;
 }
+<<<<<<< HEAD
 
+=======
+.ema614_07_0005 .boolean_wrap button {
+  white-space: nowrap;
+}
+/* 
+>>>>>>> b1dd6843 (초기 커밋)
 .ema614_07_0005 .boolean_wrap button {
   width: auto;
   height: auto;
@@ -1024,7 +1155,11 @@
   background-size: 46px auto;
   background-repeat: no-repeat;
   position: absolute;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> b1dd6843 (초기 커밋)
 
 .btn_draw.left {
   right: auto;
@@ -1037,7 +1172,11 @@
 .ema614_10 .canva {
   width: 1017px;
   height: 694px;
+<<<<<<< HEAD
   background: url(../img/EMA614_10_IH/bg.svg);
+=======
+  background: url(../img/EMA614_10_IH/bg.png);
+>>>>>>> b1dd6843 (초기 커밋)
   background-repeat: no-repeat;
   background-size: 1017px auto;
 }
@@ -1045,7 +1184,17 @@
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
 
+=======
+.ema614_10 .canva .txt {
+  position: absolute;
+  top: 484px;
+  left: 850px;
+  font-size: 26px;
+  line-height: 1.1;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema614_10 .table_wrap {
   max-width: 452px;
   margin: 0 auto;
@@ -1114,12 +1263,17 @@
   position: absolute;
   width: 110px;
   height: 110px;
+<<<<<<< HEAD
   top: 10%;
+=======
+  top: -8%;
+>>>>>>> b1dd6843 (초기 커밋)
   right: 33%;
   background: transparent;
   font-size: 25px;
   color: #fff;
 }
+<<<<<<< HEAD
 
 .ema614_10 .table_are .boolean_wrap button.selected,
 .ema614_10 .table_are .boolean_wrap button:hover {
@@ -1130,6 +1284,11 @@
 .ema614_10 .table_are .boolean_wrap button + button {
   right: 4%;
   top: 10%;
+=======
+.ema614_10 .table_are .boolean_wrap button + button {
+  right: 4%;
+  top: -8%;
+>>>>>>> b1dd6843 (초기 커밋)
   left: auto;
 }
 
@@ -1140,3 +1299,32 @@
 .contents:has(.solve_area.active) .btn_draw.left {
   bottom: 70px;
 }
+<<<<<<< HEAD
+=======
+.fs_32 {
+  font-size: 32px;
+}
+.ena614_06 .input_wrap .text_hint {
+  top: 93%;
+}
+
+.ema614_10 .example_box {
+  display: none !important;
+  max-height: none;
+  margin-left: 71px;
+}
+.ema614_10 .example_box .txt {
+  position: absolute;
+  top: 250px;
+  left: 477px;
+  line-height: 1;
+  font-size: 13px;
+}
+.ema614_10 .example_box img {
+  width: 500px;
+}
+.result .example_box,
+.ema614_10.completed .example_box {
+  display: block !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)

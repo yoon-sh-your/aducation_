@@ -7,7 +7,17 @@
   color: #1454b9;
 }
 
+<<<<<<< HEAD
 /*EMA511_01_SU_0004_s*/
 .ema511_01_su_0004 .video_wrap img {
   transform: translate(-50%, -50%) scale(1.1);
 }
+=======
+.ema511_01_su_0004 .video_wrap img,
+.ema511_01_su_0005 .picture_wrap img {
+  transform: translate(-50%, -50%) scale(1.1); 
+  width: auto;
+  height: auto;
+  max-width: 100%;
+} 
+>>>>>>> b1dd6843 (초기 커밋)

@@ -89,6 +89,7 @@ document.querySelectorAll("h2[data-head]").forEach((h2) => {
   }
 });
 
+<<<<<<< HEAD
 // 대발문 분수가 있으면서, 한줄인 경우 처리를 위한 스크립트 (250417)
 document.querySelectorAll("h2").forEach((h2) => {
   const hasFractoinBox = h2.querySelectorAll(".fraction_box");
@@ -99,6 +100,20 @@ document.querySelectorAll("h2").forEach((h2) => {
     if (height <= minHeight) {
       h2.classList.add("fraction-line-1");
     }
+=======
+// 대발문 분수가 있으면서, 한줄인 경우 처리를 위한 스크립트 (250423 수정)
+document.querySelectorAll("h2").forEach((h2) => {
+  let flag = false;
+
+  const hasFractoinBox = h2.querySelectorAll(".fraction_box");
+  if (hasFractoinBox.length > 0) {
+    hasFractoinBox.forEach(fraction => {
+      if(flag) return;
+      if(fraction.parentElement.tagName.toLowerCase() == 'h2') flag = true;
+    });
+    
+    if (flag)  h2.classList.add("fraction-line-1");
+>>>>>>> b1dd6843 (초기 커밋)
   }
 });
 
@@ -127,6 +142,11 @@ function createHint(element, multi = false) {
   let answerText;
   let hint;
 
+<<<<<<< HEAD
+=======
+  if(element.getAttribute("data-custom-hint") === 'y') return;
+
+>>>>>>> b1dd6843 (초기 커밋)
   if (multi !== false) {
     const multiAnswer = JSON.parse(element.getAttribute("data-answer-multi"));
     answerText = multiAnswer.values[multi]?.trim() || "";
@@ -198,6 +218,10 @@ function createHint(element, multi = false) {
           const textSpan = document.createElement("span");
           textSpan.textContent = beforeText;
           hint.appendChild(textSpan);
+<<<<<<< HEAD
+=======
+          console.log(beforeText);
+>>>>>>> b1dd6843 (초기 커밋)
           // hint.appendChild(createSpace()); // 텍스트 뒤에 공백 추가
         }
       }

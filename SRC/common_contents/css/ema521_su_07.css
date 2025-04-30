@@ -6,6 +6,7 @@
 }
 
 
+<<<<<<< HEAD
 /* 약속해볼까요 */
 .summarize {
   align-items: center;
@@ -52,6 +53,10 @@
 
 /* EMA521_07_SU_0002_s */
 .ema521_07_su_0002 .contents > .flex .video_wrap {
+=======
+/* EMA521_07_SU_0002_s */
+.ema521_07_su_0002 .contents > .img_row .video_wrap {
+>>>>>>> b1dd6843 (초기 커밋)
   background: url(../../common_contents/img/EMA521_07_SU/0002_contents.png) no-repeat -10px -10px / 110%;
 }
 
@@ -123,6 +128,21 @@
   height: 80%;
   background-color: #9E9E9E;
 }
+<<<<<<< HEAD
+=======
+.summarize > .check_up .reveal_btn[class*="num_txt_"] > span {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 50px;
+}
+.ema521_07_su_0003 .num_txt_01 > span {
+  background: url(../../common_contents/img/EMA521_07_SU/0003_check_answer_01.png) no-repeat 60px 50%;
+}
+.ema521_07_su_0003 .num_txt_02 > span {
+  background: url(../../common_contents/img/EMA521_07_SU/0003_check_answer_02.png) no-repeat 45px 50%;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema521_07_su_0003 .has_ico {
   display: block;
@@ -199,6 +219,7 @@
 .ema521_07_su_0003 .ruler_box > .boolean_wrap > button.hint[data-answer-single="true"]::after {
   background: url(../../common_contents/img/EMA521_07_SU/ico_down_arrow.svg) left top no-repeat;
 }
+<<<<<<< HEAD
 
 
 
@@ -211,6 +232,17 @@
 .ema521_07_su_0003 .summarize_wrap .summarize {
   height: 555px;
 }
+=======
+.ema521_07_su_0003 .ruler_box + .input_area {
+  margin-top: 30px;
+  gap: 0px;
+}
+.ema521_07_su_0003 .ruler_box + .input_area .custom_select {
+  width: 184px;
+  margin-left: 8px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema521_07_su_0003 .btnType,
 .ema521_07_su_0003 .btnSubmit { 
   display: none;
@@ -292,17 +324,28 @@
 
 
 /* EMA521_07_SU_0006_s */
+<<<<<<< HEAD
 
 .ema521_07_su_0006 .img_box {
   position: relative;
   width: 654px;
   height: 330px;
+=======
+.ema521_07_su_0006 .flex {
+  gap: 26px;
+}
+.ema521_07_su_0006 .img_box {
+  position: relative;
+  width: 770px;
+  height: 350px;
+>>>>>>> b1dd6843 (초기 커밋)
   margin: 0 auto;
 }
 .ema521_07_su_0006 .img_box > p {
   position: absolute;
   color: #000;
   text-align: center;
+<<<<<<< HEAD
   font-size: 12px;
   font-weight: 400;
 }
@@ -334,3 +377,43 @@
   margin-top: 30px;
   width: 100%;
 }
+=======
+  font-size: 16px;
+  font-weight: 400;
+}
+.ema521_07_su_0006 .img_box > .t01 {
+  top: 32px;
+  left: 34px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.ema521_07_su_0006 .img_box > .t02 {
+  top: 183px;
+  left: 447px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+.ema521_07_su_0006 .img_box > .t03 {
+  top: 62px;
+  left: 417px;
+}
+.ema521_07_su_0006 .img_box > .t04 {
+  top: 108px;
+  left: 465px;
+}
+.ema521_07_su_0006 .img_box > .t05 {
+  top: 90px;
+  left: 587px;
+}
+.ema521_07_su_0006 .img_box > .t06  {
+  top: 317px;
+  right: 127px;
+}
+.ema521_07_su_0006 .develope_box {
+  flex: 1;
+}
+.ema521_07_su_0006 .develope_box .input_wrap math-field.textarea {
+  height: 310px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

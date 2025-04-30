@@ -7,7 +7,11 @@ const enableConsoleLog = {
     connect: false,           // 선잇기 관련 로그
     canvas: false,            // 캔버스 관련 로그
     completionStatus: false, // 완료 상태 설정 관련 로그
+<<<<<<< HEAD
     selfCheck: true, // 자가 평가 관련 로그
+=======
+    selfCheck: false, // 자가 평가 관련 로그
+>>>>>>> b1dd6843 (초기 커밋)
 };
 
 /** 정오답 체크 및 힌트 기능 실행 */
@@ -243,7 +247,11 @@ function checkMultiAnswer(userValue, multiAnswerString) {
         const normalizedUserValue = Array.isArray(userValue) ? JSON.stringify([...userValue].sort()) : String(userValue);
         return answerValues.some((ans) => {
             const normalizedAns = Array.isArray(ans) ? JSON.stringify([...ans].sort()) : String(ans);
+<<<<<<< HEAD
             return normalizedUserValue === normalizedAns;
+=======
+            return normalizedUserValue === normalizeExpression(normalizedAns);
+>>>>>>> b1dd6843 (초기 커밋)
         });
     } catch (e) {
         console.error("data-answer-multi JSON 파싱 오류:", e, multiAnswerString);
@@ -500,7 +508,12 @@ function resetInputFields() {
     pagenation.activePage.querySelectorAll(".input_wrap math-field").forEach((mathField) => {
         // 값 초기화
         if (typeof mathField.setValue === "function") {
+<<<<<<< HEAD
             mathField.setValue(""); // MathLive 메서드 사용
+=======
+            // 수정: 완전히 빈 문자열로 설정
+            mathField.setValue('');
+>>>>>>> b1dd6843 (초기 커밋)
         } else {
             mathField.value = ""; // 일반 속성 사용
         }
@@ -544,6 +557,18 @@ function showExampleFields(trigger) {
         pagenation.activePage.querySelectorAll(".example_box").forEach((element) => {
             element.classList.toggle("on");
         });
+<<<<<<< HEAD
+=======
+        if(pagenation.activePage.querySelector(".custom_dropdown").dataset.correction === "false") {
+            pagenation.activePage.querySelectorAll(".custom_dropdown").forEach((dropdown) => {
+                dropdown.classList.toggle("hint");
+            });
+        }else{
+            pagenation.activePage.querySelectorAll(".custom_dropdown").forEach((dropdown) => {
+                dropdown.classList.add("correct");
+            });
+        }
+>>>>>>> b1dd6843 (초기 커밋)
     }
 }
 
@@ -758,6 +783,7 @@ function defaultTest(condition) {
 
 watchWithCustomTest(
     [
+<<<<<<< HEAD
         {
             selector: ".btn_area .btnCheck",
             key: "check_btn_active",
@@ -768,11 +794,24 @@ watchWithCustomTest(
             key: "sample_btn_active",
             test: (el) => el.classList.contains("active"),
         },
+=======
+        // {
+        //     selector: ".btn_area .btnCheck",
+        //     key: "check_btn_active",
+        //     test: (el) => el.classList.contains("active"),
+        // },
+        // {
+        //     selector: ".btn_area .btnSample",
+        //     key: "sample_btn_active",
+        //     test: (el) => el.classList.contains("active"),
+        // },
+>>>>>>> b1dd6843 (초기 커밋)
         {
             selector: ".btn_area .btnSample",
             key: "sample_btn_close",
             test: (el) => el.classList.contains("active") && el.classList.contains("close"),
         },
+<<<<<<< HEAD
         {
             selector: ".btn_area .btnSubmit",
             key: "submit_btn_active",
@@ -792,6 +831,48 @@ watchWithCustomTest(
             selector: ".input_wrap math-field",
             key: "textarea_with_example_active",
             test: (el) => (el.value?.trim() || "").replace(/\$\s+\$/g, "") !== "" && el.closest(".input_wrap")?.querySelector(".example_box") && el.closest(".input_wrap")?.querySelector(".example_box").classList.contains("on"),
+=======
+        // {
+        //     selector: ".btn_area .btnSubmit",
+        //     key: "submit_btn_active",
+        //     test: (el) => el.classList.contains("active"),
+        // },
+        {
+            selector: ".input_wrap math-field.textarea",
+            key: "textarea_with_answer_single",
+            test: (el) => {
+                // 수정: MathField 값 가져오는 방식 변경
+                const valueRaw = (el.mode == 'text' ? el.getValue('plain-text') : el.getValue());
+                return (valueRaw?.trim() || "").replace(/\$\s+\$/g, "") !== "" && !el.closest(".input_wrap")?.querySelector(".example_box");
+            },
+        },
+        {
+            selector: ".input_wrap math-field.textarea",
+            key: "textarea_with_example",
+            test: (el) => {
+                 // 수정: MathField 값 가져오는 방식 변경
+                const valueRaw = (el.mode == 'text' ? el.getValue('plain-text') : el.getValue());
+                return (valueRaw?.trim() || "").replace(/\$\s+\$/g, "") !== "" && el.closest(".input_wrap")?.querySelector(".example_box");
+            },
+        },
+        {
+            selector: ".input_wrap math-field.textarea",
+            key: "textarea_with_example_active",
+            test: (el) => {
+                // 수정: MathField 값 가져오는 방식 변경
+                const valueRaw = (el.mode == 'text' ? el.getValue('plain-text') : el.getValue());
+                const exampleBox = el.closest(".input_wrap")?.querySelector(".example_box");
+                return (valueRaw?.trim() || "").replace(/\$\s+\$/g, "") !== "" && exampleBox && exampleBox.classList.contains("on");
+            },
+        },
+        {
+            selector: ".input_wrap math-field",
+            key: "input_without_answer_single",
+            test: (el) => {
+                const valueRaw = (el.mode == 'text' ? el.getValue('plain-text') : el.getValue());
+                return (valueRaw?.trim() || "").replace(/\$\s+\$/g, "") !== "";
+            },
+>>>>>>> b1dd6843 (초기 커밋)
         },
         {
             selector: "[data-answer-single]",
@@ -800,7 +881,16 @@ watchWithCustomTest(
                 if (el.closest(".boolean_wrap")) {
                     return el.classList.contains("selected");
                 } else if (el.closest(".custom_dropdown")) {
+<<<<<<< HEAD
                     return el.selectedIndex !== 0;
+=======
+                    // 'select' 태그의 경우 selectedIndex 확인
+                    if (el.tagName === 'SELECT') {
+                        return el.selectedIndex !== 0;
+                    }
+                    // 다른 custom_dropdown 구현 (예: data-value 기반)은 추가 확인 필요
+                    return el.dataset.value !== undefined && el.dataset.value !== "";
+>>>>>>> b1dd6843 (초기 커밋)
                 } else if (el.closest(".letCheck")) {
                     return el.classList.contains("on");
                 } else if (el.closest(".figure_triangle")) {
@@ -808,6 +898,18 @@ watchWithCustomTest(
                 } else if (el.closest(".connect_wrap")) {
                     return el.dataset.correction !== undefined;
                 }
+<<<<<<< HEAD
+=======
+                // --- 추가: math-field 값 확인 ---
+                else if (el.tagName === 'MATH-FIELD') {
+                    const valueRaw = (el.mode == 'text' ? el.getValue('plain-text') : el.getValue());
+                    // 값이 비어있지 않으면 true 반환 (활성화 조건 충족)
+                    return (valueRaw?.trim() || "").replace(/\$\s+\$/g, "") !== "";
+                }
+                // --- 추가 끝 ---
+
+                // 기존 fallback: 다른 data-answer-single 요소는 correction 상태 확인
+>>>>>>> b1dd6843 (초기 커밋)
                 return el.dataset.answerSingle !== "empty_answer" && el.dataset.correction;
             },
         },
@@ -909,6 +1011,19 @@ watchWithCustomTest(
                 return pagenation.activePage && pagenation.activePage.classList.contains("completed");
             }
         },
+<<<<<<< HEAD
+=======
+        {
+            selector: ".example_box", // selector는 유지해도 좋습니다.
+            key: "example_box_active",
+            test: () => {
+                const page = pagenation.activePage;
+                const exampleBoxes = page.querySelectorAll(".example_box");
+                // .example_box 요소가 존재하고, 그 중 하나라도 'on' 클래스를 가지고 있으면 true를 반환합니다.
+                return exampleBoxes.length > 0 && Array.from(exampleBoxes).some(el => el.classList.contains("on"));
+            },
+        },
+>>>>>>> b1dd6843 (초기 커밋)
     ],
     (matchedKeys) => {
         if (enableConsoleLog.buttonState) console.log("[Button State] Matched keys for activation:", matchedKeys);
@@ -918,13 +1033,33 @@ watchWithCustomTest(
         const submitBtn = document.querySelectorAll(".btn_area .btnSubmit");
         const resetBtn = document.querySelectorAll(".btn_area .btnReset");
         const eraseBtn = document.querySelectorAll(".btn_area .btnErase");
+<<<<<<< HEAD
     
+=======
+        const solveBtnArea = document.querySelectorAll(".buttons_solve .btnSelf");
+
+>>>>>>> b1dd6843 (초기 커밋)
         // ❗ 페이지 완료 상태일 때 버튼 비활성화 로직 (기존 if 문 제거)
         if (matchedKeys.includes("page_completed")) {
             resetBtn.forEach((btn) => btn.classList.add("active"));
             checkBtn.forEach((btn) => btn.classList.remove("active"));
+<<<<<<< HEAD
             sampleBtn.forEach((btn) => btn.classList.remove("active"));
             submitBtn.forEach((btn) => btn.classList.remove("active"));
+=======
+            // sampleBtn.forEach((btn) => btn.classList.remove("active"));
+            submitBtn.forEach((btn) => {
+                console.log(solveBtnArea.length);
+                if(solveBtnArea.length === 0){
+                    console.log("solveBtnArea is not found");
+                    btn.classList.remove("active");
+                }else{
+                    btn.classList.add("active");
+                }
+                btn.classList.remove("close");
+            });
+
+>>>>>>> b1dd6843 (초기 커밋)
             // resetBtn은 page_completed 상태에서 활성화될 수 있으므로 여기서 처리하지 않음
             return; // 페이지 완료 시 다른 활성화 로직 실행 안 함
         }
@@ -940,7 +1075,11 @@ watchWithCustomTest(
             sampleBtn.forEach((btn) => btn.classList.add("active"));
         }
         
+<<<<<<< HEAD
         if (matchedKeys.includes("textarea_with_example")) {
+=======
+        if (matchedKeys.includes("textarea_with_example") || matchedKeys.includes("input_without_answer_single")) {
+>>>>>>> b1dd6843 (초기 커밋)
             checkBtn.forEach((btn) => btn.classList.add("active"));
             sampleBtn.forEach((btn) => btn.classList.add("active"));
             submitBtn.forEach((btn) => btn.classList.add("active"));
@@ -949,23 +1088,39 @@ watchWithCustomTest(
 
         if (matchedKeys.includes("textarea_with_example_active")) {
             checkBtn.forEach((btn) => btn.classList.remove("active"));
+<<<<<<< HEAD
             sampleBtn.forEach((btn) => btn.classList.remove("active"));
+=======
+            // sampleBtn.forEach((btn) => btn.classList.remove("active"));
+>>>>>>> b1dd6843 (초기 커밋)
             submitBtn.forEach((btn) => btn.classList.remove("active"));
             resetBtn.forEach((btn) => btn.classList.add("active"));
             sampleBtn.forEach((btn) => btn.classList.add("close"));
         }
 
+<<<<<<< HEAD
         if (matchedKeys.includes("reveal_btn_alone_exists") || matchedKeys.includes("any_reveal_btn_on")) {
+=======
+        if (matchedKeys.includes("reveal_btn_alone_exists") || matchedKeys.includes("any_reveal_btn_on") && !matchedKeys.includes("check_target")) {
+>>>>>>> b1dd6843 (초기 커밋)
             checkBtn.forEach((btn) => btn.classList.add("active"));
             resetBtn.forEach((btn) => btn.classList.remove("active"));
         }
 
+<<<<<<< HEAD
         if (matchedKeys.includes("all_reveal_btns_on")) {
+=======
+        if (matchedKeys.includes("all_reveal_btns_on") && !matchedKeys.includes("check_target")) {
+>>>>>>> b1dd6843 (초기 커밋)
             resetBtn.forEach((btn) => btn.classList.add("active"));
             checkBtn.forEach((btn) => btn.classList.remove("active"));
         }
 
+<<<<<<< HEAD
         if (matchedKeys.includes("reveal_btn_alone_exists") && matchedKeys.includes("any_reveal_btn_on")) {
+=======
+        if (matchedKeys.includes("reveal_btn_alone_exists") && matchedKeys.includes("any_reveal_btn_on") && !matchedKeys.includes("check_target")) {
+>>>>>>> b1dd6843 (초기 커밋)
             resetBtn.forEach((btn) => btn.classList.add("active"));
         }
 
@@ -1021,6 +1176,10 @@ watchWithCustomTest(
         const submitBtn = document.querySelectorAll(".btn_area .btnSubmit");
         const resetBtn = document.querySelectorAll(".btn_area .btnReset");
         const eraseBtn = document.querySelectorAll(".btn_area .btnErase");
+<<<<<<< HEAD
+=======
+        const solveBtnArea = document.querySelectorAll(".buttons_solve .btnSelf");
+>>>>>>> b1dd6843 (초기 커밋)
 
         // ❗ 페이지 완료 상태가 해제되었을 때 버튼 활성화 로직 추가
         if (matchedKeys.includes("page_completed")) {
@@ -1053,6 +1212,10 @@ watchWithCustomTest(
             submitBtn.forEach((btn) => btn.classList.remove("active"));
             resetBtn.forEach((btn) => btn.classList.remove("active")); // 입력 없으면 리셋도 비활성
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
         if (matchedKeys.includes("all_reveal_btns_on") && !isEmpty) {
             checkBtn.forEach((btn) => btn.classList.add("active"));
             resetBtn.forEach((btn) => btn.classList.remove("active"));
@@ -1087,6 +1250,7 @@ watchWithCustomTest(
     }
 );
 
+<<<<<<< HEAD
 // 버튼 class 변경 감시
 observeAttributeChange(".btn_area .btnReset, .btn_area .btnCheck, .btn_area .btnSample, .btn_area .btnSubmit", "class", (target) => {
     // 모든 버튼의 active 상태 확인
@@ -1129,6 +1293,8 @@ observeAttributeChange(".btn_area .btnReset, .btn_area .btnCheck, .btn_area .btn
     // window.forceWatchEvaluation(); // 여기서 호출하면 무한 루프 위험, 제거
 });
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 /**
  * submit 버튼 클릭 시 조건 평가 후 토스트 표시
  * @param {string} buttonSelector - 제출 버튼 셀렉터
@@ -1410,7 +1576,18 @@ validateBeforeSubmit(".btnSubmit[data-submit='true']", [
         selector: ".input_wrap math-field:not(.textarea), .input_wrap math-field.textarea, .custom_dropdown",
         test: (el) => {
             if (el.classList.contains("disabled") || el.hasAttribute("disabled")) return false;
+<<<<<<< HEAD
             return (el.value?.trim() || "").replace(/\$\s+\$/g, "") !== "";
+=======
+            // 수정: MathField 값 가져오는 방식 변경 (custom_dropdown은 기존 유지)
+            let valueRaw = "";
+            if (el.tagName === 'MATH-FIELD') {
+                valueRaw = (el.mode == 'text' ? el.getValue('plain-text') : el.getValue());
+            } else {
+                 valueRaw = el.value; // custom_dropdown 등 다른 요소
+            }
+            return (valueRaw?.trim() || "").replace(/\$\s+\$/g, "") !== "";
+>>>>>>> b1dd6843 (초기 커밋)
         },
     },
     {
@@ -1798,8 +1975,14 @@ function handleMathFieldInput(event) {
     }
 
     // --- data-cross-answer가 없을 때 기존 로직 수행 ---
+<<<<<<< HEAD
     let userValueRaw = mathField.getValue("plain-text");
     let userValue = normalizeMathValue(userValueRaw); // 정규화 함수 사용
+=======
+    let userValueRaw = (mathField.mode == 'text' ? mathField.getValue('plain-text') : mathField.getValue());
+    let userValue = normalizeExpression(userValueRaw);
+    console.log(`userValue - ascii: ${userValue}`);
+>>>>>>> b1dd6843 (초기 커밋)
 
     const answerMultiString = mathField.dataset.answerMulti;
     const answerSingle = mathField.dataset.answerSingle?.trim();
@@ -1821,8 +2004,13 @@ function handleMathFieldInput(event) {
 
     // 2. Single Answer 확인
     if (isCorrect === null && answerSingle !== undefined) {
+<<<<<<< HEAD
         let normalizedAnswerSingle = normalizeMathValue(answerSingle); // 정답도 정규화
 
+=======
+        let normalizedAnswerSingle = normalizeExpression(answerSingle);
+        
+>>>>>>> b1dd6843 (초기 커밋)
         if (normalizedAnswerSingle === "empty_answer") {
             isCorrect = !userValueRaw; // empty 비교는 변환 전 raw 값으로
         } else if (userValueRaw) {
@@ -2525,10 +2713,19 @@ observeAttributeChange("#app_wrap, .page", "class", (element) => {
     const page = pagenation.activePage;
     if (page.classList.contains("completed")) {
         // 모든 버튼 비활성화
+<<<<<<< HEAD
         document.querySelectorAll(".btn_area button:not(.btnReset):not(.btnType):not(.btnSample)").forEach((btn) => {
             btn.classList.remove("active");
             btn.classList.remove("close");
         });
+=======
+        // document.querySelectorAll(".btn_area button:not(.btnReset):not(.btnType):not(.btnSample)").forEach((btn) => {
+        //     if(!btn.classList.contains("btnSelf")){
+        //         btn.classList.remove("active");
+        //     }
+        //         btn.classList.remove("close");
+        // });
+>>>>>>> b1dd6843 (초기 커밋)
 
         // math-field 비활성화
         page.querySelectorAll("math-field").forEach((el) => {
@@ -2822,7 +3019,11 @@ function handleCrossAnswerCheck(currentField) {
     }
 
     // 각 필드의 값과 정답 가져오기
+<<<<<<< HEAD
     const valueRawList = pairFields.map(field => field.getValue("plain-text") || "");
+=======
+    const valueRawList = pairFields.map(field => (field.mode == 'text' ? field.getValue("plain-text") : field.getValue("")) || "");
+>>>>>>> b1dd6843 (초기 커밋)
     const answerList = pairFields.map(field => field.dataset.answerSingle);
 
     // 정답 정보가 하나라도 없으면 처리 중단
@@ -2841,8 +3042,13 @@ function handleCrossAnswerCheck(currentField) {
     }
 
     // 값과 정답 정규화
+<<<<<<< HEAD
     const normalizedValueList = valueRawList.map(normalizeMathValue);
     const normalizedAnswerList = answerList.map(normalizeMathValue);
+=======
+    const normalizedValueList = valueRawList.map(normalizeExpression);
+    const normalizedAnswerList = answerList.map(normalizeExpression);
+>>>>>>> b1dd6843 (초기 커밋)
 
     // 정렬하여 순서 무관 비교 준비
     const sortedValues = [...normalizedValueList].sort();

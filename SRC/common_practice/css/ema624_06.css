@@ -21,6 +21,12 @@ math-field.w_large {
 .ema624_06_ih_0001 .page_2 .input_area > div .blank {
 	width: 63px;
 }
+<<<<<<< HEAD
+=======
+.ema624_06_ih_0001 .question_box {
+	padding-left: 300px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema624_06_ih_0002 */
 .ema624_06_ih_0002 .page_1 .input_wrap math-field {
@@ -30,6 +36,15 @@ math-field.w_large {
 	position: absolute;
 	top: 100%;
 }
+<<<<<<< HEAD
+=======
+.ema624_06_ih_0002 .solve_area .inner_solve {
+	margin-top: 120px;
+}
+.ema624_06_ih_0002 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema624_06_ih_0003 */
 .ema624_06_ih_0003 .question_box {
@@ -38,6 +53,12 @@ math-field.w_large {
 .ema624_06_ih_0003 .input1 math-field {
 	width: 212px;
 }
+<<<<<<< HEAD
+=======
+.ema624_06_ih_0003 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema624_06_ih_0004 */
 .ema624_06_ih_0004 .question_box {
@@ -49,13 +70,22 @@ math-field.w_large {
 .ema624_06_ih_0004 .input2 math-field {
 	width: 154px;
 }
+<<<<<<< HEAD
 
+=======
+.ema624_06_ih_0004 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema624_06_ih_0005 */
 .ema624_06_ih_0005 .text_wrap {
 	width: 700px;
 }
 .ema624_06_ih_0005 .text_wrap > div {
+<<<<<<< HEAD
 	/* height: 371px; */
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 	width: 100%;
 	padding: 25px 28px;
 	border-color: #a0cf8e;
@@ -114,3 +144,16 @@ math-field.w_large {
 	margin-left: 60px;
 	gap: 5px;
 }
+<<<<<<< HEAD
+=======
+.ema624_06_ih_0005 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

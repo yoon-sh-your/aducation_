@@ -15,11 +15,14 @@
   background: url(../img/EMA514_02_SU/0002_content.png) no-repeat center / 101%;
 }
 
+<<<<<<< HEAD
 /*EMA514_02_SU_0003_s*/
 .ema514_02_su_0003 .fraction_inn {
   display: flex;
   align-items: center;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema514_02_su_0003 .page_1 .count_wrap {
   display: flex;

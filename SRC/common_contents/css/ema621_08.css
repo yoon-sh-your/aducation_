@@ -163,6 +163,14 @@
   width: 200px;
 }
 
+<<<<<<< HEAD
+=======
+.ema621_08_su_0002 .page_8 .question_box .custom_select .text_hint {
+  transform: translateX(29%);
+  top: 12px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* .ema621_08_su_0003 */
 .ema621_08_su_0003 .question_box {
   position: relative;
@@ -223,7 +231,11 @@
   border-color: #3B71FE;
   background-color: rgba(59, 113, 254, 0.3);
 }
+<<<<<<< HEAD
 .ema621_08_su_0003 .boolean_wrap button.hint:before {
+=======
+.ema621_08_su_0003 .boolean_wrap button.hint[data-answer-single="true"][data-correction="false"]:before {
+>>>>>>> b1dd6843 (초기 커밋)
   top: -3px;
   border-width: 6px;
   border-color: var(--secondary-red);

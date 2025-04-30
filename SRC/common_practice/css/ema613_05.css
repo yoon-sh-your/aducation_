@@ -171,6 +171,15 @@ math-field.has_ex_text + .text_hint:before {
 	top: 50%;
 	transform: translateY(-50%);
 }
+<<<<<<< HEAD
+=======
+.ema613_05_ih_0001 .title h2[data-head] .nemo {
+	margin: 0 4px 0 8px;
+}
+.ema613_05_ih_0001 .pt_10 {
+	padding-top: 10px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema613_05_ih_0002 */
 .ema613_05_ih_0002 .relative {
@@ -210,6 +219,33 @@ math-field.has_ex_text + .text_hint:before {
 .ema613_05_ih_0003 math-field {
 	width: 120px !important;
 }
+<<<<<<< HEAD
+=======
+.ema613_05_ih_0003 .solve_area .conts_solve > .flex + .flex {
+	margin-top: 40px;
+}
+.ema613_05_ih_0003 .solve_area .formula_box .formula_row > span {
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+}
+.ema613_05_ih_0003 .solve_area .formula_box .formula_row > span.dot:after {
+	right: -5px;
+	bottom: 7px;
+}
+.ema613_05_ih_0003 .solve_area .formula_box .formula_row.bd_b:before {
+	width: calc(100% - 38px);
+	height: 1px;
+	bottom: -8px;
+	left: 40px;
+}
+.ema613_05_ih_0003 .solve_area .formula_box .formula_row > span.wing:after {
+	height: 50px;
+	right: 0;
+	top: -2px;
+}
+	
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema613_05_ih_0004 */
 .ema613_05_ih_0004 .img_area {
@@ -224,6 +260,14 @@ math-field.has_ex_text + .text_hint:before {
 	justify-content: center;
 	gap: 114px;
 }
+<<<<<<< HEAD
+=======
+.ema613_05_ih_0004 .input_wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema613_05_ih_0005 */
 .ema613_05_ih_0005 .img_area {
@@ -289,3 +333,35 @@ math-field.has_ex_text + .text_hint:before {
 .ema613_05_ih_0006 .input2 math-field {
 	width: 160px !important;
 }
+<<<<<<< HEAD
+=======
+.ema613_05_ih_0006 .input_area > div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.ema613_05_ih_0006 .input_area > div:after {
+	content: "";
+	position: absolute;
+	left: 72px;
+	bottom: -8px;
+	height: 1px;
+	background-color: #000;
+}
+.ema613_05_ih_0006 .input_area > div:nth-child(1):after {
+	width: calc(100% - 72px);
+}
+.ema613_05_ih_0006 .input_area > div:nth-child(2):after {
+	width: calc(100% - 110px);
+}
+.ema613_05_ih_0007 .input_wrap {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap :10px;
+}
+.ema613_05_ih_0007 .solve_area .conts_solve .empty_box.nemo {
+	margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)

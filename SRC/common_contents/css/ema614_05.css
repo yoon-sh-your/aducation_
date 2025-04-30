@@ -187,7 +187,12 @@
 
 .search_wrap {
     display: flex;
+<<<<<<< HEAD
     gap: 12px;
+=======
+    align-items: center;
+    margin: -2px 0 0 8px;
+>>>>>>> b1dd6843 (초기 커밋)
     width: 155px;
     height: 56px;
     border: 1px solid #3B71FE;

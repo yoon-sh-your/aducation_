@@ -294,7 +294,10 @@ runAfterAppReady(() => {
           valueParts[1] === "true",
         ]; // Convert to [true, false]
         const expectedValue = answerArray[index]; // Get expected [true, false] from answer
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
         // Compare current value with expected value
         if (
           currentValue[0] !== expectedValue[0] ||
@@ -302,7 +305,11 @@ runAfterAppReady(() => {
         ) {
           isCorrect = false;
           return false; // Exit the .each loop early if a mismatch is found
+<<<<<<< HEAD
         }
+=======
+        } 
+>>>>>>> b1dd6843 (초기 커밋)
       });
     }
 
@@ -330,6 +337,7 @@ runAfterAppReady(() => {
 
   // 두 번째 오답 시: 정답과 다른 부분에 클래스 추가하고 모든 드래그 비활성화
   window.onIncorrectTwiceCustom = function () {
+<<<<<<< HEAD
     const $sourceDraggables = $(".drag_checkout .draggable"); // 원본 드래그 요소 선택
     const $droppedDraggables = $(
       ".drag_group.g1 .droppable .triangle, .drag_group.g1 .droppable .circle"
@@ -353,6 +361,25 @@ runAfterAppReady(() => {
       return;
     }
 
+=======
+    const $sourceDraggables = $(".drag_checkout .draggable");
+    const $droppedDraggables = $(".drag_group.g1 .droppable .triangle, .drag_group.g1 .droppable .circle");
+    const $group = $(".drag_group.g1");
+    const $droppables = $group.find(".droppable");
+    const answerString = $group.attr("data-answer-single");
+  
+    $sourceDraggables.draggable("disable");
+    $droppedDraggables.draggable("disable");
+  
+    // 기존 피드백 클래스 초기화
+    $droppables.removeClass("correct incorrect");
+  
+    if (!answerString) {
+      console.error("onIncorrectTwiceCustom: Answer data (data-answer-single) not found.");
+      return;
+    }
+  
+>>>>>>> b1dd6843 (초기 커밋)
     let answerArray;
     try {
       const validJsonString = answerString.replace(/'/g, '"');
@@ -361,6 +388,7 @@ runAfterAppReady(() => {
       console.error("onIncorrectTwiceCustom: Failed to parse answer data:", e);
       return;
     }
+<<<<<<< HEAD
 
     if ($droppables.length !== answerArray.length) {
       console.warn(
@@ -395,6 +423,46 @@ runAfterAppReady(() => {
     if (selectedDraggable) {
         selectedDraggable.removeClass('selected');
         selectedDraggable = null;
+=======
+  
+    if ($droppables.length !== answerArray.length) {
+      console.warn("onIncorrectTwiceCustom: Mismatch between droppables and answer length.");
+      return;
+    }
+  
+    $droppables.each(function (index) {
+      const $drop = $(this); // droppable 껍데기
+  
+      const valueStr = $drop.attr("data-value") || "false false";
+      const valueParts = valueStr.split(" ");
+      const currentValue = [valueParts[0] === "true", valueParts[1] === "true"];
+      const expectedValue = answerArray[index];
+        // 첫 번째 값(triangle) 비교
+        if (currentValue[0] !== expectedValue[0]) {
+          $drop.addClass("triangle");
+        }
+  
+        // 두 번째 값(circle) 비교
+        if (currentValue[1] !== expectedValue[1]) {
+          $drop.addClass("circle");
+        }
+      if (
+        currentValue[0] !== expectedValue[0] ||
+        currentValue[1] !== expectedValue[1]
+      ) {
+        // 틀린 경우
+        $drop.addClass("incorrect");
+      } else {
+        // 맞는 경우
+        $drop.addClass("correct");
+      }
+    });
+  
+    // 선택 해제
+    if (selectedDraggable) {
+      selectedDraggable.removeClass('selected');
+      selectedDraggable = null;
+>>>>>>> b1dd6843 (초기 커밋)
     }
     updateCheckoutHighlights(false);
   };

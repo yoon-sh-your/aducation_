@@ -4,9 +4,13 @@
 .solve_area .fraction_box {
   vertical-align: middle;
 }
+<<<<<<< HEAD
 .fraction_box {
   min-width: 40px;
 }
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap.fraction_wrap,
 .input_wrap.fraction_wrap math-field,
 .fraction_box .input_wrap,
@@ -84,6 +88,7 @@
   background: #e8f5fc;
 }
 
+<<<<<<< HEAD
 .ema524_01_ih_0003 .calc_vertical {gap:8px;}
 .ema524_01_ih_0003 .calc_vertical .top {align-items:flex-start;}
 .ema524_01_ih_0003 .calc_vertical span span {position:relative;}
@@ -96,3 +101,69 @@
 .ema524_01_ih_0004 .solve_area em {position:absolute; top:-1em; left:50%; transform:translateX(-50%); font-size:px; color:#E4007F; font-style:normal; font-size:24px;}
 .ema524_01_ih_0004 .solve_area .fraction_box span + span em {top:auto; bottom:-1em;}
 .ema524_01_ih_0004 .solve_area span.slash:after {content:''; position:absolute; top:50%; left:50%; width:48px; height:2px; background:#E4007F; transform:translate(-50%, -50%) rotate(-45deg)}
+=======
+.ema524_01_ih_0003 .calc_vertical {
+  gap: 8px;
+}
+.ema524_01_ih_0003 .calc_vertical .top {
+  align-items: flex-start;
+}
+.ema524_01_ih_0003 .calc_vertical span span {
+  position: relative;
+}
+.ema524_01_ih_0003 .calc_vertical span span em {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: px;
+  color: #e4007f;
+  font-style: normal;
+  font-size: 24px;
+}
+.ema524_01_ih_0003 .calc_vertical span.slash:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 2px;
+  background: #e4007f;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.ema524_01_ih_0003 .solve_area .conts_solve .flex {
+  gap: 50px;
+}
+
+.ema524_01_ih_0004 .solve_area .conts_solve .flex {
+  gap: 0;
+  align-items: center;
+}
+.ema524_01_ih_0004 .solve_area span {
+  position: relative;
+}
+.ema524_01_ih_0004 .solve_area em {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: px;
+  color: #e4007f;
+  font-style: normal;
+  font-size: 24px;
+}
+.ema524_01_ih_0004 .solve_area .fraction_box span + span em {
+  top: auto;
+  bottom: -1em;
+}
+.ema524_01_ih_0004 .solve_area span.slash:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 2px;
+  background: #e4007f;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+>>>>>>> b1dd6843 (초기 커밋)

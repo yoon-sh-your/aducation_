@@ -7,18 +7,30 @@ runAfterAppReady(() => {
 
     // --- 하이라이트 업데이트 함수 (클릭 시 사용) (추가) ---
     function updateCheckoutHighlights(apply) {
+<<<<<<< HEAD
         $droppable.removeClass('ui-state-hover ui-droppable-active'); // 하이라이트 클래스 제거
+=======
+        $droppable.removeClass("ui-state-hover ui-droppable-active"); // 하이라이트 클래스 제거
+>>>>>>> b1dd6843 (초기 커밋)
         if (apply && selectedDraggable) {
             const isTriangle = selectedDraggable.hasClass("triangle");
             const isCircle = selectedDraggable.hasClass("circle");
             const typeClass = isTriangle ? "triangle" : isCircle ? "circle" : null;
 
             if (typeClass) {
+<<<<<<< HEAD
                 $droppable.each(function() {
                     const $drop = $(this);
                     // 기존 중복 방지 규칙: 해당 타입 요소가 없는 곳만 하이라이트
                     if ($drop.find(`.${typeClass}`).length === 0) {
                         $drop.addClass('ui-state-hover ui-droppable-active');
+=======
+                $droppable.each(function () {
+                    const $drop = $(this);
+                    // 기존 중복 방지 규칙: 해당 타입 요소가 없는 곳만 하이라이트
+                    if ($drop.find(`.${typeClass}`).length === 0) {
+                        $drop.addClass("ui-state-hover ui-droppable-active");
+>>>>>>> b1dd6843 (초기 커밋)
                     }
                 });
             }
@@ -34,7 +46,11 @@ runAfterAppReady(() => {
         start: function (event, ui) {
             // 드래그 시작 시 클릭 선택 상태 해제 (추가)
             if (selectedDraggable) {
+<<<<<<< HEAD
                 selectedDraggable.removeClass('selected');
+=======
+                selectedDraggable.removeClass("selected");
+>>>>>>> b1dd6843 (초기 커밋)
                 selectedDraggable = null;
                 updateCheckoutHighlights(false);
             }
@@ -159,11 +175,16 @@ runAfterAppReady(() => {
 
     // --- 클릭-투-클릭 로직 추가 ---
     // 원본 드래그 요소 클릭
+<<<<<<< HEAD
     $draggable.off('click').on('click', function(e) {
+=======
+    $draggable.off("click").on("click", function (e) {
+>>>>>>> b1dd6843 (초기 커밋)
         e.stopPropagation();
         const $this = $(this);
 
         if (selectedDraggable && selectedDraggable[0] === this) {
+<<<<<<< HEAD
             selectedDraggable.removeClass('selected');
             selectedDraggable = null;
         } else {
@@ -173,12 +194,27 @@ runAfterAppReady(() => {
             selectedDraggable = $this;
             selectedDraggable.addClass('selected');
             audioManager.playSound('click');
+=======
+            selectedDraggable.removeClass("selected");
+            selectedDraggable = null;
+        } else {
+            if (selectedDraggable) {
+                selectedDraggable.removeClass("selected");
+            }
+            selectedDraggable = $this;
+            selectedDraggable.addClass("selected");
+            audioManager.playSound("click");
+>>>>>>> b1dd6843 (초기 커밋)
         }
         updateCheckoutHighlights(true);
     });
 
     // 드롭 영역 클릭
+<<<<<<< HEAD
     $droppable.off('click').on('click', function(e) {
+=======
+    $droppable.off("click").on("click", function (e) {
+>>>>>>> b1dd6843 (초기 커밋)
         e.stopPropagation();
         const $drop = $(this);
 
@@ -260,15 +296,25 @@ runAfterAppReady(() => {
                 checkAnswer(); // 답 확인
 
                 // 드롭 성공 후 선택 해제
+<<<<<<< HEAD
                 selectedDraggable.removeClass('selected');
                 selectedDraggable = null;
                 updateCheckoutHighlights(false); // 하이라이트 끄기
 
+=======
+                selectedDraggable.removeClass("selected");
+                selectedDraggable = null;
+                updateCheckoutHighlights(false); // 하이라이트 끄기
+>>>>>>> b1dd6843 (초기 커밋)
             } else {
                 // 클릭 드롭 실패 (이미 아이템 존재)
                 audioManager.playSound("wrong");
                 // 실패 시에도 선택 해제
+<<<<<<< HEAD
                 selectedDraggable.removeClass('selected');
+=======
+                selectedDraggable.removeClass("selected");
+>>>>>>> b1dd6843 (초기 커밋)
                 selectedDraggable = null;
                 updateCheckoutHighlights(false);
             }
@@ -278,6 +324,7 @@ runAfterAppReady(() => {
     });
 
     // 외부 클릭 시 선택 해제 (추가)
+<<<<<<< HEAD
     $(document).off("click.checkoutDragDrop060004").on("click.checkoutDragDrop060004", function(e) { // 고유 네임스페이스 사용
         if (selectedDraggable && !$(e.target).closest('.page_1 .drag_checkout .draggable').length && !$(e.target).closest('.page_1 .drag_checkout .droppable').length) {
             selectedDraggable.removeClass('selected');
@@ -285,6 +332,18 @@ runAfterAppReady(() => {
             updateCheckoutHighlights(false);
         }
     });
+=======
+    $(document)
+        .off("click.checkoutDragDrop060004")
+        .on("click.checkoutDragDrop060004", function (e) {
+            // 고유 네임스페이스 사용
+            if (selectedDraggable && !$(e.target).closest(".page_1 .drag_checkout .draggable").length && !$(e.target).closest(".page_1 .drag_checkout .droppable").length) {
+                selectedDraggable.removeClass("selected");
+                selectedDraggable = null;
+                updateCheckoutHighlights(false);
+            }
+        });
+>>>>>>> b1dd6843 (초기 커밋)
 
     // Function to check the answer
     function checkAnswer() {
@@ -468,6 +527,9 @@ runAfterAppReady(() => {
     });
 
     updateButtonClassRulesForCurrentSlide();
+<<<<<<< HEAD
 
     console.log("defineButtonClassRules 동적 호출 성공");
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 });

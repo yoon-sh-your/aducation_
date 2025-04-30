@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap:has(.w_80) {
   min-width: 80px !important;
 }
@@ -101,6 +104,10 @@ math-field.has_ex_text + .text_hint:before {
 .ema611_06_ih_0001 .question_col > p {
   white-space: normal;
   height: 100px;
+<<<<<<< HEAD
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema611_06_ih_0001 .fraction_row {
   display: flex;
@@ -120,6 +127,14 @@ math-field.has_ex_text + .text_hint:before {
   gap: 100px;
 }
 
+<<<<<<< HEAD
+=======
+.ema611_06_ih_0003 .mark_error:after {
+  width: 40px;
+  top: 3px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema611_06_ih_0004 */
 .ema611_06_ih_0004 .img_area {
   position: relative;
@@ -224,7 +239,11 @@ math-field.has_ex_text + .text_hint:before {
   width: 100%;
 }
 .ema611_06_ih_0006 .l_left .input_wrap math-field {
+<<<<<<< HEAD
   height: 60px;
+=======
+  height: 72px;
+>>>>>>> b1dd6843 (초기 커밋)
   min-height: unset;
 }
 .ema611_06_ih_0006 .l_left math-field::part(content) {

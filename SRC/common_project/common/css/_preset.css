@@ -20,6 +20,10 @@
 .justify_evenly { justify-content: space-evenly !important; }
 
 .gap_0{ gap: 0px !important; }
+<<<<<<< HEAD
+=======
+.gap_2{ gap: 2px !important; }
+>>>>>>> b1dd6843 (초기 커밋)
 .gap_4{ gap: 4px !important; }
 .gap_6{ gap: 6px !important; }
 .gap_8{ gap: 8px !important; }

@@ -30,12 +30,18 @@ runAfterAppReady(function () {
     setTimeout(() => {
       $drop.attr("data-correction", isCorrect ? "true" : "false");
       console.log("🛡 forced data-correction reapply:", $drop.attr("data-correction"));
+<<<<<<< HEAD
     }, 0);
     
   }
   
 
   
+=======
+    }, 0); 
+  }
+  
+>>>>>>> b1dd6843 (초기 커밋)
   // ✅ 회전값을 추출하는 유틸리티 함수 선언
   function getRotationDegrees($img) {
     const transform = $img.css("transform");
@@ -154,6 +160,28 @@ runAfterAppReady(function () {
       const dropIndex = $(".drop_group .drop_item").index($drop);
       $(".drop_group .text_box span").eq(dropIndex).hide();
 
+<<<<<<< HEAD
+=======
+      // ✅ 드롭한 drop_item 안의 img_bg 표시
+      $drop.children(".img_bg").css("display", "block");
+
+      //$drop.children(".from-drop").remove();
+
+      // ✅ img_bg가 없으면 정확한 구조로 추가
+      if ($drop.children(".img_bg").length === 0) {
+        $drop.prepend(`
+          <div class="img_bg" style="display: block;">
+            <span class="img1">
+              <img src="../../common_contents/img/EMA523_07_SU/0004_bg.svg" alt="이미지">
+            </span>
+          </div>
+        `);
+      } else {
+        $drop.children(".img_bg").css("display", "block");
+      }
+
+
+>>>>>>> b1dd6843 (초기 커밋)
       audioManager.playSound("drop");
 
       // ✅ 한 프레임 뒤에 정확하게 drop 상태 검사
@@ -181,6 +209,7 @@ runAfterAppReady(function () {
   
 
   // ✅ 회전 바인딩 함수
+<<<<<<< HEAD
   function bindRotation($elem) {
     $elem.find(".btn_rotation").off("mousedown touchstart").on("mousedown touchstart", function (evt) {
       evt.preventDefault();
@@ -259,6 +288,81 @@ runAfterAppReady(function () {
       document.addEventListener("touchend", endHandler);
     });
   }
+=======
+// 자유 회전 + 정확한 90/180/270도 스냅 기능 완성본
+
+function bindRotation($elem) {
+  $elem.find(".btn_rotation").off("mousedown touchstart").on("mousedown touchstart", function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
+    const $item = $(this).closest(".drag_item");
+
+    if ($item.hasClass("rotating")) return;
+    $item.addClass("rotating");
+
+    const calcAngleDegrees = (x, y) => (Math.atan2(y, x) * 180) / Math.PI;
+    const rect = $item.get(0).getBoundingClientRect();
+    const cX = rect.left + rect.width / 2;
+    const cY = rect.top + rect.height / 2;
+
+    const clientX = evt.type.startsWith("touch") ? evt.originalEvent.touches[0].clientX : evt.clientX;
+    const clientY = evt.type.startsWith("touch") ? evt.originalEvent.touches[0].clientY : evt.clientY;
+
+    const startAngle = calcAngleDegrees(clientX - cX, clientY - cY);
+    const baseRotation = parseFloat($item.attr("data-rotation")) || 0;
+
+    const moveHandler = function (e) {
+      const moveX = e.type.startsWith("touch") ? e.originalEvent.touches[0].clientX : e.clientX;
+      const moveY = e.type.startsWith("touch") ? e.originalEvent.touches[0].clientY : e.clientY;
+
+      const moveAngle = calcAngleDegrees(moveX - cX, moveY - cY);
+      let degree = baseRotation + (moveAngle - startAngle);
+      degree = (degree + 360) % 360;
+
+      // ✅ 스냅 기능 추가
+      const snapAngles = [0, 90, 180, 270, 360];
+      const snapThreshold = 5; // 5도 이내로 근접하면 스냅
+
+      for (let snapAngle of snapAngles) {
+        if (Math.abs(degree - snapAngle) <= snapThreshold) {
+          degree = snapAngle;
+          break;
+        }
+      }
+
+      $item.css({
+        transform: `rotate(${degree}deg)`,
+        transformOrigin: "center center"
+      });
+      $item.attr("data-rotation", degree.toFixed(1));
+      $item.attr("data-value", degree.toFixed(1));
+
+      const $drop = $item.closest(".drop_item.figure_triangle");
+      if ($drop.length) {
+        updateDropValueAndCorrection($drop, degree.toFixed(1));
+      }
+    };
+
+    const endHandler = function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $item.removeClass("rotating");
+
+      document.removeEventListener("mousemove", moveHandler);
+      document.removeEventListener("touchmove", moveHandler);
+      document.removeEventListener("mouseup", endHandler);
+      document.removeEventListener("touchend", endHandler);
+    };
+
+    document.addEventListener("mousemove", moveHandler, { passive: false });
+    document.addEventListener("touchmove", moveHandler, { passive: false });
+    document.addEventListener("mouseup", endHandler);
+    document.addEventListener("touchend", endHandler);
+  });
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
   
   
 
@@ -308,12 +412,32 @@ runAfterAppReady(function () {
     $droppables.each(function () {
       const $drop = $(this);
     
+<<<<<<< HEAD
       $drop.find(".from-drop").remove();
+=======
+      // ✅ 기존 드롭된 복제 아이템 삭제
+      $drop.children(".from-drop").remove();
+    
+      // ✅ img_bg가 없으면 정확한 구조로 다시 추가
+      if ($drop.children(".img_bg").length === 0) {
+        $drop.prepend(`
+          <div class="img_bg" style="display: none;">
+            <span class="img1">
+              <img src="../../common_contents/img/EMA523_07_SU/0004_bg.svg" alt="이미지">
+            </span>
+          </div>
+        `);
+      } else {
+        $drop.children(".img_bg").css("display", "none");
+      }
+    
+>>>>>>> b1dd6843 (초기 커밋)
       $drop.removeClass("ui-state-hover hint selected disabled");
       $drop.parent().removeClass("on");
       $drop.attr("data-value", "");
       $drop.removeAttr("data-correction");
     
+<<<<<<< HEAD
       // ✅ 텍스트 복구
       const dropIndex = $(".drop_group .drop_item").index($drop);
       $(".drop_group .text_box span").eq(dropIndex).css("display", "flex");
@@ -325,12 +449,37 @@ runAfterAppReady(function () {
       $item.removeClass("used disabled").css({ opacity: 1 });
       $item.attr("data-rotation", "0");
   
+=======
+      const dropIndex = $(".drop_group .drop_item").index($drop);
+      $(".drop_group .text_box span").eq(dropIndex).css("display", "flex");
+    });    
+        
+    $draggables.each(function () {
+      const $item = $(this);
+      $item.removeClass("used disabled").css({ opacity: 1 });
+      $item.attr({
+        "data-rotation": "0",
+        "data-value": "0"
+      });
+    
+      // ✅ drag_item 자체 회전도 0도 초기화
+      $item.css({
+        transform: "rotate(0deg)",
+        transformOrigin: "center center"
+      });
+    
+      // ✅ img 안쪽도 초기화 (필요 없는 경우 생략 가능하지만 안전하게)
+>>>>>>> b1dd6843 (초기 커밋)
       $item.find("img").css({
         transform: "rotate(0deg)",
         transformOrigin: "center center"
       });
     });
+<<<<<<< HEAD
   
+=======
+    
+>>>>>>> b1dd6843 (초기 커밋)
     window.forceWatchEvaluation(); // 버튼 활성화 상태 재평가
   });
   

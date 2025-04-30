@@ -106,6 +106,12 @@ h2 .small_border {
 .hint_170 .text_hint {
   width: 170px;
 }
+<<<<<<< HEAD
+=======
+.hint_150 .text_hint {
+  width: 150px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .hint_120 .text_hint {
   width: 120px;
 }
@@ -116,6 +122,7 @@ h2 .small_border {
   width: 80px;
 }
 
+<<<<<<< HEAD
 .input_wrap.height_60 .example_box {
   height: 60px;
 }
@@ -123,6 +130,17 @@ h2 .small_border {
   height: 90px;
 }
 
+=======
+.mmb_0 {
+  margin-bottom: 0px;
+}
+.mmb_10 {
+  margin-bottom: -10px;
+}
+.mm_10 {
+  margin-left: -10px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap.small math-field:not(.textarea) {
   min-width: 100px;
   width: 100px;
@@ -131,6 +149,13 @@ h2 .small_border {
   min-width: 120px;
   width: 120px;
 }
+<<<<<<< HEAD
+=======
+.input_wrap.lmedium math-field:not(.textarea) {
+  min-width: 180px;
+  width: 180px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap.large math-field:not(.textarea) {
   min-width: 240px;
   width: 240px;
@@ -167,6 +192,15 @@ h3.non-after {
 h3.non-after::before {
   display: none;
 }
+<<<<<<< HEAD
+=======
+h3.non-bullet {
+  padding-left: 0;
+}
+h3.non-bullet::before {
+  display: none;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .gray_Box {
   display: inline-block;
@@ -191,6 +225,70 @@ h3.non-after::before {
   border-bottom-right-radius: 0;
 }
 
+<<<<<<< HEAD
+=======
+.w_180 {
+  display: inline-block;
+  width: 180px;
+}
+.w_150 {
+  display: inline-block;
+  width: 150px;
+}
+.w_130 {
+  display: inline-block;
+  width: 130px;
+}
+.w_120 {
+  display: inline-block;
+  width: 123px;
+}
+.w_100 {
+  display: inline-block;
+  width: 100px;
+}
+.w_80 {
+  display: inline-block;
+  width: 80px;
+}
+.w_50 {
+  display: inline-block;
+  width: 50px;
+}
+
+/* 버튼 span 으로 정답 오답 표기  */
+
+.boolean_wrap.span_type > button {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  border: 0;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.boolean_wrap.span_type > button span {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 999px;
+  width: 60px;
+  line-height: 55px;
+}
+.boolean_wrap.span_type > button.selected span {
+  border-color: #222222;
+  background-color: rgba(59, 113, 254, 0);
+}
+.boolean_wrap.span_type button[data-answer-single="true"].hint span {
+  background-color: rgba(59, 113, 254, 0.3);
+  border-color: #3b71fe;
+}
+.boolean_wrap.span_type button[data-answer-single="false"].selected.hint span {
+  border-color: var(--secondary-red);
+}
+.boolean_wrap.span_type.correct button[data-answer-single="true"].selected span,
+.boolean_wrap.span_type button[data-correction="true"].selected.hint span {
+  background-color: rgba(59, 113, 254, 0.3);
+  border-color: #3b71fe;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* 방법 1,2 */
 .method {
   color: #ffffff;
@@ -250,7 +348,11 @@ h3.non-after::before {
 /* 문제 만들기 박스 */
 .quiz-builder {
   width: 1200px;
+<<<<<<< HEAD
   margin: 30px auto 0;
+=======
+  margin: 0px auto 0;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .quiz-builder .quiz-title {
   background-color: #fff5ed;
@@ -279,7 +381,11 @@ h3.non-after::before {
   width: 100%;
 }
 .quiz-builder .input_wrap math-field.textarea {
+<<<<<<< HEAD
   min-height: 60px;
+=======
+  min-height: 80px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .quiz-builder .quiz-answer-inner .input_wrap > p:first-child {
   display: inline-block;
@@ -311,7 +417,11 @@ h3.non-after::before {
 }
 .note-paper .paper-con {
   position: relative;
+<<<<<<< HEAD
   background: url(../../common_contents/img/EMA524_07_SU/0003_bg.svg) no-repeat
+=======
+  background: url(../../common_contents/img/EMA524_08_SU/0003_bg.svg) no-repeat
+>>>>>>> b1dd6843 (초기 커밋)
     center center / 100%;
   min-width: 377px;
   height: 220px;

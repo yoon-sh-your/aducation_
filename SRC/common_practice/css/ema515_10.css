@@ -79,14 +79,24 @@
 }
 .ema515_10_ih_0001 .map_area .map {
   max-height: 650px;
+<<<<<<< HEAD
+=======
+  width: auto;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_10_ih_0001 .map_area svg,
 .ema515_10_ih_0001 .map_area [class^='obj'] {
   position: absolute;
 }
 .ema515_10_ih_0001 .map_area svg {
+<<<<<<< HEAD
   top: 0;
   left: 0;
+=======
+  top: 130px;
+  left: 0;
+  transform: translate(0,0);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_10_ih_0001 .map_area .obj_move {
   top: 10px;
@@ -94,8 +104,13 @@
   width: 90px;
 }
 .ema515_10_ih_0001 .map_area .obj_arrival {
+<<<<<<< HEAD
   bottom: 29px;
   right: 18px;
+=======
+  bottom: 171px;
+  right: 471px;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 104px;
   opacity: 0;
 }
@@ -207,6 +222,18 @@
 .ema515_10_ih_0001 .pop_area .quiz_pop.result button[data-answer-single='true']::before {
   opacity: 1;
 }
+<<<<<<< HEAD
+=======
+
+.ema515_10_ih_0001 .pop_area .btn_zoom {
+  display: none;
+}
+
+.ema515_10_ih_0001 .btn_area {
+  margin-top: 30px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 @keyframes arrival {
   0% {
     transform: translateY(0);
@@ -230,6 +257,10 @@
 .ema515_10_ih_0001 .map_area.result .obj_arrival {
   opacity: 1;
   animation: arrival 1s ease-in-out;
+<<<<<<< HEAD
+=======
+  z-index: 3;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_10_ih_0002 .review_box .title_review {

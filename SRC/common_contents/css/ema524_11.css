@@ -1,7 +1,11 @@
 /* ema524_11_su_0002  */
 .ema524_11_su_0002 .example_num {
   margin-top: 30px;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0002_contents1.png)
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0002_contents1.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat center top/ 1000px;
   width: 1000px;
   height: 100px;
@@ -23,7 +27,11 @@
 
 .ema524_11_su_0002 .fra_parens {
   margin-top: 30px;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0002_contents2.png)
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0002_contents2.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat center top/ 461px;
   width: 500px;
   height: 145px;
@@ -43,7 +51,11 @@
 
 /* ema524_11_SU_0004_s */
 .ema524_11_su_0004 .question_box {
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0004_bg.png) no-repeat
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0004_bg.png) no-repeat
+>>>>>>> b1dd6843 (초기 커밋)
     center center / 806px;
   height: 250px;
   margin-top: 50px;
@@ -64,6 +76,10 @@
 }
 .ema524_11_su_0004 .top .item {
   display: inline-flex;
+<<<<<<< HEAD
+=======
+  justify-content: flex-start;
+>>>>>>> b1dd6843 (초기 커밋)
   align-items: center;
   gap: 12px;
 }
@@ -97,7 +113,11 @@
 .ema524_11_su_0004 .boolean_wrap button:after {
   position: absolute;
   top: -5px;
+<<<<<<< HEAD
   left: -5px;
+=======
+  left: 0px;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 60px;
   height: 60px;
   background: url(../../common_practice/common/img/icon_checked_round.svg)
@@ -127,7 +147,11 @@
 /* ema524_11_SU_0005_s */
 .ema524_11_su_0005 .fra_parens {
   margin: 30px auto;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0005_bg.png) no-repeat
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0005_bg.png) no-repeat
+>>>>>>> b1dd6843 (초기 커밋)
     center top/ 100%;
   width: 875px;
   height: 216px;
@@ -136,12 +160,23 @@
   margin-right: 5px;
   margin-left: 5px;
 }
+<<<<<<< HEAD
 
+=======
+.ema524_11_su_0005 .custom_select .text_hint {
+  font-weight: 900;
+  font-size: 34px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema524_11_SU_0006_s */
 .ema524_11_su_0006 .contents > div > ul {
   margin-top: 30px;
   flex: 1;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0006_contents.png)
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0006_contents.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat 80% 10%/ 488px;
   height: 320px;
   position: relative;
@@ -197,7 +232,11 @@
 .ema524_11_su_0007 .top {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0007_contents4.png)
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0007_contents4.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat 80% 10%/ 100%;
   height: 220px;
 }
@@ -214,6 +253,7 @@
 }
 
 .ema524_11_su_0007 .boolean_wrap button:nth-child(1) {
+<<<<<<< HEAD
   bottom: 10px;
   left: 105px;
 }
@@ -227,6 +267,22 @@
   left: 1010px;
   transform: rotate(3deg);
 }
+=======
+  bottom: 5px;
+  left: 115px;
+}
+.ema524_11_su_0007 .boolean_wrap button:nth-child(2) {
+  bottom: 10px;
+  left: 477px;
+  transform: rotate(-2deg);
+}
+.ema524_11_su_0007 .boolean_wrap button:nth-child(3) {
+  bottom: 13px;
+  left: 1010px;
+  transform: rotate(3deg);
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema524_11_su_0007 .text_center .input_wrap math-field.textarea {
   min-height: 120px;
   height: 120px;
@@ -235,7 +291,11 @@
 /* ema524_11_su_0008 */
 
 .ema524_11_su_0008 {
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_09_SU/0008_contents.png)
+=======
+  background: url(../../common_contents/img/EMA524_11_SU/0008_contents.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat 90% 15% / 298px;
 }
 .ema524_11_su_0008 .contents > div {
@@ -251,7 +311,11 @@
 /* ema524_11_su_0009 */
 .ema524_11_su_0009 .scroll_area {
   position: relative;
+<<<<<<< HEAD
   top: -40px;
+=======
+  padding-bottom: 20px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema524_11_su_0009 .scroll_area > img {
@@ -263,35 +327,85 @@
 .ema524_11_su_0009 .question_box .input_wrap {
   flex-direction: row;
   align-items: center;
+<<<<<<< HEAD
   gap: 10px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema524_11_su_0009 .question_box {
   position: absolute;
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .ema524_11_su_0009 .question_box1 {
   top: 105px;
+=======
+.ema524_11_su_0009 .question_box .w_180 {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+}
+.ema524_11_su_0009 .question_box .w_150 {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+.ema524_11_su_0009 .question_box .w_130 {
+  display: inline-block;
+  width: 130px;
+  text-align: left;
+}
+.ema524_11_su_0009 .question_box .w_120 {
+  display: inline-block;
+  width: 123px;
+  text-align: left;
+}
+.ema524_11_su_0009 .question_box .w_100 {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+.ema524_11_su_0009 .question_box1 {
+  top: 65px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 202px;
 }
 
 .ema524_11_su_0009 .question_box2 {
+<<<<<<< HEAD
   top: 140px;
+=======
+  top: 100px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 680px;
 }
 
 .ema524_11_su_0009 .question_box3 {
+<<<<<<< HEAD
   top: 440px;
+=======
+  top: 400px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 600px;
 }
 
 .ema524_11_su_0009 .question_box4 {
+<<<<<<< HEAD
   top: 300px;
   left: 1110px;
 }
 
 .ema524_11_su_0009 .question_box5 {
   top: 1089px;
+=======
+  top: 260px;
+  left: 1145px;
+}
+
+.ema524_11_su_0009 .question_box5 {
+  top: 1049px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 380px;
 }
 .ema524_11_su_0009 .question_box5 > div {
@@ -299,12 +413,21 @@
 }
 .ema524_11_su_0009 .question_box5 .title {
   position: absolute;
+<<<<<<< HEAD
   top: -190px;
   left: -60px;
 }
 .ema524_11_su_0009 .question_box6 {
   top: 1125px;
   left: 870px;
+=======
+  top: -184px;
+  left: -60px;
+}
+.ema524_11_su_0009 .question_box6 {
+  top: 1085px;
+  left: 880px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema524_11_su_0009 .question_box4 .title,
 .ema524_11_su_0009 .question_box3 .title,

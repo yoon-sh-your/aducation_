@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_area .fraction_box {
   vertical-align: middle;
   margin-left: 5px;
@@ -174,7 +177,11 @@ math-field.w_80 {
   top: auto;
   bottom: calc(100% + 4px);
 }
+<<<<<<< HEAD
 .fraction_wrap.hint_right .text_hint{
+=======
+.fraction_wrap.hint_right .text_hint {
+>>>>>>> b1dd6843 (초기 커밋)
   left: 130%;
   top: 50%;
   transform: translateY(-50%);

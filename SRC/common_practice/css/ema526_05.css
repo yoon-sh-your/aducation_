@@ -111,6 +111,10 @@ h3.title:before {
 }
 .ema526_05_ih_0001 .connect_wrap {
   height: auto;
+<<<<<<< HEAD
+=======
+  padding: 0 15px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema526_05_ih_0001 .connect_wrap .start_group,
 .ema526_05_ih_0001 .connect_wrap .end_group {
@@ -124,7 +128,11 @@ h3.title:before {
 }
 .ema526_05_ih_0002 .img span {
   position: absolute;
+<<<<<<< HEAD
   font-size: 22px;
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
   color: #58595b;
   font-weight: normal;
 }
@@ -148,11 +156,22 @@ h3.title:before {
 }
 .ema526_05_ih_0002 .input_wrap math-field {
   width: 100%;
+<<<<<<< HEAD
+=======
+  height: 100px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema526_05_ih_0002.completed .example_box {
   opacity: 1;
 }
 
+<<<<<<< HEAD
+=======
+.ema526_05_ih_0002 .label_reason {
+  /* margin-top: 12px; */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema526_05_ih_0003 .circle {
   display: inline-flex;
   width: 44px;
@@ -168,7 +187,11 @@ h3.title:before {
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto;
+<<<<<<< HEAD
   padding: 35px 60px;
+=======
+  padding: 55px 16px;
+>>>>>>> b1dd6843 (초기 커밋)
   align-items: flex-start;
   width: 1487px;
   height: 224px;
@@ -195,8 +218,13 @@ h3.title:before {
 }
 .ema526_05_ih_0003 .boolean_wrap button:after {
   position: absolute;
+<<<<<<< HEAD
   top: -20px;
   left: -40px;
+=======
+  top: -5px;
+  left: 12px;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 50px;
   height: 50px;
   background: url(../common/img/icon_checked_round.svg) no-repeat center center / contain;
@@ -219,8 +247,18 @@ h3.title:before {
 }
 .ema526_05_ih_0003 .question_box .input_wrap math-field {
   width: 100%;
+<<<<<<< HEAD
 }
 
+=======
+  height: 100px;
+}
+
+.ema526_05_ih_0004 .input_wrap math-field.textarea {
+  height: 100px !important;
+  min-height: 100px !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema526_05_ih_0004 .table_wrap {
   max-width: none;
   width: 1054px;

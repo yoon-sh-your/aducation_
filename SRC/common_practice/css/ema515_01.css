@@ -36,9 +36,12 @@ math-field.w_80 {
   min-width: 0;
   width: 80px;
 }
+<<<<<<< HEAD
 .fraction_box:has(.input_wrap) span {
   line-height: 60px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box > .flex:first-child .input_wrap .text_hint,
 .fraction_box > .input_wrap:first-child .text_hint {
   top: -36px;

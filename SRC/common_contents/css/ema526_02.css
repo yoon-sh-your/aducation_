@@ -360,6 +360,13 @@
   border-left: 1px solid rgba(218, 218, 218, 1);
 }
 
+<<<<<<< HEAD
+=======
+.ema526_02_su_0004 .page_1 .left_area .btm_box .table_box tr td.ui-droppable {
+  pointer-events: none;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema526_02_su_0004 .page_1 .left_area .btm_box .table_box tr th:not(:last-child)::before {
   content: "";
   width: 2px;

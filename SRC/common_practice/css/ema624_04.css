@@ -92,6 +92,21 @@ math-field.w_large {
 .ema624_04_ih_0002 .text_area .l_right .text_row .input_wrap {
 	margin: 0 4px 0 6px;
 }
+<<<<<<< HEAD
+=======
+.ema624_04_ih_0002 .box2 .l_left .text1 {
+	left: 48px;
+}
+.ema624_04_ih_0002 .box2 .l_left .input1 {
+	left: 125px;
+}
+.ema624_04_ih_0002 .box2 .l_left .input2 {
+	left: 178px;
+}
+.ema624_04_ih_0002 .box2 .l_left .text2 {
+	left: 310px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 #app_wrap.ema624_04_ih_0002 {
 	max-height: unset;
 }
@@ -144,7 +159,11 @@ math-field.w_large {
 	aspect-ratio: unset;
 	position: relative;
 }
+<<<<<<< HEAD
 .ema624_04_ih_0004 .boolean_wrap button:not(:focus) {
+=======
+.ema624_04_ih_0004 .boolean_wrap button {
+>>>>>>> b1dd6843 (초기 커밋)
 	border-color: transparent !important;
 }
 .ema624_04_ih_0004 .boolean_wrap button:after {
@@ -268,6 +287,12 @@ math-field.w_large {
 	max-height: unset;
 	margin-top: 0;
 }
+<<<<<<< HEAD
+=======
+.ema624_04_ih_0006 .input_wrap .example_box .fraction_box {
+	margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema624_04_ih_0006 .input_wrap .example_row {
 	gap: 0px;
 	margin-bottom: 20px;
@@ -294,3 +319,36 @@ math-field.w_large {
 	display: flex;
 	align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+/* EMA624_04_IH_0001_s */
+.solve_area .fraction-equation {
+	display: inline-flex;
+	gap: 4px;
+	line-height: 1;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.solve_area .fraction_box.align-middle {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.solve_area .fraction-equation .eq-middle {
+	position: relative;
+	top: 15px;
+}
+
+.ema624_04_ih_0001 .solve_area .bracket-l,
+.ema624_04_ih_0001 .solve_area .bracket-r {
+	height: 65px !important;
+	width: 14px !important;
+	display: inline-block;
+}
+
+.ema624_04_ih_0007 .trans_y_center {
+	transform: translateY(-20%);
+}
+>>>>>>> b1dd6843 (초기 커밋)

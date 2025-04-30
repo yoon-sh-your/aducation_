@@ -69,7 +69,12 @@ document.querySelectorAll("h2[data-icon]").forEach((h2) => {
   if (iconName) {
     const img = document.createElement("img");
     img.src = `../../common_contents/common/img/icon_${iconName}.svg`; // 이미지 파일명 구성
+<<<<<<< HEAD
     img.art = `icon_${iconName}`;
+=======
+    img.alt = `icon_${iconName}`;
+    img.classList.add(`icon_${iconName}`);
+>>>>>>> b1dd6843 (초기 커밋)
 
     h2.prepend(img); // h2 태그 텍스트 앞에 이미지 삽입
   }

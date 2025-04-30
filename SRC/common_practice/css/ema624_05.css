@@ -131,7 +131,13 @@ math-field.w_large {
 	align-items: center;
 	margin-bottom: 120px;
 }
+<<<<<<< HEAD
 
+=======
+.ema624_05_ih_0004 .conts_solve .nemo {
+	margin: 0 !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema624_05_ih_0005 */
 .ema624_05_ih_0005 .text_area {
 	width: 332px;
@@ -166,7 +172,11 @@ math-field.w_large {
 	padding: 0;
 	position: relative;
 }
+<<<<<<< HEAD
 .ema624_05_ih_0005 .boolean_wrap button:not(:focus) {
+=======
+.ema624_05_ih_0005 .boolean_wrap button {
+>>>>>>> b1dd6843 (초기 커밋)
 	border-color: transparent !important;
 	background-color: transparent !important;
 }
@@ -188,6 +198,12 @@ math-field.w_large {
 .ema624_05_ih_0005 .boolean_wrap button.hint[data-answer-single="false"]:after {
 	background-color: var(--secondary-red);
 }
+<<<<<<< HEAD
+=======
+.ema624_05_ih_0005 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema624_05_ih_0006 */
 .ema624_05_ih_0006 .img_area {
@@ -236,3 +252,17 @@ math-field.w_large {
 .ema624_05_ih_0007 math-field.textarea + .example_box p {
 	white-space: normal;
 }
+<<<<<<< HEAD
+=======
+.ema624_05_ih_0007 .solve_area .inner_solve {
+	margin-top: 120px;
+}
+
+.ema624_05_ih_0004 .nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

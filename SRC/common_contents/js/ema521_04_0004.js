@@ -18,11 +18,22 @@ runAfterAppReady(() => {
 		let x = e.pageX - $wrap.offset().left;
 		let gap = parseFloat($wrap.attr("data-gap"));
 		let adjustedWidth;
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 		if (pos.length === 2) return;
 		if (typeof pos[0] === "undefined") {
 			pos[0] = Math.floor(x / scale / gap) * gap;
 			$wrap.children(".input-wrap").css("left", `${pos[0]}px`);
 			$(".dw1").addClass("on");
+<<<<<<< HEAD
+=======
+	
+>>>>>>> b1dd6843 (초기 커밋)
 		} else {
 			pos[1] = Math.floor(x / scale / gap) * gap;
 			pos.sort((a, b) => a - b);
@@ -32,6 +43,15 @@ runAfterAppReady(() => {
 			$wrap.children(".input-wrap").css("width", `${adjustedWidth}px`);
 			$(".dw2").addClass("on");
 		}
+<<<<<<< HEAD
+=======
+		setTimeout(() => {
+			const activeDw = $wrap.find(".dw1.on, .dw2.on"); 
+			const innerElements = activeDw.find('.select_options');
+			activeDw.addClass("active");
+			innerElements.addClass("upper").css("display", "block");
+		}, 0);
+>>>>>>> b1dd6843 (초기 커밋)
 	});
 	$(".dropdown_wrap, .dropdown_wrap *").on("click", function(e) {
 		e.stopPropagation();

@@ -166,6 +166,7 @@ runAfterAppReady(() => {
         resetAll();
     });
 
+<<<<<<< HEAD
     defineButtonClassRules([
         {
             key: "textarea_with_example",
@@ -196,12 +197,69 @@ runAfterAppReady(() => {
             ],
         },
     ]);
+=======
+    // 버튼 활성화 조건 추가
+    function updateButtonClassRulesForCurrentSlide(slideIdx) {
+        console.log(slideIdx);
+        if (slideIdx === "page_2") {
+            defineButtonClassRules([
+                {
+                    selector: ".page_2 .input_wrap math-field",
+                    test: (el) => {
+                        const filled = (typeof el.getValue === "function" ? el.getValue() : el.value || "").trim() !== "";
+
+                        return filled;
+                    },
+                },
+            ]);
+        } else {
+            defineButtonClassRules([
+                {
+                    key: "textarea_with_example",
+                    selector: ".page_1 .btm_right_box table, .page_1 .input_wrap math-field.textarea",
+                    test: (el) => {
+                        // textarea 입력 감지
+                        if (el.matches("math-field.textarea")) {
+                            const filled = (typeof el.getValue === "function" ? el.getValue() : el.value || "").trim() !== "";
+                            const hasExample = !!el.closest(".input_wrap")?.querySelector(".example_box");
+                            return filled && hasExample;
+                        }
+                        // 테이블 이동 감지
+                        if (el.matches(".btm_right_box table")) {
+                            const tds = el.querySelectorAll("tr:not(:last-child) td");
+                            for (let i = 0; i < tds.length; i++) {
+                                if (tds[i].querySelectorAll(".circle").length !== initialRightState[i]) {
+                                    return true;
+                                }
+                            }
+                            return false;
+                        }
+                        // 기타 경우
+                        return false;
+                    },
+                },
+            ]);
+        }
+    }
+
+    $(".next, .prev, .pagenation button").on("click", function () {
+        let slideIdx = $("#app_wrap").attr("data-current-page");
+        console.log("click", slideIdx);
+        setTimeout(updateButtonClassRulesForCurrentSlide(slideIdx), 100);
+        if (slideIdx === "page_1" && !$(".page_1").hasClass("completed")) {
+            $(".page_1 .example_box").removeClass("on");
+        }
+    });
+
+    updateButtonClassRulesForCurrentSlide();
+>>>>>>> b1dd6843 (초기 커밋)
 
     window.onCorrectCustom = function () {
         $(".example_box").addClass("on");
     };
 
     window.onIncorrectTwiceCustom = function () {
+<<<<<<< HEAD
         $rightRows.find("td").empty();
 
         $(".btm_left_box tr").each(function (trIdx, tr) {
@@ -252,6 +310,37 @@ runAfterAppReady(() => {
                         $(td).append(leftCircles[idx]);
                         leftCircles[idx].draggable({
                             helper: "clone",
+=======
+        let slideIdx = $("#app_wrap").attr("data-current-page");
+        if (slideIdx === "page_1") {
+            $rightRows.find("td").empty();
+
+            $(".btm_left_box tr").each(function (trIdx, tr) {
+                $(tr)
+                    .find("td")
+                    .each(function (tdIdx, td) {
+                        $(td).empty();
+                        (originalLeftState[trIdx][tdIdx] || []).forEach((html) => {
+                            $(td).append(html);
+                        });
+                    });
+            });
+
+            let leftCircles = [];
+            $(".btm_left_box .circle").each(function () {
+                leftCircles.push($(this).clone());
+                $(this).remove();
+            });
+
+            for (let col = 0; col < colCount; col++) {
+                let filled = 0;
+                for (let i = tdMatrix[col].length - 1; i >= 0; i--) {
+                    if (filled < 3 && leftCircles.length > 0) {
+                        let $circle = leftCircles.shift();
+                        tdMatrix[col][i].append($circle);
+                        $circle.draggable({
+                            helper: "original",
+>>>>>>> b1dd6843 (초기 커밋)
                             revert: "invalid",
                             zIndex: 100,
                             start: function (event, ui) {
@@ -261,12 +350,46 @@ runAfterAppReady(() => {
                                 $(this).removeClass("dragging");
                             },
                         });
+<<<<<<< HEAD
                         idx++;
                     }
                 });
         });
 
         checkEvenDistribution();
+=======
+                        filled++;
+                    }
+                }
+            }
+            $(".btm_left_box tr td").empty();
+            let idx = 0;
+            $(".btm_left_box tr").each(function (trIdx, tr) {
+                $(tr)
+                    .find("td")
+                    .each(function (tdIdx, td) {
+                        if (leftCircles[idx]) {
+                            $(td).append(leftCircles[idx]);
+                            leftCircles[idx].draggable({
+                                helper: "clone",
+                                revert: "invalid",
+                                zIndex: 100,
+                                start: function (event, ui) {
+                                    $(this).addClass("dragging");
+                                },
+                                stop: function (event, ui) {
+                                    $(this).removeClass("dragging");
+                                },
+                            });
+                            idx++;
+                        }
+                    });
+            });
+
+            checkEvenDistribution();
+        } else {
+        }
+>>>>>>> b1dd6843 (초기 커밋)
     };
 
     $(".btm_left_box .circle").draggable({
@@ -284,6 +407,7 @@ runAfterAppReady(() => {
     checkEvenDistribution();
 
     window.customCheckCondition = function () {
+<<<<<<< HEAD
         const mathField = document.querySelector(".input_wrap math-field.textarea");
         const value = mathField && (typeof mathField.getValue === "function" ? mathField.getValue() : mathField.value || "");
         const isFilled = !!(value && value.trim() !== "");
@@ -301,5 +425,40 @@ runAfterAppReady(() => {
             return "empty";
         }
         return isEvenlyDistributed;
+=======
+        let slideIdx = $("#app_wrap").attr("data-current-page");
+        if (slideIdx === "page_2") {
+            const mathField = document.querySelector(".page_2 .input_wrap math-field");
+            const value = mathField && (typeof mathField.getValue === "function" ? mathField.getValue() : mathField?.value || "");
+
+            // \text{...} 제거 함수
+            function parseMathfieldValue(val) {
+                return val.replace(/\\text\{([^}]*)\}/g, "$1").trim();
+            }
+
+            const parsedValue = parseMathfieldValue(value);
+            const answer = mathField?.dataset?.answerSingle ?? mathField2.getAttribute("data-answer-single") ?? "";
+
+            return parsedValue === answer.trim();
+        } else {
+            const mathField = document.querySelector(".input_wrap math-field.textarea");
+            const value = mathField && (typeof mathField.getValue === "function" ? mathField.getValue() : mathField.value || "");
+            const isFilled = !!(value && value.trim() !== "");
+
+            let moved = false;
+            const tds = document.querySelectorAll(".btm_right_box table tr:not(:last-child) td");
+            for (let i = 0; i < tds.length; i++) {
+                if (tds[i].querySelectorAll(".circle").length !== initialRightState[i]) {
+                    moved = true;
+                    break;
+                }
+            }
+
+            if (!isFilled || !moved) {
+                return "empty";
+            }
+            return isEvenlyDistributed;
+        }
+>>>>>>> b1dd6843 (초기 커밋)
     };
 });

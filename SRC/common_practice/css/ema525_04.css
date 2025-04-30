@@ -115,6 +115,10 @@
   border: none !important;
   border-radius: 0;
   aspect-ratio: unset;
+<<<<<<< HEAD
+=======
+  gap: 10px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema525_04_ih_0004 .boolean_wrap button:after {
   position: absolute;
@@ -150,6 +154,26 @@
 .ema525_04_ih_0005 .custom_select {
   width: 182px;
 }
+<<<<<<< HEAD
+=======
+.ema525_04_ih_0005 .img {
+  position: relative;
+}
+.ema525_04_ih_0005 .img .txt {
+  position: absolute;
+  top: 112px;
+  left: 545px;
+  font-size: 30px;
+}
+.ema525_04_ih_0005 .img .txt.t2 {
+  top: 260px;
+  left: 480px;
+}
+.ema525_04_ih_0005 .img .txt.t3 {
+  top: 320px;
+  left: 178px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema525_04_ih_0006 h3.title:before {
   top: 50%;
@@ -207,6 +231,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
+=======
+
+.ema525_04_ih_0006 .ui-state-hover {
+  outline: none;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema525_04_ih_0006 .question_box {
   border: 1px solid #d2d2d2;
   border-radius: 16px;
@@ -245,7 +276,11 @@
   border: none;
   border-radius: 0;
 }
+<<<<<<< HEAD
 .ema525_04_ih_0006 .question_box .boolean_wrap button:after {
+=======
+.ema525_04_ih_0006 .question_box .boolean_wrap button::before {
+>>>>>>> b1dd6843 (초기 커밋)
   position: absolute;
   top: 50%;
   left: 50%;
@@ -255,6 +290,7 @@
   border: 4px solid #222;
   border-radius: 50%;
 }
+<<<<<<< HEAD
 .ema525_04_ih_0006 .question_box .boolean_wrap button.selected:after {
   content: '';
 }
@@ -266,3 +302,30 @@
   border-color: var(--primary-blue);
   background: rgba(59, 113, 254, 0.3);
 }
+=======
+.ema525_04_ih_0006 .question_box .boolean_wrap button.selected::before {
+  content: '';
+}
+.ema525_04_ih_0006 .question_box .boolean_wrap button.hint[data-answer-single='true']::before {
+  content: '';
+  border-color: var(--font-negative);
+}
+.ema525_04_ih_0006 .question_box .boolean_wrap button.selected.hint[data-answer-single='true']::before {
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.3);
+}
+
+.ema525_04_ih_0006 .completed .question_box .boolean_wrap button {
+  background: transparent !important;
+}
+
+body:has(article.result) #app_wrap.of_h:has(.solve_area) {
+  display: block;
+  overflow-y: auto;
+}
+
+body:has(article.result) section.contents.paging_layout:has(.solve_area) {
+  height: auto;
+  min-height: calc(100% - 112px);
+}
+>>>>>>> b1dd6843 (초기 커밋)

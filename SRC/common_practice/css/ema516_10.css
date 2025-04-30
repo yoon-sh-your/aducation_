@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_area > span,
 .input_area .text_row > span {
   display: inline-block;
@@ -63,12 +66,15 @@ math-field.has_ex_text + .text_hint:before {
   line-height: 42px;
 }
 
+<<<<<<< HEAD
 .solve_area .nemo {
   position: relative;
   top: 4px;
   background: #fff;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .solve_area span.blank {
   display: inline-block;
   height: 32px;

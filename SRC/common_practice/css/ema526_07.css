@@ -126,6 +126,13 @@
 .ema526_07_ih_0001 .boolean_wrap button.selected:before {
   content: '';
 }
+<<<<<<< HEAD
+=======
+.ema526_07_ih_0001 .boolean_wrap button:hover:before {
+  content: '';
+  border-color: var(--primary-blue-300);
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema526_07_ih_0001 .boolean_wrap.result button.hint[data-answer-single='true']:before {
   content: '';
   border-color: var(--font-negative);
@@ -169,7 +176,11 @@
   width: auto;
   height: auto;
   aspect-ratio: unset;
+<<<<<<< HEAD
   padding: 0 0 0 54px;
+=======
+  padding: 0;
+>>>>>>> b1dd6843 (초기 커밋)
   border: none;
   border-radius: 0;
   background: none;
@@ -184,7 +195,11 @@
 }
 .ema526_07_ih_0002 .boolean_wrap button:after {
   position: absolute;
+<<<<<<< HEAD
   top: -20px;
+=======
+  top: -8px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: -38px;
   width: 50px;
   height: 50px;
@@ -209,13 +224,31 @@
 .ema526_07_ih_0002 .question_box .input_wrap math-field {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+.ema526_07_ih_0003 .img {
+  position: relative;
+}
+.ema526_07_ih_0003 .img ul {
+  position: absolute;
+  top: 110px;
+  left: 420px;
+  display: flex;
+  align-items: center;
+  gap: 215px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema526_07_ih_0003 .boolean_wrap {
   position: relative;
   width: 485px;
   height: 145px;
   margin-top: 80px;
+<<<<<<< HEAD
   background: url(../img/EMA526_07_IH/0003_img2.svg) no-repeat center center;
+=======
+  background: url(../img/EMA526_07_IH/0003_img2.png) no-repeat center center;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema526_07_ih_0003 .boolean_wrap button {
   position: absolute;
@@ -254,7 +287,11 @@
 }
 .ema526_07_ih_0004 .img span {
   position: absolute;
+<<<<<<< HEAD
   font-size: 22px;
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
   font-weight: normal;
 }
 .ema526_07_ih_0004 .img [class^='name'] {

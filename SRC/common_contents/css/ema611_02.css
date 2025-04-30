@@ -212,12 +212,18 @@
 }
 
 .ema611_02_su_0004[data-current-page='page_6'] section.title,
+<<<<<<< HEAD
 .ema611_02_su_0004:not([data-current-page='page_2'], [data-current-page='page_4'], [data-current-page='page_5']) .btn_area .btnSubmit,
 .ema611_02_su_0004:not([data-current-page='page_2']) .btn_area .btnCheck[data-look='submit'],
 .ema611_02_su_0004[data-current-page='page_2'] .btn_area .btnCheck,
 .ema611_02_su_0004[data-current-page='page_4'] .btn_area .btnCheck,
 .ema611_02_su_0004[data-current-page='page_5'] .btn_area .btnCheck,
 .ema611_02_su_0004[data-current-page='page_2'] .btn_area .btnType,
+=======
+.ema611_02_su_0004:not([data-current-page='page_4'], [data-current-page='page_5']) .btn_area .btnSubmit,
+.ema611_02_su_0004[data-current-page='page_4'] .btn_area .btnCheck,
+.ema611_02_su_0004[data-current-page='page_5'] .btn_area .btnCheck,
+>>>>>>> b1dd6843 (초기 커밋)
 .ema611_02_su_0004[data-current-page='page_6'] .btn_area .btnType {
   display: none;
 }

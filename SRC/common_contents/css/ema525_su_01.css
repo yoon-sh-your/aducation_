@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .flex.rows {
   flex-direction: row;
 }
@@ -1509,3 +1510,41 @@ h3.non-after::before {
 .dragndrop_fraction_wrap .drop_item::after {
   opacity: 1 !important;
 } */
+=======
+/* ema525_01_su_0001 */
+.ema525_01_su_0001#app_wrap {
+  background: url(../../common_contents/img/EMA525_00_SU/0001_contents.png)
+      no-repeat left 150px / 857px,
+    #b7a5cf;
+}
+
+.intro_page .text_box {
+  color: #6247dc;
+  top: 240px;
+  left: 51px;
+}
+
+.input_area label.img {
+  background-color: #6247dc;
+}
+
+.input_area label::after {
+  background-color: #6247dc;
+}
+
+/*ema525_01_SU_0004_s*/
+
+.ema525_01_su_0004 .video_wrap {
+  background: url(../../common_contents/img/EMA525_00_SU/0004_contents.png)
+    no-repeat center -3px / 110%;
+}
+
+/*ema525_01_SU_0005_s*/
+.ema525_01_su_0005 .picture_wrap {
+  background: url(../../common_contents/img/EMA525_00_SU/0005_contents.png)
+    no-repeat center 48% / 110%;
+}
+.ema525_01_su_0005 .picture_wrap img {
+  display: none;
+}
+>>>>>>> b1dd6843 (초기 커밋)

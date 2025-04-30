@@ -20,6 +20,25 @@ window.afterAppReadyQueue = [];
 
 // 내부 공통 스크립트
 const scriptPaths = [
+<<<<<<< HEAD
+=======
+    // 통신 규약 필요한 스크립트
+    "../../common_practice/common/js/receiver.js",
+    "../../common_practice/common/js/serviceFuncs.js",
+
+    "../../common_practice/common/js/htmlparser.js",
+    "../../common_practice/common/js/html2json.js",
+    "../../common_practice/common/js/html2canvas.min.js",
+
+    // 고객사 금칙어 스크립트
+    "https://cdn.smart-aidt.com/common/aidtBlockWordsV1.js",
+    // 고객사 번역
+    "https://cdn.smart-aidt.com/common/axios.min.js",
+    "https://cdn.smart-aidt.com/common/transfer-v22.js",
+    "https://cdn.smart-aidt.com/common/core.min.js",
+    "https://cdn.smart-aidt.com/common/sha256.min.js",
+
+>>>>>>> b1dd6843 (초기 커밋)
     "../../common_practice/common/js/audio.js",
     "../../common_practice/common/js/dynamic_tag.js",
     "../../common_practice/common/js/scrollbar.js",
@@ -38,6 +57,10 @@ const scriptPaths = [
     //키패드기능 전역함수
     "../../common_practice/common/js/keypad/selvypen-math-keyboard.min.js",
     "../../common_practice/common/js/keypad/keypad.js"
+<<<<<<< HEAD
+=======
+    "../../common_practice/common/js/keypad/math_compare.js",
+>>>>>>> b1dd6843 (초기 커밋)
 ];
 
 // 전체 스크립트 리스트

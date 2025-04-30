@@ -62,13 +62,22 @@
 .ema615_11_su_0007 .container {
     width: 1635px;
     height: calc(518px - 64px - 12px);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     gap: 20px;
+<<<<<<< HEAD
+=======
+
+    position: relative;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema615_11_su_0007 .container>div:nth-child(1) {
@@ -79,12 +88,88 @@
 .ema615_11_su_0007 .input_wrap math-field.textarea {
     width: 1168px;
     min-height: auto;
+<<<<<<< HEAD
     
 }
 
 
 
 
+=======
+    height: 86px !important;
+}
+
+.ema615_11_su_0007 .gray_tag {
+    width: 135px;
+    height: 36px;
+
+    background-image: url(../img/EMA615_11_SU/0007_gray_tag.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    position: absolute;
+    top: 252px;
+    left: 68px;
+
+    color: var(--Secondary-Text-White, #FFF);
+    text-align: center;
+
+    /* Title/H_04_BOLD */
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+    letter-spacing: -0.5px;
+}
+
+.ema615_11_su_0007 .booleans {
+    width: 879px;
+    height: 405px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+}
+
+.ema615_11_su_0007 .boolean_wrap {
+    display: unset;
+}
+
+.ema615_11_su_0007 .boolean_wrap {}
+
+.ema615_11_su_0007 .boolean_wrap button {
+    padding: unset;
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
+    aspect-ratio: unset;
+
+    /* border: 4px solid coral; */
+
+    width: 58px;
+    height: 58px;
+}
+
+.ema615_11_su_0007 .boolean_wrap.b1 button:nth-child(1) {
+    top: 12px;
+    left: 440px;
+}
+.ema615_11_su_0007 .boolean_wrap.b1 button:nth-child(2) {
+    top: -6px;
+    left: 736px;
+}
+.ema615_11_su_0007 .boolean_wrap.b1 button:nth-child(3) {
+    top: 11px;
+    left: 1137px;
+}
+
+.ema615_11_su_0007 .boolean_wrap button[data-answer-single="false"].hint {
+    border-color: black; 
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 
@@ -495,6 +580,7 @@ svg {
 
 
 
+<<<<<<< HEAD
     /* 0003 */
     .ema615_11_su_0003 .page .question_box {
         flex-direction: column;
@@ -666,11 +752,185 @@ svg {
     .ema615_11_su_0003 .page.page_1 .input_wrap .example_box {
         margin-top: -80px;
     }
+=======
+/* 0003 */
+.ema615_11_su_0003 .page .question_box {
+    flex-direction: column;
+    width: calc(1635px - 160px);
+    height: calc(468px - 64px - 64px);
+    /* padding: 20px 0px; */
+    /* background-color: rosybrown; */
+}
+
+.ema615_11_su_0003 .page h3 {
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615 {
+    /* width: 1635px; */
+    width: 100%;
+    /* height: 176px; */
+    /* height: 128px; */
+    height: 100%;
+    /* background-color: aquamarine; */
+    /* border: 1px solid orange; */
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615 .r1,
+.ema615_11_su_0003 .page.page_1 .container_615 .r2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615 .r1 {
+    /* background-color: cornflowerblue; */
+    height: 140px;
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615 .r2 {
+    /* background-color: royalblue; */
+}
+
+
+.ema615_11_su_0003 .page.page_1 .container_615 .table-container {
+    transform: scale(.5);
+    /* margin-top: -104px; */
+    margin-top: -86px;
+    /* display: none; */
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615 table {}
+
+.ema615_11_su_0003 .page.page_1 .container_615 .table-title {
+    margin-bottom: 32.71px;
+}
+
+.ema615_11_su_0003 .page.page_1 .question_box>.table-title {
+    position: relative;
+}
+
+.ema615_11_su_0003 .page.page_1 .question_box>.table-title>div {
+    position: absolute;
+    top: 0;
+    padding: 4px;
+}
+
+.ema615_11_su_0003 .page.page_1 .tt2 {
+    /* border: 1px solid red; */
+    width: 860px;
+    height: 88px;
+}
+
+
+/* .ema615_11_su_0003 .page.page_1 .picture_wrap {
+        transform: scale(1.1) translate(0px, 0px);
+    } */
+
+.ema615_11_su_0003 .page.page_1 .container_615-abs {
+    /* width: 800px;
+        height: 800px; */
+    background-color: rgba(0, 0, 0, .3);
+    /* top: -25px; */
+    /* top: -12px; */
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615-abs>div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 6px;
+
+    color: #000;
+
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+
+    /* border: 1px solid green; */
+}
+
+.ema615_11_su_0003 .page.page_1 .input_wrap math-field.textarea {
+    min-height: auto;
+    /* height: 60px; */
+    width: 714px;
+}
+
+.ema615_11_su_0003 .page.page_1 .d1 {
+    top: 605px;
+    left: 168px;
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615-abs>* {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.ema615_11_su_0003 .page.page_1 .container_615-abs>*::after {
+    content: "";
+    background-color: #3B71FE;
+    /* background-color: palevioletred; */
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    left: 36%;
+    z-index: 55;
+}
+
+.ema615_11_su_0003 .page.page_1 .d5::after {
+    top: unset;
+    bottom: -70px;
+    height: 70px;
+}
+
+.ema615_11_su_0003 .page.page_1 .d2 {
+    top: 605px;
+    left: 516px;
+}
+
+.ema615_11_su_0003 .page.page_1 .d3 {
+    top: 605px;
+    left: 881px
+}
+
+.ema615_11_su_0003 .page.page_1 .d4 {
+    top: 605px;
+    left: 1233px
+}
+
+.ema615_11_su_0003 .page.page_1 .d5 {
+    top: 409px;
+    left: 1272px;
+}
+
+.ema615_11_su_0003 .page.page_1 .title-abs {
+    position: absolute;
+    top: 407px;
+    left: 531px;
+}
+
+.ema615_11_su_0003 .page.page_1 .input_wrap .example_box {
+    margin-top: -80px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 
 
 
+<<<<<<< HEAD
     .ema615_11_su_0003 .page.page_2 .container_615 {
         /* width: 707px;
         height: 176px; */
@@ -766,12 +1026,110 @@ svg {
     .ema615_11_su_0003 .page.page_2 .input_wrap .example_box {
         margin-top: -80px;
     }
+=======
+.ema615_11_su_0003 .page.page_2 .container_615 {
+    /* width: 707px;
+        height: 176px; */
+    /* border: 1px solid blue; */
+    /* transform: scale(.5); */
+}
+
+.ema615_11_su_0003 .page.page_2 .container_615 .table-container {
+    transform: scale(.5);
+    /* margin-top: -104px; */
+    margin-left: -350px;
+    margin-top: 40px;
+    /* display: none; */
+    /* background-color: #3b71fe; */
+}
+
+.ema615_11_su_0003 .page.page_2 .container_615 .table-title {
+    margin-bottom: 12px;
+}
+
+.ema615_11_su_0003 .page.page_2 .picture_wrap svg {
+    transform: translate(-50%, -61%);
+}
+
+.ema615_11_su_0003 .page.page_2 .container_615-abs {
+    /* width: 800px;
+        height: 800px; */
+    background-color: rgba(0, 0, 0, .3);
+    top: -25px;
+    left: 80px;
+}
+
+.ema615_11_su_0003 .page.page_2 .container_615-abs>div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    color: #000;
+
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+
+    /* border: 1px solid green; */
+}
+
+.ema615_11_su_0003 .page.page_2 .d1 {
+    top: 580px;
+    left: 711px;
+}
+
+.ema615_11_su_0003 .page.page_2 .d2 {
+    top: 337px;
+    left: 627px;
+}
+
+.ema615_11_su_0003 .page.page_2 .d3 {
+    top: 359px;
+    left: 1255px;
+}
+
+.ema615_11_su_0003 .page.page_2 .d4 {
+    top: 495px;
+    left: 1255px;
+}
+
+.ema615_11_su_0003 .page.page_2 .d5 {
+    top: 590px;
+    left: 1255px;
+}
+
+.ema615_11_su_0003 .page.page_2 .r2 {
+    transform: scale(.6);
+    /* background-color: #0000ff; */
+    position: absolute;
+    top: 230px;
+    left: 900px;
+}
+
+.ema615_11_su_0003 .page.page_2 .title-abs {
+    position: absolute;
+    top: 216px;
+    left: 925px;
+}
+
+.ema615_11_su_0003 .page.page_2 .title-abs .input_wrap math-field.textarea {
+    min-height: unset;
+}
+
+.ema615_11_su_0003 .page.page_2 .input_wrap .example_box {
+    margin-top: -80px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 
 
 
 
+<<<<<<< HEAD
     /* 0004 */
     .ema615_11_su_0004 .container_615-abs {
         top: 460px;
@@ -781,3 +1139,14 @@ svg {
     .ema615_11_su_0004 .input_wrap math-field.textarea {
         min-height: auto;
     }
+=======
+/* 0004 */
+.ema615_11_su_0004 .container_615-abs {
+    top: 460px;
+    left: 100px;
+}
+
+.ema615_11_su_0004 .input_wrap math-field.textarea {
+    min-height: auto;
+}
+>>>>>>> b1dd6843 (초기 커밋)

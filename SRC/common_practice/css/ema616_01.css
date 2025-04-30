@@ -59,7 +59,10 @@
   background: url(../img/EMA511_01_IH/0002_line.svg) no-repeat center top / contain;
   transform: rotate(180deg);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 /* _layout.css 공통사항 수정 "이전에 배웠어요 수정내용 */
 
 .ema616_01_ih_0001 .title h2 .recap {
@@ -78,6 +81,7 @@
   color: #8e3a00;
 }
 
+<<<<<<< HEAD
 .ema616_01_ih_0001 .question_box .inout_box {
   /* border:1px solid;  */
   position: relative;
@@ -92,10 +96,29 @@
   top: 286px;
   left: 10px;
 }
+=======
+/* .ema616_01_ih_0001 .question_box .inout_box {
+  position: relative;
+} */
+.ema616_01_ih_0001 .question_box {
+  position: relative;
+}
+
+/* .ema616_01_ih_0001 .question_box .inout_box .to_out {
+  position: absolute;
+  width: 200px;
+} */
+
+/* .ema616_01_ih_0001 .question_box .inout_box span.to_out.firstbox {
+  top: 286px;
+  left: 10px;
+} */
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* .ema616_01_ih_0001  .question_box .inout_box div.input_wrap{
   border:1px solid;
 } */
+<<<<<<< HEAD
 .ema616_01_ih_0001 .question_box .inout_box span.to_out.firstbox span {
   padding-left: 12px;
 }
@@ -132,6 +155,59 @@
 .ema616_01_ih_0001 .question_box .inout_box .cm4 {
   top: 120px;
   right: 10px;
+=======
+/* .ema616_01_ih_0001 .question_box .inout_box span.to_out.firstbox span {
+  padding-left: 12px;
+} */
+/* .ema616_01_ih_0001 .question_box .inout_box .to_out.secondbox {
+  top: 286px;
+  right: 50px;
+} */
+
+/* .ema616_01_ih_0001 .question_box .inout_box span.to_out.secondbox span {
+  padding-left: 12px;
+} */
+
+.ema616_01_ih_0001 .box_cm .cm1,
+.ema616_01_ih_0001 .box_cm .cm2,
+.ema616_01_ih_0001 .box_cm .cm3,
+.ema616_01_ih_0001 .box_cm .cm4 {
+  position: absolute;
+  font-size: 24px;
+  color: #000;
+}
+
+.ema616_01_ih_0001 .box_cm .cm1 {
+  top: 80px;
+  /* left: 86px; */
+  left: calc(50% - 247px);
+}
+
+.ema616_01_ih_0001 .box_cm .cm2 {
+  top: 180px;
+  /* left: 250px; */
+  left: calc(50% - 90px);
+}
+.ema616_01_ih_0001 .box_cm .cm3 {
+  top: 25px;
+  right: calc(50% - 200px);
+}
+
+.ema616_01_ih_0001 .box_cm .cm4 {
+  top: 155px;
+  right: calc(50% - 325px);
+}
+.ema616_01_ih_0001 .input_field_wrap {
+  width: 45%;
+  margin: auto;
+}
+.ema616_01_ih_0001 .input_field_wrap > div {
+  column-gap: 12px;
+}
+.ema616_01_ih_0001 .input_field_wrap .in_flex:nth-child(2) {
+  position: relative;
+  left: 13px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema616_01_ih_0001 section span.title_sub_me {
@@ -164,13 +240,23 @@
 
 .ema616_01_ih_0002 .question_box {
   width: 100%;
+<<<<<<< HEAD
   height: 700px;
+=======
+  /* height: 700px; */
+  height: auto;
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
 }
 .ema616_01_ih_0002 .question_box .inout_box {
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD
   height: 270px;
+=======
+  /* height: 270px; */
+  height: 350px;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 700px;
   background: url(../img/EMA616_01_IH/616_01_02.png) no-repeat;
   position: relative;
@@ -267,7 +353,11 @@
   gap: 60px;
 }
 
+<<<<<<< HEAD
 .ema616_01_ih_0001 .inout_box .to_out {
+=======
+/* .ema616_01_ih_0001 .inout_box .to_out {
+>>>>>>> b1dd6843 (초기 커밋)
   text-align: left;
 }
 .ema616_01_ih_0001 .question_box .to_out {
@@ -277,7 +367,11 @@
 }
 .ema616_01_ih_0001 .question_box .to_out span {
   padding-left: 10px;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ### ema616_01_ih_02 수정 */
 

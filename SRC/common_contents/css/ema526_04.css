@@ -460,7 +460,11 @@
 }
 
 .ema526_04_su_0005 .page_1 .table_box {
+<<<<<<< HEAD
   gap: 10px;
+=======
+  gap: 5px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema526_04_su_0005 .page_1 .table_box1 {
@@ -506,6 +510,7 @@
 }
 
 .ema526_04_su_0005 .page_1 > .input_wrap {
+<<<<<<< HEAD
   width: 1208px;
   margin-top: 20px;
   position: relative;
@@ -516,6 +521,17 @@
 .ema526_04_su_0005 .page_1 > .input_wrap math-field.textarea {
   height: 70px;
   min-height: 70px;
+=======
+  display: flex;
+  width: 1208px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.ema526_04_su_0005 .page_1 > .input_wrap math-field.textarea {
+  height: 75px;
+  min-height: 75px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* page_2, page_4 */
@@ -681,6 +697,7 @@
   min-height: 149px;
 }
 
+<<<<<<< HEAD
 
 .ema526_04_su_0005:not([data-current-page='page_3']) .btn_area .btnSubmit[data-submit='true'],
 .ema526_04_su_0005:not([data-current-page='page_1']) .btn_area .btnSubmit:not([data-submit='true']),
@@ -691,3 +708,9 @@
 
 
 /*EMA526_04_SU_0006_s*/
+=======
+.ema526_04_su_0005:not([data-current-page='page_1']) .btn_area .btnSubmit:not([data-submit='true']),
+.ema526_04_su_0005[data-current-page='page_1'] .btn_area .btnCheck {
+  display: none !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)

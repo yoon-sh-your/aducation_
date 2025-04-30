@@ -6,6 +6,7 @@
 }
 
 
+<<<<<<< HEAD
 /* 약속해볼까요 */
 .summarize {
   align-items: center;
@@ -48,6 +49,8 @@
 
 
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 /* EMA521_05_SU_0002_s */
 .ema521_05_su_0002 .contents > .flex .video_wrap {
   background: url(../../common_contents/img/EMA521_05_SU/0002_contents.png) no-repeat -10px -10px;
@@ -122,9 +125,29 @@
   height: 80%;
   background-color: #9E9E9E;
 }
+<<<<<<< HEAD
 .summarize > .check_up .reveal_btn.num_txt:not(:disabled):after {
   bottom: 20px;
 }
+=======
+.summarize > .check_up [class*="num_txt_"]:not(:disabled):after{
+  bottom: 16px;
+}
+.summarize > .check_up .reveal_btn[class*="num_txt_"] > span {
+  display: flex;
+  align-items: center;
+  width: 212px;
+  height: 106px;
+}
+.ema521_05_su_0003 .num_txt_01 > span {
+  background: url(../../common_contents/img/EMA521_05_SU/0003_check_answer_01.png) no-repeat 50% 50% / 212px;
+}
+.ema521_05_su_0003 .num_txt_02 > span {
+  background: url(../../common_contents/img/EMA521_05_SU/0003_check_answer_02.png) no-repeat 50% 50% / 212px;
+}
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema521_05_su_0003 .page_1 .talk_txt {
   background: url(../../common_contents/img/EMA521_05_SU/0003_bg_content_01.png) no-repeat left top / 100%;
 }
@@ -139,6 +162,12 @@
   top: 93px;
   left: 250px;
 } 
+<<<<<<< HEAD
+=======
+.ema521_05_su_0003 .page_3  .develope_box_full .input_wrap math-field.textarea {
+  height: 180px;
+} 
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema521_05_su_0003 .btnSubmit {
   display: none;
@@ -209,6 +238,7 @@
 }
 .character-box {
   position: absolute;
+<<<<<<< HEAD
   top: 62px;
   right: 150px;
   width: 400px;
@@ -216,6 +246,15 @@
 }
 .character-box > p {
   width: 285px;
+=======
+  top: 85px;
+  right: 190px;
+  width: 316px;
+  background: url(../../common_contents/img/EMA521_05_SU/ico_white_bird.png) no-repeat center right / 140px;
+}
+.character-box > p {
+  width: 210px;
+>>>>>>> b1dd6843 (초기 커밋)
   text-align: center;
 }
 .ema521_05_su_0005 .develope_box {

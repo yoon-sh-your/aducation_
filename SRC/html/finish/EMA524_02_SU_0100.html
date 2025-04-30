@@ -15,17 +15,43 @@
     <script type="module" src="../../common_finish/common/js/main.js"></script>
   </head>
   <style>
+<<<<<<< HEAD
+=======
+    #q1 .qe_area > .flex {
+      align-items: flex-start;
+      padding-left: 100px;
+    }
+>>>>>>> b1dd6843 (초기 커밋)
     #q1 .qe_area .ans {
       width: 100px;
     }
 
     #q2 .qe {
       flex-direction: column;
+<<<<<<< HEAD
+=======
+      margin-top: 70px;
+>>>>>>> b1dd6843 (초기 커밋)
     }
 
     #q2 .qe img {
       margin-bottom: 50px;
     }
+<<<<<<< HEAD
+=======
+
+    #q5 .qe_area {
+      align-items: flex-start;
+      margin-top: 50px;
+      padding-left: 160px;
+    }
+    #q5 .qe_area .t-box {
+      display: flex !important;
+    }
+    #q5 .mt50 {
+      margin-top: 50px;
+    }
+>>>>>>> b1dd6843 (초기 커밋)
   </style>
   <body>
     <div id="scaleWrapper">
@@ -77,6 +103,7 @@
                 <span lang="y" class="txt">빈칸 안에 알맞은 수를 써 보세요. </span>
               </div>
               <div class="qe_area center">
+<<<<<<< HEAD
                 <div class="t-box">
                   (1) 0.6 + 0.6 = 0.6 ×
                   <div class="ans">
@@ -94,6 +121,27 @@
                     </div>
                     = 1.2
                   </div>
+=======
+                <div class="flex col gap30">
+                  <div class="t-box">
+                    (1) 0.6 + 0.6 = 0.6 ×
+                    <div class="ans">
+                      <label for="answer1-1" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="text" id="answer1-1" class="answer answer1-1 active" readonly />
+                    </div>
+                    = 1.2
+                  </div>
+                  <div class="ans_wrap">
+                    <div class="t-box">
+                      (2) 0.4 + 0.4 + 0.4 = 0.4 ×
+                      <div class="ans">
+                        <label for="answer1-2" class="sr-only">두 번째 정답 입력</label>
+                        <input type="text" id="answer1-2" class="answer answer1-2" readonly />
+                      </div>
+                      = 1.2
+                    </div>
+                  </div>
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
               </div>
             </div>
@@ -284,7 +332,11 @@
                 <span lang="y" class="q-num">문제</span>
                 <span lang="y" class="txt">물음에 답하세요.</span>
               </div>
+<<<<<<< HEAD
               <div class="qe_area">
+=======
+              <div class="qe_area center">
+>>>>>>> b1dd6843 (초기 커밋)
                 <div class="t-box">
                   (1) 덧셈식으로 나타내어 보세요. 0.8+0.8+0.8=
                   <div class="ans">
@@ -292,6 +344,7 @@
                     <input type="text" id="answer5-1" class="answer answer5-1 active" readonly />
                   </div>
                 </div>
+<<<<<<< HEAD
                 <div class="t-box">
                   (2) 곱셈식으로 나타내어 보세요. 0.8×
                   <div class="ans">
@@ -309,6 +362,29 @@
                   <div class="ans">
                     <label for="answer5-4" class="sr-only">두 번째 정답 입력</label>
                     <input type="text" id="answer5-4" class="answer answer5-4 active" readonly />
+=======
+                <div class="ans_wrap">
+                  <div class="t-box">
+                    (2) 곱셈식으로 나타내어 보세요. 0.8×
+                    <div class="ans">
+                      <label for="answer5-2" class="sr-only">두 번째 정답 입력</label>
+                      <input type="text" id="answer5-2" class="answer answer5-2 active" readonly />
+                    </div>
+                    =
+                    <div class="ans">
+                      <label for="answer5-3" class="sr-only">두 번째 정답 입력</label>
+                      <input type="text" id="answer5-3" class="answer answer5-3 active" readonly />
+                    </div>
+                  </div>
+                </div>
+                <div class="ans_wrap mt50">
+                  <div class="t-box">
+                    (3) 0.8씩 3이면 얼마인가요?
+                    <div class="ans">
+                      <label for="answer5-4" class="sr-only">두 번째 정답 입력</label>
+                      <input type="text" id="answer5-4" class="answer answer5-4 active" readonly />
+                    </div>
+>>>>>>> b1dd6843 (초기 커밋)
                   </div>
                 </div>
               </div>
@@ -371,7 +447,11 @@
       window.questionTypes = [1, 4, 1, 1, 1];
       window.correctAnswers = {
         1: [2, 3],
+<<<<<<< HEAD
         2: ["item1"],
+=======
+        2: ['item1'],
+>>>>>>> b1dd6843 (초기 커밋)
         3: [9.1],
         4: [9, 45, 4.5],
         5: [2.4, 3, 2.4, 2.4],

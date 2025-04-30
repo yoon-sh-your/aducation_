@@ -318,6 +318,7 @@ section.contents.paging_layout {
 
 .ema615_06_su_0004 .boolean_wrap.b1 button:nth-child(1) {
     top: 117px;
+<<<<<<< HEAD
     left: 263px;
 }
 .ema615_06_su_0004 .boolean_wrap.b1 button:nth-child(2) {
@@ -335,14 +336,38 @@ section.contents.paging_layout {
 .ema615_06_su_0004 .boolean_wrap.b2 button:nth-child(2) {
     top: 236px;
     left: 603px;
+=======
+    left: 271px;
+}
+.ema615_06_su_0004 .boolean_wrap.b1 button:nth-child(2) {
+    top: 218px;
+    left: 148px;
+}
+.ema615_06_su_0004 .boolean_wrap.b1 button:nth-child(3) {
+    top: 238px;
+    left: 242px;
+}
+.ema615_06_su_0004 .boolean_wrap.b2 button:nth-child(1) {
+    top: 118px;
+    left: 643px;
+}
+.ema615_06_su_0004 .boolean_wrap.b2 button:nth-child(2) {
+    top: 243px;
+    left: 604px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema615_06_su_0004 .boolean_wrap.b2 button:nth-child(3) {
     top: 199px;
     left: 507px;
 }
 .ema615_06_su_0004 .boolean_wrap.b2 button:nth-child(4) {
+<<<<<<< HEAD
     top: 106px;
     left: 522px;
+=======
+    top: 111px;
+    left: 527px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .boolean_wrap button[data-answer-single="false"].hint {
     border-color: black;
@@ -454,6 +479,13 @@ section.contents.paging_layout {
     /* height: 100%; */
 }
 
+<<<<<<< HEAD
+=======
+.ema615_06_su_0005 .container_615-col>div.d4 {
+    /* po */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema615_06_su_0005 .d1 .custom_select {
     width: 210px;
 }
@@ -474,30 +506,54 @@ section.contents.paging_layout {
 } */
 
 .ema615_06_su_0005 .input_wrap math-field.textarea {
+<<<<<<< HEAD
     min-width: auto;
     min-height: auto;
     width: 236px;
     height: 60px;
     padding: 0px 20px;
 }
+=======
+    /* min-width: auto; */
+    min-height: auto;
+    /* width: 236px; */
+    height: 80px !important;
+    /* padding: 0px 20px; */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema615_06_su_0005 math-field::part(placeholder) {
     background-position: left top;
 }
 
 .ema615_06_su_0005 .example_box {
     /* border: 2px solid red; */
+<<<<<<< HEAD
     position: absolute;
+=======
+    /* position: absolute;
+>>>>>>> b1dd6843 (초기 커밋)
     top: -24%;
     left: calc(100% + 12px);
     width: auto;
     height: 60px;
     padding: 5px 24px 24px 82px;
+<<<<<<< HEAD
     overflow: hidden;
+=======
+    overflow: hidden; */
+
+    margin-top: -80px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 
 .ema615_06_su_0005 .input_wrap .example_box::before {
+<<<<<<< HEAD
     top: 7px;
+=======
+    /* top: 7px; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema615_06_su_0005 .d3 .input_wrap {

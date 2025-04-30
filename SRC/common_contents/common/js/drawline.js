@@ -463,6 +463,21 @@ document.querySelectorAll(".btn_area .btnReset").forEach(resetButton => {
           // 모든 버튼의 active 클래스 제거
         }
       });
+<<<<<<< HEAD
+=======
+
+      // connect_wrap 요소 리셋 로직 추가
+      document.querySelectorAll(".connect_wrap").forEach(connectWrap => {
+        if (!pagenation.activePage.contains(connectWrap)) return;
+
+        const resetFunc = connectWrap.__resetConnectWrap__;
+        if (typeof resetFunc === "function") {
+          resetFunc();
+        }
+      });
+
+      forceWatchEvaluation(); // connect_wrap 리셋 후에도 호출
+>>>>>>> b1dd6843 (초기 커밋)
     });
 
 
@@ -844,6 +859,35 @@ document.querySelectorAll('.connect_wrap').forEach(wrap => {
       // console.error("Error parsing initial connections for connect_wrap:", e);
   }
 
+<<<<<<< HEAD
+=======
+  // --- 리셋 함수 추가 --- 
+  function resetConnectWrap() {
+    // SVG 내용 비우기
+    svg.innerHTML = '';
+    // 연결 정보 초기화
+    connections.clear();
+    // 선택된 점 초기화
+    if (firstClickedDot) {
+      firstClickedDot.classList.remove('selected');
+      firstClickedDot = null;
+    }
+    // 모든 점의 연결 상태 클래스 제거
+    points.forEach(p => p.classList.remove('connected', 'selected'));
+    // 임시 라인 제거 (만약 존재하고 DOM에 있다면)
+    if (tempLine && svg.contains(tempLine)) {
+      tempLine.remove();
+      tempLine = null;
+    }
+    // 데이터셋 업데이트 및 이벤트 발생
+    updateConnectionData();
+  }
+
+  // wrap 요소에 리셋 함수 저장
+  wrap.__resetConnectWrap__ = resetConnectWrap;
+  // --- 리셋 함수 추가 끝 --- 
+
+>>>>>>> b1dd6843 (초기 커밋)
 });
 
 function drawAnswerConnections(connectWrap) {

@@ -1,4 +1,5 @@
 /* ema622_04_su_0002 */
+<<<<<<< HEAD
 .ema622_04_su_0002 .video_wrap {
   width: 812px;
   height: 428px;
@@ -23,6 +24,8 @@
   height: calc(290px - 8px);
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema622_04_su_0002 .video_wrap img,
 .ema622_04_su_0002 .video_wrap svg {
   transform: scale(.7) translate(-70%, -70%);
@@ -88,6 +91,7 @@
 }
 
 .ema622_04_su_0003 .page_2 .input_wrap math-field.textarea {
+<<<<<<< HEAD
    height: calc(242px - 8px - 8px - 8px);
 }
 
@@ -97,6 +101,17 @@
 
 .ema622_04_su_0003 .page_9 .input_wrap math-field.textarea {
   height: calc(330px - 8px - 8px - 8px);
+=======
+  height: calc(242px - 8px - 8px - 8px - 8px - 8px - 8px);
+}
+
+.ema622_04_su_0003 .page_3 .input_wrap math-field.textarea {
+  height: calc(338px - 8px - 8px - 8px - 8px - 8px - 8px);
+}
+
+.ema622_04_su_0003 .page_9 .input_wrap math-field.textarea {
+  height: calc(330px - 8px - 8px - 8px - 8px - 8px - 8px);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* .ema622_04_su_0003[data-current-page='page_3'] .picture_wrap {
@@ -154,6 +169,7 @@ section.contents.paging_layout {
 
 .ema622_04_su_0003 .page_4 .question_box {
   width: calc(1635px - 160px);
+<<<<<<< HEAD
   /* border: 1px solid green; */
 }
 
@@ -272,6 +288,35 @@ section.contents.paging_layout {
   top: 146px;
   left: 346px;
 }
+=======
+}
+
+.ema622_04_su_0003 .page_4 .container {
+  width: 1178px;
+  height: 221px;
+  flex-shrink: 0;
+
+  background-image: url(../img/EMA622_04_SU/0003_p4_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  position: relative;
+}
+
+.ema622_04_su_0003 .page_4 .i1 {
+  position: absolute;
+  top: 74px;
+  left: 570.5px;
+}
+
+.ema622_04_su_0003 .page_4 .i2 {
+  position: absolute;
+  top: 74px;
+  right: 109.5px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 
@@ -285,12 +330,86 @@ section.contents.paging_layout {
   height: 434px;
   flex-shrink: 0;
 
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 63px;
   align-items: center;
 
   background-color: #eee;
+=======
+  background-color: #fff;
+  background: url(../img/EMA622_04_SU/0003_p5_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* border: 2px solid tomato; */
+
+  position: relative;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck.lc1 {
+  position: absolute;
+  bottom: 25px;
+  left: 29px;
+  padding-top: 0;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck.lc2 {
+  position: absolute;
+  bottom: 25px;
+  left: 472px;
+  padding-top: 0;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck .cover {
+  background-color: #E1F2EC;
+  border: none;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck li {
+  /* border: 2px solid coral; */
+  height: 143px;
+  white-space: normal;
+  background-color: transparent;
+  border: none;
+  /* border: 1px solid rgba(0, 0, 0, .3); */
+}
+
+.ema622_04_su_0003 .page_5 .letCheck .front {
+  background-color: transparent;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck li>div>p {
+  color: var(--Secondary-Text-Gray-900, #222);
+  text-align: center;
+  
+  /* Caption/Caption_01_REGULAR */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.5px;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck.lc1 li:nth-child(1) {
+  min-width: auto;
+  width: 175px;
+  height: 155px;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck.lc1 li:nth-child(2) {
+  width: 212px;
+  height: 155px;
+}
+
+.ema622_04_su_0003 .page_5 .letCheck.lc2 li:nth-child(1) {
+  min-width: auto;
+  width: 175px;
+  height: 155px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 
@@ -301,6 +420,7 @@ section.contents.paging_layout {
 
 .ema622_04_su_0003 .page_6 .question_box {
   width: calc(1635px - 160px);
+<<<<<<< HEAD
   /* border: 1px solid green; */
 }
 
@@ -422,6 +542,35 @@ section.contents.paging_layout {
 
 
 
+=======
+}
+
+.ema622_04_su_0003 .page_6 .container {
+  width: 1179px;
+  height: 225px;
+  flex-shrink: 0;
+
+  background-image: url(../img/EMA622_04_SU/0003_p6_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  position: relative;
+}
+
+.ema622_04_su_0003 .page_6 .i1 {
+  position: absolute;
+  top: 74px;
+  left: 589.5px;
+}
+
+.ema622_04_su_0003 .page_6 .i2 {
+  position: absolute;
+  top: 74px;
+  right: 148.5px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 
@@ -437,12 +586,86 @@ section.contents.paging_layout {
   height: 434px;
   flex-shrink: 0;
 
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 63px;
   align-items: center;
 
   background-color: #eee;
+=======
+  background-color: #fff;
+  background: url(../img/EMA622_04_SU/0003_p7_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* border: 2px solid tomato; */
+
+  position: relative;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck.lc1 {
+  position: absolute;
+  bottom: 25px;
+  left: 28px;
+  padding-top: 0;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck.lc2 {
+  position: absolute;
+  bottom: 25px;
+  left: 500px;
+  padding-top: 0;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck .cover {
+  background-color: #E1F2EC;
+  /* background-color: rgba(255, 0, 0, .3); */
+  border: none;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck li {
+  /* border: 2px solid coral; */
+  height: 143px;
+  white-space: normal;
+  background-color: transparent;
+  border: none;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck .front {
+  background-color: transparent;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck li>div>p {
+  color: var(--Secondary-Text-Gray-900, #222);
+  text-align: center;
+  
+  /* Caption/Caption_01_REGULAR */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.5px;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck.lc1 li:nth-child(1) {
+  min-width: auto;
+  width: 186px;
+  height: 151px;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck.lc1 li:nth-child(2) {
+  width: 235px;
+  height: 151px;
+}
+
+.ema622_04_su_0003 .page_7 .letCheck.lc2 li:nth-child(1) {
+  min-width: auto;
+  width: 156px;
+  height: 151px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 
@@ -457,7 +680,11 @@ section.contents.paging_layout {
   justify-content: center;
   align-items: center;
   gap: 52px;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
   width: 709px;
 
   position: absolute;
@@ -490,7 +717,11 @@ section.contents.paging_layout {
   justify-content: center;
   align-items: center;
   gap: 52px;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
   width: 709px;
 
   position: absolute;
@@ -573,6 +804,7 @@ section.contents.paging_layout {
 
 
 
+<<<<<<< HEAD
 .ema622_04_su_0004 .question_box {
   width: calc(1635px - 160px);
 }
@@ -591,26 +823,41 @@ section.contents.paging_layout {
 .ema622_04_su_0004 .page_3 .input_wrap math-field.textarea {
   width: 1208px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 
 
 
 
+<<<<<<< HEAD
 
 .ema622_04_su_0005 .question_box.justify_center {
+=======
+.ema622_04_su_0004 .question_box.justify_center {
+>>>>>>> b1dd6843 (초기 커밋)
   width: 100%;
   padding-top: 18px;
 }
 
+<<<<<<< HEAD
 .ema622_04_su_0005 .container {
+=======
+.ema622_04_su_0004 .container {
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   flex-direction: column;
   gap: 120px;
 }
 
+<<<<<<< HEAD
 .ema622_04_su_0005 .container .r1,
 .ema622_04_su_0005 .container .r2 {
+=======
+.ema622_04_su_0004 .container .r1,
+.ema622_04_su_0004 .container .r2 {
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   gap: 240px;
 }
@@ -623,6 +870,7 @@ section.contents.paging_layout {
 
 
 
+<<<<<<< HEAD
 /* 
 tspan[lang="y"] {
     fill: red;
@@ -632,4 +880,15 @@ tspan[lang="y"] {
 *[lang="y"] {
     color: green !important;
     font-weight: bold;
+=======
+
+/* tspan[lang="y"] {
+  fill: red;
+  font-weight: bold;
+}
+
+*[lang="y"] {
+  color: green !important;
+  font-weight: bold;
+>>>>>>> b1dd6843 (초기 커밋)
 } */

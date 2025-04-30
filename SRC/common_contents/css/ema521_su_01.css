@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 .title h2 .blue {
   color: rgba(59, 113, 254, 1);
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 
 
 /* EMA521_01_SU_0001_s */
@@ -13,6 +16,7 @@
 
 
 /* EMA521_01_SU_0003_s */
+<<<<<<< HEAD
 .ema521_01_su_0003 .letCheck li {
   width: calc((100% - 24px) / 3);
 }
@@ -28,6 +32,21 @@
 .ema521_01_su_0004 .contents > .flex .video_wrap {
   background: url(../../common_contents/img/EMA521_01_SU/0004_content.png) no-repeat -10px -10px;
   background-size: 110%;
+=======
+.ema521_01_su_0003 .contents .letCheck li:nth-child(2) .back {
+  flex-direction: column;
+}
+.ema521_01_su_0003 .contents .letCheck li:nth-child(2) .back img {
+  height: 115px;
+}
+
+
+
+/* EMA521_00_SU_0004_s */
+.ema521_01_su_0004 .contents > .flex .video_wrap {
+  background: url(../../common_contents/img/EMA521_01_SU/0004_content.png) no-repeat left top;
+  background-size: 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 

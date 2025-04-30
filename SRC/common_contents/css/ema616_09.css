@@ -122,12 +122,20 @@
 .ema616_09_su_0003 .btn.calculator {
   position: absolute;
   top: 62px;
+<<<<<<< HEAD
   left: 212px;
+=======
+  left: 221px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_09_su_0004 .btn.calculator {
   position: absolute;
   top: 62px;
+<<<<<<< HEAD
   left: 305px;
+=======
+  left: 313px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .border1::before,
@@ -205,8 +213,13 @@
 }
 .ema616_09_su_0003 .length_d {
   position: absolute;
+<<<<<<< HEAD
   top: 198px;
   right: 90px;
+=======
+  top: 201px;
+  right: 101px;
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 32px;
   font-weight: 700;
 }
@@ -218,6 +231,17 @@
   font-weight: 700;
 }
 
+<<<<<<< HEAD
+=======
+.ema616_09_su_0003 .length_f {
+  position: absolute;
+  top: 216px;
+  left: 283px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 가 위치 (좌측 위 상자 위쪽 중앙) */
 .ema616_09_su_0003 .page_1 .border3::before {
   content: "가";
@@ -271,7 +295,11 @@
 .ema616_09_su_0003 .page_1 .border4::before {
   content: "나";
   top: 25px;
+<<<<<<< HEAD
   left: 332px;
+=======
+  left: 360px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_09_su_0003 .page_2 .border4::before {
   content: "나";
@@ -281,18 +309,30 @@
 .ema616_09_su_0003 .page_3 .border4::before {
   content: "나";
   top: 25px;
+<<<<<<< HEAD
   left: 440px;
+=======
+  left: 360px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_09_su_0003 .page_4 .border4::before {
   content: "나";
   top: 25px;
+<<<<<<< HEAD
   left: 440px;
+=======
+  left: 360px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema616_09_su_0003 .page_5 .border4::before {
   content: "나";
   top: 25px;
+<<<<<<< HEAD
   left: 440px;
+=======
+  left: 360px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema616_09_su_0004 .page_1 .border4::before {
@@ -397,6 +437,41 @@
 
 .ema616_09_su_0003 .page_2 .flex {
   justify-content: center;
+<<<<<<< HEAD
+=======
+  gap: 50px;
+}
+
+.ema616_09_su_0003 .page_2 .unit1 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.95px; /* 150% */
+  letter-spacing: -0.999px;
+  position: absolute;
+  top: 392px;
+  left: 284px;
+}
+.ema616_09_su_0003 .page_2 .unit2 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.95px; /* 150% */
+  letter-spacing: -0.999px;
+  position: absolute;
+  top: 281px;
+  left: 439px;
+}
+.ema616_09_su_0003 .page_2 .unit3 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.95px; /* 150% */
+  letter-spacing: -0.999px;
+  position: absolute;
+  top: 348px;
+  left: 419px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* 가 위치 (좌측 위 상자 위쪽 중앙) */
@@ -410,7 +485,11 @@
 .ema616_09_su_0003 .page_2 .border4::before {
   content: "나";
   top: 9px;
+<<<<<<< HEAD
   left: 440px;
+=======
+  left: 495px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema616_09_su_0003 .page_2 .answer1 {
@@ -608,8 +687,13 @@
 
 .ema616_09_su_0004 .page_1 .answer1 {
   position: absolute;
+<<<<<<< HEAD
   top: 270px;
   left: 170px;
+=======
+  top: 274px;
+  left: 183px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_09_su_0004 .page_1 .answer2 {
   position: absolute;
@@ -629,7 +713,11 @@
 .ema616_09_su_0004 .page_1 .answer5 {
   position: absolute;
   top: 280px;
+<<<<<<< HEAD
   right: 276px;
+=======
+  right: 265px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_09_su_0004 .page_1 .answer6 {
   position: absolute;

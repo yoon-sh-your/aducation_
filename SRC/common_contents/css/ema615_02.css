@@ -60,8 +60,17 @@
 
 .ema615_02_su_0003 .picture_wrap img,
 .ema615_02_su_0003 .picture_wrap svg {
+<<<<<<< HEAD
     /* transform: scale() translate(-70%, -70%); */
     /* height: 100%; */
+=======
+    /* transform: scale(1) translate(-70%, -70%); */
+    height: 100%;
+}
+
+.ema615_02_su_0003 .picture_wrap img {
+    object-fit: contain;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* picture_wrap 가리는 페이지 */
@@ -261,9 +270,14 @@ section.contents.paging_layout {
 }
 
 .ema615_02_su_0004 .page_4 .input_wrap math-field.textarea {
+<<<<<<< HEAD
     min-height: unset;
     height: 100px;
     min-width: auto;
+=======
+    /* min-height: unset; */
+    height: calc(271px - 8px - 8px - 8px);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 

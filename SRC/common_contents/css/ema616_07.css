@@ -31,6 +31,13 @@
   height: 40px;
 }
 
+<<<<<<< HEAD
+=======
+.ema616_07_su_0003 .page_4 .img_area {
+  position: relative;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema616_07_su_0003 .bottom_img {
   position: relative;
 }
@@ -88,8 +95,13 @@ math-field::part(content) {
 }
 
 .ema616_07_su_0003 .page_4 .bottom_wrap {
+<<<<<<< HEAD
   top: 88px;
   right: 83px;
+=======
+  top: 159px;
+  right: 49px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* ema616_07_su_0004 */
@@ -146,7 +158,11 @@ math-field::part(content) {
   gap: 0;
   position: absolute;
   top: 87px;
+<<<<<<< HEAD
   left: 182px;
+=======
+  left: 205px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .container span {
   font-size: 24px;
@@ -205,7 +221,11 @@ math-field::part(content) {
   padding: 20px;
   position: absolute;
   top: 135px;
+<<<<<<< HEAD
   left: 177px;
+=======
+  left: 202px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* .ema616_07_su_0004 .page_2 .input_wrap {
@@ -281,7 +301,11 @@ math-field::part(content) {
   gap: 0;
   position: absolute;
   top: 159px;
+<<<<<<< HEAD
   left: 180px;
+=======
+  left: 205px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_07_su_0004 .page_2 .input_box {
   display: flex;
@@ -313,7 +337,11 @@ math-field::part(content) {
   gap: 10px;
   position: absolute;
   top: 256px;
+<<<<<<< HEAD
   left: 186px;
+=======
+  left: 205px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_07_su_0004 .page_2 .input_box2 {
   display: flex;
@@ -447,7 +475,11 @@ math-field::part(content) {
 
 .ema616_07_su_0004 .page_4 .input_wrap math-field.textarea {
   width: 1208px;
+<<<<<<< HEAD
   height: 90px;
+=======
+  /* height: 142px; */
+>>>>>>> b1dd6843 (초기 커밋)
   min-height: 96px;
   margin-top: 20px;
 }

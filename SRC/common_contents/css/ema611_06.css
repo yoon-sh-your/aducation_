@@ -292,6 +292,7 @@ h4 {
   gap: 4px;
 }
 
+<<<<<<< HEAD
 .ema611_06_su_0003 .page_5 .text_box .input_area > span {
   font-weight: 700;
   font-size: 32px;
@@ -300,6 +301,16 @@ h4 {
 }
 
 .ema611_06_su_0003 .page_5 .text_box .input_area > .fraction_box > span {
+=======
+.ema611_06_su_0003 .page_5 .text_box .input_area span {
+  font-weight: 700;
+  font-size: 32px;
+  /* line-height: 48px; */
+  letter-spacing: -1px;
+}
+
+.ema611_06_su_0003 .page_5 .text_box .input_area .fraction_box span {
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 32px;
 }
 
@@ -402,7 +413,12 @@ h4 {
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .ema611_06_su_0004 .page:not(.page_3) .input_area .equation > span {
+=======
+.ema611_06_su_0004 .page:not(.page_3) .input_area .equation > span,
+.ema611_06_su_0004 .page:not(.page_3) .input_area .mixed_fraction span {
+>>>>>>> b1dd6843 (초기 커밋)
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
@@ -461,10 +477,17 @@ h4 {
   gap: 4px;
 }
 
+<<<<<<< HEAD
 .ema611_06_su_0005 .question_box .quiz > span {
   font-weight: 700;
   font-size: 32px;
   line-height: 60px;
+=======
+.ema611_06_su_0005 .question_box .quiz > span,
+.ema611_06_su_0005 .question_box .quiz .mixed_fraction span {
+  font-weight: 700;
+  font-size: 32px;
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -1px;
 }
 
@@ -480,6 +503,14 @@ h4 {
   width: 197px;
 }
 
+<<<<<<< HEAD
+=======
+.ema611_06_su_0006 .contents .input_area {
+  display: flex;
+  align-items: center;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema611_06_su_0006 .contents .input_area > span {
   padding-left: 8px;
   font-weight: 700;

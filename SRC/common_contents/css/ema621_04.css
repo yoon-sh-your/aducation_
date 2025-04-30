@@ -116,6 +116,12 @@
 .ema621_04_su_0003 .page_3 .question_box {
   gap: 8px;
 }
+<<<<<<< HEAD
+=======
+.ema621_04_su_0003 .page_3 .input_wrap math-field {
+  width: 140px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* .ema621_04_su_0004 */
 .ema621_04_su_0004:not([data-current-page="page_2"]) .btn_area .btnCheck,
 .ema621_04_su_0004[data-current-page="page_2"] .btn_area .btnSubmit {
@@ -176,11 +182,15 @@
 }
 
 /* ema621_04_su_0006 */
+<<<<<<< HEAD
 .ema621_04_su_0006 .fraction_row {
   line-height: 1;
 }
 .ema621_04_su_0006 .fraction_inn {
   display: flex;
+=======
+.ema621_04_su_0006 h2 {
+>>>>>>> b1dd6843 (초기 커밋)
   align-items: center;
 }
 .ema621_04_su_0006 .question_box {

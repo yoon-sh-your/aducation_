@@ -32,6 +32,7 @@
     #q3 .qe_area .ans {
       width: 150px;
     }
+<<<<<<< HEAD
 
     #q3 .qe_area .t-box {
       display: flex !important;
@@ -39,6 +40,22 @@
     #q4 .qe_area {
       align-items: flex-start;
       padding-left: 160px;
+=======
+    #q3 .frac_ans {
+      position: relative;
+      top: 0;
+    }
+    #q3 .frac_ans hr {
+      margin: 0;
+    }
+
+    #q4 .qe_area {
+      align-items: flex-start;
+      padding-left: 140px;
+      gap: 30px;
+      position: relative;
+      top: -20px;
+>>>>>>> b1dd6843 (초기 커밋)
     }
     #q4 .qe_area .t-box {
       display: flex !important;
@@ -106,7 +123,11 @@
                     <label for="answer1-1" class="sr-only">첫 번째 정답 입력</label>
                     <input type="text" id="answer1-1" class="answer answer1-1 active" readonly />
                   </div>
+<<<<<<< HEAD
                   <span class="exp ga">초</span>
+=======
+                  <span class="exp ga">초,</span>
+>>>>>>> b1dd6843 (초기 커밋)
                   <div class="ans">
                     <label for="answer1-2" class="sr-only">두 번째 정답 입력</label>
                     <input type="text" id="answer1-2" class="answer answer1-2" readonly />
@@ -194,6 +215,7 @@
                 <span lang="y" class="txt">자료의 값을 모두 더해 자료의 수로 나눈 값을 무엇이라고 하는지 빈칸 안에 알맞은 말을 써 보세요.</span>
               </div>
               <div class="qe_area">
+<<<<<<< HEAD
                 <div class="ans_wrap">
                   <div class="frac_ans center">
                     <div class="ans">
@@ -202,6 +224,20 @@
                     </div>
                   </div>
                   <div class="t-box center">=&nbsp; $$\frac{'자료의 값을 모두 더한 수'}{자료의 수}$$</div>
+=======
+                <div class="ans_wrap flex gap0">
+                  <div class="ans">
+                    <label for="answer3" class="sr-only">첫 번째 정답 입력</label>
+                    <input type="text" id="answer3" readonly class="answer answer3 active" />
+                  </div>
+                  <div class="t-box center">
+                    =<span class="frac_ans">
+                      자료의 값을 모두 더한 수
+                      <hr />
+                      자료의 수
+                    </span>
+                  </div>
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
               </div>
             </div>
@@ -210,7 +246,11 @@
                 <p lang="y" class="calc_tit">정답</p>
                 <div class="calc_result">
                   <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+<<<<<<< HEAD
                   <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+=======
+                  <input type="text" class="calc_result_input" inputmode="decimal" aria-live="polite" aria-label="계산기 입력 필드" />
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
                 <div class="calc_option">
                   <button type="button" class="calc_reset" aria-label="결과 지우기">
@@ -246,7 +286,11 @@
             <div class="area_l">
               <div class="mid_tit">
                 <span lang="y" class="q-num">문제</span>
+<<<<<<< HEAD
                 <span lang="y" class="txt">두 친구가 가지고 있는 테이프의 길이를 비교해 보았습니다. 윤기는 18 cm , 세리는 24 cm입니다. 직접 테이프를 이용해서 두 테이프의 평균 길이를 구하려고 할 때, 빈칸에 들어가는 알맞은 수를 써 보세요.</span>
+=======
+                <span lang="y" class="txt"> 두 친구가 가지고 있는 테이프의 길이를 비교해 보았습니다. 윤기는 18 ㎝ , 세리는 24 ㎝입니다. 직접 테이프를 이용해서 두 테이프의 평균 길이를 구하려고 할 때, 빈칸에 들어가는 알맞은 수를 써 보세요.</span>
+>>>>>>> b1dd6843 (초기 커밋)
               </div>
               <div class="qe_area">
                 <div class="t-box">1) 두 테이프를 겹치지 않게 이어 붙입니다.</div>
@@ -256,16 +300,28 @@
                     <label for="answer4-1" class="sr-only">첫 번째 정답 입력</label>
                     <input type="number" id="answer4-1" class="answer answer4-1 active" readonly />
                   </div>
+<<<<<<< HEAD
                   &nbsp;cm입니다.
                 </div>
                 <div class="t-box">3) 이어붙인 테이프를 반으로 접습니다.</div>
                 <div class="t-box">
                   4) 접힌 부분의 길이
+=======
+                  &nbsp;㎝입니다.
+                </div>
+                <div class="t-box">3) 이어붙인 테이프를 반으로 접습니다.</div>
+                <div class="t-box">
+                  4) 접힌 부분의 길이&nbsp;
+>>>>>>> b1dd6843 (초기 커밋)
                   <div class="ans">
                     <label for="answer4-2" class="sr-only">첫 번째 정답 입력</label>
                     <input type="number" id="answer4-2" class="answer answer4-2 active" readonly />
                   </div>
+<<<<<<< HEAD
                   ㎝가 두 테이프 길이의 평균입니다.
+=======
+                  &nbsp;㎝가 두 테이프 길이의 평균입니다.
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
               </div>
             </div>
@@ -356,10 +412,17 @@
       window.questionTypes = [1, 3, 1, 1, 3];
       window.correctAnswers = {
         1: [18.5, 21.5],
+<<<<<<< HEAD
         2: ["item2"],
         3: ["평균"],
         4: [42, 21],
         5: ["item3"],
+=======
+        2: ['item2'],
+        3: ['평균'],
+        4: [42, 21],
+        5: ['item3'],
+>>>>>>> b1dd6843 (초기 커밋)
       };
     </script>
   </body>

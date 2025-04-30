@@ -20,6 +20,19 @@ section.contents {
   border-color: #79c366;
   border-radius: 0;
 }
+<<<<<<< HEAD
+=======
+
+.paging_layout .page h3 .empty_box.nemo {
+  margin: 0 10px;
+}
+.paging_layout .page h3 .empty_box.nemo.head {
+  margin-left: 0;
+}
+.empty_box.nemo + .empty_box.nemo {
+  margin-left: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .title.flex_wrap {
   flex-wrap: wrap;
 }
@@ -35,7 +48,13 @@ section.contents {
 .title.group .puple {
   color: #8f659d;
 }
+<<<<<<< HEAD
 
+=======
+.title.group h2 {
+  gap: 10px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .title h2:has(.recap) + .title_sub {
   width: auto;
   padding-left: 0;
@@ -71,6 +90,7 @@ section.contents {
   height: 45px;
   background: url(../../../common_practice/common/img/title_number_star1.svg);
 }
+<<<<<<< HEAD
 .title h2[data-head='4'].is_star::before,
 .title h2[data-head='4_green'].is_star::before,
 .title h2[data-head='4'].is_star2::before,
@@ -82,6 +102,30 @@ section.contents {
 }
 .title h2[data-head] .nemo.head {
   margin: 0 8px 0 0;
+=======
+
+.title h2[data-head='4'].is_star::before,
+.title h2[data-head='4'].is_star2::before,
+.title h2[data-head='4_green'].is_star::before,
+.title h2[data-head='4_green'].is_star2::before,
+.title h2[data-head='4_orange'].is_star::before {
+  left: 0px;
+}
+.title h2.is_star.left0::before {
+  left: 0px;
+}
+.title h2[data-head] .nemo {
+  margin: 0 6px;
+}
+.title h2[data-head]:has(.fraction_box) .nemo {
+  margin: 0 10px;
+}
+.title h2[data-head] .nemo.head {
+  margin: 0 6px 0 0;
+}
+.title h2[data-head]:has(.fraction_box) .nemo.head {
+  margin: 0 10px 0 0;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .title h2[data-star] .heading:after {
@@ -206,6 +250,12 @@ section.contents {
 .title.puzzle.pink {
   background-image: url(../img/title_puzzle_pink.svg);
 }
+<<<<<<< HEAD
+=======
+.title.puzzle.red {
+  background-image: url(../img/title_puzzle_red.svg);
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .title.puzzle.orange {
   background-image: url(../img/title_puzzle_orange.svg);
 }
@@ -308,6 +358,10 @@ section.contents {
 }
 .review_box.orange .title_review {
   background-image: url(../../common/img/title_review_orange.svg);
+<<<<<<< HEAD
+=======
+  background-position: 20px 0;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .review_box.jade .title_review {
   background-image: url(../../common/img/title_review_jade.svg);
@@ -318,6 +372,13 @@ section.contents {
 .review_box.deep_green .title_review {
   background-image: url(../../common/img/title_review_deep_green.svg);
 }
+<<<<<<< HEAD
+=======
+.review_box.purple .title_review {
+  background-image: url(../../common/img/title_review_purple.svg);
+  background-position: 20px 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .review_box .input_wrap {
   width: 100%;
@@ -335,11 +396,22 @@ body:has(article.completed) section.contents.paging_layout:has(.solve_area) {
   height: auto;
   min-height: calc(100% - 112px);
 }
+<<<<<<< HEAD
+=======
+body:has(article.completed) #app_wrap.of_h:has(.solve_area) .paging_controller {
+  display: flex;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 body:has(article.completed) #app_wrap.of_h:has(.solve_area) .paging_controller .pagenation {
   position: relative;
   left: auto;
   transform: unset;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  display: inline-flex;
+  margin: auto;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .contents:has(.solve_area.active) {

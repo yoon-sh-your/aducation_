@@ -1,7 +1,11 @@
 /* ema524_07_SU_0002 */
 
 .ema524_07_su_0002 .video_wrap {
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_06_SU/0002_contents.png)
+=======
+  background: url(../../common_contents/img/EMA524_07_SU/0002_contents.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat center 90% / 100%;
 }
 .ema524_07_su_0002 .video_wrap p {
@@ -14,7 +18,11 @@
 /* ema524_07_SU_0003 page_1 */
 
 .ema524_07_su_0003 .page_1 .picture_wrap {
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_06_SU/0002_contents.png)
+=======
+  background: url(../../common_contents/img/EMA524_07_SU/0002_contents.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat center 100% / 100%;
 }
 .ema524_07_su_0003 .page_1 .picture_wrap img {
@@ -28,6 +36,15 @@
 .ema524_07_su_0003 .image-content text {
   transform: translateX(900px) translateY(480px) scale(1.2);
 }
+<<<<<<< HEAD
+=======
+
+.ema524_07_su_0003 .page_1 .input_wrap {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema524_07_SU_0003 page_2 */
 .ema524_07_su_0003 .page_2 .wrap > p {
   position: absolute;
@@ -67,10 +84,17 @@
   left: 10%;
 }
 .ema524_07_su_0003 .page_2 .base-point li:nth-child(3) {
+<<<<<<< HEAD
   left: 60%;
 }
 .ema524_07_su_0003 .page_2 .base-point li:nth-child(4) {
   left: 90%;
+=======
+  left: 59.5%;
+}
+.ema524_07_su_0003 .page_2 .base-point li:nth-child(4) {
+  left: 89.3%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema524_07_su_0003 .page_2 .base-point li:nth-child(5) {
   left: 100%;
@@ -79,7 +103,11 @@
 .ema524_07_su_0003 .multiply-box {
   max-width: 1100px;
   height: 155px;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_06_SU/0003_bg1.png) no-repeat
+=======
+  background: url(../../common_contents/img/EMA524_07_SU/0003_bg1.png) no-repeat
+>>>>>>> b1dd6843 (초기 커밋)
     left center;
   background-size: contain;
   margin: 0 auto;
@@ -112,17 +140,28 @@
 /* ema524_07_SU_0003_s page3 */
 
 .ema524_07_su_0003 .page_3 .picture_wrap {
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_06_SU/0002_contents.png)
+=======
+  background: url(../../common_contents/img/EMA524_07_SU/0002_contents.png)
+>>>>>>> b1dd6843 (초기 커밋)
     no-repeat center 100% / 100%;
 }
 .ema524_07_su_0003 .page_3 .picture_wrap img {
   display: none;
 }
 
+<<<<<<< HEAD
 .ema524_07_su_0003 .page_3 .input_wrap {
   flex-direction: row;
   align-items: center;
   gap: 12px;
+=======
+.ema524_07_su_0003 .page_3 .input_area > .flex {
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 #app_wrap.ema524_07_su_0003[data-current-page="page_1"] .btnSubmit,
@@ -131,6 +170,7 @@
   display: none;
 }
 /* ema524_07_SU_0004 page_1 */
+<<<<<<< HEAD
 .ema524_07_su_0004 .wrap {
   display: flex;
   gap: 30px;
@@ -141,6 +181,19 @@
   min-height: 60px;
 }
 
+=======
+.ema524_07_su_0004 .page_1 .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0px auto 0;
+  align-items: center;
+}
+.ema524_07_su_0004 .page_1 .wrap .textarea {
+  min-height: 80px;
+  width: 1108px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema524_07_SU_0004_s page2 */
 
 .ema524_07_su_0004 .page_2 .fra_parens {
@@ -209,10 +262,35 @@
   gap: 40px;
 }
 
+<<<<<<< HEAD
 #app_wrap.ema524_07_su_0004[data-current-page="page_1"] .btnCheck,
 #app_wrap.ema524_07_su_0004[data-current-page="page_2"] .btnSubmit,
 #app_wrap.ema524_07_su_0004[data-current-page="page_3"] .btnSubmit,
 #app_wrap.ema524_07_su_0004[data-current-page="page_4"] .btnCheck {
+=======
+/* ema524_07_SU_0004_s page4 */
+.ema524_07_su_0004 .page_4 .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  padding-top: 30px;
+}
+.ema524_07_su_0004 .page_4 .wrap .textarea {
+  min-height: 80px;
+}
+
+.ema524_07_su_0004 .page_4 .wrap > .input_wrap {
+  width: 1108px;
+}
+.ema524_07_su_0004 .page_4 .wrap > .input_wrap math-field.textarea {
+  width: 100% !important;
+}
+.ema524_07_su_0004[data-current-page="page_2"] .btnSample,
+.ema524_07_su_0004[data-current-page="page_3"] .btnSample,
+.ema524_07_su_0004[data-current-page="page_1"] .btnCheck,
+.ema524_07_su_0004[data-current-page="page_4"] .btnCheck {
+>>>>>>> b1dd6843 (초기 커밋)
   display: none;
 }
 /* ema524_07_SU_0005_s */
@@ -226,3 +304,14 @@
 .ema524_07_su_0005 .wrap > div > div {
   min-width: 280px;
 }
+<<<<<<< HEAD
+=======
+/* ema524_07_SU_0006_s */
+
+.ema524_07_su_0006 .quiz-builder {
+  margin-top: -20px;
+}
+.ema524_07_su_0006 .quiz-builder .quiz-answer-inner .quiz-color {
+  margin-left: -30px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

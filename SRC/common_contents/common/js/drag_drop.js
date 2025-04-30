@@ -774,6 +774,12 @@ window.resetDragDrop = function (targetPage) {
     $drop.removeAttr("data-value"); // data-value 속성 제거
   });
 
+<<<<<<< HEAD
+=======
+  // 드래그 가능한 원본 요소들의 상태 리셋
+  pageSelector.find(".dragndrop_fraction_wrap .drag_item:not(.dropped)").removeClass("used selected");
+
+>>>>>>> b1dd6843 (초기 커밋)
   // 드래그 가능한 요소들의 상태 리셋 (필요 시 draggable의 상태 변경이 있다면 추가)
   // 예: pageSelector.find(".drag_item.dropped").removeClass("dropped");
 

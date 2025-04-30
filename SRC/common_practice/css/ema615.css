@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .circle {
   display: inline-block;
   width: 64px;
@@ -229,7 +232,11 @@
   gap: 35px;
   justify-content: center;
   align-items: flex-start;
+<<<<<<< HEAD
   padding-bottom: 200px;
+=======
+  padding-bottom: 100px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .tit_title_input.graf_flex {
@@ -371,7 +378,11 @@
 }
 
 .ema615_03_0003 .input_are .tit.tit02 {
+<<<<<<< HEAD
   left: 50px;
+=======
+  left: 20px;
+>>>>>>> b1dd6843 (초기 커밋)
   top: 100px;
   flex-direction: column;
   align-items: flex-end;
@@ -395,7 +406,11 @@
 }
 
 .ema615_03_0003 .input_are .tit.tit03 {
+<<<<<<< HEAD
   left: 70px;
+=======
+  left: 20px;
+>>>>>>> b1dd6843 (초기 커밋)
   top: 300px;
   flex-direction: column;
   align-items: flex-end;
@@ -513,7 +528,11 @@
 }
 
 .ema615_03_0004.page02 .input_are .tit.tit01 {
+<<<<<<< HEAD
   bottom: 0;
+=======
+  bottom: 40px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 30px;
 }
 .ema615_03_0004.page02 .input_are .tit.tit01::after {
@@ -529,8 +548,13 @@
 }
 
 .ema615_03_0004.page02 .input_are .tit.tit02 {
+<<<<<<< HEAD
   bottom: 100px;
   left: 20px;
+=======
+  bottom: 140px;
+  left: 40px;
+>>>>>>> b1dd6843 (초기 커밋)
   flex-direction: column;
   align-items: flex-end;
 }
@@ -553,7 +577,11 @@
 }
 
 .ema615_03_0004.page02 .input_are .tit.tit03 {
+<<<<<<< HEAD
   left: 20px;
+=======
+  left: 40px;
+>>>>>>> b1dd6843 (초기 커밋)
   top: -0;
   flex-direction: column;
   align-items: flex-end;
@@ -766,7 +794,11 @@ section.contents.paging_layout.over {
   display: flex;
 }
 
+<<<<<<< HEAD
 .ema615_07_0003_box .boolean_wrap button.selected::after {
+=======
+.ema615_07_0003_box .boolean_wrap button::after {
+>>>>>>> b1dd6843 (초기 커밋)
   content: '';
   width: 46px;
   height: 45px;
@@ -774,7 +806,22 @@ section.contents.paging_layout.over {
   background-size: 46px auto;
   background-repeat: no-repeat;
   position: absolute;
+<<<<<<< HEAD
   left: 0;
+=======
+  left: -34px;
+  opacity: 0;
+}
+.completed.ema615 .boolean_wrap button[data-answer-single='true']::after,
+.ema615_07_0003_box .boolean_wrap button.selected::after {
+  opacity: 1;
+}
+.completed.ema615 .boolean_wrap button[data-answer-single='true']::after {
+  filter: invert(49%) sepia(100%) saturate(3512%) hue-rotate(345deg) brightness(93%) contrast(101%);
+}
+.completed.ema615 .boolean_wrap button[data-answer-single='true'].selected::after {
+  filter: invert(48%) sepia(46%) saturate(7213%) hue-rotate(214deg) brightness(101%) contrast(101%);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema615_07_0003_box .boolean_wrap button:nth-child(1):before {
@@ -803,10 +850,13 @@ section.contents.paging_layout.over {
   min-height: 124px;
 }
 
+<<<<<<< HEAD
 .ema615_07_0003 .input_wrap .example_box {
   opacity: 1;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema615_11 .img_are img {
   margin: 0 auto 60px;
 }
@@ -827,3 +877,39 @@ section.contents.paging_layout.over {
 .ema615_11_ih_0002.completed button.btnReset.active {
   display: none;
 }
+<<<<<<< HEAD
+=======
+
+
+.ema615_02_0001 .input_wrap {
+  width: 800px;
+}
+.ema615_02_0001 .input_wrap math-field:not(.textarea) {
+  width: 800px;
+}
+
+
+.dropdown_wrap.left_hint .text_hint{    top: 12px;
+  left: calc(-100% - 14px);
+  transform: none;
+  text-align: right;}
+
+.dropdown_wrap.up_hint .text_hint{   top: calc(-100% + 20px);
+    transform: none;}  
+
+.ema615 .ema615_04_0003  .table_wrap{max-width: 1100px;}
+.ema615 .ema615_04_0003  .table_wrap td,
+.ema615 .ema615_04_0003  .table_wrap th{padding: 25px 10px;}
+
+.pb100{padding-bottom: 100px;}
+
+
+.ema615_06_0004 .input_wrap {
+  width: 200px;
+}
+.ema615_06_0004 .input_wrap math-field:not(.textarea) {
+  width: 200px;
+}
+
+.question_box{margin-top: 80px !important;}
+>>>>>>> b1dd6843 (초기 커밋)

@@ -329,14 +329,20 @@
   width: 30.21px;
   height: 30.21px;
   background-image: url(../img/EMA515_08_SU/0002_circle-gieok.png);
+<<<<<<< HEAD
   margin-top: 6px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .circle-nieun {
   width: 30.21px;
   height: 30.21px;
   background-image: url(../img/EMA515_08_SU/0002_circle-nieun.png);
+<<<<<<< HEAD
   margin-top: 6px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0004 .to_be .main .red {
@@ -448,7 +454,11 @@
   width: 757px;
   height: 427.396484375px;
 
+<<<<<<< HEAD
   background-image: url(../img/EMA515_08_SU/0002_bg-2.png);
+=======
+  /* background-image: url(../img/EMA515_08_SU/0002_bg-2.png); */
+>>>>>>> b1dd6843 (초기 커밋)
 
   flex-direction: column;
 
@@ -482,14 +492,20 @@
   position: absolute;
   top: 126px;
   left: 129px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0002 .page.page_2 .text-4 {
   position: absolute;
   top: 125px;
   left: 615px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   padding: 2px;
 }
 
@@ -497,14 +513,20 @@
   position: absolute;
   top: 176px;
   left: 129px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0002 .page.page_2 .text-6 {
   position: absolute;
   top: 163px;
   left: 612px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   align-items: center;
 }
@@ -513,14 +535,20 @@
   position: absolute;
   top: 228px;
   left: 129px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0002 .page.page_2 .text-8 {
   position: absolute;
   top: 218px;
   left: 610px;
+<<<<<<< HEAD
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   align-items: center;
 }
@@ -529,7 +557,10 @@
   position: absolute;
   top: 324px;
   left: 83px;
+<<<<<<< HEAD
   background-color: #DCEAC5;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0002 .page.page_2 .container_515 .operations {
@@ -573,10 +604,22 @@
   position: relative;
 }
 
+<<<<<<< HEAD
 .ema515_08_su_0002 .page.page_4 .container_515 .drag_group {
   background-color: #F2F4F7;
   width: 480px;
   height: 140px;
+=======
+/* .ema515_08_su_0002 .page.page_4 .container_515 .right_515 {
+  position: relative;
+  top: -40px;
+} */
+
+.ema515_08_su_0002 .page.page_4 .container_515 .drag_group {
+  background-color: #F2F4F7;
+  width: 480px;
+  height: 180px;
+>>>>>>> b1dd6843 (초기 커밋)
   border-radius: 15px;
   display: flex;
   justify-content: space-around;
@@ -586,8 +629,13 @@
 
 .ema515_08_su_0002 .page.page_4 .container_515 .drag_group>* {
   background-color: white;
+<<<<<<< HEAD
   width: 80px;
   height: 60px;
+=======
+  width: 100px;
+  height: 130px;
+>>>>>>> b1dd6843 (초기 커밋)
   border-radius: 12px;
   border: 4px solid #222222;
   display: flex;
@@ -607,7 +655,12 @@
 
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   align-items: center;
+=======
+  align-items: center; 
+
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0002 .page.page_4 .dragndrop_fraction_wrap .drag_group {
@@ -623,6 +676,30 @@
   border-radius: 10px;
   background-color: white;
   text-align: center;
+<<<<<<< HEAD
+=======
+  svg {
+    width: 82px;  
+    height: 123px;
+    
+  }
+  &.drag_item[data-value="𝅘𝅥"] svg path {
+    transform: scale(0.8);
+    transform-origin: center center;
+    transform-box: fill-box;
+  }
+  &.dropped{
+    svg {
+      width: 102px;  
+      height: 123px;      
+    }
+    &.drag_item[data-value="𝅘𝅥"] svg path {
+      transform: scale(0.8);
+      transform-origin: center center;
+      transform-box: fill-box;
+    }
+  }
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_08_su_0002 .page.page_4 .drag_item.ui-draggable.ui-draggable-handle.dropped {

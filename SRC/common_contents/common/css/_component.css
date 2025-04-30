@@ -104,6 +104,15 @@
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+.image_zoom_wrap .title h3 .icon_speech,
+.image_zoom_wrap .title h3 .title_head,
+.image_zoom_wrap .title h3 .btn_zoom {
+    display: none;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .image_zoom_wrap button.close,
 .supplies_zoom_wrap button.close {
     width: 40px;

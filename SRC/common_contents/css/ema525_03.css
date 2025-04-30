@@ -129,7 +129,11 @@
 .form_wrap .form_row .player_area .player_area_bottom .btn_wrap .btnComplete {
   border-radius: 12px;
   padding: 0;
+<<<<<<< HEAD
   width: 189px;
+=======
+  width: 249px;
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 20px;
   background-color: var(--btn-default);
 }

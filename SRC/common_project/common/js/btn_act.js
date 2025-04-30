@@ -7,7 +7,11 @@ const enableConsoleLog = {
     connect: false,           // 선잇기 관련 로그
     canvas: false,            // 캔버스 관련 로그
     completionStatus: false, // 완료 상태 설정 관련 로그
+<<<<<<< HEAD
     selfCheck: false, // 자가 평가 관련 로그
+=======
+    selfCheck: true, // 자가 평가 관련 로그
+>>>>>>> b1dd6843 (초기 커밋)
 };
 
 /** 정오답 체크 및 힌트 기능 실행 */
@@ -64,6 +68,10 @@ document.querySelectorAll(".btn_area button").forEach((button) => {
 
             // 모든 버튼의 close 클래스 제거
             document.querySelectorAll(".btn_area button").forEach((btn) => {
+<<<<<<< HEAD
+=======
+                btn.classList.remove("active");
+>>>>>>> b1dd6843 (초기 커밋)
                 btn.classList.remove("close");
             });
 
@@ -74,6 +82,34 @@ document.querySelectorAll(".btn_area button").forEach((button) => {
 
             typeof resetCustom === "function" && resetCustom();
         } else if (button.classList.contains("btnCheck") || button.classList.contains("btnSubmit")) {
+<<<<<<< HEAD
+=======
+
+            // <<<--- 추가: btnSubmit 클릭 시 self_check 유효성 검사 먼저 수행 --->>>
+            if (button.classList.contains("btnSubmit")) {
+                const page = pagenation.activePage; // 페이지 컨텍스트 가져오기
+                const selfCheckGroups = page.querySelectorAll(".self_check .state_wrap");
+                if (selfCheckGroups.length > 0) { // .self_check가 페이지에 존재하는 경우에만 검사
+                    let allSelfCheckCompleted = true;
+                    selfCheckGroups.forEach((group) => {
+                        if (!group.querySelector("input[type='radio']:checked")) {
+                            allSelfCheckCompleted = false;
+                        }
+                    });
+
+                    if (!allSelfCheckCompleted) {
+                        // self_check가 존재하지만 완료되지 않았으면 메시지 표시 후 종료 (checkAnswers 실행 안 됨)
+                        toastCheckMsg("해당하는 표정을 선택해 보세요.", 1, false);
+                        return;
+                    }
+                    // self_check가 존재하고 완료되었으면 아래 로직 계속 진행
+                }
+                // .self_check가 페이지에 없으면 아래 로직 계속 진행
+            }
+            // <<<--- 추가 끝 --->>>
+
+            // --- 기존 로직 시작 ---
+>>>>>>> b1dd6843 (초기 커밋)
             if (button.dataset.submit === "true") return;
 
             const revealBtns = page.querySelectorAll(".reveal_btn");
@@ -218,7 +254,11 @@ function checkMultiAnswer(userValue, multiAnswerString) {
         const normalizedUserValue = Array.isArray(userValue) ? JSON.stringify([...userValue].sort()) : String(userValue);
         return answerValues.some((ans) => {
             const normalizedAns = Array.isArray(ans) ? JSON.stringify([...ans].sort()) : String(ans);
+<<<<<<< HEAD
             return normalizedUserValue === normalizedAns;
+=======
+            return normalizedUserValue === normalizeExpression(normalizedAns);
+>>>>>>> b1dd6843 (초기 커밋)
         });
     } catch (e) {
         console.error("data-answer-multi JSON 파싱 오류:", e, multiAnswerString);
@@ -376,6 +416,25 @@ function onIncorrect() {
     toastCheckMsg("한 번 더 생각해 보세요.", 2, false);
 }
 
+<<<<<<< HEAD
+=======
+/**
+ * 요소의 correction 상태에 따라 hint 또는 correct 클래스를 처리하는 함수
+ * @param {Element} el - 처리할 요소
+ */
+const processHintClasses = (el) => {
+    // 기존 클래스 모두 제거
+    el.classList.remove("correct", "hint");
+
+    // correction 상태에 따라 클래스 추가
+    if (el.dataset.correction === "true") {
+        el.classList.add("correct");
+    } else if (!el.dataset.correction || el.dataset.correction === "false") {
+        el.classList.add("hint");
+    }
+};
+
+>>>>>>> b1dd6843 (초기 커밋)
 // 두 번째 이상 오답 처리 콜백
 function onIncorrectTwice() {
     typeof onIncorrectTwiceCustom === "function" && onIncorrectTwiceCustom();
@@ -399,6 +458,7 @@ function onIncorrectTwice() {
     });
 
     // input_wrap, dropdown_wrap, drawing_area(이제 drawing_grid_area) 처리
+<<<<<<< HEAD
     page.querySelectorAll(".input_wrap math-field:not(.textarea), .input_wrap math-field.textarea, .custom_dropdown, .drawing_grid_area").forEach((wrapper) => {
         // drawing_grid_area 추가
         const isDrawingGridArea = wrapper.classList.contains("drawing_grid_area");
@@ -419,6 +479,14 @@ function onIncorrectTwice() {
             }
         }
     });
+=======
+    const wrappers = page.querySelectorAll(".input_wrap, .custom_dropdown, .drawing_grid_area"); // 선택자 수정: math-field 대신 input_wrap, dropdown_wrap 대신 custom_dropdown 선택
+    if (wrappers.length > 0) {
+        wrappers.forEach((wrapper) => {
+             processHintClasses(wrapper); // 모든 타입의 wrapper에 대해 processHintClasses 호출 (내부에서 data-correction 확인)
+        });
+    }
+>>>>>>> b1dd6843 (초기 커밋)
 
     // ✅ boolean 버튼 처리
     page.querySelectorAll(".boolean_wrap > button").forEach((button) => {
@@ -473,7 +541,11 @@ function resetInputFields() {
     pagenation.activePage.querySelectorAll(".input_wrap math-field").forEach((mathField) => {
         // 값 초기화
         if (typeof mathField.setValue === "function") {
+<<<<<<< HEAD
             mathField.setValue(""); // MathLive 메서드 사용
+=======
+            mathField.setValue('\\text{}'); // MathLive 메서드 사용
+>>>>>>> b1dd6843 (초기 커밋)
         } else {
             mathField.value = ""; // 일반 속성 사용
         }
@@ -778,6 +850,11 @@ watchWithCustomTest(
                     return el.classList.contains("on");
                 } else if (el.closest(".figure_triangle")) {
                     return el.dataset.correction !== undefined;
+<<<<<<< HEAD
+=======
+                } else if (el.closest(".connect_wrap")) {
+                    return el.dataset.correction !== undefined;
+>>>>>>> b1dd6843 (초기 커밋)
                 }
                 return el.dataset.answerSingle !== "empty_answer" && el.dataset.correction;
             },
@@ -880,6 +957,19 @@ watchWithCustomTest(
                 return pagenation.activePage && pagenation.activePage.classList.contains("completed");
             }
         },
+<<<<<<< HEAD
+=======
+        {
+            selector: ".example_box", // selector는 유지해도 좋습니다.
+            key: "example_box_active",
+            test: () => {
+                const page = pagenation.activePage;
+                const exampleBoxes = page.querySelectorAll(".example_box");
+                // .example_box 요소가 존재하고, 그 중 하나라도 'on' 클래스를 가지고 있으면 true를 반환합니다.
+                return exampleBoxes.length > 0 && Array.from(exampleBoxes).some(el => el.classList.contains("on"));
+            },
+        },
+>>>>>>> b1dd6843 (초기 커밋)
     ],
     (matchedKeys) => {
         if (enableConsoleLog.buttonState) console.log("[Button State] Matched keys for activation:", matchedKeys);
@@ -889,13 +979,33 @@ watchWithCustomTest(
         const submitBtn = document.querySelectorAll(".btn_area .btnSubmit");
         const resetBtn = document.querySelectorAll(".btn_area .btnReset");
         const eraseBtn = document.querySelectorAll(".btn_area .btnErase");
+<<<<<<< HEAD
     
+=======
+        const solveBtnArea = document.querySelectorAll(".buttons_solve .btnSelf");
+
+>>>>>>> b1dd6843 (초기 커밋)
         // ❗ 페이지 완료 상태일 때 버튼 비활성화 로직 (기존 if 문 제거)
         if (matchedKeys.includes("page_completed")) {
             resetBtn.forEach((btn) => btn.classList.add("active"));
             checkBtn.forEach((btn) => btn.classList.remove("active"));
+<<<<<<< HEAD
             sampleBtn.forEach((btn) => btn.classList.remove("active"));
             submitBtn.forEach((btn) => btn.classList.remove("active"));
+=======
+            // sampleBtn.forEach((btn) => btn.classList.remove("active"));
+            submitBtn.forEach((btn) => {
+                console.log(solveBtnArea.length);
+                if(solveBtnArea.length === 0){
+                    console.log("solveBtnArea is not found");
+                    btn.classList.remove("active");
+                }else{
+                    btn.classList.add("active");
+                }
+                btn.classList.remove("close");
+            });
+
+>>>>>>> b1dd6843 (초기 커밋)
             // resetBtn은 page_completed 상태에서 활성화될 수 있으므로 여기서 처리하지 않음
             return; // 페이지 완료 시 다른 활성화 로직 실행 안 함
         }
@@ -915,6 +1025,10 @@ watchWithCustomTest(
             checkBtn.forEach((btn) => btn.classList.add("active"));
             sampleBtn.forEach((btn) => btn.classList.add("active"));
             submitBtn.forEach((btn) => btn.classList.add("active"));
+<<<<<<< HEAD
+=======
+            resetBtn.forEach((btn) => btn.classList.add("active"));
+>>>>>>> b1dd6843 (초기 커밋)
         }
 
         if (matchedKeys.includes("textarea_with_example_active")) {
@@ -991,6 +1105,10 @@ watchWithCustomTest(
         const submitBtn = document.querySelectorAll(".btn_area .btnSubmit");
         const resetBtn = document.querySelectorAll(".btn_area .btnReset");
         const eraseBtn = document.querySelectorAll(".btn_area .btnErase");
+<<<<<<< HEAD
+=======
+        const solveBtnArea = document.querySelectorAll(".buttons_solve .btnSelf");
+>>>>>>> b1dd6843 (초기 커밋)
 
         // ❗ 페이지 완료 상태가 해제되었을 때 버튼 활성화 로직 추가
         if (matchedKeys.includes("page_completed")) {
@@ -1023,6 +1141,10 @@ watchWithCustomTest(
             submitBtn.forEach((btn) => btn.classList.remove("active"));
             resetBtn.forEach((btn) => btn.classList.remove("active")); // 입력 없으면 리셋도 비활성
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
         if (matchedKeys.includes("all_reveal_btns_on") && !isEmpty) {
             checkBtn.forEach((btn) => btn.classList.add("active"));
             resetBtn.forEach((btn) => btn.classList.remove("active"));
@@ -1057,6 +1179,7 @@ watchWithCustomTest(
     }
 );
 
+<<<<<<< HEAD
 // 버튼 class 변경 감시
 observeAttributeChange(".btn_area .btnReset, .btn_area .btnCheck, .btn_area .btnSample, .btn_area .btnSubmit", "class", (target) => {
     // 모든 버튼의 active 상태 확인
@@ -1099,6 +1222,8 @@ observeAttributeChange(".btn_area .btnReset, .btn_area .btnCheck, .btn_area .btn
     // window.forceWatchEvaluation(); // 여기서 호출하면 무한 루프 위험, 제거
 });
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 /**
  * submit 버튼 클릭 시 조건 평가 후 토스트 표시
  * @param {string} buttonSelector - 제출 버튼 셀렉터
@@ -1302,6 +1427,7 @@ function validateBeforeSubmit(buttonSelector, rules) {
         }
 
         // input_wrap, dropdown_wrap, drawing_area(이제 drawing_grid_area) 처리
+<<<<<<< HEAD
         const wrappers = page.querySelectorAll(".input_wrap math-field:not(.textarea), .input_wrap math-field.textarea, .custom_dropdown, .drawing_grid_area");
         if (wrappers.length > 0) {
             wrappers.forEach((wrapper) => {
@@ -1315,6 +1441,12 @@ function validateBeforeSubmit(buttonSelector, rules) {
                         processHintClasses(wrapper);
                     }
                 }
+=======
+        const wrappers = page.querySelectorAll(".input_wrap, .custom_dropdown, .drawing_grid_area"); // 선택자 수정: math-field 대신 input_wrap, dropdown_wrap 대신 custom_dropdown 선택
+        if (wrappers.length > 0) {
+            wrappers.forEach((wrapper) => {
+                 processHintClasses(wrapper); // 모든 타입의 wrapper에 대해 processHintClasses 호출 (내부에서 data-correction 확인)
+>>>>>>> b1dd6843 (초기 커밋)
             });
         }
 
@@ -1777,8 +1909,14 @@ function handleMathFieldInput(event) {
     }
 
     // --- data-cross-answer가 없을 때 기존 로직 수행 ---
+<<<<<<< HEAD
     let userValueRaw = mathField.getValue("plain-text");
     let userValue = normalizeMathValue(userValueRaw); // 정규화 함수 사용
+=======
+    let userValueRaw = (mathField.mode == 'text' ? mathField.getValue('plain-text') : mathField.getValue());
+    let userValue = normalizeExpression(userValueRaw);
+    console.log(`userValue - ascii: ${userValue}`);
+>>>>>>> b1dd6843 (초기 커밋)
 
     const answerMultiString = mathField.dataset.answerMulti;
     const answerSingle = mathField.dataset.answerSingle?.trim();
@@ -1800,8 +1938,13 @@ function handleMathFieldInput(event) {
 
     // 2. Single Answer 확인
     if (isCorrect === null && answerSingle !== undefined) {
+<<<<<<< HEAD
         let normalizedAnswerSingle = normalizeMathValue(answerSingle); // 정답도 정규화
 
+=======
+        let normalizedAnswerSingle = normalizeExpression(answerSingle);
+        
+>>>>>>> b1dd6843 (초기 커밋)
         if (normalizedAnswerSingle === "empty_answer") {
             isCorrect = !userValueRaw; // empty 비교는 변환 전 raw 값으로
         } else if (userValueRaw) {
@@ -2241,6 +2384,7 @@ observeAttributeChange(".connect_wrap", "data-connections", (wrap) => {
     }
 
     const answerMultiString = wrap.dataset.answerMulti;
+<<<<<<< HEAD
     const answerSingle = wrap.dataset.answerSingle;
     let answerSingleValue = undefined;
     if (answerSingle !== undefined) {
@@ -2254,6 +2398,21 @@ observeAttributeChange(".connect_wrap", "data-connections", (wrap) => {
             console.warn("정답 데이터 파싱 오류:", e);
         }
     }
+=======
+    const answerSingle = wrap.dataset.answerSingle; // 원시 값 가져오기
+    // let answerSingleValue = undefined; // 삭제: 필요시 아래에서 파싱
+    // if (answerSingle !== undefined) { // 삭제: 아래에서 처리
+    //     try {
+    //         answerSingleValue = JSON.parse(answerSingle || "[]"); // 삭제: 아래에서 처리
+    //         // console.log('3. 정답 데이터:', {
+    //         //     answerMulti: answerMultiString,
+    //         //     answerSingle: answerSingleValue
+    //         // });
+    //     } catch (e) {
+    //         console.warn("정답 데이터 파싱 오류:", e);
+    //     }
+    // }
+>>>>>>> b1dd6843 (초기 커밋)
 
     let isCorrect = null;
 
@@ -2261,7 +2420,11 @@ observeAttributeChange(".connect_wrap", "data-connections", (wrap) => {
     if (userValue === "[]" || !userValue) {
         delete wrap.dataset.correction;
         // console.log('4. 사용자 입력 없음 - correction 제거');
+<<<<<<< HEAD
         console.groupEnd();
+=======
+        // console.groupEnd(); // 필요에 따라 로깅 유지/제거
+>>>>>>> b1dd6843 (초기 커밋)
         return;
     }
 
@@ -2272,10 +2435,18 @@ observeAttributeChange(".connect_wrap", "data-connections", (wrap) => {
             if (multiAnswerData && Array.isArray(multiAnswerData.values)) {
                 const normalizedMultiAnswers = multiAnswerData.values.map((answer) => {
                     try {
+<<<<<<< HEAD
                         const arr = JSON.parse(JSON.stringify(answer));
                         return JSON.stringify(arr.map((pair) => pair.slice().sort((a, b) => String(a).localeCompare(String(b)))).sort((a, b) => String(a[0]).localeCompare(String(b[0])) || String(a[1]).localeCompare(String(b[1]))));
                     } catch (e) {
                         return "[]";
+=======
+                        // multi answer 내의 각 배열도 userValue와 동일하게 정규화
+                        const arr = JSON.parse(JSON.stringify(answer)); // 깊은 복사
+                        return JSON.stringify(arr.map((pair) => pair.slice().sort((a, b) => String(a).localeCompare(String(b)))).sort((a, b) => String(a[0]).localeCompare(String(b[0])) || String(a[1]).localeCompare(String(b[1]))));
+                    } catch (e) {
+                        return "[]"; // 파싱 오류 시 빈 배열 문자열
+>>>>>>> b1dd6843 (초기 커밋)
                     }
                 });
                 isCorrect = normalizedMultiAnswers.some((answer) => answer === userValue);
@@ -2285,9 +2456,32 @@ observeAttributeChange(".connect_wrap", "data-connections", (wrap) => {
         }
     }
 
+<<<<<<< HEAD
     // Single Answer (정규화된 문자열 비교)
     if (isCorrect === null && answerSingleValue !== undefined) {
         isCorrect = userValue === answerSingleValue;
+=======
+    // Single Answer 처리
+    if (isCorrect === null && answerSingle !== undefined) {
+        if (answerSingle === "empty_answer") {
+            // 'empty_answer' 처리: 사용자 입력이 없으면("[]") 정답
+            isCorrect = (userValue === "[]");
+        } else {
+            // 'empty_answer'가 아니면 정답 JSON을 정규화하여 비교
+            let normalizedAnswerSingleValue = "[]";
+            try {
+                const arr = JSON.parse(answerSingle || "[]"); // Single answer 파싱
+                normalizedAnswerSingleValue = JSON.stringify(
+                    arr.map((pair) => pair.slice().sort((a, b) => String(a).localeCompare(String(b))))
+                       .sort((a, b) => String(a[0]).localeCompare(String(b[0])) || String(a[1]).localeCompare(String(b[1])))
+                );
+                isCorrect = userValue === normalizedAnswerSingleValue;
+            } catch (e) {
+                console.warn("Single answer JSON 파싱 또는 정규화 오류:", e, "for answer:", answerSingle);
+                isCorrect = false; // 파싱/정규화 오류 시 오답 처리
+            }
+        }
+>>>>>>> b1dd6843 (초기 커밋)
     }
 
     // Correction 업데이트
@@ -2486,10 +2680,19 @@ observeAttributeChange("#app_wrap, .page", "class", (element) => {
     const page = pagenation.activePage;
     if (page.classList.contains("completed")) {
         // 모든 버튼 비활성화
+<<<<<<< HEAD
         document.querySelectorAll(".btn_area button:not(.btnReset):not(.btnType):not(.btnSample)").forEach((btn) => {
             btn.classList.remove("active");
             btn.classList.remove("close");
         });
+=======
+        // document.querySelectorAll(".btn_area button:not(.btnReset):not(.btnType):not(.btnSample)").forEach((btn) => {
+        //     if(!btn.classList.contains("btnSelf")){
+        //         btn.classList.remove("active");
+        //     }
+        //         btn.classList.remove("close");
+        // });
+>>>>>>> b1dd6843 (초기 커밋)
 
         // math-field 비활성화
         page.querySelectorAll("math-field").forEach((el) => {
@@ -2754,6 +2957,7 @@ if (selfCheck.length > 0) {
     });
 }
 
+<<<<<<< HEAD
 /* 준비물 스크립트 추가 (250415) */
 const buttonSupplies = document.querySelectorAll("button.icon_supplies");
 if(buttonSupplies.length > 0){
@@ -2770,6 +2974,8 @@ if(buttonSupplies.length > 0){
     });
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 /**
  * data-cross-answer 속성을 가진 math-field 쌍(2개 이상)의 정답 여부를 교차 확인합니다.
  * 입력된 값들의 집합과 정답들의 집합이 일치하면 정답으로 처리합니다 (순서 무관).
@@ -2799,7 +3005,11 @@ function handleCrossAnswerCheck(currentField) {
     }
 
     // 각 필드의 값과 정답 가져오기
+<<<<<<< HEAD
     const valueRawList = pairFields.map(field => field.getValue("plain-text") || "");
+=======
+    const valueRawList = pairFields.map(field => (field.mode == 'text' ? field.getValue("plain-text") : field.getValue("")) || "");
+>>>>>>> b1dd6843 (초기 커밋)
     const answerList = pairFields.map(field => field.dataset.answerSingle);
 
     // 정답 정보가 하나라도 없으면 처리 중단
@@ -2818,8 +3028,13 @@ function handleCrossAnswerCheck(currentField) {
     }
 
     // 값과 정답 정규화
+<<<<<<< HEAD
     const normalizedValueList = valueRawList.map(normalizeMathValue);
     const normalizedAnswerList = answerList.map(normalizeMathValue);
+=======
+    const normalizedValueList = valueRawList.map(normalizeExpression);
+    const normalizedAnswerList = answerList.map(normalizeExpression);
+>>>>>>> b1dd6843 (초기 커밋)
 
     // 정렬하여 순서 무관 비교 준비
     const sortedValues = [...normalizedValueList].sort();

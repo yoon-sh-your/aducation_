@@ -57,6 +57,45 @@
   font-weight: normal;
   line-height: 1;
 }
+<<<<<<< HEAD
+=======
+.ema524_04_ih_0001 .txt1,
+.ema524_04_ih_0001 .txt1 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ema524_04_ih_0001 .txt1 li:nth-child(1) {
+  top: 174px;
+  left: 0;
+}
+.ema524_04_ih_0001 .txt1 li:nth-child(2) {
+  top: 165px;
+  left: 68px;
+}
+.ema524_04_ih_0001 .txt1 li:nth-child(3) {
+  top: 169px;
+  left: 530px;
+}
+.ema524_04_ih_0001 .txt1 li:nth-child(4) {
+  top: 180px;
+  left: 747px;
+}
+.ema524_04_ih_0001 .txt2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 138px;
+}
+
+.ema524_04_ih_0001 .txt2 li:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 66px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema524_04_ih_0002 .bottom {
   margin-top: 60px;
@@ -77,6 +116,19 @@
   bottom: 0;
   right: 16px;
 }
+<<<<<<< HEAD
+=======
+.ema524_04_ih_0004 .txt {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  font-size: 34px;
+}
+.ema524_04_ih_0004 .txt.t2 {
+  top: 160px;
+  left: 129px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema524_04_ih_0005 .circle {
   display: inline-flex;
@@ -166,4 +218,10 @@
 .ema524_04_ih_0007 .empty_box {
   justify-content: center;
 }
+<<<<<<< HEAD
 .ema524_04_ih_0007 .solve_area .inner_solve {margin-top:30px;}
+=======
+.ema524_04_ih_0007 .solve_area .inner_solve {
+  margin-top: 30px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

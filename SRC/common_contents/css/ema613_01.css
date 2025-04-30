@@ -16,6 +16,7 @@
   left: 247px;
 }
 
+<<<<<<< HEAD
 .ema613_01_su_0001 {
   .info {
     position: absolute;
@@ -25,6 +26,18 @@
   }
 }
 
+=======
+/* .ema613_01_su_0001 { */
+.ema613_01_su_0001 .info {
+  position: absolute;
+  bottom: 23PX;
+  left: 346px;
+  font-size: 16px;
+}
+
+/* } */
+
+>>>>>>> b1dd6843 (초기 커밋)
 /*EMA613_01_SU_0003_s*/
 .mr_56 {
   margin-right: 63px !important;

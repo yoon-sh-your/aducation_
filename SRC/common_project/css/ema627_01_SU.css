@@ -8,6 +8,7 @@
 }
 
 /* ema627_01_su_0002 */
+<<<<<<< HEAD
 .ema627_01_su_0002 .img_wrap {
   position: relative;
 }
@@ -33,6 +34,14 @@
   height: 4px;
   background-color: #222;
   border-radius: 50em;
+=======
+.ema627_01_su_0002 .page_1 .picture_wrap {
+  aspect-ratio: 70 / 39;
+}
+.ema627_01_su_0002 .page_1 .picture_wrap svg {
+  width: 100%;
+  height: 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema627_01_su_0002 .page_1 .desc_wrap p {
   position: relative;
@@ -58,3 +67,29 @@
   left: 15px;
   top: 27px;
 }
+<<<<<<< HEAD
+=======
+
+/* ema627_01_su_0003 */
+.ema627_01_su_0003 .picture_wrap {
+  aspect-ratio: 70 / 39;
+}
+.ema627_01_su_0003 .picture_wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ema627_01_su_0004 */
+.ema627_01_su_0004 .picture_wrap {
+  aspect-ratio: 70 / 39;
+}
+.ema627_01_su_0004 .picture_wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ema627_01_su_0006 */
+.ema627_01_su_0006 .picture_wrap svg { 
+  height: 100%;
+}
+>>>>>>> b1dd6843 (초기 커밋)

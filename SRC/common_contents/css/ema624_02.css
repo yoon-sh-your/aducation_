@@ -146,7 +146,11 @@
     top: 83px;
     left: 179px;
     display: flex;
+<<<<<<< HEAD
     gap: 238px;
+=======
+    gap: 254px;
+>>>>>>> b1dd6843 (초기 커밋)
     letter-spacing: 4px;
   }
 
@@ -162,6 +166,20 @@
     display: none;
   }
 
+<<<<<<< HEAD
+=======
+
+  .ema624_02_su_0003 .page_3 .proportional_line.up {
+    width: 263px;
+    left: 7px;
+  }
+
+  .ema624_02_su_0003 .page_3 .proportional_line.down {
+    width: 265px;
+    left: 51px;
+  }
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema624_02_su_0004 */
 
   .ema624_02_su_0004 .page_1 .input_wrap.fraction_wrap math-field {
@@ -202,7 +220,11 @@
     top: 83px;
     left: 556px;
     display: flex;
+<<<<<<< HEAD
     gap: 238px;
+=======
+    gap: 254px;
+>>>>>>> b1dd6843 (초기 커밋)
     letter-spacing: 4px;
   }
 
@@ -228,6 +250,13 @@
     left: 688px;
   }
 
+<<<<<<< HEAD
+=======
+  .ema624_02_su_0004 .page_3 .input_wrap math-field.hint + .text_hint {
+    left: 15px;
+  }
+
+>>>>>>> b1dd6843 (초기 커밋)
   .ema624_02_su_0004 .page_4 .input_wrap math-field.textarea {
     width: 1208px;
     min-height: 330px;
@@ -268,6 +297,20 @@
     align-items: center;
   }
 
+<<<<<<< HEAD
+=======
+  .ema624_02_su_0005 .answer1 math-field.hint + .text_hint {
+    left: 63px;
+  }
+  .ema624_02_su_0005 .answer2 math-field.hint + .text_hint {
+    left: -13px;
+  }
+
+  .ema624_02_su_0005 .answer3 math-field.hint + .text_hint {
+    left:-2px;
+  }
+
+>>>>>>> b1dd6843 (초기 커밋)
 
   .ema624_02_su_0003[data-current-page="page_1"] .btnSubmit,
   .ema624_02_su_0003[data-current-page="page_2"] .btnCheck,
@@ -279,7 +322,11 @@
   }
   .ema624_02_su_0004[data-current-page="page_1"] .btnSubmit,
   .ema624_02_su_0004[data-current-page="page_2"] .btnCheck,
+<<<<<<< HEAD
   .ema624_02_su_0004[data-current-page="page_4"] .btnSubmit,
+=======
+  .ema624_02_su_0004[data-current-page="page_3"] .btnSubmit,
+>>>>>>> b1dd6843 (초기 커밋)
   .ema624_02_su_0004[data-current-page="page_4"] .btnCheck,
   .ema624_02_su_0004[data-current-page="page_5"] .btnSubmit,
   .ema624_02_su_0004[data-current-page="page_5"] .btnType{

@@ -316,3 +316,10 @@ button.btnCheck.hide {
     font-weight: 700;
     color: #fff;
 }
+<<<<<<< HEAD
+=======
+.ema515_09_su_0002 .dp_grid.type2{
+    grid-template-columns: 0.85fr;
+    justify-content:center;
+}
+>>>>>>> b1dd6843 (초기 커밋)

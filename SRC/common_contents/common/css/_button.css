@@ -202,6 +202,16 @@ button:focus-visible,
   background-image: url(../img/icon_btn_sample_white.svg);
 }
 
+<<<<<<< HEAD
+=======
+.btn_area > button.btnSample.active {
+  background-color: var(--bg-default);
+  color: var(--font-main-reverse);
+  background-image: url(../img/icon_btn_sample.svg);
+  pointer-events: all;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .btn_area > button.btnSample.close,
 .btn_area > button.btnCheck.active.close {
   background-color: var(--secondary-red);
@@ -211,12 +221,15 @@ button:focus-visible,
   pointer-events: all;
 }
 
+<<<<<<< HEAD
 .btn_area > button.btnSample.active {
   background-color: var(--bg-default);
   color: var(--font-main-reverse);
   background-image: url(../img/icon_btn_sample.svg);
   pointer-events: all;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 
 .btn_area > button.btnReset:hover,
 .btn_area > button.btnCheck:hover,

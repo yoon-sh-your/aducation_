@@ -31,13 +31,18 @@
                 <ul class="flex dir_col gap_12">
                   <li class="text_bullet">30의 약수입니다.</li>
                   <li class="text_bullet">6보다 큰 수입니다.</li>
+<<<<<<< HEAD
                   <li class="text_bullet">홀수입니다</li>
+=======
+                  <li class="text_bullet">홀수입니다.</li>
+>>>>>>> b1dd6843 (초기 커밋)
                 </ul>
               </div>
             </div>
             <div class="right">
               <h3 lang="y">30의 약수를 모두 써 보세요.</h3>
               <div class="flex align_center">
+<<<<<<< HEAD
                 <span>(</span>
                 <div class="input_wrap"><math-field data-answer-single="1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
                 ,
@@ -56,6 +61,25 @@
                 <div class="input_wrap"><math-field data-answer-single="30" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
                 )
               </div>
+=======
+                <div class="input_wrap"><math-field data-answer-single="1" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="2" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="3" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="5" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="6" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="10" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="15" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="30" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+              </div>
+              <div class="error-message"></div>
+>>>>>>> b1dd6843 (초기 커밋)
             </div>
           </div>
           <div class="solve_area">
@@ -63,7 +87,11 @@
               <div class="flex">
                 <strong class="tit_solve" lang="y">해설</strong>
                 <div class="conts_solve">
+<<<<<<< HEAD
                   <p lang="y" class="text_bullet">30의 약수는 1, 2, 3, 5, 6, 10, 15, 30입니다.</p>
+=======
+                  <p lang="y">30의 약수는 1, 2, 3, 5, 6, 10, 15, 30입니다.</p>
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
               </div>
               <div class="buttons_solve"></div>
@@ -78,16 +106,24 @@
                 <ul class="flex dir_col gap_12">
                   <li class="text_bullet">30의 약수입니다.</li>
                   <li class="text_bullet">6보다 큰 수입니다.</li>
+<<<<<<< HEAD
                   <li class="text_bullet">홀수입니다</li>
+=======
+                  <li class="text_bullet">홀수입니다.</li>
+>>>>>>> b1dd6843 (초기 커밋)
                 </ul>
               </div>
             </div>
             <div class="right">
               <h3 lang="y">30의 약수 중에서 6보다 큰 홀수를 써 보세요.</h3>
               <div class="flex align_center gap_12">
+<<<<<<< HEAD
                 (
                 <div class="input_wrap"><math-field data-answer-single="15"></math-field></div>
                 )
+=======
+                <div class="input_wrap"><math-field data-answer-single="15"></math-field></div>
+>>>>>>> b1dd6843 (초기 커밋)
               </div>
             </div>
           </div>
@@ -110,5 +146,65 @@
         </div>
       </section>
     </div>
+<<<<<<< HEAD
+=======
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mathFields = document.querySelectorAll('math-field');
+    
+        const getEnteredValues = () =>
+          Array.from(mathFields)
+            .map(f => f.getValue().trim())
+            .filter(v => v !== '');
+    
+        mathFields.forEach(field => {
+          const correctValue = field.dataset.answerSingle;
+          const allCorrectValues = JSON.parse(field.dataset.answerMulti).values;
+    
+          const errorDiv = document.createElement('div');
+          errorDiv.className = 'error-message';
+          field.parentElement.appendChild(errorDiv);
+    
+          field.addEventListener('input', () => {
+            const currentValue = field.getValue().trim();
+            const allValues = getEnteredValues();
+    
+            // 중복 체크
+            const isDuplicate = allValues.filter(v => v === currentValue).length > 1;
+    
+            // 정답 체크
+            const isCorrect = currentValue === correctValue;
+    
+            if (isDuplicate) {
+              field.classList.add('error');
+              field.classList.remove('correct');
+              errorDiv.textContent = '이미 입력된 약수입니다.';
+            } else if (allCorrectValues.includes(currentValue)) {
+              if (isCorrect) {
+                field.classList.add('correct');
+                field.classList.remove('error');
+                errorDiv.textContent = '';
+              } else {
+                // field.classList.add('error');
+                // field.classList.remove('correct');
+                // errorDiv.textContent = '정답이 아닙니다. 다시 입력해주세요.';
+              }
+            } else {
+              // field.classList.add('error');
+              // field.classList.remove('correct');
+              // errorDiv.textContent = '유효하지 않은 값입니다.';
+            }
+    
+            // 입력 비우면 초기화
+            if (currentValue === '') {
+              field.classList.remove('correct', 'error');
+              errorDiv.textContent = '';
+            }
+          });
+        });
+      });
+    </script>
+    
+>>>>>>> b1dd6843 (초기 커밋)
   </body>
 </html>

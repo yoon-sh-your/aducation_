@@ -62,7 +62,12 @@
     z-index: 2;
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap {
+=======
+.image_zoom_wrap,
+.supplies_zoom_wrap {
+>>>>>>> b1dd6843 (초기 커밋)
     display: flex;
     flex-direction: column;
     width: 1635px;
@@ -76,7 +81,12 @@
     transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap button {
+=======
+.image_zoom_wrap button,
+.supplies_zoom_wrap button {
+>>>>>>> b1dd6843 (초기 커밋)
     min-width: unset;
 }
 
@@ -99,9 +109,17 @@
 .image_zoom_wrap .title h3>span {
     color: var(--primary-blue);
     margin-right: 12px;
+<<<<<<< HEAD
 }
 
 .image_zoom_wrap button.close {
+=======
+    display: none;
+}
+
+.image_zoom_wrap button.close,
+.supplies_zoom_wrap button.close {
+>>>>>>> b1dd6843 (초기 커밋)
     width: 40px;
     height: 40px;
     background: url(../../common/img/icon_times_blk.svg) no-repeat center / 40px;
@@ -113,12 +131,22 @@
     position: relative;
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .image_zoom {
+=======
+.image_zoom_wrap .image_zoom,
+.supplies_zoom_wrap .supplies_zoom {
+>>>>>>> b1dd6843 (초기 커밋)
     overflow: auto;
     position: relative;
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .image_zoom.grab {
+=======
+.image_zoom_wrap .image_zoom.grab,
+.supplies_zoom_wrap .supplies_zoom.grab {
+>>>>>>> b1dd6843 (초기 커밋)
     cursor: move;
 }
 
@@ -160,7 +188,12 @@
     z-index: 2;
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .controller {
+=======
+.image_zoom_wrap .controller,
+.supplies_zoom_wrap .controller {
+>>>>>>> b1dd6843 (초기 커밋)
     display: inline-flex;
     gap: 12px;
     position: absolute;
@@ -169,7 +202,12 @@
     z-index: 3;
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .controller>button {
+=======
+.image_zoom_wrap .controller>button,
+.supplies_zoom_wrap .controller>button {
+>>>>>>> b1dd6843 (초기 커밋)
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -178,7 +216,12 @@
     background-color: var(--bg-default);
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .controller>button::after {
+=======
+.image_zoom_wrap .controller>button::after,
+.supplies_zoom_wrap .controller>button::after {
+>>>>>>> b1dd6843 (초기 커밋)
     content: "";
     width: 40px;
     height: 40px;
@@ -191,22 +234,38 @@
     transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .controller>button:hover {
+=======
+.image_zoom_wrap .controller>button:hover,
+.supplies_zoom_wrap .controller>button:hover {
+>>>>>>> b1dd6843 (초기 커밋)
     background-color: var(--primary-blue-50);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .controller>button:disabled {
+=======
+.image_zoom_wrap .controller>button:disabled,
+.supplies_zoom_wrap .controller>button:disabled {
+>>>>>>> b1dd6843 (초기 커밋)
     background-color: var(--btn-disabled-bg);
     border-color: var(--stroke-default);
     box-shadow: none;
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .controller>button:disabled::after {
+=======
+.image_zoom_wrap .controller>button:disabled::after,
+.supplies_zoom_wrap .controller>button:disabled::after {
+>>>>>>> b1dd6843 (초기 커밋)
     -webkit-filter: grayscale(100%) opacity(50%);
     filter: grayscale(100%) opacity(50%);
 }
 
+<<<<<<< HEAD
 .image_zoom_wrap .scale_up::after {
     background-image: url(../img/icon_plus.svg);
 }
@@ -215,6 +274,83 @@
     background-image: url(../img/icon_minus.svg);
 }
 
+=======
+.image_zoom_wrap .scale_up::after,
+.supplies_zoom_wrap .supplies_scale_up::after {
+    background-image: url(../img/icon_plus.svg);
+}
+
+.image_zoom_wrap .scale_down::after,
+.supplies_zoom_wrap .supplies_scale_down::after {
+    background-image: url(../img/icon_minus.svg);
+}
+
+/* 준비물 팝업 */
+.pop_supplies_area:not(.show) {
+    display: none;
+}
+
+.pop_supplies_area .supplies_zoom_wrap button.close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+}
+
+.pop_supplies_wrap .pop_supplies_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_supplies_area .supplies_zoom_wrap .supplies_zoom {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pop_supplies_area .supplies_zoom_wrap .supplies_zoom .supplies_box_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 70px 0;
+}
+
+.pop_supplies_area .supplies_zoom_wrap .supplies_zoom .supplies_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_supplies_area .supplies_zoom_wrap .supplies_zoom .supplies_box .supplies_tit {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pop_supplies_area .supplies_zoom_wrap .supplies_zoom .supplies_box .supplies_contents {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.pop_supplies_area .supplies_zoom_wrap .supplies_zoom img {
+    width: auto;
+    height: auto;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /**
 * 페이징 기능 ui
 */
@@ -701,6 +837,19 @@
     background-color: var(--font-main);
 }
 
+<<<<<<< HEAD
+=======
+.connect_wrap.correct .connect_lines line.hint_line,
+.connect_wrap.hint .connect_lines line.correct_line {
+    opacity: .3;
+    stroke: #0066cc;
+}
+.connect_wrap.hint .connect_lines line.answer_line {
+    opacity: .3;
+    stroke: red;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 드래그앤드롭 */
 .ui-state-hover {
     outline: 2px dashed var(--stroke-hover);
@@ -858,6 +1007,11 @@
     stroke-width: 2;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 .drawing_grid_area .drawing_grid_area.correct {
     border: 2px solid green;
 }
@@ -866,6 +1020,22 @@
     border: 2px solid red;
 }
 
+<<<<<<< HEAD
+=======
+.drawing_grid_area .answer_bg_line {
+    stroke: red;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.drawing_grid_area.hint .answer_bg_line {
+    opacity: 1;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 컨텐츠 비활성화 */
 .completed .disabled,
 .completed .drawing_area,
@@ -1024,6 +1194,7 @@
 }
 .zoom_scroll_content.grabbing {
     cursor: grabbing;
+<<<<<<< HEAD
 }
 
 /* 준비물 팝업 */
@@ -1062,4 +1233,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }

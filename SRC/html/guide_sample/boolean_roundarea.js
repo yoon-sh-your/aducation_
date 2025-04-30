@@ -7,6 +7,7 @@ runAfterAppReady(function() {
     });
 
     // 버튼 활성화 규칙 정의
+<<<<<<< HEAD
     defineButtonClassRules([
         {
             selector: ".circle-graph-division",
@@ -19,6 +20,20 @@ runAfterAppReady(function() {
             }
         }
     ]);
+=======
+    // defineButtonClassRules([
+    //     {
+    //         selector: ".circle-graph-division",
+    //         key: "check_target",
+    //         test: (el) => {
+    //             // correction 데이터 가져오기
+    //             const correction = el.getAttribute('data-correction');
+    //             // correction 속성이 없거나 빈 배열이면 false
+    //             return !correction || correction === '[]' ? false : true;
+    //         }
+    //     }
+    // ]);
+>>>>>>> b1dd6843 (초기 커밋)
     
     window.resetCustom = function() {
         // 현재 활성화된 페이지의 원만 리셋

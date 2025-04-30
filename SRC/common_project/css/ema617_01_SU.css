@@ -2,7 +2,11 @@
 .ema617_01_su_0002 .contents {
     width: 1208px;
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 104px 90px 20px 46px;
+=======
+    padding: 88px 90px 20px 46px;
+>>>>>>> b1dd6843 (초기 커밋)
     background: url(../img/EMA617_01_SU/EMA617_01_SU_0002_bg.png) no-repeat;
     background-size: 1208px 502px;
 }
@@ -10,13 +14,21 @@
     text-decoration-thickness : 3px;
 }
 .ema617_01_su_0002 .tables {
+<<<<<<< HEAD
     gap:80px;
+=======
+    gap:50px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema617_01_su_0002 .tables table {
     background-color: #fff;
 }
 .ema617_01_su_0002 .tables table caption {
+<<<<<<< HEAD
     caption-side: bottom;
+=======
+    /* caption-side: bottom; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema617_01_su_0002 .tables table th,
 .ema617_01_su_0002 .tables table td {
@@ -25,7 +37,11 @@
     border:1px solid #D2D2D2;
 }
 .ema617_01_su_0002 .tables table th {
+<<<<<<< HEAD
     width:150px;
+=======
+    width:154px;
+>>>>>>> b1dd6843 (초기 커밋)
     background-color: #D9F0FF;
 }
 .ema617_01_su_0002 .tables table thead td {
@@ -35,11 +51,19 @@
 
 
 /* ema617_01_su_0003 */
+<<<<<<< HEAD
 .ema617_01_su_0003 .img_wrap {
+=======
+.ema617_01_su_0003[data-current-page="page_1"] .btn_area {
+    display: none;
+}
+.ema617_01_su_0003 .page_1 .img_wrap {
+>>>>>>> b1dd6843 (초기 커밋)
     position: relative;
     width: max-content;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 .ema617_01_su_0003 .img_wrap .img_txt {
     position: absolute;
     left: 133px;
@@ -48,11 +72,28 @@
 
 /* ema617_01_su_0004 */
 .ema617_01_su_0004 .input_wrap {
+=======
+.ema617_01_su_0003 .page_1 .img_wrap .img_txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ema617_01_su_0003 .page_1 .img_wrap .canvas_wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+.ema617_01_su_0003 .input_wrap {
+>>>>>>> b1dd6843 (초기 커밋)
     width:100%;
     display: block;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 .ema617_01_su_0004 .input_wrap math-field.textarea {
+=======
+.ema617_01_su_0003 .input_wrap math-field.textarea {
+>>>>>>> b1dd6843 (초기 커밋)
     width:100%;
     height: 194px;
 }

@@ -17,7 +17,11 @@
 .input_wrap math-field:not(.textarea) {
   width: 120px;
   height: 60px;
+<<<<<<< HEAD
   padding: 10px 20px;
+=======
+  padding: 10px 10px;
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4;
@@ -30,19 +34,31 @@
   width: 100%;
   min-width: 400px;
   min-height: 160px;
+<<<<<<< HEAD
   padding: 14px 10px 14px 20px;
+=======
+  padding: 10px 20px;
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 24px;
   font-weight: 700;
   border: 1px solid var(--stroke-default);
   border-radius: 12px;
   background: var(--bg-input);
+<<<<<<< HEAD
 }
+=======
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap math-field.correct {
   color: var(--primary-blue);
   background-color: var(--primary-blue-50);
   pointer-events: none;
   opacity: 1;
 }
+<<<<<<< HEAD
 .input_wrap math-field:not(.textarea).correct::after,
 .input_wrap math-field.textarea.correct::after {
   border-color: var(--stroke-correct);
@@ -52,6 +68,17 @@
 .input_wrap math-field.textarea.correct:disabled:hover::after,
 .input_wrap math-field:not(.textarea).correct:focus::after,
 .input_wrap math-field.textarea.correct:focus::after {
+=======
+.input_wrap math-field:not(.textarea).correct,
+.input_wrap math-field.textarea.correct {
+  border-color: var(--stroke-correct);
+}
+
+.input_wrap math-field:not(.textarea).correct:disabled:hover,
+.input_wrap math-field.textarea.correct:disabled:hover,
+.input_wrap math-field:not(.textarea).correct:focus,
+.input_wrap math-field.textarea.correct:focus {
+>>>>>>> b1dd6843 (초기 커밋)
   border-color: var(--stroke-correct);
   border-width: 2px;
   border-style: solid;
@@ -65,6 +92,7 @@
   background-color: var(--secondary-coral-300);
   opacity: 1;
 }
+<<<<<<< HEAD
 .input_wrap math-field[data-correction]:not(.textarea).hint:disabled::after,
 .input_wrap math-field[data-correction].textarea.hint:disabled::after {
   border-color: var(--stroke-error);
@@ -74,6 +102,23 @@
 .input_wrap math-field[data-correction].textarea.hint:disabled:hover::after,
 .input_wrap math-field[data-correction]:not(.textarea).hint:disabled:focus::after,
 .input_wrap math-field[data-correction].textarea.hint:disabled:focus::after {
+=======
+.input_wrap math-field[data-correction]:not(.textarea).hint:disabled,
+.input_wrap math-field[data-correction].textarea.hint:disabled {
+  border-color: var(--stroke-error);
+}
+
+.input_wrap.keypad_mode math-field:not(.hint):disabled {
+  /* 필기인식+수식입력인 경우 inputbox 흰색배경의 비활성화, 클릭해서 키패드를 띄우도록 함 */
+  background: var(--bg-input);
+  cursor: pointer;
+}
+
+.input_wrap math-field[data-correction]:not(.textarea).hint:disabled:hover,
+.input_wrap math-field[data-correction].textarea.hint:disabled:hover,
+.input_wrap math-field[data-correction]:not(.textarea).hint:disabled:focus,
+.input_wrap math-field[data-correction].textarea.hint:disabled:focus {
+>>>>>>> b1dd6843 (초기 커밋)
   border-color: var(--stroke-error);
   border-width: 2px;
   border-style: solid;
@@ -82,12 +127,16 @@
 .input_wrap.fraction_wrap math-field {
   min-height: 112px;
 }
+<<<<<<< HEAD
 .input_wrap.fraction_wrap math-field::part(container) {
   height: 92px;
 }
 .input_wrap.fraction_wrap math-field::part(content) {
   height: 50px;
 }
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap.fraction_wrap math-field::part(placeholder) {
   font-size: 24px;
 }
@@ -98,7 +147,11 @@
 .input_wrap math-field.textarea::placeholder {
   color: #999;
   font-size: 14px;
+<<<<<<< HEAD
   background-image: url("../img/icon_hint.svg");
+=======
+  background-image: url('../img/icon_hint.svg');
+>>>>>>> b1dd6843 (초기 커밋)
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 40px;
@@ -107,10 +160,15 @@
 
 .input_wrap math-field:not(.textarea)::after,
 .input_wrap math-field.textarea::after {
+<<<<<<< HEAD
   content: "";
   display: block;
   width: 100%;
   height: 100%;
+=======
+  content: '';
+  display: block;
+>>>>>>> b1dd6843 (초기 커밋)
   border-radius: 12px;
   position: absolute;
   top: 50%;
@@ -125,6 +183,7 @@
 
 .input_wrap input:hover::after,
 .input_wrap textarea:hover::after,
+<<<<<<< HEAD
 .input_wrap math-field:not(.textarea):hover::after,
 .input_wrap math-field.textarea:hover::after {
   border-color: var(--stroke-hover);
@@ -133,11 +192,47 @@
 .input_wrap textarea:focus,
 .input_wrap math-field:not(.textarea):focus-within::after,
 .input_wrap math-field.textarea:focus-within::after {
+=======
+.input_wrap math-field:not(.textarea):hover,
+.input_wrap math-field.textarea:hover,
+.input_wrap input:focus,
+.input_wrap textarea:focus,
+.input_wrap textarea:focus,
+.input_wrap math-field:not(.textarea):focus,
+.input_wrap math-field.textarea:focus {
+  border-color: var(--stroke-hover);
+}
+
+/* 예시답안이 있는 경우 포커스 비활성화 (250429) */
+.input_wrap:has(.example_box) math-field.correct {
+  border-color: var(--stroke-default);
+  color: #000;
+}
+.input_wrap:has(.example_box) math-field:focus,
+.input_wrap:has(.example_box) math-field:hover {
+  border-color: var(--stroke-default) !important;
+}
+
+.input_wrap input:focus-visible,
+.input_wrap textarea:focus-visible {
+>>>>>>> b1dd6843 (초기 커밋)
   border-width: 3px;
   border-style: dashed;
   border-color: var(--stroke-focus-visible);
 }
 
+<<<<<<< HEAD
+=======
+.input_wrap math-field:not(.textarea).focus-visible,
+.input_wrap math-field.textarea.focus-visible {
+  outline: var(--stroke-focus-visible) dashed 3px;
+  border-radius: 12px;
+}
+.input_wrap math-field:focus-within {
+  outline: unset;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap input:disabled,
 .input_wrap textarea:disabled,
 .input_wrap math-field:disabled {
@@ -145,12 +240,18 @@
   pointer-events: none;
 }
 
+<<<<<<< HEAD
 .input_wrap math-field:disabled:not(.textarea):hover::after,
 .input_wrap math-field:disabled.textarea:hover::after {
+=======
+.input_wrap math-field:disabled:not(.textarea):hover,
+.input_wrap math-field:disabled.textarea:hover {
+>>>>>>> b1dd6843 (초기 커밋)
   border-width: 1px;
   border-color: var(--stroke-default);
 }
 
+<<<<<<< HEAD
 .input_wrap math-field:focus-within {
   outline: unset;
 }
@@ -162,6 +263,14 @@
 .input_wrap.keypad_mode input,
 .input_wrap.keypad_mode textarea,
 .input_wrap.keypad_mode math-field {
+=======
+/* .input_wrap math-field.disabled::part(container) {
+  pointer-events: none;
+} */
+
+.input_wrap.keypad_mode input,
+.input_wrap.keypad_mode textarea {
+>>>>>>> b1dd6843 (초기 커밋)
   pointer-events: none;
 }
 
@@ -182,6 +291,7 @@
   background-size: 40px;
   white-space: nowrap;
 }
+<<<<<<< HEAD
 
 .input_wrap math-field.scroll {
   overflow-y: auto;
@@ -190,6 +300,16 @@
 /* Error 상태 */
 .input_wrap.error::after {
   content: "에러문구 지정 필요";
+=======
+/* 
+.input_wrap math-field.scroll {
+  overflow-y: auto;
+} */
+
+/* Error 상태 */
+.input_wrap.error::after {
+  content: '에러문구 지정 필요';
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
   padding-left: 20px;
   background: url(../img/icon_input_error.svg) no-repeat center left 4px / 12px;
@@ -201,16 +321,28 @@
 
 .input_wrap.error input,
 .input_wrap.error textarea,
+<<<<<<< HEAD
 .input_wrap.error math-field::after {
   border-color: var(--stroke-error);
 }
 
 .input_wrap math-field[data-correction="false"].disabled::after {
+=======
+.input_wrap.error math-field {
+  border-color: var(--stroke-error);
+}
+
+.input_wrap math-field[data-correction='false'].disabled {
+>>>>>>> b1dd6843 (초기 커밋)
   border-color: var(--stroke-error);
   border-width: 2px;
 }
 
+<<<<<<< HEAD
 .input_wrap math-field[data-correction="true"].disabled::after {
+=======
+.input_wrap math-field[data-correction='true'].disabled {
+>>>>>>> b1dd6843 (초기 커밋)
   border-color: var(--stroke-completion);
   border-width: 2px;
 }
@@ -259,14 +391,23 @@
 }
 
 .input_wrap .text_hint.multiple_hint_wrap .multiple_hint {
+<<<<<<< HEAD
   gap: 8px;
   margin-left: 8px;
+=======
+  gap: 4px;
+  margin-left: 4px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* 괄호 스타일 수정 시 _layout.css pare_wrap 에도 동시 적용 되어야 함. (250423) */
 .input_wrap .text_hint .pare_wrap::before,
 .input_wrap .text_hint.multiple_hint_wrap .multiple_hint::before {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
   width: 10px;
   height: 40px;
@@ -276,7 +417,11 @@
 
 .input_wrap .text_hint .pare_wrap::after,
 .input_wrap .text_hint.multiple_hint_wrap .multiple_hint::after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
   width: 10px;
   height: 40px;
@@ -288,7 +433,11 @@
 .input_wrap .text_hint.multiple_hint_wrap .multiple_hint:has(.fraction_box)::before {
   width: 14px;
   height: 76px;
+<<<<<<< HEAD
   background-image: url("../img/pare_ico1_big.svg");
+=======
+  background-image: url('../img/pare_ico1_big.svg');
+>>>>>>> b1dd6843 (초기 커밋)
   margin-right: -8px;
 }
 
@@ -296,7 +445,11 @@
 .input_wrap .text_hint.multiple_hint_wrap .multiple_hint:has(.fraction_box)::after {
   width: 14px;
   height: 76px;
+<<<<<<< HEAD
   background-image: url("../img/pare_ico2_big.svg");
+=======
+  background-image: url('../img/pare_ico2_big.svg');
+>>>>>>> b1dd6843 (초기 커밋)
   margin-left: -8px;
 }
 
@@ -347,21 +500,34 @@
   bottom: calc(100% + 4px);
 }
 
+<<<<<<< HEAD
 .input_wrap[data-hint-position="up"] .text_hint:has(.fraction_box),
+=======
+.input_wrap[data-hint-position='up'] .text_hint:has(.fraction_box),
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box > span:first-child .input_wrap .text_hint:has(.fraction_box),
 .fraction_box > .input_wrap:first-child .text_hint:has(.fraction_box) {
   bottom: calc(100% + 12px);
 }
 
+<<<<<<< HEAD
 .input_wrap[data-hint-position="right"] .text_hint {
+=======
+.input_wrap[data-hint-position='right'] .text_hint {
+>>>>>>> b1dd6843 (초기 커밋)
   width: auto;
   left: calc(100% + 14px);
   top: 50%;
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .fraction_box > span .input_wrap[data-hint-position="right"] .text_hint,
 .fraction_box > .input_wrap[data-hint-position="right"] .text_hint {
+=======
+.fraction_box > span .input_wrap[data-hint-position='right'] .text_hint,
+.fraction_box > .input_wrap[data-hint-position='right'] .text_hint {
+>>>>>>> b1dd6843 (초기 커밋)
   width: auto;
   left: calc(100% + 14px);
   bottom: auto;
@@ -369,7 +535,11 @@
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .input_wrap[data-hint-position="left"] .text_hint {
+=======
+.input_wrap[data-hint-position='left'] .text_hint {
+>>>>>>> b1dd6843 (초기 커밋)
   width: auto;
   left: auto;
   right: calc(100% + 14px);
@@ -377,8 +547,13 @@
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .fraction_box > span .input_wrap[data-hint-position="left"] .text_hint,
 .fraction_box > .input_wrap[data-hint-position="left"] .text_hint {
+=======
+.fraction_box > span .input_wrap[data-hint-position='left'] .text_hint,
+.fraction_box > .input_wrap[data-hint-position='left'] .text_hint {
+>>>>>>> b1dd6843 (초기 커밋)
   width: auto;
   left: auto;
   right: calc(100% + 14px);
@@ -387,7 +562,11 @@
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .input_wrap[data-hint-position="up"] .text_hint {
+=======
+.input_wrap[data-hint-position='up'] .text_hint {
+>>>>>>> b1dd6843 (초기 커밋)
   top: auto !important;
   bottom: calc(100% + 4px);
 }
@@ -399,6 +578,7 @@ math-field::part(virtual-keyboard-toggle) {
   display: none;
 }
 
+<<<<<<< HEAD
 math-field::part(container),
 math-field::part(content) {
   overflow-y: auto;
@@ -409,6 +589,11 @@ math-field::part(content) {
 math-field {
   --composition-background-color: transparent; /* 한글 조합 모드에서 배경색 투명하게 */
   --smart-fence-color: transparent;
+=======
+math-field {
+  --composition-background-color: transparent; /* 한글 조합 모드에서 배경색 투명하게 *
+  --smart-fence-color: transparent;*/
+>>>>>>> b1dd6843 (초기 커밋)
   --highlight-text: transparent;
 }
 
@@ -434,6 +619,12 @@ math-field::part(placeholder) {
   justify-content: flex-start;
   position: absolute;
 }
+<<<<<<< HEAD
+=======
+math-field:not(.textarea)::part(placeholder) {
+  top: -1px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* keypad 모드 placeholder 스타일 */
 .input_wrap.keypad_mode math-field::part(placeholder) {
@@ -464,7 +655,11 @@ label {
 }
 
 .input_area label::after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
   width: 100%;
   height: 26px;
@@ -499,7 +694,11 @@ label {
 }
 
 .input_wrap .example_box::before {
+<<<<<<< HEAD
   content: "예";
+=======
+  content: '예';
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -515,14 +714,31 @@ label {
   left: 24px;
 }
 
+<<<<<<< HEAD
+=======
+.input_wrap .example_box .example_text_box {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--primary-blue-800);
+  white-space: normal;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap .example_box > p {
   display: flex;
   align-items: center;
   gap: 12px;
   font-size: 24px;
   font-weight: 700;
+<<<<<<< HEAD
   /* line-height: 1.5; */
   color: var(--primary-blue-800);
+=======
+  line-height: 1.5;
+  color: var(--primary-blue-800);
+  white-space: normal;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .input_wrap ol.example_box li {
@@ -531,7 +747,12 @@ label {
   color: var(--primary-blue-800);
   font-size: 24px;
   font-weight: 700;
+<<<<<<< HEAD
   /* line-height: 1.5; */
+=======
+  line-height: 1.5;
+  white-space: normal;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .input_wrap ol.example_box li:not(:first-child) {
@@ -539,7 +760,11 @@ label {
 }
 
 .input_wrap ol.example_box li::before {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   position: absolute;
   left: 0;
   top: 14px;

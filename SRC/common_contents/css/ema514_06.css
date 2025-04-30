@@ -174,7 +174,11 @@
   width: 48px;
   position: absolute;
   top: 48px;
+<<<<<<< HEAD
   left: 115px;
+=======
+  left: 130px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema514_06_su_0004 .fra_ex .fra_parens {
   display: flex;
@@ -183,6 +187,7 @@
 .ema514_06_su_0004 .page_2 .example_box .ex_col {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   gap: 16px;
   position: relative;
 }
@@ -191,6 +196,10 @@
   top: -6px;
   left: 36px;
 }
+=======
+  position: relative;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema514_06_su_0004 .fra_inn {
   display: flex;
   align-items: center;
@@ -251,6 +260,18 @@
 .ema514_06_su_0004 .page_2 math-field::part(placeholder) {
   background-position: 1px -7px;
 }
+<<<<<<< HEAD
+=======
+
+.ema514_06_su_0004 .page_2 .input_wrap[data-hint-position="left"] .text_hint {
+  right: calc(100% + 31px);
+}
+.ema514_06_su_0004 .page_2 .input_wrap[data-hint-position="right"] .text_hint {
+  left: calc(100% + 30px);
+}
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema514_06_su_0004 .page_2 .example_input {
   height: 120px;
   width: 100%
@@ -258,11 +279,22 @@
 .ema514_06_su_0004 .page_2 .example_input .example_box {
   display: flex;
   gap: 100px;
+<<<<<<< HEAD
 }
 .ema514_06_su_0004 .page_2 .example_input .example_box:before {
   top: 14px;
 }
 .ema514_06_su_0004 .page_2 .example_input .example_box span {
+=======
+  margin-top: 4px;
+  padding: 18px 24px 18px 82px;
+}
+.ema514_06_su_0004 .page_2 .example_input .example_box:before {
+  top: 24px;
+}
+.ema514_06_su_0004 .page_2 .example_input .example_box span {
+  color: var(--primary-blue-800);
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 28px;
 }
 .ema514_06_su_0004 .page_3 .fraction_col {
@@ -346,13 +378,20 @@
   display: flex;
   gap: 160px;
   justify-content: center;
+<<<<<<< HEAD
 
+=======
+  height: 300px;
+>>>>>>> b1dd6843 (초기 커밋)
   flex-wrap: wrap;
   background: url(../../common_contents/img/EMA514_06_SU/0006_bg.png) no-repeat center;
 }
 .ema514_06_su_0006 .draggable_wrap {
   width: 400px;
+<<<<<<< HEAD
   height: 208px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   padding: 10px 50px;
   justify-content: center;
   align-items: center;
@@ -362,10 +401,15 @@
 .ema514_06_su_0006 .draggable {
   width: 80px;
   height: 114px;
+<<<<<<< HEAD
   /* width: 40px;
     height: 40px; */
   position: absolute;
   top: 42px;
+=======
+  position: absolute;
+  top: 90px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 40px;
   cursor: grab;
 }
@@ -394,11 +438,21 @@
   justify-content: center;
   gap: 20px;
   width: 400px;
+<<<<<<< HEAD
   padding: 36px 50px 10px;
   height: 210px;
 }
 .ema514_06_su_0006 .drag_group_box .fraction_box:before {
   top: calc(50% - 53px);
+=======
+  padding: 38px 50px 10px;
+}
+.ema514_06_su_0006 .drag_group_box .fraction_box span:first-child {
+  height: 84px;
+}
+.ema514_06_su_0006 .drag_group_box .fraction_box:before {
+  top: calc(50% - 55px);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema514_06_su_0006 .droppable {

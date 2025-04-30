@@ -79,7 +79,11 @@
 }
 
 .ema611_03_su_0003 h3 > .tag:first-child {
+<<<<<<< HEAD
   margin-left: 12px;
+=======
+  /* margin-left: 12px; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema611_03_su_0003 .contents .page_1 > .flex,
@@ -282,7 +286,11 @@
   letter-spacing: -1px;
 }
 
+<<<<<<< HEAD
 .ema611_03_su_0004 .question_box .quiz > .fraction_box > span {
+=======
+.ema611_03_su_0004 .question_box .quiz .fraction_box > span {
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 32px;
 }
 

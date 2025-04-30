@@ -1,4 +1,5 @@
 /* ema524_08_SU_0002 */
+<<<<<<< HEAD
 
 .ema524_08_su_0002 .video_wrap {
   background: url(../../common_contents/img/ema524_07_SU/0002_contents.png)
@@ -7,6 +8,15 @@
 .ema524_08_su_0002 .video_wrap p {
   position: absolute;
   top: 71%;
+=======
+/* .ema524_08_su_0002 .video_wrap {
+  background: url(../../common_contents/img/EMA524_08_SU/0002_contents.png)
+    no-repeat center 100% / 103%;
+} */
+.ema524_08_su_0002 .video_wrap p {
+  position: absolute;
+  top: 86%;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 55%;
   transform: rotate(5deg);
   text-align: center;
@@ -21,6 +31,14 @@
   width: 200px;
 }
 
+<<<<<<< HEAD
+=======
+.ema524_08_su_0003 .note-paper .paper-con > span > span {
+  display: inline-block;
+  width: 120px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema524_08_SU_0004 */
 .ema524_08_su_0004 .page_1 > div {
   display: flex;
@@ -28,7 +46,12 @@
 }
 .ema524_08_su_0004 .page_1 > div > div {
   min-width: 50%;
+<<<<<<< HEAD
   padding-top: 50px;
+=======
+  padding-top: 30px;
+  margin: 0 auto;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema524_08_su_0004 .page_2 .wrap {
   text-align: center;
@@ -37,15 +60,29 @@
 .ema524_08_su_0004 .page_2 .input_wrap math-field.textarea {
   min-height: 288px;
 }
+<<<<<<< HEAD
 #app_wrap.ema524_08_su_0004[data-current-page="page_2"] .btnCheck,
 #app_wrap.ema524_08_su_0004[data-current-page="page_1"] .btnSubmit {
   display: none;
 }
+=======
+.ema524_08_su_0004[data-current-page="page_1"] .btnSample {
+  display: none;
+}
+.ema524_08_su_0004[data-current-page="page_2"] .btnCheck {
+  display: none;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema524_08_SU_0005 */
 .ema524_08_su_0005 .wrap {
   width: 1200px;
   margin: 50px auto 0;
+<<<<<<< HEAD
   background: url(../../common_contents/img/ema524_07_SU/0005_bg.png) no-repeat
+=======
+  background: url(../../common_contents/img/EMA524_08_SU/0005_bg.png) no-repeat
+>>>>>>> b1dd6843 (초기 커밋)
     center center;
   height: 320px;
   display: flex;
@@ -67,6 +104,14 @@
   padding-right: 215px;
 }
 
+<<<<<<< HEAD
+=======
+.ema524_08_su_0005 .wrap > div > div > span:first-child {
+  display: inline-block;
+  width: 165px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema524_08_SU_0006 */
 .ema524_08_su_0006 .wrap {
   margin: 50px auto 0;
@@ -87,4 +132,8 @@
 }
 .ema524_08_su_0006 .answer_box > div {
   gap: 50px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b1dd6843 (초기 커밋)

@@ -68,6 +68,7 @@
   border: none;
 }
 
+<<<<<<< HEAD
 .ema511_09_su_0002 .boolean_wrap .button1 {
   width: 90px;
   left: 71px;
@@ -101,6 +102,37 @@
 
 .ema511_09_su_0002 .input_wrap math-field.textarea {
   height: 250px;
+=======
+.ema511_09_su_0002 .boolean_wrap button {
+  width: 80px;
+  height: 80px;
+  top: -10px;
+  left: 71px;
+}
+
+.ema511_09_su_0002 .boolean_wrap .button2 {  
+  left: 118px;
+}
+
+.ema511_09_su_0002 .boolean_wrap .button3 { 
+  left: 165px; 
+}
+
+.ema511_09_su_0002 .boolean_wrap .button4 { 
+  left: 54px;
+}
+
+.ema511_09_su_0002 .boolean_wrap .button5 { 
+  left: 126px; 
+}
+
+.ema511_09_su_0002 .boolean_wrap .button6 { 
+  left: 180px;
+}
+
+.ema511_09_su_0002 .input_wrap math-field.textarea {
+  height: 255px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /*ema511_09_su_0003_s*/
@@ -350,6 +382,13 @@
 }
 
 /* ema511_09_su_0009_s */
+<<<<<<< HEAD
+=======
+.ema511_09_su_0009 section.title.type2 + section.contents{
+  padding-top: 0px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema511_09_su_0009 .scroll_area {
   position: relative;
 }

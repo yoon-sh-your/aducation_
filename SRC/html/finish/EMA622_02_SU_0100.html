@@ -16,7 +16,31 @@
   </head>
   <style>
     #q1 .qe_area .ans {
+<<<<<<< HEAD
       width: 200px;
+=======
+      width: 100px;
+    }
+    #q2 .dot_area {
+      width: 100%;
+      gap: 0;
+    }
+    #q2 .dot_area .wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #q2 .dot_area .item {
+      font-size: 40px;
+      height: 180px;
+    }
+    #q2 .dot_area .dot {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      right: 0;
+>>>>>>> b1dd6843 (초기 커밋)
     }
   </style>
   <body>
@@ -69,6 +93,7 @@
                 <span lang="y" class="txt">수의 나눗셈을 자연수의 나눗셈을 이용하여 계산하려고 합니다. 빈칸에 알맞은 수를 써 보세요.</span>
               </div>
               <div class="qe_area">
+<<<<<<< HEAD
                 <div class="qe">
                   <img src="../../common_finish/common/img/mamuri/qe/EMA622_02_SU_0100(1).png" alt="" />
                 </div>
@@ -84,6 +109,29 @@
                   <div class="ans">
                     <label for="answer2-2" class="sr-only">두 번째 정답 입력</label>
                     <input type="text" id="answer2-2" class="answer answer2-2 active" readonly />
+=======
+                <div class="ans_wrap flex col">
+                  <div class="t-box">7.2 ÷ 0.8</div>
+                  <div class="t-box">
+                    ↓
+                    <div class="ans">
+                      <label for="answer1-1" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer1-1" class="answer answer1-1 active" readonly />
+                    </div>
+                    배 ↓ 10배
+                  </div>
+                  <div class="t-box">
+                    72 ÷
+                    <div class="ans">
+                      <label for="answer1-2" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer1-2" class="answer answer1-2" readonly />
+                    </div>
+                    &nbsp; = &nbsp;
+                    <div class="ans">
+                      <label for="answer1-3" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer1-3" class="answer answer1-3" readonly />
+                    </div>
+>>>>>>> b1dd6843 (초기 커밋)
                   </div>
                 </div>
               </div>
@@ -127,12 +175,17 @@
           <div class="bg">
             <div class="mid_tit">
               <span lang="y" class="q-num">문제</span>
+<<<<<<< HEAD
               <span lang="y" class="txt">윤아가 문제를 풀고 있습니다. 윤아를 도와 관계있는 것끼리 이어 보세요. </span>
+=======
+              <span lang="y" class="txt">관계있는 것끼리 이어 보세요. </span>
+>>>>>>> b1dd6843 (초기 커밋)
             </div>
             <div class="qe_area">
               <div class="dot_area">
                 <div class="area left">
                   <div class="wrap">
+<<<<<<< HEAD
                     <div class="item"><span>20.4÷3.4</span></div>
                     <div class="dot" pos="1"></div>
                   </div>
@@ -145,10 +198,35 @@
                       <span><span>735÷105</span></span>
                     </div>
                     <div class="dot" pos="3"></div>
+=======
+                    <div class="item">
+                      <span>20.4÷3.4 </span>
+                    </div>
+                    <div class="dot" pos="1"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="item">
+                      <span>73.5÷10.5</span>
+                    </div>
+                    <div class="dot" pos="2"></div>
+                  </div>
+                </div>
+                <div class="area center">
+                  <div class="wrap">
+                    <div class="dot" pos="3"></div>
+                    <div class="item"><span>73.5÷10.5</span></div>
+                    <div class="dot" pos="5"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="dot" pos="4"></div>
+                    <div class="item"><span>204÷34</span></div>
+                    <div class="dot" pos="6"></div>
+>>>>>>> b1dd6843 (초기 커밋)
                   </div>
                 </div>
                 <div class="area right">
                   <div class="wrap">
+<<<<<<< HEAD
                     <div class="item"><span>204÷34</span></div>
                     <div class="dot" pos="4"></div>
                   </div>
@@ -159,17 +237,37 @@
                   <div class="wrap">
                     <div class="item"><span>7</span></div>
                     <div class="dot" pos="6"></div>
+=======
+                    <div class="dot" pos="7"></div>
+                    <div class="item"><span>6</span></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="dot" pos="8"></div>
+                    <div class="item"><span>7</span></div>
+>>>>>>> b1dd6843 (초기 커밋)
                   </div>
                 </div>
               </div>
               <svg class="theboard" style="position: absolute; width: 100%; height: 100%">
                 <circle n="1" pos="1" tabindex="0" style="cursor: pointer" r="30" fill="red" stroke="#000" stroke-width="1" class="thapoint" />
                 <circle n="2" pos="2" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint" />
+<<<<<<< HEAD
                 <circle n="3" pos="3" tabindex="0" style="cursor: pointer" r="30" fill="red" stroke="#000" stroke-width="1" class="thapoint" />
 
                 <circle n="1" pos="4" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
                 <circle n="2" pos="5" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
                 <circle n="3" pos="6" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
+=======
+
+                <circle n="2" pos="3" tabindex="0" style="cursor: pointer" r="30" fill="red" stroke="#000" stroke-width="1" class="thapoint2" />
+                <circle n="1" pos="4" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
+
+                <circle n="3" pos="5" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint" />
+                <circle n="4" pos="6" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint" />
+
+                <circle n="4" pos="7" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
+                <circle n="3" pos="8" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
+>>>>>>> b1dd6843 (초기 커밋)
 
                 <g class="area-solution"></g>
               </svg>
@@ -187,6 +285,7 @@
                 <legend id="q3-label" class="sr-only"></legend>
                 <label class="item">
                   <input type="checkbox" name="q3" value="item1" class="sr-only" />
+<<<<<<< HEAD
                   <span lang="y" class="txt">① 9.9÷0.9</span>
                 </label>
                 <label class="item">
@@ -204,6 +303,25 @@
                 <label class="item">
                   <input type="checkbox" name="q3" value="item5" class="sr-only" />
                   <span lang="y" class="txt">⑤ 6.3÷0.7</span>
+=======
+                  <span lang="y" class="txt">9.9÷0.9</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">16.2÷2.7</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">37.1÷5.3</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">79.2÷9.9</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">6.3÷0.7</span>
+>>>>>>> b1dd6843 (초기 커밋)
                 </label>
               </fieldset>
             </div>
@@ -221,6 +339,7 @@
                 <legend id="q4-label" class="sr-only"></legend>
                 <label class="item">
                   <input type="checkbox" name="q4" value="item1" class="sr-only" />
+<<<<<<< HEAD
                   <span lang="y" class="txt">① 14개</span>
                 </label>
                 <label class="item">
@@ -238,6 +357,25 @@
                 <label class="item">
                   <input type="checkbox" name="q4" value="item5" class="sr-only" />
                   <span lang="y" class="txt">⑤ 22개</span>
+=======
+                  <span lang="y" class="txt">14개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">16개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">18개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">20개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">22개</span>
+>>>>>>> b1dd6843 (초기 커밋)
                 </label>
               </fieldset>
             </div>
@@ -255,6 +393,7 @@
                 <legend id="q5-label" class="sr-only"></legend>
                 <label class="item">
                   <input type="checkbox" name="q5" value="item1" class="sr-only" />
+<<<<<<< HEAD
                   <span lang="y" class="txt">① 1.1 kg</span>
                 </label>
                 <label class="item">
@@ -272,6 +411,25 @@
                 <label class="item">
                   <input type="checkbox" name="q5" value="item5" class="sr-only" />
                   <span lang="y" class="txt">⑤ 0.6 kg</span>
+=======
+                  <span lang="y" class="txt">1.1 kg</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">1.5 kg</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">1.2 kg</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">0.5 kg</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">0.6 kg</span>
+>>>>>>> b1dd6843 (초기 커밋)
                 </label>
               </fieldset>
             </div>

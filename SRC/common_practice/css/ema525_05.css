@@ -17,10 +17,40 @@
 .ema525_05_ih_0004 .bottom .input_wrap {
   width: 1208px;
 }
+<<<<<<< HEAD
 
 .ema525_05_ih_0003 .img_box {
   position: relative;
   margin-top: 28px;
+=======
+.ema525_05_ih_0003 .question_box .img {
+  margin-top: 140px;
+}
+
+.ema525_05_ih_0003 .question_box .img .txt1 {
+  position: absolute;
+  top: 297px;
+  left: 230px;
+}
+.ema525_05_ih_0003 .img_box {
+  position: relative;
+  margin-top: 28px;
+  padding-top: 27px;
+  padding-left: 32px;
+  background: url(../../common_practice/img/EMA525_05_IH/003_grid2.png) no-repeat left top;
+}
+.ema525_05_ih_0003 .question_box .img_box > span {
+  position: absolute;
+  font-size: 15px;
+}
+.ema525_05_ih_0003 .question_box .img_box .txt1 {
+  top: 36px;
+  left: 0;
+}
+.ema525_05_ih_0003 .question_box .img_box .txt2 {
+  top: 0;
+  left: 40px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema525_05_ih_0003 .img_box .example {
   position: absolute;
@@ -34,7 +64,11 @@
   display: block;
 }
 .ema525_05_ih_0003 .img_box .example:after {
+<<<<<<< HEAD
   content: "예";
+=======
+  content: '예';
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
   position: absolute;
   top: -19px;
@@ -55,12 +89,52 @@
   margin-left: 115px;
   margin-top: 106px;
 }
+<<<<<<< HEAD
+=======
+.ema525_05_ih_0003 .input_wrap .example_box {
+  position: relative;
+  max-height: 298px;
+  display: none;
+}
+.ema525_05_ih_0003 .input_wrap .example_box.on {
+  display: block;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema525_05_ih_0005.fail .title h2[data-head]:after {
   background-image: url(../common/img/marking_failed-all.svg);
 }
 .ema525_05_ih_0005 .img {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+.ema525_05_ih_0005 .img span{
+  position: absolute;
+  font-size: 44px;
+  font-weight: 700;
+}
+.ema525_05_ih_0005 .img span.txt1{
+  top: 22px;
+  left: 255px;
+}
+.ema525_05_ih_0005 .img span.txt2{
+  top: 22px;
+  left: 366px;
+}
+.ema525_05_ih_0005 .img span.txt3{
+  top: 133px;
+  left: 35px;
+}
+.ema525_05_ih_0005 .img span.txt4{
+  top: 245px;
+  left: 146px;
+}
+.ema525_05_ih_0005 .img span.txt5{
+  top: 245px;
+  left: 255px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema525_05_ih_0005 .boolean_wrap button {
   position: absolute;
   width: 110px;
@@ -98,6 +172,7 @@
 .ema525_05_ih_0005 .boolean_wrap button.selected img {
   opacity: 1;
 }
+<<<<<<< HEAD
 .ema525_05_ih_0005 .boolean_wrap.result button[data-answer-single="true"] img {
   opacity: 1;
 }
@@ -105,6 +180,15 @@
   filter: invert(41%) sepia(96%) saturate(2815%) hue-rotate(211deg) brightness(97%) contrast(107%);
 }
 .ema525_05_ih_0005 .boolean_wrap.result button.hint[data-answer-single="true"] img {
+=======
+.ema525_05_ih_0005 .boolean_wrap.result button[data-answer-single='true'] img {
+  opacity: 1;
+}
+.ema525_05_ih_0005 .boolean_wrap.result button.selected[data-answer-single='true'] img {
+  filter: invert(41%) sepia(96%) saturate(2815%) hue-rotate(211deg) brightness(97%) contrast(107%);
+}
+.ema525_05_ih_0005 .boolean_wrap.result button.hint[data-answer-single='true'] img {
+>>>>>>> b1dd6843 (초기 커밋)
   filter: invert(12%) sepia(85%) saturate(6857%) hue-rotate(0deg) brightness(92%) contrast(121%);
 }
 
@@ -132,7 +216,10 @@
   z-index: 10;
 }
 .ema525_05_ih_0003 .custom_select.math_symbol {
+<<<<<<< HEAD
   /* width: 200px; */
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   height: 16px;
 }
 .ema525_05_ih_0003 .custom_select.math_symbol .select_trigger {
@@ -147,15 +234,23 @@
   background-color: transparent;
   background-image: none;
 }
+<<<<<<< HEAD
 .ema525_05_ih_0003 .custom_select.math_symbol .select_trigger.completion[data-value="dotted"] {
   border: 2px dashed #231f20;
 }
 .ema525_05_ih_0003 .custom_select.math_symbol .select_trigger.completion[data-value="solid"] {
+=======
+.ema525_05_ih_0003 .custom_select.math_symbol .select_trigger.completion[data-value='dotted'] {
+  border: 2px dashed #231f20;
+}
+.ema525_05_ih_0003 .custom_select.math_symbol .select_trigger.completion[data-value='solid'] {
+>>>>>>> b1dd6843 (초기 커밋)
   background-color: #231f20;
 }
 .ema525_05_ih_0003 .custom_select.math_symbol .select_options {
   top: 10px;
 }
+<<<<<<< HEAD
 .ema525_05_ih_0003 .custom_select.math_symbol .select_options li[data-value="solid"] {
   background-size: 29px;
   background-image: url(../../common_practice/img/EMA525_05_IH/dropdown_solid.svg);
@@ -169,18 +264,37 @@
   padding-left: 35.03px;
   background: url(../../common_practice/img/EMA525_05_IH/003_grid2.svg) no-repeat left top;
 }
+=======
+.ema525_05_ih_0003 .custom_select.math_symbol .select_options li[data-value='solid'] {
+  background-size: 29px;
+  background-image: url(../../common_practice/img/EMA525_05_IH/dropdown_solid.svg);
+}
+.ema525_05_ih_0003 .custom_select.math_symbol .select_options li[data-value='dotted'] {
+  background-size: 32px;
+  background-image: url(../../common_practice/img/EMA525_05_IH/dropdown_dashed.svg);
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* .ema525_05_ih_0003 .custom_select.math_symbol .select_trigger + .select_options {
   display: block;
 } */
 
 /*dropdown*/
+<<<<<<< HEAD
 .selctLineType {
+=======
+.select_line_type {
+>>>>>>> b1dd6843 (초기 커밋)
   display: none;
   position: absolute;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   transform: translateX(-50%);
   padding-top: 15px;
+=======
+  transform: translate(-50%, 0);
+  padding-top: 16px;
+>>>>>>> b1dd6843 (초기 커밋)
   z-index: 10;
 }
 .select_type_options {
@@ -197,7 +311,11 @@
   z-index: 999;
 }
 .select_type_options:after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   width: 29px;
   height: 15px;
   background: url(../../common_practice/common/img/icon_bubble_tail.svg) no-repeat top center / 100%;
@@ -237,10 +355,17 @@
   background-position: center;
   background-size: 32px;
 }
+<<<<<<< HEAD
 .select_type_options li[data-value="solid"] {
   background-image: url(../../common_practice/img/EMA525_05_IH/dropdown_solid.svg);
 }
 .select_type_options li[data-value="dotted"] {
+=======
+.select_type_options li[data-value='solid'] {
+  background-image: url(../../common_practice/img/EMA525_05_IH/dropdown_solid.svg);
+}
+.select_type_options li[data-value='dotted'] {
+>>>>>>> b1dd6843 (초기 커밋)
   background-image: url(../../common_practice/img/EMA525_05_IH/dropdown_dashed.svg);
 }
 /*Grid*/

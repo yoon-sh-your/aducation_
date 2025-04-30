@@ -41,6 +41,15 @@
   z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+.video_wrap.type2 img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /**
   * 비디오 플레이어
   */

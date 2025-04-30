@@ -139,6 +139,7 @@
 .ema617_02_su_0005 .table_wrap table td:first-child {
   width: 960px;
 }
+<<<<<<< HEAD
 .ema617_02_su_0005 .table_wrap table td:has(math-field) {
   width: 281px;
   max-width: 281px;
@@ -149,3 +150,45 @@
   min-height: 72px;
   height: 72px;
 }
+=======
+.ema617_02_su_0005 .table_wrap table td:has(input) {
+  width: 90px;
+  max-width: 90px;
+  text-align: center;
+}
+.ema617_02_su_0005 .table_wrap table td .item {
+  cursor: pointer;
+  min-height: auto;
+  padding:0;
+}
+.ema617_02_su_0005 .table_wrap table td .item::after {
+  display: none;
+}
+.ema617_02_su_0005 .table_wrap table td .item input.sr-only {    
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.ema617_02_su_0005 .table_wrap table td .item .chk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #3B71FE;
+  font-weight: 700;
+  font-size: 24px;
+  background:var(--btn-disabled-bg) url(../../common_project/common/img/icon_check_disabled.svg) no-repeat center;
+  border: 1px solid var(--stroke-default);
+  border-radius: 12px;
+}
+.ema617_02_su_0005 .table_wrap table td .item input:checked + .chk {
+  border: 1px solid var(--btn-default);
+  background:var(--btn-default) url(../../common_project/common/img/icon_check_white.svg) no-repeat center;
+}
+>>>>>>> b1dd6843 (초기 커밋)

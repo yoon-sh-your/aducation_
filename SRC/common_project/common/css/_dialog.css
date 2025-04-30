@@ -151,6 +151,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .pop_goal_inner label {

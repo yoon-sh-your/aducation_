@@ -25,6 +25,15 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.operation_box {
+  font-size: 32px;
+  font-weight: 700;
+  /* gap: 4px; */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .operations {
   display: flex;
   align-items: center;
@@ -171,11 +180,37 @@
 .boolean_count_wrap.grid_515 button {
   /* border: 1px dashed black; */
   border: 1px solid;
+<<<<<<< HEAD
   border-image-source: repeating-linear-gradient(45deg, black 0px, black 3px, white 3px, white 5px);
   border-image-slice: 3;
   min-width: auto;
   width: 30px;
   height: 40px;
+=======
+  /* border-image-source: repeating-linear-gradient(45deg, black 0px, black 3px, white 3px, white 5px); */
+  /* border-image-slice: 3; */
+  min-width: auto;
+  width: 30px;
+  height: 40px;
+  position: relative;
+  &:nth-child(5n)::before{
+    display: none;
+  }
+}
+ .boolean_count_wrap.grid_515 button{
+  border-top: 1px dashed #555; 
+  border-right: 1px dashed #555; 
+  &:nth-of-type(4n){
+    border-right: 0px !important;
+  }
+  &:nth-of-type(-n+4){
+    border-top: 0px !important;
+  }
+  
+}
+.ema515_07_su_0003 .boolean_count_wrap button{
+  &.correct{background-color: #767070;}
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .boolean_count_wrap.grid_515 button:not(:first-child)::before {
@@ -459,8 +494,12 @@ button.count-12 {
   /* background-color: aliceblue; */
 }
 
+<<<<<<< HEAD
 .ema515_07_su_0004 .texts_515 {
   background-color: white;
+=======
+.ema515_07_su_0004 .texts_515 { 
+>>>>>>> b1dd6843 (초기 커밋)
   color: #575756;
   font-family: Pretendard;
   font-weight: 400;
@@ -570,9 +609,12 @@ button.count-12 {
   line-height: 48px;
   /* 150% */
   letter-spacing: -1px;
+<<<<<<< HEAD
   background-image: url(../img/EMA515_07_SU/0006_bg_left.png);
   background-repeat: no-repeat;
   background-position: bottom;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   position: relative;
 }
 
@@ -614,10 +656,24 @@ button.count-12 {
 }
 
 .ema515_07_su_0006 .col_515-1 .textarea {
+<<<<<<< HEAD
   width: 860px;
   min-height: unset;
 }
 
+=======
+  width: 920px;
+  min-height: 120px;
+  height: 120px;
+  overflow-y: scroll;   
+  box-sizing: border-box;  
+}
+.ema515_07_su_0006 .col_515-1 .fraction_container .input_wrap{
+  display: block;
+  position: relative;
+  top: 10px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema515_07_su_0006 .col_515-1 .example_box {
   width: auto;
   /* height: 100%; */
@@ -627,12 +683,49 @@ button.count-12 {
 .ema515_07_su_0006 .absol_515-2 {
   position: absolute;
   bottom: 0;
+<<<<<<< HEAD
   right: 0;
   display: flex;
   flex-direction: row;
   width: 400px;
   height: 320px;
   gap: 20px;
+=======
+  right: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  height: 265px;
+  gap: 20px;
+  align-content: top;
+  .custom_select{
+    min-width: 90px;
+    width: 90px;
+    height: 57px;
+    button{min-width: 90px;}
+  }
+  .dropdown_wrap{    
+    position: relative; 
+    top: 11px;
+    .select_trigger{
+      border: 1px solid var(--stroke-default);
+      border-radius: 12px;
+      background: var(--bg-input);
+      height: 70px;
+    }
+  }
+}
+
+.ema515_07_su_0006 .example_box .pare_wrap:has(.fraction_box)::before {
+  background-image: url("../common/img/pare_ico1_big_blue.svg");
+}
+
+.ema515_07_su_0006 .example_box .pare_wrap:has(.fraction_box)::after {
+  background-image: url("../common/img/pare_ico2_big_blue.svg");
+}
+
+.ema515_07_su_0006 .input_wrap .example_box::before{
+top:40px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .makeing_problem {
@@ -671,18 +764,35 @@ button.count-12 {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+=======
+  position: relative;
+  left: 10px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* .ema515_07_su_0006 .input_wrap {
   align-items: start;
 } */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema515_07_su_0006 .right_515-2 .textarea {
   min-width: auto;
   width: 227px !important;
   min-height: auto;
 }
 
+<<<<<<< HEAD
+=======
+.ema515_07_su_0006 .right_515-2 .example_box{
+  position: absolute;
+  width: 335px;
+  top: 65px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema515_07_su_0006 .absol_515 {
   font-family: Pretendard;
   font-weight: 700;

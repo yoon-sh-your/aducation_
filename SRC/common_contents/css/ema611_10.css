@@ -326,10 +326,17 @@ h4 {
   gap: 4px;
 }
 
+<<<<<<< HEAD
 .ema611_10_su_0004 .question_box .quiz > span {
   font-weight: 700;
   font-size: 32px;
   line-height: 60px;
+=======
+.ema611_10_su_0004 .question_box .quiz > span,
+.ema611_10_su_0004 .question_box .quiz .mixed_fraction span {
+  font-weight: 700;
+  font-size: 32px;
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -1px;
 }
 
@@ -562,6 +569,12 @@ h4 {
 }
 
 /* ema611_10_su_0008_s */
+<<<<<<< HEAD
+=======
+.ema611_10_su_0008 section.title.type2 + section.contents{
+  padding-top: 0px; 
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema611_10_su_0008 .scroll_area {
   position: relative;
 }

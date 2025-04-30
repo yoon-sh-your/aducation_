@@ -186,6 +186,12 @@ math-field.has_ex_text + .text_hint:before {
 	top: 197px;
 	left: 331px;
 }
+<<<<<<< HEAD
+=======
+.ema613_07_ih_0001  .solve_area:has(.conts_solve .fraction_box) .tit_solve {
+    top: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema613_07_ih_0002 */
 .ema613_07_ih_0002 .question_box {
@@ -202,6 +208,38 @@ math-field.has_ex_text + .text_hint:before {
 .ema613_07_ih_0003 math-field {
 	width: 120px !important;
 }
+<<<<<<< HEAD
+=======
+.ema613_07_ih_0003 .solve_area .conts_solve .flex {
+	gap: 80px;
+}
+.ema613_07_ih_0003 .solve_area .conts_solve .flex:first-child {
+	margin-bottom: 57px;
+}
+.ema613_07_ih_0003 .solve_area .formula_box:last-child .formula_row > span.wing {	
+	padding-right: 5px;
+}
+.ema613_07_ih_0003 .solve_area .formula_box .formula_row > span {
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+}
+.ema613_07_ih_0003 .solve_area .formula_box .formula_row > span.dot:after {
+	right: -5px;
+	bottom: 7px;
+}
+.ema613_07_ih_0003 .solve_area .formula_box .formula_row.bd_b:before {
+	width: calc(100% - 38px);
+	height: 1px;
+	bottom: -8px;
+	left: 40px;
+}
+.ema613_07_ih_0003 .solve_area .formula_box .formula_row > span.wing:after {
+	height: 50px;
+	right: 0;
+	top: -2px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema613_07_ih_0004 */
 .ema613_07_ih_0004 .img_area {
@@ -264,6 +302,7 @@ math-field.has_ex_text + .text_hint:before {
 .ema613_07_ih_0005 .boolean_wrap button.selected {
 	border-color: var(--font-main);
 }
+<<<<<<< HEAD
 .ema613_07_ih_0005 .boolean_wrap .button1 {
 	top: 28px;
 	left: 174px;
@@ -271,6 +310,21 @@ math-field.has_ex_text + .text_hint:before {
 .ema613_07_ih_0005 .boolean_wrap .button2 {
 	top: 134px;
 	left: 244px;
+=======
+.ema613_07_ih_0005 .boolean_wrap button {
+	width: 40%;
+}
+.ema613_07_ih_0005 .boolean_wrap .button1 {
+	top: 28px;
+	left: 120px;
+}
+.ema613_07_ih_0005 .boolean_wrap .button2 {
+	top: 134px;
+	left: 190px;
+}
+.ema613_07_ih_0005 .contents:has(.solve_area.active) .btn_area {
+	bottom: 0;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .result .ema613_07_ih_0005 .boolean_wrap button[data-answer-single="true"] {
 	border-color: var(--primary-blue);
@@ -295,6 +349,15 @@ math-field.has_ex_text + .text_hint:before {
 	align-items: flex-start;
 	margin-bottom: 60px;
 }
+<<<<<<< HEAD
+=======
+.unit {
+	margin: 8px 0 0 -8px;
+}
+.ema613_07_ih_0006 .contents:has(.solve_area.active) .btn_area {
+	bottom: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema613_07_ih_0007 */
 .ema613_07_ih_0007 .img_area {
@@ -305,3 +368,7 @@ math-field.has_ex_text + .text_hint:before {
 	top: 250px;
 	left: 55px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)

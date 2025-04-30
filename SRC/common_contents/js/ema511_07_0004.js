@@ -73,7 +73,11 @@ runAfterAppReady(function () {
       if (!isInside) return;
 
       const currentCount = $drop.find(".draggable_bag.already-dropped").length;
+<<<<<<< HEAD
       if (currentCount >= 4) return;
+=======
+      if (currentCount >= 9) return;
+>>>>>>> b1dd6843 (초기 커밋)
 
       const $original = $(ui.draggable);
       const $clone = ui.helper.clone();

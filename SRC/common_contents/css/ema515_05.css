@@ -67,8 +67,12 @@
 .container_515 {
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   align-items: center;
   margin-top: 30px;
+=======
+  align-items: center; 
+>>>>>>> b1dd6843 (초기 커밋)
   background-repeat: no-repeat;
 }
 
@@ -164,12 +168,20 @@
 
 .abs-1{
   top: 20px;
+<<<<<<< HEAD
   right: 410px;
+=======
+  right: 447px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .abs-2{
   top: 120px;
+<<<<<<< HEAD
   right: 410px;
+=======
+  right: 447px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .abs-1 .line_515 {
@@ -205,6 +217,13 @@
 }
 
 /* 0003 */
+<<<<<<< HEAD
+=======
+.ema515_05_su_0003 .page_4 math-field.textarea {
+  width: 100%;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 확인 버튼 가리기 */
 .ema515_05_su_0003:not([data-current-page='page_4']) .btn_area .btnSubmit,
 .ema515_05_su_0003[data-current-page='page_4'] .btn_area .btnCheck {
@@ -334,18 +353,29 @@
 .ema515_05_su_0003 .page.page_2 .texts_515 {
   font-family: Pretendard;
   font-weight: 400;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
   line-height: 40px;
   letter-spacing: -0.5px;
   text-align: center;
   vertical-align: middle;
   color: #222222;
+<<<<<<< HEAD
 
   background-color: white;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   border-radius: 20px;
   position: absolute;
   top: 7px;
   left: 37px;
+<<<<<<< HEAD
+=======
+  width: 300px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_05_su_0003 .page.page_2 .text-515 {
@@ -450,9 +480,15 @@
   display: flex;
   justify-content: space-between;
   padding-top: 45px;
+<<<<<<< HEAD
   padding-left: 40px;
   padding-right: 20px;
   font-size: 22px;
+=======
+  padding-left: 30px;
+  padding-right: 15px;
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_05_su_0006 .right_515 {

@@ -34,6 +34,13 @@
     #q3 .dot_area .item span {
       display: inline;
     }
+<<<<<<< HEAD
+=======
+
+    .t-boxrow {
+      flex-direction: row;
+    }
+>>>>>>> b1dd6843 (초기 커밋)
   </style>
   <body>
     <div id="scaleWrapper">
@@ -211,6 +218,7 @@
         </div>
 
         <div id="q4" class="page">
+<<<<<<< HEAD
           <div class="bg">
             <div class="mid_tit">
               <span lang="y" class="q-num">문제</span>
@@ -235,6 +243,86 @@
                   <span lang="y" class="txt"><img src="../../common_finish/common/img/mamuri/qe/EMA312_04_SU_0100(4-3).png" alt="" /></span>
                 </label>
               </fieldset>
+=======
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">빈칸 안에 알맞은 수를 써넣으세요.</span>
+              </div>
+              <div class="qe_area">
+                <div class="qe">
+                  <img src="../../common_finish/common/img/mamuri/qe/EMA515_03_SU_0100(4).png" alt="" />
+                </div>
+                <div class="ans_wrap">
+                  <div class="t-box">
+                    <div class="frac_ans">
+                      <div class="ans">
+                        <label for="answer4-1" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer4-1" class="answer answer4-1" readonly />
+                      </div>
+                      <hr />
+                      <div class="ans">
+                        <label for="answer4-2" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer4-2" class="answer answer4-2 active" readonly />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ans_wrap mb0">
+                    <div class="frac_ans">
+                      <div class="ans">
+                        <label for="answer4-3" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer4-3" class="answer answer4-3" readonly />
+                      </div>
+                    </div>
+                    <div class="frac_ans">
+                      <div class="ans h-top">
+                        <label for="answer4-4" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer4-4" class="answer answer4-4" readonly />
+                      </div>
+                      <hr />
+                      <div class="ans">
+                        <label for="answer4-5" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer4-5" class="answer answer4-5" readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri2504/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+>>>>>>> b1dd6843 (초기 커밋)
             </div>
           </div>
         </div>
@@ -246,7 +334,11 @@
                 <span lang="y" class="q-num">문제</span>
                 <span lang="y" class="txt">지유는 빵을 만들기 위해 설탕 $$\frac{3}{4}$$컵과 밀가루 $$\frac{6}{7}$$컵을 사용했습니다. 지유가 사용한 설탕과 밀가루는 모두 몇 컵인지 구하세요.</span>
               </div>
+<<<<<<< HEAD
               <div class="qe_area">
+=======
+              <div class="qe_area center">
+>>>>>>> b1dd6843 (초기 커밋)
                 <div class="ans_wrap">
                   <div class="frac_ans">
                     <div class="ans">
@@ -266,6 +358,10 @@
                       <input type="number" id="answer5-3" class="answer answer5-3" readonly />
                     </div>
                   </div>
+<<<<<<< HEAD
+=======
+                  <span class="exp">컵</span>
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
               </div>
             </div>
@@ -324,12 +420,21 @@
     4. : D&D              .dropped-item
     5. : 선긋기           
     */
+<<<<<<< HEAD
       window.questionTypes = [2, 1, 5, 2, 1];
       window.correctAnswers = {
         1: ["item2"],
         2: [1, 1],
         3: ["item1-item4", "item2-item3"],
         4: ["item2"],
+=======
+      window.questionTypes = [2, 1, 5, 1, 1];
+      window.correctAnswers = {
+        1: ['item2'],
+        2: [1, 1],
+        3: ['item1-item4', 'item2-item3'],
+        4: [25, 42, 1, 1, 70],
+>>>>>>> b1dd6843 (초기 커밋)
         5: [1, 17, 28],
       };
     </script>

@@ -36,6 +36,7 @@
     height: 48px;
 }
 
+<<<<<<< HEAD
 /* EMA614_01_SU_0004_s */
 .ema614_01_su_0004 .contents > .flex .video_wrap {
     width: 812px;
@@ -44,6 +45,9 @@
     background: url(../../common_contents/img/EMA614_01_SU/0004_content.png) no-repeat center center;
     background-size: cover;
 }
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 /*EMA614_01_SU_0005_s*/
 .ema614_01_su_0005 .input_wrap > math-field.textarea {
     height: 394px;

@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+=======
+/* 250425 진도학습과 버튼 위치가 달라서 수정 */
+.btn_area {
+  bottom: 0;
+  right: 0;
+}
+.btn_area .btnSubmit.chk {
+  background-image: url(../img/icon_check_disabled.svg);
+}
+.btn_area .btnSubmit.off {
+  background-image: url(../img/icon_check_white.svg);
+}
+.btn_area > button.btnSubmit.chk.active:not(.close) {
+  background-image: url(../img/icon_check_white.svg);
+}
+
+.btn_area .btnSubmit.off {
+  pointer-events: none !important;
+  background-color: var(--btn-disabled-bg) !important;
+  border-color: var(--stroke-default) !important;
+  background-image: url(../img/icon_submit_disabled.svg) !important;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 세로 계산형 */
 .calc_vertical {
   display: flex;
@@ -86,6 +111,22 @@
   font-size: 16px;
   font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+.label_reason {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 32px;
+  border: 2px solid #abacad;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #abacad;
+  font-size: 16px;
+  font-weight: 700;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .bogi_box {
   position: relative;
@@ -280,6 +321,16 @@
 }
 
 /* 해설 영역 */
+<<<<<<< HEAD
+=======
+
+/* 250424 김성미 페이지 완료되었는데 노출 안되는 부분 css로 보완 */
+/* 이상 있는 경우 얘기해주세요 */
+.completed .solve_area {
+  display: block !important;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .solve_area {
   display: none;
   /* display: block; */
@@ -343,6 +394,20 @@
 .solve_area .conts_solve .empty_box.nemo {
   display: inline-block;
   vertical-align: middle;
+<<<<<<< HEAD
+=======
+  margin: 0 10px;
+}
+
+.solve_area .conts_solve .fraction_txt_wrap .fraction_txt {
+  height: auto;
+}
+
+.solve_area .conts_solve .fraction_txt_wrap .fraction_txt > .fraction_box,
+.solve_area .conts_solve .fraction_txt_wrap .fraction_txt > .mixed_fraction,
+.solve_area .conts_solve .fraction_txt_wrap .fraction_txt > .operation_box {
+  margin: 0 2px 0 10px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .solve_area .flex {
@@ -361,7 +426,11 @@
   display: flex;
   justify-content: flex-end;
   /* margin-top: 40px; */
+<<<<<<< HEAD
   gap: 40px;
+=======
+  /* gap: 40px; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .solve_area .buttons_solve > div {
@@ -462,7 +531,11 @@
   background: #fff;
   vertical-align: text-bottom;
   position: relative;
+<<<<<<< HEAD
   top: -2px;
+=======
+  top: -4px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .solve_area .conts_solve .nemo.green {
   background: #77cb53;
@@ -893,3 +966,23 @@ body:has(article.failed-all.on) .title h2[data-head]:after {
 .lines_img.bottom .line_txt3 {
   top: 20px;
 }
+<<<<<<< HEAD
+=======
+
+.boolean_wrap.before button:not(.selected):hover:before {
+  content: '';
+  border-color: var(--primary-blue-300);
+}
+.boolean_wrap.before button.selected:before {
+  content: '';
+}
+.completed .boolean_wrap button[data-answer-single='true']::before {
+  content: '';
+  border-color: var(--font-negative);
+  border-width: 6px;
+}
+.completed .boolean_wrap button.selected[data-answer-single='true']::before {
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.3);
+}
+>>>>>>> b1dd6843 (초기 커밋)

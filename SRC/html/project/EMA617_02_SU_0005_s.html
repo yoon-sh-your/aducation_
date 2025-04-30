@@ -8,6 +8,10 @@
 
   <!-- 공통 js-->
   <script src="../../common_project/common/js/app.js"></script>
+<<<<<<< HEAD
+=======
+  <script src="../../common_project/js/ema617_02_SU.js"></script>
+>>>>>>> b1dd6843 (초기 커밋)
 
   <!-- 공통 css-->
   <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
@@ -28,7 +32,11 @@
     <section class="contents">   
       <div class="input_area text_center">
         <div class="input_wrap ">
+<<<<<<< HEAD
           <div class="table_wrap text_left">
+=======
+          <div class="chkMySelf table_wrap text_left">
+>>>>>>> b1dd6843 (초기 커밋)
             <table>
               <thead>
                 <tr>
@@ -39,6 +47,7 @@
               <tbody>
                 <tr>
                   <td class="f32b" lang="y">· 기사를 고쳐 쓰는 목적이 분명한가요?​​</td>
+<<<<<<< HEAD
                   <td><math-field class="textarea" type="text"></math-field></td>
                 </tr>
                 <tr>
@@ -52,6 +61,41 @@
                 <tr>
                   <td class="f32b" lang="y">· 활동을 위한 역할을 잘 정하였나요?​​</td>
                   <td><math-field class="textarea" type="text"></math-field></td>
+=======
+                  <td class="chkMySelf_item">
+                    <label class="item">
+                      <input type="checkbox" name="chkMySelf_item" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">· 주어진 기사의 잘못된 내용을 어떻게 고쳐 쓸지 정하였나요?​​</td>
+                  <td class="chkMySelf_item">
+                    <label class="item">
+                      <input type="checkbox" name="chkMySelf_item" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">​· 그래프로 나타낼 수 있는 자료를 찾고, 어떤 그래프로 나타낼지 정하였나요?​</td>
+                  <td class="chkMySelf_item">
+                    <label class="item">
+                      <input type="checkbox" name="chkMySelf_item" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">· 활동을 위한 역할을 잘 정하였나요?​​</td>
+                  <td class="chkMySelf_item">
+                    <label class="item">
+                      <input type="checkbox" name="chkMySelf_item" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+>>>>>>> b1dd6843 (초기 커밋)
                 </tr>
               </tbody>
             </table> 
@@ -62,12 +106,79 @@
         </div>
       </div>
       <div class="btn_area">
+<<<<<<< HEAD
         <button class="btnType key">입력타입토글</button>
+=======
+>>>>>>> b1dd6843 (초기 커밋)
         <button class="btnReset">리셋</button>
         <button class="btnSubmit" data-submit="true">제출</button>
       </div>
     </section>
   </div>
+<<<<<<< HEAD
 </body>
 
+=======
+  
+  <script>
+    runAfterAppReady(() => {
+
+    const selectionWrap = document.querySelector('.chkMySelf');
+    const items = document.querySelectorAll('.chkMySelf_item');
+
+    // 각 아이템의 체크박스 상태를 관리하는 함수
+    function handleItemChange(currentItem) {
+      const currentCheckbox = currentItem.querySelector('input[type="checkbox"]');
+      
+      // 체크 상태에 따른 처리
+      if (!currentCheckbox.checked) {
+        // 체크가 해제된 경우 모든 아이템 활성화
+        items.forEach(item => {
+          const checkbox = item.querySelector('input[type="checkbox"]');
+          checkbox.disabled = false;
+          item.classList.remove('disabled');
+        });
+      }
+    }
+
+    // 각 아이템에 이벤트 리스너 추가
+    items.forEach(item => {
+      const checkbox = item.querySelector('input[type="checkbox"]');
+      checkbox.addEventListener('change', () => handleItemChange(item));
+    });
+
+    // 버튼 활성화 규칙 정의
+    defineButtonClassRules([
+      {
+        selector: "input[type='checkbox']",
+        key: "custom_submit_btn_active",
+        test: (el) => {
+          const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+          return checkedCount > 0;
+        },
+      }
+    ]);
+
+    // 버튼 상태 변경 후 강제 평가
+    window.forceWatchEvaluation();
+
+    // 리셋 버튼 클릭 시 실행할 커스텀 함수
+    window.resetCustom = function() {
+      items.forEach(item => {
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        checkbox.checked = false;
+        checkbox.disabled = false;
+        item.classList.remove('disabled');
+      });
+    };
+    });
+
+
+  </script>
+  
+  
+</body>
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 </html>

@@ -170,4 +170,93 @@
   /* line-height: 48px; */
   letter-spacing: -1px;
   word-break: keep-all;
+<<<<<<< HEAD
+=======
+}
+
+/* 도움자료 팝업 (250428) */
+.btn_reference {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.pop_reference_wrap {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.pop_reference {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 1511px;
+  min-height: 320px;
+  padding: 40px;
+  background: #fcefdf;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pop_reference .close {
+  min-width: unset;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon_close_black.svg) no-repeat center / 100%;
+  font-size: 0;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 99;
+}
+
+.pop_reference_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.pop_reference_inner > h3 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.pop_reference_inner p {
+  font-size: 32px;
+  font-weight: 700;
+  /* line-height: 48px; */
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+
+.pop_reference_wrap .paging_layout {
+  width: 100%;
+}
+
+.pop_reference_wrap .paging_layout article.popup_page {
+  display: none;
+}
+
+.pop_reference_wrap .paging_layout article.popup_page.on {
+  display: block;
+}
+
+.pop_reference_wrap .paging_controller > button {
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+>>>>>>> b1dd6843 (초기 커밋)
 }

@@ -686,11 +686,18 @@
 }
 
 .ema526_06_su_0005 .page_3 .input_wrap {
+<<<<<<< HEAD
   width: 1208px;
   margin-top: 20px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+=======
+  display: flex;
+  width: 1208px;
+  margin: 0 auto;
+  margin-top: 20px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema526_06_su_0005 .page_3 .input_wrap math-field.textarea {

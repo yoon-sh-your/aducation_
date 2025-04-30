@@ -14,6 +14,10 @@ const getScale = () => {
 
 const activateSolveArea = () => {
   const isPaging = document.querySelector('.contents')?.classList.contains('paging_layout');
+<<<<<<< HEAD
+=======
+  console.log('실행');
+>>>>>>> b1dd6843 (초기 커밋)
   if (isPaging) {
     document.querySelector('article.on .solve_area')?.classList.add('active');
   } else {
@@ -31,6 +35,14 @@ function revealExampleBoxes(container) {
 const showAllExampleBoxes = () => {
   const page = pagenation?.activePage || document;
   page.querySelectorAll('.example_box').forEach((el) => el.classList.add('on'));
+<<<<<<< HEAD
+=======
+  if ($('.paging_layout').length > 0) {
+    $('.page.on .btnSubmit').removeClass('chk').addClass('off');
+  } else {
+    $('.btnSubmit').removeClass('chk').addClass('off');
+  }
+>>>>>>> b1dd6843 (초기 커밋)
 };
 
 const updateBodyClassByScore = () => {
@@ -87,10 +99,17 @@ const handleSelfEvaluation = () => {
 
   const btnsSolve = container.querySelector('.buttons_solve');
   const alreadyExists = btnsSolve?.querySelector('.btnSelf');
+<<<<<<< HEAD
 
   if (btnsSolve && !alreadyExists) {
     const btnWrapper = document.createElement('div');
     const btn = document.createElement('button');
+=======
+  if (btnsSolve && !alreadyExists) {
+    const btnWrapper = document.createElement('div');
+    const btn = document.createElement('button');
+    btnWrapper.className = 'self_wrap';
+>>>>>>> b1dd6843 (초기 커밋)
     btn.type = 'button';
     btn.className = 'btnSelf';
     btn.innerHTML = '<span lang="y">평가하기</span>';
@@ -98,11 +117,24 @@ const handleSelfEvaluation = () => {
 
     btnWrapper.appendChild(btn);
     btnsSolve.insertBefore(btnWrapper, btnsSolve.firstChild);
+<<<<<<< HEAD
+=======
+
+    $('.btn_area').addClass('self');
+>>>>>>> b1dd6843 (초기 커밋)
   }
 };
 
 const showRatingPopup = (event) => {
+<<<<<<< HEAD
   if (document.querySelector('.rate-popover')) return;
+=======
+  if (document.querySelector('.rate-popover')) {
+    const popover = document.querySelector('.rate-popover');
+    popover.style.display = 'block';
+    return;
+  }
+>>>>>>> b1dd6843 (초기 커밋)
 
   const popover = document.createElement('div');
   popover.className = 'rate-popover';
@@ -129,17 +161,33 @@ const showRatingPopup = (event) => {
       }
 
       const submitBtn = document.querySelector('.btnSubmit');
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.classList.add('active');
         submitBtn.classList.remove('close');
+<<<<<<< HEAD
+=======
+        if ($('.paging_layout').length > 0) {
+          $('.page.on .btnSubmit').removeClass('off');
+        } else {
+          $('.btnSubmit').removeClass('off');
+        }
+>>>>>>> b1dd6843 (초기 커밋)
       }
     });
   });
 
   const closeBtn = popover.querySelector('.close_popup');
   closeBtn.addEventListener('click', () => {
+<<<<<<< HEAD
     popover.remove();
+=======
+    popover.style.display = 'none';
+>>>>>>> b1dd6843 (초기 커밋)
   });
 };
 
@@ -149,7 +197,13 @@ const observeHintAdded = () => {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.type === 'attributes' && mutation.attributeName === 'class' && el.classList.contains('hint')) {
+<<<<<<< HEAD
           activateSolveArea();
+=======
+          /** 250429 김용현 - 조건이 맞지 않아 주석처리 */
+          /** 해당 함수 활성화시 EMA514_04_IH_0002_s 문제 오류 발생 */
+          // activateSolveArea();
+>>>>>>> b1dd6843 (초기 커밋)
         }
       });
     });
@@ -167,9 +221,24 @@ const resetSolveArea = () => {
   });
   document.querySelectorAll('.solve_area').forEach((el) => el.classList.remove('active'));
   document.querySelector('.rate-popover')?.remove();
+<<<<<<< HEAD
   document.querySelector('.btnSelf')?.remove();
   selfScore = null;
   checkCountMap.clear();
+=======
+  document.querySelector('.self_wrap')?.remove();
+  selfScore = null;
+  checkCountMap.clear();
+
+  if ($('.paging_layout').length > 0) {
+    $('.page.on .btnSubmit').removeClass('off');
+  } else {
+    $('.btnSubmit').removeClass('off');
+  }
+  if ($('.btn_area').hasClass('self')) {
+    $('.btnSubmit').removeClass('active').addClass('chk');
+  }
+>>>>>>> b1dd6843 (초기 커밋)
 };
 
 // 기억에 남는 내용 버튼 수정
@@ -198,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resetSolveArea();
         return;
       }
+<<<<<<< HEAD
     
       const isPaging = document.querySelector('.contents')?.classList.contains('paging_layout');
       const container = isPaging ? document.querySelector('article.on') : document;
@@ -206,11 +276,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const answerables = [...container.querySelectorAll('[data-answer-single]')];
       const hasScored = answerables.length > 0;
     
+=======
+
+      const isPaging = document.querySelector('.contents')?.classList.contains('paging_layout');
+      const container = isPaging ? document.querySelector('article.on') : document;
+      const key = isPaging ? container : 'global';
+
+      const answerables = [...container.querySelectorAll('[data-answer-single]')];
+      const hasScored = answerables.length > 0;
+
+>>>>>>> b1dd6843 (초기 커밋)
       const hasEmpty = answerables.some((el) => {
         const val = el.value || el.dataset?.value;
         return !el.dataset.correction && (!val || val.trim?.() === '');
       });
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
       if (hasEmpty) {
         checkCountMap.set(key, 0);
         if (typeof toastCheckMsg === 'function') {
@@ -218,26 +302,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return;
       }
+<<<<<<< HEAD
     
       if (hasScored) {
         const allCorrected = container.querySelectorAll("[data-correction='true']").length;
     
+=======
+
+      if (hasScored) {
+        const allCorrected = container.querySelectorAll("[data-correction='true']").length;
+
+>>>>>>> b1dd6843 (초기 커밋)
         if (allCorrected === answerables.length) {
           updateBodyClassByScore();
           showAllExampleBoxes();
           return;
         }
+<<<<<<< HEAD
     
         const currentCount = checkCountMap.get(key) || 0;
         const newCount = currentCount + 1;
         checkCountMap.set(key, newCount);
     
+=======
+
+        const currentCount = checkCountMap.get(key) || 0;
+        const newCount = currentCount + 1;
+        checkCountMap.set(key, newCount);
+
+>>>>>>> b1dd6843 (초기 커밋)
         if (newCount >= 2) {
           updateBodyClassByScore();
           showAllExampleBoxes();
         } else {
           observeHintAdded();
         }
+<<<<<<< HEAD
     
         return;
       }
@@ -246,32 +346,56 @@ document.addEventListener('DOMContentLoaded', () => {
       handleSelfEvaluation();
       showAllExampleBoxes();
     
+=======
+
+        return;
+      }
+
+      // 자가 평가 문제의 경우
+      handleSelfEvaluation();
+      showAllExampleBoxes();
+
+>>>>>>> b1dd6843 (초기 커밋)
       if (typeof toastCheckMsg === 'function') {
         toastCheckMsg('선생님께 제출되었습니다.', 5, false);
       }
     });
+<<<<<<< HEAD
     
   }
   
   
+=======
+  }
+
+>>>>>>> b1dd6843 (초기 커밋)
   if (btnSubmit) {
     btnSubmit.addEventListener('click', () => {
       const isPaging = document.querySelector('.contents')?.classList.contains('paging_layout');
       const container = isPaging ? document.querySelector('article.on') : document;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
       const answerables = [...container.querySelectorAll('[data-answer-single]')];
       const hasScored = answerables.length > 0;
       const hasEmpty = answerables.some((el) => {
         const val = el.value || el.dataset?.value;
         return !el.dataset.correction && (!val || val.trim?.() === '');
       });
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
       if (hasEmpty) {
         if (typeof toastCheckMsg === 'function') {
           toastCheckMsg('문제를 풀어보세요!', 1, false);
         }
         return; // solve_area 활성화 없이 종료
       }
+<<<<<<< HEAD
   
       const hasUnscored = container.querySelectorAll('.example_box').length > 0;
   
@@ -282,17 +406,39 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
   
+=======
+
+      const hasUnscored = container.querySelectorAll('.example_box').length > 0;
+      if (!hasScored && hasUnscored && selfScore === null) {
+        $('.btnSubmit.chk').removeClass('active');
+        console.log('d');
+        showAllExampleBoxes();
+        revealExampleBoxes(container);
+        handleSelfEvaluation(); // 자가 평가 노출
+
+        return;
+      }
+
+>>>>>>> b1dd6843 (초기 커밋)
       // 채점 진행
       updateBodyClassByScore(); // 이 안에서 solve_area 활성화됨
       showAllExampleBoxes();
       revealExampleBoxes(container);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
       if (typeof toastCheckMsg === 'function') {
         toastCheckMsg('선생님께 제출되었습니다.', 5, false);
       }
     });
   }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
   if (btnReset) {
     btnReset.addEventListener('click', () => {
       resetSolveArea();
@@ -306,7 +452,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+<<<<<<< HEAD
   if ($('.review_box').length > 0) {
+=======
+  if (document.querySelectorAll('.review_box').length > 0) {
+>>>>>>> b1dd6843 (초기 커밋)
     reviewBoxBtn();
   }
 });

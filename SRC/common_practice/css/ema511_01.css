@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+.ema511_01_ih_0001 .question_box {
+  min-width: 17%;
+}
+.ema511_01_ih_0001 .calc_vertical {
+  justify-content: flex-end;
+}
+.ema511_01_ih_0001 .calc_vertical .top {
+  padding-right: 20px;
+}
+.ema511_01_ih_0001 .calc_vertical math-field:not(.textarea)::part(content) {
+  justify-content: flex-end
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema511_01_ih_0002 .question_box {
   padding: 0 38px;
 }
@@ -68,3 +84,13 @@
   background: url(../img/EMA511_01_IH/0002_line.svg) no-repeat center top / contain;
   transform: rotate(180deg);
 }
+<<<<<<< HEAD
+=======
+
+.ema511_01_ih_0003 .answer3 {
+  padding-left: 12px;
+}
+.ema511_01_ih_0003 .solve_area p {
+  display: inline;
+}
+>>>>>>> b1dd6843 (초기 커밋)

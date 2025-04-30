@@ -77,7 +77,11 @@
   background-color: #feeee7;
 }
 
+<<<<<<< HEAD
 .ema512_02_ih_0003 .boolean_wrap button:after,
+=======
+/* .ema512_02_ih_0003 .boolean_wrap button:after, */
+>>>>>>> b1dd6843 (초기 커밋)
 .ema512_02_ih_0003 .boolean_wrap button:before {
   position: absolute;
   top: 50%;
@@ -91,7 +95,14 @@
 }
 
 .ema512_02_ih_0003 .boolean_wrap button:before {
+<<<<<<< HEAD
   left: 17px;
+=======
+  left: 0;
+  right:0;
+  width:100%;
+  height: 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema512_02_ih_0003 .boolean_wrap button.selected:after,
@@ -100,10 +111,21 @@
 }
 
 .ema512_02_ih_0003 .boolean_wrap button.hint[data-answer-single='true']::before {
+<<<<<<< HEAD
   left: 17px;
 }
 
 .ema512_02_ih_0003 .boolean_wrap button.hint[data-answer-single='true']::after,
+=======
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 67, 67, 0.3);
+}
+
+/* .ema512_02_ih_0003 .boolean_wrap button.hint[data-answer-single='true']::after, */
+>>>>>>> b1dd6843 (초기 커밋)
 .ema512_02_ih_0003 .boolean_wrap button.hint[data-answer-single='true']::before {
   content: '';
   border-color: var(--secondary-red);
@@ -112,6 +134,19 @@
 .ema512_02_ih_0003 .boolean_wrap button.correct[data-correction='true'].selected::after,
 .ema512_02_ih_0003 .boolean_wrap button.correct[data-correction='true'].selected::before {
   border-color: var(--btn-default);
+<<<<<<< HEAD
+=======
+  background-color: rgba(59, 113, 254, 0.5);
+}
+
+.ema512_02_ih_0003 .result .boolean_wrap button.hint[data-answer-single='true'], 
+.completed .boolean_wrap button.hint.disabled[data-answer-single='true'] {
+  background-color: transparent;
+}
+.result .boolean_wrap button.selected[data-answer-single='true'], 
+.completed .boolean_wrap button.selected.hint.disabled[data-answer-single='true'] {  
+  background-color: transparent;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema512_02_ih_0004 .question_box {
@@ -162,6 +197,10 @@
   background: url(../img/EMA512_02_IH/0005_bg.png) no-repeat center center / auto 100%;
   font-size: 32px;
   font-weight: bold;
+<<<<<<< HEAD
+=======
+  flex-direction: column;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema512_02_ih_0005 .input_wrap math-field {
@@ -195,15 +234,29 @@
 .ema512_02_ih_0007 .question_box {
   gap: 20px;
   padding: 0 40px;
+<<<<<<< HEAD
+=======
+  align-items: flex-start;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema512_02_ih_0007 .bogi_box {
   flex-shrink: 0;
+<<<<<<< HEAD
+=======
+  margin-top: 0;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema512_02_ih_0007 .right {
   flex-grow: 1;
 }
+<<<<<<< HEAD
+=======
+.ema512_02_ih_0007 .right .flex {  
+  padding-left: 18px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema512_02_ih_0007 .page_1 .right .flex {
   position: relative;
@@ -211,10 +264,26 @@
   padding-left: 18px;
   gap: 60px 12px;
 }
+<<<<<<< HEAD
 
+=======
+.ema512_02_ih_0007 .input_wrap {
+  position: relative;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema512_02_ih_0007 .page_1 .right .flex span {
   position: absolute;
   top: 0;
   left: 0;
   line-height: 60px;
 }
+<<<<<<< HEAD
+=======
+.ema512_02_ih_0007 .error-message {
+  position: absolute;
+  bottom: -24px;
+  font-size:13px;
+  color: #ff0000;
+  margin-top: 2px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

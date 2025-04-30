@@ -181,7 +181,11 @@
 
 .ema515_03_su_0003 .container_515 {
   width: 1188px;
+<<<<<<< HEAD
   height: 343px;
+=======
+  height: 400px;
+>>>>>>> b1dd6843 (초기 커밋)
   background-image: url(../img/EMA515_03_SU/0004_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,6 +194,10 @@
   /* border: 2px solid blue; */
   justify-content: space-between;
   margin-top: 20px;
+<<<<<<< HEAD
+=======
+  padding-bottom: 30px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_03_su_0003 .container_515 .col-1,
@@ -252,6 +260,7 @@
 
 .ema515_03_su_0003 .page_2 .col-2 >div:nth-child(2) {
   /* background-color: #5BB8A1; */
+<<<<<<< HEAD
   height: 150px;
 }
 
@@ -265,6 +274,26 @@
   top: 30% !important;
 }
 
+=======
+  height: 128px;
+}
+
+.ema515_03_su_0003 .page_2{
+  .fraction_box > span:first-child .input_wrap .text_hint, 
+  .fraction_box > .input_wrap:first-child .text_hint{
+    bottom: calc(100% + -4px);
+  }
+
+  .input_wrap .text_hint, .dropdown_wrap .text_hint, 
+  .dragndrop_fraction_wrap .drop_item::after{
+    top:calc(100% + 0px);
+  }
+}
+
+ 
+
+ 
+>>>>>>> b1dd6843 (초기 커밋)
 /* 0004 */
 /* 확인 버튼 가리기 */
 .ema515_03_su_0004:not([data-current-page='page_3']) .btn_area .btnSubmit,
@@ -384,12 +413,17 @@
 .ema515_03_su_0006 math-field.textarea {
   min-width: unset;
   min-height: unset;
+<<<<<<< HEAD
   width: 80px;
+=======
+  width: 90px;
+>>>>>>> b1dd6843 (초기 커밋)
   height: 112px;
 }
 
 .ema515_03_su_0006 .input_wrap .example_box {
   color: #1454B9;
+<<<<<<< HEAD
 }
 .ema515_03_su_0006 .col_515-3 .input_wrap {
   /* border: 10px solid pink; */
@@ -400,6 +434,26 @@
   /* margin-left: 60px;
   padding-left: 30px; */
   left: 30px;
+=======
+} 
+
+.ema515_03_su_0006 .col_515-3 .example_box { 
+  left: 30px;
+  overflow: hidden;
+  &::before {top: 45px;}
+}
+
+.ema515_03_su_0006 .example_box::before {  
+    top: 38px; 
+}
+
+.ema515_03_su_0006 .col_515-3 .example_box .pare_wrap:has(.fraction_box)::before {
+  background-image: url("../common/img/pare_ico1_big_blue.svg");
+}
+
+.ema515_03_su_0006 .col_515-3 .example_box .pare_wrap:has(.fraction_box)::after {
+  background-image: url("../common/img/pare_ico2_big_blue.svg");
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_03_su_0006 .input_wrap {

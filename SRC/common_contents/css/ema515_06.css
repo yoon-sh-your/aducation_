@@ -22,6 +22,20 @@
   min-width: 80px;
 }
 
+<<<<<<< HEAD
+=======
+
+/* 분수 색칠 */
+.boolean_count_wrap button.selected {
+  background-color: #D2D2D2;
+}
+
+.boolean_count_wrap button.selected.correct,
+.boolean_count_wrap button.correct {
+  background-color: #D2D2D2;
+  background-color: #666;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* 비디오, 사진 페이지 공통 */
 .contents>.flex {
   gap: 26px;
@@ -159,7 +173,11 @@
   /* background-color: tomato; */
   transform: scale(.8);
   /* gap: 60px; */
+<<<<<<< HEAD
   gap: 40px;
+=======
+  gap: 60px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_06_su_0003 .container_515 .top-515 .top2-515,
@@ -199,7 +217,11 @@
 }
 
 .ema515_06_su_0003 .container_515 .right_515 {
+<<<<<<< HEAD
   flex: 1;
+=======
+  flex: 0.7;
+>>>>>>> b1dd6843 (초기 커밋)
   /* background-color: blueviolet; */
   display: flex;
   justify-content: center;
@@ -211,6 +233,7 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .ema515_06_su_0003 .page_1 .input_wrap math-field{
   width: 174px;
 }
@@ -220,6 +243,17 @@
 .boolean_count_wrap.hint button.correct:not(.selected){
   background-color: var(--secondary-coral);
 }
+=======
+/* .ema515_06_su_0003 .page_1 .input_wrap math-field{
+  width: 174px;
+} 
+.ema515_06_su_0003 .page_1 .input_area{
+  width: 715px;
+}*/
+/* .boolean_count_wrap.hint button.correct:not(.selected){
+  background-color: var(--secondary-coral);
+} */
+>>>>>>> b1dd6843 (초기 커밋)
 .boolean_count_wrap.correct button.correct{
   background-color: var(--primary-blue);
 }
@@ -236,6 +270,13 @@
 .ema515_06_su_0003 .page_2 .container_515 {
   margin-top: -10px;
   transform: scale(0.96);
+<<<<<<< HEAD
+=======
+  .operations{
+  position: relative;
+  top: 10px;
+  }
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* 0004 */
@@ -298,8 +339,12 @@
 }
 .ema515_06_su_0005 .page_2 .frac4 math-field{
   width: 120px;
+<<<<<<< HEAD
 }
 
+=======
+} 
+>>>>>>> b1dd6843 (초기 커밋)
 /* 0006 */
 .ema515_06_su_0006 .container_515 {
   background-image: url(../img/EMA515_06_SU/0006_bg.png);
@@ -329,6 +374,15 @@
   font-size: 24px;
   margin-top: 10px;
 }
+<<<<<<< HEAD
+=======
+.ema515_06_su_0006 .texture{
+  font-size: 15px;
+  position: absolute;
+  bottom: 170px;
+  right: 60px;
+} 
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* 새로운 스타일 추가 */
 /* .input_wrap math-field:not(.textarea) {

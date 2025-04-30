@@ -30,6 +30,7 @@ math-field.has_ex_text + .text_hint:before {
   position: relative;
   top: 4px;
 }
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -41,6 +42,9 @@ math-field.has_ex_text + .text_hint:before {
   border-color: #22b24c;
   background-color: #22b24c;
 }
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema521_05_ih_0001 */
 span.label_important {
   display: inline-block;
@@ -284,6 +288,7 @@ span.label_important {
   padding: 0 135px;
 }
 .ema521_05_ih_0007 .title h2 {
+<<<<<<< HEAD
   padding-left: 128px;
   display: inline-block;
   top: -20px;
@@ -298,6 +303,29 @@ span.label_important {
 }
 .ema521_05_ih_0007 .title h2 span {
   display: inline;
+=======
+  /* padding-left: 128px;
+  display: inline-block;
+  top: -20px; */
+  display: block;
+}
+.ema521_05_ih_0007 .title h2 .heading {
+  /* position: absolute;
+  left: 43px;
+  top: 20px; */
+}
+.ema521_05_ih_0007 .title h2 .icon_creative {
+  /* top: 20px; */
+}
+.ema521_05_ih_0007 .title h2 span {
+  /* display: inline; */
+}
+.ema521_05_ih_0007 .img_wrap {
+  display: inline-flex;
+  margin-top: -20px;
+  position: relative;
+  top: 14px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema521_05_ih_0007 .title h2 .card {
   display: inline-block;

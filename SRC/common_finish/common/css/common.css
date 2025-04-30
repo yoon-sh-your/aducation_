@@ -56,10 +56,18 @@
   unicode-range: U+0030-0039, U+0041-005A, U+0061-007A, U+002B, U+2212, U+00D7, U+00F7, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E, U+20A0-20CF, U+2200-22FF, U+338E-338F, U+3390, U+339A-339F, U+33A0-33A6, U+33B7-33BF, U+33C0-33CF, U+33D0-33DD;
 }
 
+<<<<<<< HEAD
 .disabled,
 .disabled * {
   pointer-events: none !important;
 }
+=======
+.disabled:not(.withKeypad .qe_area),
+.disabled:not(.withKeypad .qe_area) * {
+  pointer-events: none !important;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .mlr0 {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -83,6 +91,15 @@
 .mt20 {
   margin-top: 20px !important;
 }
+<<<<<<< HEAD
+=======
+.mt50 {
+  margin-top: 50px !important;
+}
+.mt60 {
+  margin-top: 60px !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .m0 {
   margin: 0 !important;
 }
@@ -92,9 +109,21 @@
 .gap14 {
   gap: 14px !important;
 }
+<<<<<<< HEAD
 .gap20 {
   gap: 20px !important;
 }
+=======
+.gap10 {
+  gap: 10px !important;
+}
+.gap20 {
+  gap: 20px !important;
+}
+.gap30 {
+  gap: 30px !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .gap50 {
   gap: 50px !important;
 }
@@ -106,6 +135,12 @@
 .fs37 * {
   font-size: 37px !important;
 }
+<<<<<<< HEAD
+=======
+.fs44 {
+  font-size: 44px !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .wp80 {
   width: 80%;
   margin: auto;
@@ -115,10 +150,17 @@
   margin: auto;
 }
 .w80 {
+<<<<<<< HEAD
   width: 80px;
 }
 .w100 {
   width: 100px;
+=======
+  width: 80px !important;
+}
+.w100 {
+  width: 100px !important;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .tac {
   text-align: center !important;
@@ -127,14 +169,36 @@
   display: flex !important;
 }
 .flex.col {
+<<<<<<< HEAD
   flex-direction: column;
+=======
+  flex-direction: column !important;
+}
+.flex.row {
+  flex-direction: row !important;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .flex.al-cen {
   align-items: center;
 }
+<<<<<<< HEAD
 .flex.ju-cen {
   justify-content: center !important;
 }
+=======
+.flex.align-start {
+  align-items: flex-start;
+}
+.flex.ju-cen {
+  justify-content: center !important;
+}
+.ju-sa {
+  justify-content: space-around !important;
+}
+.ju-se {
+  justify-content: space-evenly !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 mjx-container {
   display: inline-block !important;
   margin: 0 !important;
@@ -767,10 +831,18 @@ input::-webkit-inner-spin-button {
 .qe_area.center {
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .bg2 .qe_area,
 .bg3 .qe_area {
   justify-content: space-around;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .qe_area .qe {
   position: relative;
   display: flex;
@@ -815,7 +887,17 @@ input::-webkit-inner-spin-button {
 .withKeypad .qe_area .ans_wrap {
   white-space: nowrap;
 }
+<<<<<<< HEAD
 
+=======
+.withKeypad .qe_area.ans_center {
+  gap: 20px;
+  justify-content: center;
+}
+.withKeypad .qe_area.ans_center .ans_wrap {
+  margin: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .qe_area .ans_wrap .exp {
   font-size: 44px;
   font-weight: 600;
@@ -865,6 +947,12 @@ input::-webkit-inner-spin-button {
 .qe_area .item .blank {
   width: 78px;
 }
+<<<<<<< HEAD
+=======
+.withKeypad .qe_area .blank {
+  border: 3px solid #7f7f7f;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .qe_area .item .blank.sm {
   height: 46px;
 }
@@ -920,9 +1008,19 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   padding: 0 10px 0 5px;
 }
+<<<<<<< HEAD
 .qe_area.disabled .ans input {
   color: #1454b9;
 }
+=======
+
+.qe_area.disabled .ans input.is-correct {
+  color: #1454b9;
+}
+.qe_area.disabled .ans input.is-incorrect {
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .qe_area .ans .hint {
   position: absolute;
   top: calc(100% + 8px);
@@ -937,10 +1035,24 @@ input::-webkit-inner-spin-button {
   background: #fff7bd;
   backdrop-filter: blur(2px);
   border-radius: 12px;
+<<<<<<< HEAD
 }
 .qe_area .ans.h-top .hint {
   top: -58px !important;
 }
+=======
+  font-size: 26px;
+}
+
+.qe_area .h-top .hint {
+  top: -58px !important;
+}
+.qe_area .h-right .hint {
+  top: 50% !important;
+  left: calc(100% + 8px);
+  transform: translate(0%, -50%);
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .qe_area.disabled .ans input.is-incorrect + .hint {
   display: flex;
 }
@@ -949,6 +1061,15 @@ input::-webkit-inner-spin-button {
   border: 5px solid #3bb3fe;
   border-radius: 12px;
 }
+<<<<<<< HEAD
+=======
+.qe_area .ans:has(input.active.is-incorrect) {
+  border-color: transparent !important;
+}
+.qe_area .ans:has(input.active.is-correct) {
+  border-width: 7px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .qe_area .btns {
   position: absolute;
   bottom: 60px;
@@ -1008,11 +1129,17 @@ input::-webkit-inner-spin-button {
   position: relative;
   top: -20px;
 }
+<<<<<<< HEAD
 .modal-content.good {
   background: url(../img/charactor_toast_4.svg) no-repeat center / 100%;
 }
 .modal-content.bad {
   background: url(../img/charactor_toast_4.svg) no-repeat center / 100%;
+=======
+
+.modal-content.bad::before {
+  background: url(../img/charactor_toast_2.svg) no-repeat center / 100%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .modal-content p {
   font-size: 36px;
@@ -1100,6 +1227,12 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
   padding: 8px 20px;
 }
+<<<<<<< HEAD
+=======
+.item:hover {
+  background-color: rgb(238, 238, 238);
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .item_wrap.sm {
   row-gap: 30px;
 }
@@ -1242,6 +1375,12 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+.matching-pairs li.v-txt .has-txt .hint {
+  font-size: 26px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .matching-pairs li.v-txt .has-txt > span:not(.droppable) {
   width: 90px;
   display: inline-flex;
@@ -1286,6 +1425,27 @@ input::-webkit-inner-spin-button {
   border: 4px solid #0075af;
   border-radius: 12px;
 }
+<<<<<<< HEAD
+=======
+.droppable .hint {
+  color: red;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px !important;
+}
+.droppable.top .hint {
+  top: -42%;
+}
+.droppable.left .hint {
+  top: 50%;
+  left: 110%;
+  transform: translate(0%, -50%);
+  white-space: nowrap;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .v-txt .droppable {
   position: relative;
   right: -24px;
@@ -1537,7 +1697,11 @@ body.grabbing * {
   left: 0;
   width: 100%;
   height: 764px;
+<<<<<<< HEAD
   background: url(../../common/img/mamuri/tutorial.png) no-repeat 0 0 / 100%;
+=======
+  background-color: rgba(0, 0, 0, 0.55);
+>>>>>>> b1dd6843 (초기 커밋)
   z-index: 100;
 }
 #tutorial .nav {
@@ -1553,17 +1717,37 @@ body.grabbing * {
   font-size: 30px;
   line-height: 42px;
   letter-spacing: -1px;
+<<<<<<< HEAD
   color: #ffffff;
+=======
+  color: #fd3;
+>>>>>>> b1dd6843 (초기 커밋)
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
   text-indent: -28px;
 }
 #tutorial .txts li:nth-child(2) {
+<<<<<<< HEAD
   top: 628px;
   left: 1133px;
+=======
+  top: 168px;
+  left: 617px;
+}
+#tutorial .txts li:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: -170px;
+  left: -30px;
+  width: 99px;
+  height: 163px;
+  background: url(../../common/img/mamuri/tutorial_arrow1.svg) no-repeat 0 0 / 100%;
+  transform: rotate(-19deg);
+>>>>>>> b1dd6843 (초기 커밋)
 }
 #tutorial .txts li:nth-child(2)::before {
   content: '';
   position: absolute;
+<<<<<<< HEAD
   top: -307px;
   left: 105px;
   width: 445px;
@@ -1589,6 +1773,16 @@ body.grabbing * {
   left: 617px;
   width: 296px;
 }
+=======
+  top: -63px;
+  left: 120px;
+  width: 94px;
+  height: 30px;
+  background: url(../../common/img/mamuri/tutorial_arrow2.svg) no-repeat 0 0 / 100%;
+  transform: rotate(-45deg);
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 #tutorial .bt_area {
   position: absolute;
   bottom: 50px;
@@ -1611,6 +1805,10 @@ body.grabbing * {
   letter-spacing: -0.5px;
 
   color: #ffffff;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 #tutorial .chk_wrap input {
   position: absolute;
@@ -1630,15 +1828,24 @@ body.grabbing * {
   border: 1px solid #3b71fe;
 }
 #tutorial .btn_start {
+<<<<<<< HEAD
   width: 134px;
   height: 56px;
+=======
+  width: 180px;
+  height: 76px;
+>>>>>>> b1dd6843 (초기 커밋)
 
   background: #3b71fe;
   border-radius: 12px;
 
   font-style: normal;
   font-weight: 700;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+  font-size: 44px;
+>>>>>>> b1dd6843 (초기 커밋)
 
   letter-spacing: -0.5px;
 
@@ -1655,6 +1862,12 @@ body.grabbing * {
   justify-content: space-between;
   gap: 500px;
 }
+<<<<<<< HEAD
+=======
+.dot_area.center {
+  align-items: center;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .dot_area .area {
   display: flex;
   flex-direction: column;
@@ -1690,9 +1903,26 @@ body.grabbing * {
 .dot_area .wrap .dot.on {
   background: #ff5884;
 }
+<<<<<<< HEAD
 .dot_area .wrap .dot.done {
   background: #273b56;
 }
+=======
+.dot_area .wrap .dot.correct {
+  background: #273b56;
+}
+.qe_area.disabled .dot_area .wrap .dot.correct {
+  background: #3b71fe;
+}
+.dot_area .wrap .dot.ans {
+  background: #ff0000;
+  border: none;
+}
+.dot_area .wrap .dot.ans.n-match {
+  background: #4da4ae;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .dot_area .left .dot {
   right: -36px;
 }
@@ -1730,7 +1960,16 @@ body.grabbing * {
 .theboard circle {
   opacity: 0;
 }
+<<<<<<< HEAD
 
+=======
+.qe_area.disabled svg line {
+  stroke: #ff0000;
+}
+.qe_area.disabled svg line.correct {
+  stroke: #3b71fe;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* 분수 답안 */
 .frac_ans {
   display: flex;
@@ -1783,3 +2022,104 @@ th {
   font-weight: 700;
   background-color: #eee;
 }
+<<<<<<< HEAD
+=======
+
+/* D & D */
+.draggable.selected {
+  transform: scale(1.1);
+}
+
+/* .droppable.highlight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px dashed black;
+  cursor: url(../../common/img/clickicon-sm.png) 35 15, auto;
+} */
+
+/* 화살표 박스 추가 */
+.arrow_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+.arrow_wrap .arrow_left {
+  position: relative;
+  padding-right: 100px;
+}
+.arrow_wrap .arrow_left::before,
+.arrow_wrap .arrow_left::after {
+  position: relative;
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 105px;
+  height: 45px;
+  background: url(../../common/img/arrow.svg) center no-repeat;
+}
+.arrow_wrap .arrow_left::before {
+  transform: rotate(-45deg);
+  top: calc(50% - 65px);
+}
+.arrow_wrap .arrow_left::after {
+  transform: rotate(45deg);
+  top: calc(50% + 15px);
+}
+.arrow_wrap .ans.sizem {
+  width: 150px;
+}
+.arrow_wrap .ans.sizes {
+  width: 100px;
+}
+
+/* 나눗셈 */
+.division {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.division .t-box {
+  position: relative;
+}
+.division .t-box .left {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translate(-100%, -50%);
+  width: auto;
+}
+
+.division .t-box .right {
+  border-top: 2px solid #000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 32px;
+}
+
+.division .t-box .right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -26px;
+  width: 40px;
+  height: 82%;
+  border-right: 4px solid #000;
+  border-radius: 100%;
+}
+.division hr {
+  border: none;
+  border-top: 2px solid #000;
+}
+.qe_area .division .hint {
+  top: 50%;
+  left: calc(100% + 8px);
+  transform: translate(0%, -50%);
+}
+>>>>>>> b1dd6843 (초기 커밋)

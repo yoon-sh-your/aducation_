@@ -78,6 +78,10 @@ runAfterAppReady(() => {
                 hasDragged = true;
             }
             checkEvenDistribution();
+<<<<<<< HEAD
+=======
+            resetBtn.classList.remove("active");
+>>>>>>> b1dd6843 (초기 커밋)
         });
     });
 

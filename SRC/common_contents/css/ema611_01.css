@@ -50,11 +50,19 @@
 
 .ema611_01_su_0003 .flip:nth-child(2) .back .arrow1 {
   padding-top: 10px;
+<<<<<<< HEAD
   top: 40px;
 }
 
 .ema611_01_su_0003 .flip:nth-child(2) .back .arrow2 {
   top: 150px;
+=======
+  top: 47px;
+}
+
+.ema611_01_su_0003 .flip:nth-child(2) .back .arrow2 {
+  top: 135px;
+>>>>>>> b1dd6843 (초기 커밋)
   background: url(../../common_contents/img/EMA611_01_SU/0003_arrow2.svg) no-repeat 0 5px;
 }
 
@@ -78,7 +86,11 @@
   font-weight: 700;
   font-size: 24px;
   color: rgba(228, 0, 127, 1);
+<<<<<<< HEAD
   line-height: 36px;
+=======
+  /* line-height: 36px; */
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -0.5px;
   position: absolute;
   bottom: 0;
@@ -96,7 +108,10 @@
 .ema611_01_su_0003 .flip .back span {
   font-weight: 700;
   font-size: 32px;
+<<<<<<< HEAD
   line-height: 48px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -1px;
 }
 

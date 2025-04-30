@@ -18,6 +18,7 @@
   <body>
     <div id="app_wrap" class="ema612_05_su_0006">
       <section class="title type2">
+<<<<<<< HEAD
         <h2 data-head="4" lang="y">
           사각기둥의 전개도를 그려 봅시다.
           <span class="title_right ml_20">
@@ -36,6 +37,22 @@
 
           <div class="pop_goal_inner">
             <h3 lang="y" class="f32b">
+=======
+        <h2 data-head="4">
+          <div>
+            <span lang="y">사각기둥의 전개도를 그려 봅시다.</span>
+            <button type="button" class="btn_reference" onclick="openPop('.pop_reference_wrap')">도움 자료</button>
+          </div>
+        </h2>
+      </section>
+
+      <div class="pop_reference_wrap">
+        <div class="pop_reference">
+          <button class="close" onclick="closePop('.pop_reference_wrap')">닫기</button>
+
+          <div class="pop_reference_inner">
+            <h3 lang="y">
+>>>>>>> b1dd6843 (초기 커밋)
               각기둥의 전개도를 그릴 때 생각해야 할 점
             </h3>
 
@@ -105,14 +122,22 @@
             <div class="img_paper">
               <p class="ex_txt">예</p>
 
+<<<<<<< HEAD
               <img
                 src="../../common_contents/img/EMA612_05_SU/0006_graph_paper.png"
                 alt=""
               />
+=======
+              <!-- <img
+                src="../../common_contents/img/EMA612_05_SU/0006_graph_paper.png"
+                alt=""
+              /> -->
+>>>>>>> b1dd6843 (초기 커밋)
 
               <p class="t01">1 ㎝</p>
               <p class="t02">1 ㎝</p>
 
+<<<<<<< HEAD
               <div class="img_box part2">
                 <div class="dropdown_wrap line_00">
                   <select
@@ -222,6 +247,37 @@
                     <option value="solid">solid</option>
                     <option value="dotted">dotted</option>
                   </select>
+=======
+              <!-- 선 속성 선택 팝업 -->
+              <!-- <div class="dropdown_wrap" id="selectLineType">
+                <select
+                  class="custom_dropdown math_symbol"
+                  data-answer-single="empty_answer"
+                >
+                  <option value=""></option>
+                  <option value="solid" selected>solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div> -->
+
+              <div class="drawline_grid">
+                <!-- 선 속성 선택 팝업 -->
+                <div class="select_line_type">
+                  <ul class="select_type_options">
+                    <li data-value="solid">solid</li>
+                    <li data-value="dotted">dotted</li>
+                  </ul>
+                </div>
+                <!--drawing-->
+                <div
+                  class="drawing_grid_area"
+                  data-grid-size="30"
+                  id="drawingArea"
+                  data-answer-single='[[{"x":60,"y":120},{"x":60,"y":270},{"x":150,"y":270},{"x":150,"y":360},{"x":270,"y":270},{"x":390,"y":270},{"x":390,"y":120},{"x":270,"y":120},{"x":150,"y":30},{"x":150,"y":120}],[{"x":150,"y":120},{"x":150,"y":270},{"x":270,"y":270},{"x":270,"y":120},{"x":60,"y":120},{"x":150,"y":120}]]'
+                  data-sample-line=""
+                >
+                  <svg class="line_canvas"></svg>
+>>>>>>> b1dd6843 (초기 커밋)
                 </div>
               </div>
             </div>

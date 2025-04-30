@@ -222,8 +222,12 @@ section.contents.paging_layout {
 }
 
 .ema615_07_su_0004 .page_2 .input_wrap math-field.textarea {
+<<<<<<< HEAD
     min-height: auto;
     height: 80px;
+=======
+    height: 274px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema615_07_su_0004 .page_3 .input_wrap math-field.textarea,

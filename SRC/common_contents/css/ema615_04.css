@@ -109,7 +109,11 @@ section.contents.paging_layout {
 
 .ema615_04_su_0003 .page_1 .input_wrap math-field.textarea {
     min-height: auto;
+<<<<<<< HEAD
     /* height: 80px; */
+=======
+    height: 99px !important;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 
@@ -246,12 +250,29 @@ section.contents.paging_layout {
     /* background-color: orange; */
 }
 
+<<<<<<< HEAD
+=======
+.ema615_04_su_0004 .title h2,
+.ema615_04_su_0005 .title h2 {
+    /* 수정 요청 개별 작업 */
+    gap: 0;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 /* 서술형 페이지 버튼 */
 .ema615_04_su_0004:not([data-current-page='page_2']) .btn_area .btnSubmit,
 .ema615_04_su_0004[data-current-page='page_2'] .btn_area .btnCheck {
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+.ema615_04_su_0004:not([data-current-page='page_1']) .btn_area .btnSample,
+.ema615_04_su_0004[data-current-page='page_1'] .btn_area .btnCheck {
+    display: none;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema615_04_su_0004 .page_1 .question_box {
     width: calc(1635px - 160px);
 }

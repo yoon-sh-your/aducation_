@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap:has(.w_80) {
   min-width: 80px !important;
 }
@@ -115,6 +118,13 @@ math-field.has_ex_text + .text_hint:before {
   align-items: center;
   gap: 10px;
 }
+<<<<<<< HEAD
+=======
+.ema612_04_ih_0001 .text_area .col > div:first-child .custom_dropdown.hint~.custom_select .text_hint{
+  top: -38px;
+  left: 65%;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema612_04_ih_0001 .text_area .col > div + div {
   margin-top: 5px;
 }
@@ -126,7 +136,11 @@ math-field.has_ex_text + .text_hint:before {
 }
 .ema612_04_ih_0001 .text_area .col span.large {
   font-size: 44px;
+<<<<<<< HEAD
   font-family: sans-serif;
+=======
+  /* font-family: sans-serif; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 /* .ema612_04_ih_0001 .text_area */
 
@@ -262,6 +276,12 @@ math-field.has_ex_text + .text_hint:before {
   width: 170px;
 }
 /* ema612_04_ih_0005 */
+<<<<<<< HEAD
+=======
+.ema612_04_ih_0005 .input_wrap{
+  flex-direction: row;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema612_04_ih_0005 .img_area {
   position: relative;
 }

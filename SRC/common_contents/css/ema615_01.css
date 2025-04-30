@@ -30,6 +30,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -37,6 +38,22 @@
 .ema615_01_su_0002 .contents {
     display: flex;
     justify-content: center;
+=======
+.operation {
+    display: flex;
+    align-items: center;
+
+    color: var(--Text-Gray-900, #222);
+
+    /* Title/H_02_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 
@@ -46,6 +63,11 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema615_01_su_0004 .video_wrap {
     background-image: url(../img/EMA615_01_SU/0004_content.svg);
     background-repeat: no-repeat;

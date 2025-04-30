@@ -207,7 +207,10 @@
 .ema621_03_su_0005 .col:nth-child(3) .input_wrap math-field,
 .ema621_03_su_0005 .col:nth-child(4) .input_wrap math-field {
   width: 247px;
+<<<<<<< HEAD
   height: 112px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* .ema621_03_su_0006 */
@@ -336,5 +339,8 @@
 }
 .ema621_03_su_0006 .row math-field {
   width: 203px;
+<<<<<<< HEAD
   height: 113px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }

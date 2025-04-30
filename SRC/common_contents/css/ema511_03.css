@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 /*EMA511_03_SU_0003_s*/
 .ema511_03_su_0003 .group_box {
+=======
+/*EMA511_03_SU_0002_s*/
+.ema511_03_su_0002 .video_wrap svg, 
+.ema511_03_su_0002  .video_wrap img{
+  top:40%;
+}
+
+/*EMA511_03_SU_0003_s*/
+.ema511_03_su_0003 .group_box {
+  min-height: 80px;
+  padding: 10px 5px;
+>>>>>>> b1dd6843 (초기 커밋)
   gap: 0;
   background-color: var(--primary-blue-50);
 }
@@ -31,7 +44,11 @@
   letter-spacing: -1px;
 }
 .ema511_03_su_0003 .input_area article:not(.page_4) h3 {
+<<<<<<< HEAD
   margin-bottom: 40px;
+=======
+  /* margin-bottom: 40px; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema511_03_su_0003 .answer4 input {
   width: 150px;
@@ -286,3 +303,13 @@
 .ema511_03_su_0006 .answer1 input {
   width: 232px;
 }
+<<<<<<< HEAD
+=======
+
+svg text {
+  font-family: 'Pretendard', '맑은 고딕', 'Malgun Gothic', Arial, sans-serif;
+  font-size: 60px;
+  letter-spacing: -1px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)

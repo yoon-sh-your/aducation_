@@ -20,9 +20,12 @@ math-field.w_80 {
 .fraction_box.pos_custom > .input_wrap + span {
   transform: translateY(-20px);
 }
+<<<<<<< HEAD
 .fraction_box {
   min-width: 40px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap.fraction_wrap,
 .input_wrap.fraction_wrap math-field,
 .fraction_box .input_wrap,
@@ -30,9 +33,12 @@ math-field.w_80 {
   min-width: 0;
   width: 80px;
 }
+<<<<<<< HEAD
 .fraction_box:has(.input_wrap) span {
   line-height: 60px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box > .flex:first-child .input_wrap .text_hint,
 .fraction_box > .input_wrap:first-child .text_hint {
   top: -36px;
@@ -98,6 +104,16 @@ h3.title:before {
   background: url(../img/EMA515_02_IH/0001_img3.png) no-repeat center center;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+.ema515_02_ih_0001 .hint .correct{
+  background-color: var(--secondary-red);
+}
+.ema515_02_ih_0001 .correct .selected{
+  background-color: #C5D5FF;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema515_02_ih_0002 .question_box {
   justify-content: center;
@@ -179,7 +195,10 @@ h3.title:before {
 }
 .ema515_02_ih_0006 .title h2 .fraction_box {
   vertical-align: middle;
+<<<<<<< HEAD
   gap: 8px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_02_ih_0006 .img_box {
   position: relative;
@@ -214,7 +233,14 @@ h3.title:before {
   width: 198px;
 }
 .ema515_02_ih_0006 .dir_col > div:first-child .input_wrap_underline .text_hint {
+<<<<<<< HEAD
   top: -75px;
+=======
+  /* top: -75px; */
+}
+.ema515_02_ih_0006 .gap_80{
+  gap: 80px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_02_ih_0007 .question_box {
@@ -248,10 +274,18 @@ h3.title:before {
 .ema515_02_ih_0007 .question_box .img_box .txt1 {
   top: 52px;
   left: 126px;
+<<<<<<< HEAD
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_02_ih_0007 .question_box .img_box .txt2 {
   top: 52px;
   left: 430px;
+<<<<<<< HEAD
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_02_ih_0007 .question_box .img_box .fraction_box {
   vertical-align: middle;

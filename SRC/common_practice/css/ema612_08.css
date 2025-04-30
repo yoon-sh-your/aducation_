@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_wrap:has(.w_80) {
   min-width: 80px !important;
 }
@@ -102,9 +105,17 @@ math-field.has_ex_text + .text_hint:before {
 }
 .ema612_08_ih_0001 .text_area .col span.large {
   font-size: 44px;
+<<<<<<< HEAD
   font-family: sans-serif;
 }
 
+=======
+  /* font-family: sans-serif; */
+}
+.ema612_08_ih_0001 .text_area .col > div:first-child .custom_dropdown.hint~.custom_select .text_hint{
+  top: -38px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 /* ema612_08_ih_0002 */
 .ema612_08_ih_0002 .text_area {
   width: 434px;

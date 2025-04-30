@@ -28,6 +28,12 @@
 .pl16 {
   padding-left: 16px;
 }
+<<<<<<< HEAD
+=======
+.mlr0 {
+  margin: 0 !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .mr_0 {
   margin-right: 0 !important;
 }

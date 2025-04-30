@@ -3,6 +3,10 @@
  */
 let globalScale = 1;
 let globalFaultCount = 0;
+<<<<<<< HEAD
+=======
+let globalIsCorrect = [];
+>>>>>>> b1dd6843 (초기 커밋)
 let keypadModeState = {
     isKeypadMode: false
 };
@@ -120,9 +124,17 @@ const scriptPaths = [
     "../../common_contents/common/js/tools.js",
     "../../common_contents/common/js/fabricModule/drawPopup.js",
     "../../common_contents/common/js/fabricModule/canvas_init.js",
+<<<<<<< HEAD
     //키패드기능
     "../../common_contents/common/js/keypad/selvypen-math-keyboard.min.js",
     "../../common_contents/common/js/keypad/keypad.js",
+=======
+
+    //키패드기능
+    "../../common_contents/common/js/keypad/selvypen-math-keyboard.min.js",
+    "../../common_contents/common/js/keypad/keypad.js",
+    "../../common_contents/common/js/keypad/math_compare.js",
+>>>>>>> b1dd6843 (초기 커밋)
 ];
 
 // 전체 스크립트 리스트
@@ -190,9 +202,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
             });
         }
+<<<<<<< HEAD
 
         initializeCardFlip();
 
+=======
+        initializeCardFlip();
+
+        // 통신 모듈 전송 이벤트 생성
+        initSendResultEvent();
+>>>>>>> b1dd6843 (초기 커밋)
     } catch (error) {
         console.error("스크립트 로드 실패:", error);
     }
@@ -201,10 +220,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 /**
  * 화면 스케일링
  */
+<<<<<<< HEAD
+=======
+let previousGlobalScale = null;
+const SCALE_THRESHOLD = 0.01; // 스케일 변경 임계값
+
+>>>>>>> b1dd6843 (초기 커밋)
 function scaleScreen() {
     const container = document.getElementById("app_wrap");
     if (!container) return;
 
+<<<<<<< HEAD
     const currentWidth = window.visualViewport ? window.visualViewport.width : window.innerWidth;
     const scaleX = currentWidth / 1715;
     globalScale = scaleX;
@@ -217,6 +243,30 @@ function scaleScreen() {
         container.classList.add('of_h');
     } else {
         container.classList.remove('of_h');
+=======
+    const currentWidth = document.documentElement.clientWidth; // 스크롤바 너비 제외
+    const scaleX = currentWidth / 1715;
+    const newGlobalScale = parseFloat(scaleX.toFixed(5));
+
+    // 스케일 변경이 임계값보다 클 경우에만 업데이트
+    if (previousGlobalScale === null || Math.abs(newGlobalScale - previousGlobalScale) > SCALE_THRESHOLD) {
+        globalScale = newGlobalScale;
+        container.style.transform = `scale(${globalScale})`;
+        previousGlobalScale = globalScale; // 이전 스케일 값 업데이트
+
+        // 페이징 레이아웃 감지 및 클래스 추가
+        const hasPagingLayout = container.querySelector('section.paging_layout');
+        if (hasPagingLayout) {
+            if (!container.classList.contains('of_h')) {
+                 container.classList.add('of_h');
+            }
+        } else {
+             if (container.classList.contains('of_h')) {
+                 container.classList.remove('of_h');
+             }
+        }
+        // console.log(`Screen scaled to: ${globalScale}`); // 디버깅용 로그
+>>>>>>> b1dd6843 (초기 커밋)
     }
 }
 
@@ -225,6 +275,13 @@ function scaleScreen() {
  */
 function updateGlobalFaultCount(newCount) {
     globalFaultCount = newCount;
+<<<<<<< HEAD
+=======
+
+    // 정오답 여부 체크 newCount가 0일 경우 정답, 아닐 경우 오답
+    globalIsCorrect[pagenation.currentPage-1] = newCount === 0;
+
+>>>>>>> b1dd6843 (초기 커밋)
     document.dispatchEvent(new CustomEvent("globalFaultUpdated", {
         detail: globalFaultCount
     }));

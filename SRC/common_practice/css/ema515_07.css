@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 .title h2[data-head] .fraction_box {
   margin-left: 0;
 }
@@ -8,6 +12,7 @@
 math-field.w_80 {
   width: 80px !important;
 }
+<<<<<<< HEAD
 
 .fraction_box.pos_custom > .input_wrap + span {
   transform: translateY(-20px);
@@ -16,6 +21,8 @@ math-field.w_80 {
 .fraction_box {
   min-width: 40px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box_wrap .input_wrap,
 .fraction_box_wrap .input_wrap math-field,
 .input_wrap.fraction_wrap,
@@ -31,9 +38,12 @@ math-field.w_80 {
   min-width: 0;
   width: 100%;
 }
+<<<<<<< HEAD
 .fraction_box:has(.input_wrap) span {
   line-height: 60px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box > .flex:first-child .input_wrap .text_hint,
 .fraction_box > .input_wrap:first-child .text_hint {
   top: -36px;
@@ -129,6 +139,19 @@ h3.title:before {
   /* gap: 18px; */
   background: url(../img/EMA515_07_IH/0004_img2.svg) 0 0 no-repeat;
   background-size: contain;
+<<<<<<< HEAD
+=======
+  position: relative;
+}
+.ema515_07_ih_0004 .question_box .left::after{
+  content: '-';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 156px;
+  font-weight: 700;
+  font-size: 32px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_07_ih_0004 .question_box .box {
   padding: 10px;
@@ -176,7 +199,35 @@ h3.title:before {
 }
 .ema515_07_ih_0006 .title h2 .fraction_box {
   vertical-align: middle;
+<<<<<<< HEAD
   gap: 8px;
+=======
+}
+.ema515_07_ih_0006 .mixed_fraction{
+  display: inline-flex;
+}
+.ema515_07_ih_0006 .img_box{
+  position: relative;
+}
+.ema515_07_ih_0006 .img_box::after{
+  content: '폐식용유';
+  display: block;
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  bottom: 68px;
+  left: 67px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.ema515_07_ih_0007 .gap_80{
+  gap: 80px;
+}
+.ema515_07_ih_0007 .right{
+  width: 700px;
+  height: 300px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema515_07_ih_0007 .question_box {

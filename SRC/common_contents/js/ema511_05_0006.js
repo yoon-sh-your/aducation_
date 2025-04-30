@@ -18,6 +18,19 @@ runAfterAppReady(() => {
             field.setAttribute("data-answer-single", "");
         });
 
+<<<<<<< HEAD
+=======
+        // 드롭다운 초기화
+        document.querySelectorAll(".custom_dropdown").forEach(dropdown => {
+            dropdown.classList.remove("hint", "disabled");
+            dropdown.removeAttribute("disabled");
+        });
+        //선택 스타일 초기화
+        document.querySelectorAll(".dropdown_wrap .select_options li").forEach(li => {
+            li.removeAttribute("style"); 
+          });
+
+>>>>>>> b1dd6843 (초기 커밋)
         return false;
     };
 

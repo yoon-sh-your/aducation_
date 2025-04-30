@@ -211,7 +211,11 @@
 .ema514_08_su_0002 .page_2 .count_wrap .fraction_num::before {
   content: '';
   display: flex;
+<<<<<<< HEAD
   background: url(../img/EMA514_08_SU/0002_bg.png) 0 0 no-repeat;
+=======
+  background: url(../../common_contents/img/EMA514_08_SU/0002_bg.png) 0 0 no-repeat;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 63px;
   height: 68px;
   position: absolute;
@@ -261,7 +265,11 @@
   min-height: 120px;
 }
 .ema514_08_su_0002 .page_4 .speech_bubble {
+<<<<<<< HEAD
   background: url(../img/EMA514_08_SU/0002_bg2.png) no-repeat 0 0;
+=======
+  background: url(../../common_contents/img/EMA514_08_SU/0002_bg2.png) no-repeat 0 0;
+>>>>>>> b1dd6843 (초기 커밋)
   background-size: contain;
   height: 190px;
   width: 285px;
@@ -347,6 +355,7 @@
 /* 움직일 도형 */
 .ema514_08_su_0003 .page_1 .triangle {
   background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_.svg) no-repeat center center / 100%;
+<<<<<<< HEAD
   width: 70px;
   height: 70px;
 }
@@ -354,6 +363,15 @@
   background: url(../../common_contents/img/EMA512_04_SU/0004_drag_circle_.svg) no-repeat center center / 100%;
   width: 70px;
   height: 70px;
+=======
+  width: 80px;
+  height: 80px;
+}
+.ema514_08_su_0003 .page_1 .circle {
+  background: url(../../common_contents/img/EMA514_08_SU/0003_mark1.svg) no-repeat center center / 100%;
+  width: 80px;
+  height: 80px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* 매칭 박스 wrap */
@@ -413,8 +431,11 @@
 
 /* 하위 div */
 .ema514_08_su_0003 .page_1 .droppable .ui-draggable-handle {
+<<<<<<< HEAD
   width: 100%;
   height: 100%;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   position: absolute !important;
   top: 0;
 }
@@ -503,7 +524,11 @@
 .ema514_08_su_0003 .ex_box {
   content: '';
   display: block;
+<<<<<<< HEAD
   background: url(../img/EMA514_08_SU/0003_bg3.png) 100% 0 no-repeat;
+=======
+  background: url(../../common_contents/img/EMA514_08_SU/0003_bg3.png) 100% 0 no-repeat;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 475px;
   height: 360px;
   position: absolute;
@@ -513,7 +538,11 @@
 .ema514_08_su_0003 .ex_box:before {
   content: '';
   display: block;
+<<<<<<< HEAD
   background: url(../img/EMA514_08_SU/0003_bg4.png) 100% 100% no-repeat;
+=======
+  background: url(../../common_contents/img/EMA514_08_SU/0003_bg4.png) 100% 100% no-repeat;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 384px;
   height: 260px;
   position: absolute;
@@ -574,7 +603,11 @@
 
 .ema514_08_su_0003 .page_2 .tb_area {
   display: flex;
+<<<<<<< HEAD
   background: url(../img/EMA514_08_SU/0003_bg5.png) no-repeat 0 0;
+=======
+  background: url(../../common_contents/img/EMA514_08_SU/0003_bg5.png) no-repeat 0 0;
+>>>>>>> b1dd6843 (초기 커밋)
   width: 800px;
   height: 140px;
 }
@@ -597,6 +630,10 @@
   line-height: 48px;
   letter-spacing: -1px;
   min-width: 80px;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema514_08_su_0003 .page_2 .tb_area dl dt {
@@ -617,22 +654,31 @@
 }
 
 .ema514_08_su_0003 .page_2 .tb_area .drop_item {
+<<<<<<< HEAD
   width: 44px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   font-size: 24px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema514_08_su_0003 .page_2 .tb_area .drop_item.hint {
   color: var(--font-negative);
 }
 
+<<<<<<< HEAD
 .ema514_08_su_0003 .page_2 .tb_area .drag_item {
   font-size: 24px;
   min-width: 90px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema514_08_su_0003 .page_2 .tb_area .fraction_box {
   margin-right: 4px;
 }

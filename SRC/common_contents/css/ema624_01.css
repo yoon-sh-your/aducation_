@@ -50,7 +50,11 @@
   position: relative;
 }
 .ema624_01_su_0003 .list {
+<<<<<<< HEAD
   width: 169px;
+=======
+  width: 212px;
+>>>>>>> b1dd6843 (초기 커밋)
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -80,3 +84,16 @@
 .ema624_01_su_0005 .input_wrap .example_box {
   max-height: 115px;
 }
+<<<<<<< HEAD
+=======
+
+.picture_wrap svg {
+  width: unset !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 100% !important;
+}
+>>>>>>> b1dd6843 (초기 커밋)

@@ -35,7 +35,11 @@ $(function () {
     const pageId = $(this).attr('id');
     const $resetBtn = $(`#${pageId} .calc_reset`);
     const $checkBtn = $(`#${pageId} .calc_check`);
+<<<<<<< HEAD
     $(`#${pageId} .calc_check`).text('정답확인');
+=======
+    $(`#${pageId} .calc_check`).text('정답 확인');
+>>>>>>> b1dd6843 (초기 커밋)
 
     $resetBtn.addClass('disable');
     $checkBtn.addClass('disable');
@@ -74,9 +78,37 @@ $(function () {
     playSound('click');
 
     let currentPage = $('.pagination button.on').index() + 1;
+<<<<<<< HEAD
 
     // active된 정답 입력 필드 초기화
     $('.answer.active').val('');
+=======
+    // active된 정답 입력 필드 초기화
+    $('.page.on .answer.active').val('');
+    $('.page.on .answer').removeClass('is-incorrect is-correct');
+    $('.page.on').find('.disabled').removeClass('disabled');
+
+    if (window.wrongCnt[currentPage] === 2) {
+      window.wrongCnt[currentPage] = 0;
+      $('.page.on .answer').val('');
+      $('.page.on .answer').removeClass('active is-incorrect is-correct');
+      $('.page.on .answer').eq(0).addClass('active');
+      $(`.pagination .p${currentPage}`).removeClass('x-icon o-icon');
+
+      if ($(`#q${currentPage} .answer`).first().parents('.frac_ans').length > 0) {
+        const parentAns0 = $(`#q${currentPage} .answer`).first().parents('.frac_ans').find('.answer')[0];
+        const parentAns = $(`#q${currentPage} .answer`).first().parents('.frac_ans').find('.answer')[1];
+        $(`#q${currentPage} .answer`).removeClass('active');
+        if (parentAns) {
+          $(parentAns).addClass('active');
+        } else {
+          $(parentAns0).addClass('active');
+        }
+      } else {
+        $(`#q${currentPage} .answer`).first().addClass('active');
+      }
+    }
+>>>>>>> b1dd6843 (초기 커밋)
 
     // 키패드 입력창 리셋
     $(`#q${currentPage} .calc_result_input`).val('');
@@ -151,27 +183,61 @@ $(function () {
     $('.page.on .answer').each(function () {
       if (!$(this).val()) {
         $('.page.on .answer').removeClass('active');
+<<<<<<< HEAD
         $(this).addClass('active');
+=======
+
+        if ($(this).parents('.frac_ans').length > 0) {
+          const parentAns = $(this).parents('.frac_ans').find('.answer')[1];
+          if ($(parentAns).val() === '') {
+            $(parentAns).addClass('active');
+          } else {
+            $(this).addClass('active');
+          }
+        } else {
+          $(this).addClass('active');
+        }
+
+>>>>>>> b1dd6843 (초기 커밋)
         allCompleted = false;
         $('.page.on .calc_reset').click();
         return false; // 루프 멈춤 (break 효과)
       }
     });
+<<<<<<< HEAD
     if (allCompleted) window.checkPageAnswerStates(currentPage);
+=======
+    if (allCompleted) {
+      window.checkPageAnswerStates(currentPage);
+      window.enterActive = false;
+      console.log(window.enterActive);
+    }
+>>>>>>> b1dd6843 (초기 커밋)
   }
 
   // 키패드 체크 버튼 클릭 이벤트
   $('.calc_check').on('click', function () {
     answerConfirmation();
   });
+<<<<<<< HEAD
  
   // 입력형 문제 키보드 엔터 입력 시 "정답 확인" 버튼 클릭과 동일한 이벤트
   $(document).on('keydown', function(e) {
+=======
+
+  // 입력형 문제 키보드 엔터 입력 시 "정답 확인" 버튼 클릭과 동일한 이벤트
+  $(document).on('keydown', function (e) {
+>>>>>>> b1dd6843 (초기 커밋)
     const currentPage = $('.pagination button.on').index() + 1;
     const $input = $(`#q${currentPage} .calc_result_input`);
     if (window.questionTypes[currentPage - 1] === 1 && $input?.[0]?.value && (e.key === 'Enter' || e.keyCode === 13)) {
       e.preventDefault();
       e.stopImmediatePropagation();
+<<<<<<< HEAD
+=======
+      $('.calc_num button').blur();
+      if ($('.page.on .qe_area').hasClass('disabled') || !window.enterActive) return;
+>>>>>>> b1dd6843 (초기 커밋)
       answerConfirmation();
     }
   });

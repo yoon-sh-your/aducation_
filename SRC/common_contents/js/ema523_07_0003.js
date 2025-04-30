@@ -3,15 +3,32 @@ runAfterAppReady(function () {
 
   function updateDropValueAndCorrection($drop, value) {
     console.log("✅ updateDropValueAndCorrection 실행됨");
+<<<<<<< HEAD
     console.log("📌 $drop:", $drop);
     console.log("📌 value:", value);
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   
     if (!$drop || !$drop.length || value === undefined) {
       console.warn("❌ drop 또는 값이 잘못됨");
       return;
     }
   
+<<<<<<< HEAD
     $drop.attr("data-value", value);
+=======
+    // ✅ drop_item 안의 from-drop drag_item의 data-value 읽기
+    const $dragItem = $drop.find(".from-drop");
+    let dropValue = value;
+  
+    if ($dragItem.length) {
+      dropValue = parseFloat($dragItem.attr("data-value")) || 0;
+      dropValue = (dropValue + 360) % 360;
+      dropValue = dropValue.toFixed(1);
+    }
+  
+    $drop.attr("data-value", dropValue);
+>>>>>>> b1dd6843 (초기 커밋)
   
     const answer = $drop.attr("data-answer-single");
   
@@ -20,12 +37,25 @@ runAfterAppReady(function () {
       isCorrect = true;
     } else {
       const numAnswer = parseFloat(answer);
+<<<<<<< HEAD
       const numValue = parseFloat(value);
       isCorrect = Math.abs(numAnswer - numValue) <= 1;
+=======
+      const numValue = parseFloat(dropValue);
+  
+      const diff = Math.min(
+        Math.abs(numAnswer - numValue),
+        Math.abs(numAnswer - (numValue + 360)),
+        Math.abs((numAnswer + 360) - numValue)
+      );
+  
+      isCorrect = diff <= 1;
+>>>>>>> b1dd6843 (초기 커밋)
     }
   
     $drop.attr("data-correction", isCorrect ? "true" : "false");
     console.log("🎯 최종 data-correction:", $drop.attr("data-correction"));
+<<<<<<< HEAD
 
     setTimeout(() => {
       $drop.attr("data-correction", isCorrect ? "true" : "false");
@@ -35,6 +65,14 @@ runAfterAppReady(function () {
   }
   
 
+=======
+  
+    setTimeout(() => {
+      $drop.attr("data-correction", isCorrect ? "true" : "false");
+    }, 0);
+  }
+  
+>>>>>>> b1dd6843 (초기 커밋)
   
   // ✅ 회전값을 추출하는 유틸리티 함수 선언
   function getRotationDegrees($img) {
@@ -87,6 +125,7 @@ runAfterAppReady(function () {
       const $original = $(ui.draggable);
       const $helper = $(ui.helper);
       const $img = $helper.find("img");
+<<<<<<< HEAD
   
       const dropW = $drop.outerWidth();
       const dropH = $drop.outerHeight();
@@ -109,24 +148,51 @@ runAfterAppReady(function () {
         })
         .css({ opacity: 0.8 });
 
+=======
+    
+      // 회전값은 복제 전에 원본 drag_item에서 가져옴
+      let rotationValue = parseFloat($original.attr("data-rotation")) || 0;
+      rotationValue = (rotationValue + 360) % 360;
+      rotationValue = rotationValue.toFixed(1);
+    
+      $original.addClass("used disabled").attr({
+        "data-rotation": "0",
+        "data-value": "0"
+      }).css({ opacity: 0.8 });
+    
+>>>>>>> b1dd6843 (초기 커밋)
       $original.find("img").css({
         transform: "rotate(0deg)",
         transformOrigin: "center center"
       });
+<<<<<<< HEAD
   
       // ✅ drop 내 기존 도형 제거
       $drop.find(".from-drop").remove();
   
       // ✅ 복제 생성
+=======
+    
+      $drop.find(".from-drop").remove();
+    
+>>>>>>> b1dd6843 (초기 커밋)
       const $clone = $helper.clone(true, true)
         .addClass("from-drop")
         .removeClass("used disabled")
         .css({
+<<<<<<< HEAD
           width: `${cloneW}px`,
           height: `${cloneH}px`,
           position: "absolute",
           left: offsetLeft,
           top: offsetTop,
+=======
+          width: `${$helper.outerWidth()}px`,
+          height: `${$helper.outerHeight()}px`,
+          position: "absolute",
+          left: ($drop.outerWidth() - $helper.outerWidth()) / 2,
+          top: ($drop.outerHeight() - $helper.outerHeight()) / 2,
+>>>>>>> b1dd6843 (초기 커밋)
           pointerEvents: "auto",
           userSelect: "none",
           opacity: 1
@@ -135,11 +201,16 @@ runAfterAppReady(function () {
           "data-rotation": rotationValue,
           "data-value": rotationValue
         });
+<<<<<<< HEAD
   
+=======
+    
+>>>>>>> b1dd6843 (초기 커밋)
       $clone.find("img").css({
         transform: `rotate(${rotationValue}deg)`,
         transformOrigin: "center center"
       });
+<<<<<<< HEAD
   
       // ✅ drop_item에 회전값 반영 및 정답 판단
       updateDropValueAndCorrection($drop, rotationValue);
@@ -155,6 +226,24 @@ runAfterAppReady(function () {
   
   
 
+=======
+    
+      // ✅ 드롭할 때 드롭 아이템의 data-value도 복제 아이템의 값으로 세팅
+      $drop.attr("data-value", rotationValue);
+    
+      // ✅ drop_item의 data-value 업데이트 이후 정답 체크
+      updateDropValueAndCorrection($drop, rotationValue);
+    
+      $drop.append($clone);
+      makeDraggable($clone);
+      bindRotation($clone);
+      $drop.parent().addClass("on");
+    
+      audioManager.playSound("drop");
+    }    
+  });
+  
+>>>>>>> b1dd6843 (초기 커밋)
   // ✅ 회전 바인딩 함수
   function bindRotation($elem) {
     $elem.find(".btn_rotation").off("mousedown touchstart").on("mousedown touchstart", function (evt) {
@@ -169,6 +258,7 @@ runAfterAppReady(function () {
   
       const calcAngleDegrees = (x, y) => (Math.atan2(y, x) * 180) / Math.PI;
   
+<<<<<<< HEAD
       let cX = 0, cY = 0, sA = 0, mA = 0, degree = 0;
       let angle = parseFloat($item.attr("data-rotation")) || 0;
   
@@ -202,11 +292,62 @@ runAfterAppReady(function () {
         $item.attr("data-value", degree.toFixed(1));
   
         // drop 위치의 정답 비교 갱신
+=======
+      let startAngle = parseFloat($item.attr("data-rotation")) || 0;
+      let centerX, centerY, startVectorAngle;
+  
+      const rect = $img.get(0).getBoundingClientRect();
+      centerX = rect.left + rect.width / 2;
+      centerY = rect.top + rect.height / 2;
+  
+      const clientX = evt.type.startsWith("touch") ? evt.originalEvent.touches[0].clientX : evt.clientX;
+      const clientY = evt.type.startsWith("touch") ? evt.originalEvent.touches[0].clientY : evt.clientY;
+  
+      const dx = clientX - centerX;
+      const dy = clientY - centerY;
+      startVectorAngle = calcAngleDegrees(dx, dy);
+  
+      const moveHandler = (moveEvt) => {
+        moveEvt.preventDefault();
+        moveEvt.stopPropagation();
+      
+        const moveX = moveEvt.type.startsWith("touch") ? moveEvt.originalEvent.touches[0].clientX : moveEvt.clientX;
+        const moveY = moveEvt.type.startsWith("touch") ? moveEvt.originalEvent.touches[0].clientY : moveEvt.clientY;
+      
+        const moveDx = moveX - centerX;
+        const moveDy = moveY - centerY;
+        const currentVectorAngle = calcAngleDegrees(moveDx, moveDy);
+      
+        let degree = startAngle + (currentVectorAngle - startVectorAngle);
+        degree = (degree + 360) % 360;
+      
+        // ✅ 여기 추가: 스냅 기능
+        const snapAngles = [0, 90, 180, 270, 360];
+        const snapThreshold = 5; // 5도 이내로 근접하면 스냅
+      
+        for (let snapAngle of snapAngles) {
+          if (Math.abs(degree - snapAngle) <= snapThreshold) {
+            degree = snapAngle;
+            break;
+          }
+        }
+      
+        // ✅ drag_item 전체를 회전시킴
+        $item.css({
+          transform: `rotate(${degree}deg)`,
+          transformOrigin: "center center"
+        });
+      
+        $item.attr("data-rotation", degree.toFixed(1));
+        $item.attr("data-value", degree.toFixed(1));
+      
+>>>>>>> b1dd6843 (초기 커밋)
         const $drop = $item.closest(".drop_item.figure_triangle");
         if ($drop.length) {
           updateDropValueAndCorrection($drop, degree.toFixed(1));
         }
       };
+<<<<<<< HEAD
   
       const endHandler = function (e) {
         e.preventDefault();
@@ -221,12 +362,25 @@ runAfterAppReady(function () {
           updateDropValueAndCorrection($drop, degree.toFixed(1));
         }
       
+=======
+      
+      
+  
+      const endHandler = (endEvt) => {
+        endEvt.preventDefault();
+        endEvt.stopPropagation();
+        $item.removeClass("rotating");
+  
+>>>>>>> b1dd6843 (초기 커밋)
         document.removeEventListener("mousemove", moveHandler);
         document.removeEventListener("touchmove", moveHandler);
         document.removeEventListener("mouseup", endHandler);
         document.removeEventListener("touchend", endHandler);
       };
+<<<<<<< HEAD
       
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   
       document.addEventListener("mousemove", moveHandler, { passive: false });
       document.addEventListener("touchmove", moveHandler, { passive: false });
@@ -235,8 +389,11 @@ runAfterAppReady(function () {
     });
   }
   
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
   // ✅ 복제 도형 드래그 가능하게
   function makeDraggable($elem) {
     $elem.draggable({
@@ -289,17 +446,42 @@ runAfterAppReady(function () {
       $drop.attr("data-value", "");
       $drop.removeAttr("data-correction"); // ✅ data-correction 제거
     });
+<<<<<<< HEAD
   
     $draggables.each(function () {
       const $item = $(this);
       $item.removeClass("used disabled").css({ opacity: 1 });
       $item.attr("data-rotation", "0");
   
+=======
+
+    $draggables.each(function () {
+      const $item = $(this);
+      $item.removeClass("used disabled").css({ opacity: 1 });
+      
+      // ✅ data-rotation, data-value 둘 다 초기화
+      $item.attr({
+        "data-rotation": "0",
+        "data-value": "0"
+      });
+    
+      // ✅ drag_item 자체 회전도 초기화
+      $item.css({
+        transform: "rotate(0deg)",
+        transformOrigin: "center center"
+      });
+    
+      // ✅ img 회전도 초기화 (기존 코드)
+>>>>>>> b1dd6843 (초기 커밋)
       $item.find("img").css({
         transform: "rotate(0deg)",
         transformOrigin: "center center"
       });
     });
+<<<<<<< HEAD
+=======
+    
+>>>>>>> b1dd6843 (초기 커밋)
   
     window.forceWatchEvaluation(); // 버튼 활성화 상태 재평가
   });

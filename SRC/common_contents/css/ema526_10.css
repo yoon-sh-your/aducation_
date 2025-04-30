@@ -541,6 +541,12 @@
 }
 
 /*EMA526_10_SU_0008_s*/
+<<<<<<< HEAD
+=======
+.ema526_10_su_0008 section.title.type2 + section.contents{
+  padding-top: 40px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema526_10_su_0008 .scroll_area {
   position: relative;
 }

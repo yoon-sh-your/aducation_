@@ -25,7 +25,12 @@ runAfterAppReady(() => {
 			let gap = parseFloat($wrap.attr("data-gap"));
 			let adjustedWidth;
 			let currentPos = pos.get(this);
+<<<<<<< HEAD
 	
+=======
+
+
+>>>>>>> b1dd6843 (초기 커밋)
 			//if (!currentPos || currentPos.length === 2) return;
 			if (!currentPos || currentPos.filter(v => typeof v !== "undefined").length === 2) return;
 
@@ -35,6 +40,12 @@ runAfterAppReady(() => {
 				$wrap.children(".input-wrap").css("left", `${currentPos[0]}px`);
 				$wrap.find(".dw1").addClass("on"); 
 				$wrap.find(".dw3").addClass("on");
+<<<<<<< HEAD
+=======
+
+			
+				  
+>>>>>>> b1dd6843 (초기 커밋)
 			} else {
 				currentPos[1] = Math.floor(x / scale / gap) * gap;
 				currentPos.sort((a, b) => a - b);
@@ -47,6 +58,16 @@ runAfterAppReady(() => {
 				$wrap.find(".dw2").addClass("on"); 
 				$wrap.find(".dw4").addClass("on"); 
 			}
+<<<<<<< HEAD
+=======
+
+			setTimeout(() => {
+				const activeDw = $wrap.find(".dw1.on, .dw2.on, .dw3.on, .dw4.on"); // dw1이나 dw3 중에 on 붙은 것 찾기
+				const innerElements = activeDw.find('.select_options');
+				activeDw.addClass("active");
+				innerElements.addClass("upper").css("display", "block");
+			  }, 10);
+>>>>>>> b1dd6843 (초기 커밋)
 		});
 	});
 	

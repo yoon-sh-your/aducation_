@@ -213,6 +213,12 @@
   width: 230px;
   height: 137px;
 }
+<<<<<<< HEAD
+=======
+.ema512_03_ih_0006 section.title.type2 + section.contents {
+  padding-top: 0;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema512_03_ih_0007 .question_box {
   position: relative;

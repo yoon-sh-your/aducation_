@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 .title h2[data-head] .fraction_box {
   margin-left: 0;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .line_height_1 {
   line-height: 1;
 }
@@ -34,9 +37,12 @@
 /* .fraction_box {
   min-width: 40px;
 } */
+<<<<<<< HEAD
 .fraction_box.pos_custom > .input_wrap + span {
   transform: translateY(-20px);
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box_wrap .input_wrap,
 .fraction_box_wrap .input_wrap math-field,
 .input_wrap.fraction_wrap,
@@ -52,9 +58,12 @@
   min-width: 0;
   width: 100%;
 }
+<<<<<<< HEAD
 .fraction_box:has(.input_wrap) span {
   line-height: 60px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .fraction_box > .flex:first-child .input_wrap .text_hint,
 .fraction_box > .input_wrap:first-child .text_hint {
   top: -36px;
@@ -136,11 +145,29 @@ h3.title:before {
 .ema515_05_ih_0004 .img_box .fraction_box {
   position: absolute;
   top: 10px;
+<<<<<<< HEAD
   right: 105px;
+=======
+  right: 99px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 /* .ema515_05_ih_0004 .img_box .input_wrap .text_hint {
   top: -36px;
 } */
+<<<<<<< HEAD
+=======
+.ema515_05_ih_0004 .explainFraction{
+  position: absolute;
+}
+.ema515_05_ih_0004 .explainFraction:nth-child(3){
+  top: 35px;
+  left: 455px;
+}
+.ema515_05_ih_0004 .explainFraction:nth-child(4){
+  top: 295px;
+  left: 609px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema515_05_ih_0005 .boolean_wrap {
   justify-content: center;
@@ -190,6 +217,27 @@ h3.title:before {
 .ema515_05_ih_0005 .boolean_wrap button.selected.correct:after {
   filter: invert(48%) sepia(46%) saturate(7213%) hue-rotate(214deg) brightness(101%) contrast(101%);
 }
+<<<<<<< HEAD
+=======
+.ema515_05_ih_0005 .bg_050005{
+  position: relative;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+.ema515_05_ih_0005 .bg_050005::after{
+  position: absolute;
+  content: '';
+  background: url(../../common_practice/img/EMA515_05_IH/0005_bg_02.png) no-repeat center / auto 100%;
+  width: 80px;
+  height: 50px;
+  display: block;
+  top: -11px;
+  left: -21px;
+  z-index: -1;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema515_05_ih_0006 .question_box {
   gap: 118px;
 }
@@ -219,9 +267,12 @@ h3.title:before {
 }
 .ema515_05_ih_0006 .img_box .fraction_box {
   vertical-align: middle;
+<<<<<<< HEAD
   gap: 8px;
   line-height: 1;
   min-width: 0;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_05_ih_0006 .label_gray {
   width: 50px;

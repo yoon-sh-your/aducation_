@@ -19,7 +19,11 @@
   <body>
     <div id="app_wrap" class="ema613_08_ih_0002">
       <section class="title type2">
+<<<<<<< HEAD
         <h2 data-head="2_pink" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 찍어 보세요.</h2>
+=======
+        <h2 data-head="2" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 찍어 보세요.</h2>
+>>>>>>> b1dd6843 (초기 커밋)
       </section>
 
       <section class="contents">
@@ -44,8 +48,14 @@
                 <div class="input_row">
                   <span class="label_gray" lang="y">몫</span>
                   <span>4</span>
+<<<<<<< HEAD
                   <div class="input_wrap small">
                     <math-field id="field1-1" data-answer-single="."></math-field>
+=======
+                  <!-- <button type="button" data-answer-single="true" data-correction="false"><span>·</span></button> -->
+                  <div class="input_wrap small">
+                    <math-field id="field1-1" data-answer-single="." readonly></math-field>
+>>>>>>> b1dd6843 (초기 커밋)
                   </div>
                   <span>9</span>
                   <div class="input_wrap small">
@@ -72,7 +82,11 @@
                   <span class="label_gray" lang="y">몫</span>
                   <span>7</span>
                   <div class="input_wrap small">
+<<<<<<< HEAD
                     <math-field id="field2-1" data-answer-single="."></math-field>
+=======
+                    <math-field id="field2-1" data-answer-single="." readonly></math-field>
+>>>>>>> b1dd6843 (초기 커밋)
                   </div>
                   <span>9</span>
                   <div class="input_wrap small">
@@ -91,7 +105,14 @@
             <div class="flex">
               <strong class="tit_solve" lang="y">해설</strong>
               <div class="conts_solve">
+<<<<<<< HEAD
                 <p lang="y">해설 미수급</p>
+=======
+                <p lang="y">
+                  39.6÷8을 40÷8로 어림셈하면 약 5이므로 몫은 4.95입니다.<br />
+                  15.9÷2를 16÷2로 어림셈하면 약 8이므로 몫은 7.95입니다.
+                </p>
+>>>>>>> b1dd6843 (초기 커밋)
               </div>
             </div>
             <div class="buttons_solve"></div>
@@ -104,11 +125,20 @@
         </div>
       </section>
     </div>
+<<<<<<< HEAD
     <script>
+=======
+ <script>
+>>>>>>> b1dd6843 (초기 커밋)
       function latexToText(val) {
         return val.replace(/^\\text{(.+)}$/, '$1');
       }
 
+<<<<<<< HEAD
+=======
+      let isChecking = false; //"확인" 버튼 누른 이후 toggle 비활성화
+
+>>>>>>> b1dd6843 (초기 커밋)
       window.customCheckCondition = function () {
         const $f11 = $('#field1-1');
         const $f12 = $('#field1-2');

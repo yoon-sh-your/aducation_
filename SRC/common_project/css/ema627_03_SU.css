@@ -16,7 +16,11 @@
   height: 100%;
 }
 .ema627_03_SU_0002 dd {
+<<<<<<< HEAD
   width: 475px;
+=======
+  width: 600px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema627_03_SU_0002 dd math-field.textarea {
   width: 100%;
@@ -25,6 +29,7 @@
 .ema627_03_SU_0002 dd.h_cst1 math-field.textarea {
   height: 96px;
 }
+<<<<<<< HEAD
 .ema627_03_SU_0002 dd.h_cst2 math-field.textarea {
   height: 302px;
 }
@@ -47,10 +52,32 @@
   bottom: 20px;
   left: 553px;
 } */
+=======
+.ema627_03_SU_0002 dl.h_cst2 dt {
+  height: 388px;
+} 
+.ema627_03_SU_0002 dd.flex > div {
+  width: calc(50% - 8px);
+  min-width: calc(50% - 8px);
+  height: 340px;
+}
+.ema627_03_SU_0002 dd.flex math-field.textarea {
+  width:100%;
+}
+.ema627_03_SU_0002 .canvas_wrap {
+  width:600px;
+  height: 600px;
+  background: url(../../common_project/img/EMA627_03_SU/EMA627_03_SU_0002_grid.svg) no-repeat;
+  background-size: cover;
+}
+
+/* ema627_03_su_0003 */
+>>>>>>> b1dd6843 (초기 커밋)
 .ema627_03_su_0003 .input_wrap {
   display: block;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 .ema627_03_su_0003 .table_wrap {
   border-radius: 20px;
   border:1px solid #D2D2D2;
@@ -92,3 +119,8 @@
 }
 
 
+=======
+.ema627_03_su_0003 .input_wrap math-field {
+  height: 250px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

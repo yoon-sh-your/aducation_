@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   function checkPage() {
+<<<<<<< HEAD
     let isPage4Visible = document.querySelector(".page_5")?.offsetParent !== null;
+=======
+    let isPage4Visible = document.querySelector(".page_4")?.offsetParent !== null;
+>>>>>>> b1dd6843 (초기 커밋)
 
     // 페이지별 대발문 및 버튼 숨김
     document.querySelector(".title.type2").style.display = isPage4Visible ? "none" : "block";

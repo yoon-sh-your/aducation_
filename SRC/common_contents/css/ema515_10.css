@@ -20,6 +20,15 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.operation_box {
+  font-size: 32px;
+  font-weight: 700;
+  /* gap: 4px; */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .operations {
   display: flex;
   align-items: center;
@@ -636,13 +645,21 @@
 }
 
 .name.jihoon {
+<<<<<<< HEAD
   top: 133px;
+=======
+  top: 122px;
+>>>>>>> b1dd6843 (초기 커밋)
   right: 372px;
   transform: rotate(-5.001deg);
 }
 
 .name.seoyoon {
+<<<<<<< HEAD
   top: 129px;
+=======
+  top: 117px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 370px;
   transform: rotate(5.001deg);
 }
@@ -660,10 +677,17 @@
 }
 
 /* 0009 */
+<<<<<<< HEAD
 .ema515_10_su_0009 .title h2 {
   display: flex;
   align-items: center;
 }
+=======
+.ema515_10_su_0009 section.title.type2 + section.contents{
+  padding-top: 0px;
+}
+ 
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema515_10_su_0009 .container_515 {
   width: 1435px;

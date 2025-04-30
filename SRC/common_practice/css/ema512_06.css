@@ -51,9 +51,17 @@
 }
 .ema512_06_ih_0002 .question_block.left .top {
   gap: 28px;
+<<<<<<< HEAD
 }
 .ema512_06_ih_0002 .question_block.left .top .row {
   gap: 12px;
+=======
+  
+}
+.ema512_06_ih_0002 .question_block.left .top .row {
+  gap: 12px;
+  padding-left: 72px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema512_06_ih_0002 .question_block.left .top .text_hint {
   top: 50%;
@@ -112,8 +120,14 @@
 
 .ema512_06_ih_0007 .question_box {
   align-items: flex-start;
+<<<<<<< HEAD
   justify-content: center;
   gap: 20px;
+=======
+  justify-content: flex-start;
+  gap: 40px;
+  padding-left: 10%;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema512_06_ih_0007 .chr {
   display: inline-flex;
@@ -125,8 +139,17 @@
   border: 2px solid #000;
   font-size: 24px;
 }
+<<<<<<< HEAD
 .ema512_06_ih_0007 .question_box .right .dir_col {
   gap: 50px;
+=======
+.ema512_06_ih_0007 .right {
+  min-width: 500px;
+}
+.ema512_06_ih_0007 .question_box .right .dir_col {
+  gap: 24px;
+  margin-top: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema512_06_ih_0006 .solve_area .text_group {
   display: flex;

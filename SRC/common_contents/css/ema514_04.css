@@ -320,9 +320,12 @@
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
 .ema514_04_su_0004 .page_4 h3 {
   margin-top: 1px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema514_04_su_0004 .page_3 .question_box {
   flex-direction: column;
   gap: 20px;

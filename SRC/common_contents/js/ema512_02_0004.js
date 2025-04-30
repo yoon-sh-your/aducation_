@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 let countClickIndex1 = 0;
 let countClickIndex2 = 0;
 
@@ -52,22 +53,28 @@ function countClick(el) {
   }
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 runAfterAppReady(() => {
   // 앱 준비 후 실행, jQuery 사용가능
   console.log("custom_answer_check.js 실행");
 
   // 리셋 버튼 클릭 시 실행할 커스텀 함수
   window.resetCustom = function () {
+<<<<<<< HEAD
     // alert("🔄 리셋 버튼 클릭됨");
     // let revealBtn = document.querySelectorAll(".reveal_btn");
     //     for(let i = 0; i < targetInfoImg.length; i++){
     //         revealBtn[i].classList.remove('on');
     //     }
     // };
+=======
+>>>>>>> b1dd6843 (초기 커밋)
     let targetInfoImg = document.querySelectorAll(".etc_img");
     for (let i = 0; i < targetInfoImg.length; i++) {
       targetInfoImg[i].style.display = "none";
     }
+<<<<<<< HEAD
   };
 
   console.log("always one---------------------------------");
@@ -148,3 +155,53 @@ runAfterAppReady(() => {
     // });
 
 });
+=======
+    summarizeIndex1 = 0;
+    summarizeIndex2 = 0;
+  };
+
+  let summarizeBtn1 = document.querySelectorAll(".reveal_btn")[0];
+  let summarizeBtn2 = document.querySelectorAll(".reveal_btn")[1];
+
+  let summarizeIndex1 = 0;
+  let summarizeIndex2 = 0;
+  let targetInfoImg = document.querySelector(".etc_img");
+
+  summarizeBtn1.addEventListener("click", function () {
+    if (summarizeIndex1 === 0) {
+      summarizeIndex1 = (summarizeIndex1 + 1) % 2;
+      showTeacher();
+    } else if (summarizeIndex1 === 1) {
+      summarizeIndex1 = 0;
+      targetInfoImg.style.display = "none";
+    }
+
+  });
+
+  summarizeBtn2.addEventListener("click", function () {
+    if (summarizeIndex2 === 0) {
+      summarizeIndex2 = (summarizeIndex2 + 1) % 2;
+      showTeacher();
+    } else if (summarizeIndex2 === 1) {
+      summarizeIndex2 = 0;
+      targetInfoImg.style.display = "none";
+    }
+  });
+
+  function showTeacher() {
+    if (summarizeIndex1 === summarizeIndex2) {
+        targetInfoImg.style.display = "block";
+    }else{
+        targetInfoImg.style.display = "none";
+    }
+  }
+
+  let showTeacherCheck = document.querySelector(".etcImgOn");
+  showTeacherCheck.addEventListener('click', function(){
+    summarizeIndex1 = 1;
+    summarizeIndex2 = 1;
+    showTeacher();
+  })
+
+});
+>>>>>>> b1dd6843 (초기 커밋)

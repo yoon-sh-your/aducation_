@@ -468,6 +468,7 @@
   width: 185px;
 }
 
+<<<<<<< HEAD
 
 .ema511_02_ih_0007.button_change .btn_area > button.btnSubmit {
   background-image: url(../../common_contents/common/img/icon_check_disabled.svg);
@@ -480,3 +481,24 @@
 
 .ema511_02_ih_0007.button_change .btnCheck{display: none;}
 .ema511_02_ih_0007.button_change .btnCheck.active{display: block;}
+=======
+/* .ema511_02_ih_0007.button_change .btn_area > button.btnSubmit {
+  background-image: url(../../common_contents/common/img/icon_check_disabled.svg);
+} */
+
+/* .ema511_02_ih_0007.button_change .btn_area > button.btnSubmit.active:not(.close){
+  background-image: url(../../common_contents/common/img/icon_check_white.svg);
+} */
+
+.ema511_02_ih_0007.button_change .btnCheck {
+  display: none;
+}
+.ema511_02_ih_0007.button_change .btnCheck.active {
+  display: block;
+}
+
+.ema511_02_ih_0007 .quiz-answer-inner .example_box {
+  top: -18px;
+  left: 710px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

@@ -34,6 +34,7 @@
     flex-direction: column;
     padding-top: 45px;
 }
+<<<<<<< HEAD
 .ema614_10_su_0002 .page_2 h3,
 .ema614_10_su_0002 .page_3 h3 {
     gap: 8px;
@@ -42,6 +43,17 @@
 .ema614_10_su_0002 .page_3 h3:before {
     top: 50px;
 }
+=======
+
+.ema614_10_su_0002[data-current-page="page_2"] .contents h3:not(:has(.fraction_txt_wrap)):has(.fraction_box)::before,
+.ema614_10_su_0002[data-current-page="page_3"] .contents h3:not(:has(.fraction_txt_wrap)):has(.fraction_box)::before {
+    top: 50px;
+}
+.ema614_10_su_0002 .page_2 h3 .input_wrap,
+.ema614_10_su_0002 .page_3 h3 .input_wrap {
+    margin-left: 8px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema614_10_su_0002 .page_2 .input_wrap,
 .ema614_10_su_0002 .page_3 .input_wrap {
@@ -231,9 +243,16 @@
     gap: 20px;
 }
 .ema614_10_su_0006 .ex_box {
+<<<<<<< HEAD
     width: 582px;
     height: 175px;
     background: url(../img/EMA614_10_SU/0006_bg.png) no-repeat 0 0;
+=======
+    width: 734px;
+    height: 220px;
+    background: url(../img/EMA614_10_SU/0006_bg.png) no-repeat 0 0;
+    background-size: cover;
+>>>>>>> b1dd6843 (초기 커밋)
     position: relative;
     padding: 20px 27px;
     display: flex;
@@ -244,10 +263,20 @@
 .ema614_10_su_0006 .ex_box p {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     font-size: 20px;
     color: #231F20;
     letter-spacing: -0.5px;
 }
+=======
+    font-size: 32px;
+    color: #231F20;
+}
+.ema614_10_su_0006 .ex_box p .fraction_box {
+    margin-left: 8px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema614_10_su_0006 .input_wrap {
     width: 100%;
 }
@@ -261,7 +290,14 @@
 .ema614_10_su_0007 .col {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     gap: 8px;
+=======
+    
+}
+.ema614_10_su_0007 .col .f32b + .input_wrap {
+    margin-left: 8px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema614_10_su_0007 .custom_select {
     width: 167px;
@@ -279,6 +315,12 @@
 }
 
 /* ema614_10_su_0008 */
+<<<<<<< HEAD
+=======
+.ema614_10_su_0008 section.title.type2 + section.contents{
+    padding-top: 0px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema614_10_su_0008 {
     height: 764px;
 }

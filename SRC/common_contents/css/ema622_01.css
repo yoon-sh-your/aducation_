@@ -14,4 +14,18 @@
     align-items: center;
     font-size: 32px;
     font-weight: 700;
+<<<<<<< HEAD
 }
+=======
+}
+
+/* tspan[lang="y"] {
+    fill: red;
+    font-weight: bold;
+}
+
+*[lang="y"] {
+    color: green !important;
+    font-weight: bold;
+} */
+>>>>>>> b1dd6843 (초기 커밋)

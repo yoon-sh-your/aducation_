@@ -78,6 +78,7 @@ runAfterAppReady(() => {
 
       if (!typeClass) return; // Should not happen with current HTML
 
+<<<<<<< HEAD
       // 중복 체크 (기존 규칙 유지)
       if ($this.find(`.${typeClass}`).length > 0) {
         // 드래그 드롭 실패 시 소리 재생
@@ -86,6 +87,15 @@ runAfterAppReady(() => {
       }
 
       // data-value 업데이트 (기존 로직)
+=======
+      // 모든 기존 요소 제거
+      $this.find('.triangle, .circle').remove();
+
+      // data-value 초기화
+      $this.attr("data-value", "false false");
+
+      // data-value 업데이트
+>>>>>>> b1dd6843 (초기 커밋)
       let valueParts = ($this.attr("data-value") || "false false").split(" ");
       let currentValues = [valueParts[0] === "true", valueParts[1] === "true"];
       if (isTriangle) {
@@ -95,7 +105,11 @@ runAfterAppReady(() => {
       }
       $this.attr("data-value", currentValues.join(" "));
 
+<<<<<<< HEAD
       // 새 요소 생성 및 추가 (기존 로직)
+=======
+      // 새 요소 생성 및 추가
+>>>>>>> b1dd6843 (초기 커밋)
       const $droppedEl = $(`<div class="${typeClass}"></div>`);
       $this.append($droppedEl);
 
@@ -161,6 +175,35 @@ runAfterAppReady(() => {
         },
       });
 
+<<<<<<< HEAD
+=======
+      // 더블클릭 이벤트 추가
+      $droppedEl.on('dblclick', function() {
+        const $this = $(this);
+        const $parent = $this.parent();
+        let valueParts = ($parent.attr("data-value") || "false false").split(" ");
+        let currentValues = [valueParts[0] === "true", valueParts[1] === "true"];
+        
+        if ($this.hasClass("triangle")) {
+          currentValues[0] = false;
+        } else if ($this.hasClass("circle")) {
+          currentValues[1] = false;
+        }
+        
+        $parent.attr("data-value", currentValues.join(" "));
+        $this.remove();
+        audioManager.playSound("drop");
+        checkAnswer();
+        
+        const $group = $(".drag_group.g1");
+        const hasDroppedItems = $group.find(".droppable .triangle, .droppable .circle").length > 0;
+        if (!hasDroppedItems) {
+          $group.removeAttr("data-correction");
+          window.forceWatchEvaluation();
+        }
+      });
+
+>>>>>>> b1dd6843 (초기 커밋)
       // 드롭 성공 시 처리 (기존 로직)
       audioManager.playSound("drop");
       checkAnswer();

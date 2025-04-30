@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -6,6 +7,8 @@
   border-radius: 4px;
 }
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .input_area .fraction_box {
   vertical-align: middle;
   margin-left: 5px;
@@ -103,7 +106,11 @@ math-field.w_80 {
   justify-content: center;
 }
 .ema611_01_ih_0002 .lines_img {
+<<<<<<< HEAD
 	margin-left: 50px;
+=======
+  margin-left: 50px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 /* ema511_01_ih_0003 */

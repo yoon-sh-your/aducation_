@@ -58,6 +58,39 @@
   line-height: 1;
 }
 
+<<<<<<< HEAD
+=======
+.ema524_05_ih_0001 .txt1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 177px;
+}
+.ema524_05_ih_0001 .txt1 li:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 95px;
+}
+.ema524_05_ih_0001 .txt2 li {
+  position: absolute;
+  top: 176px;
+  left: 0;
+}
+.ema524_05_ih_0001 .txt2 li:nth-child(2) {
+  left: 75px;
+}
+.ema524_05_ih_0001 .txt2 li:nth-child(3) {
+  left: 389px;
+}
+.ema524_05_ih_0001 .txt2 li:nth-child(4) {
+  left: 462px;
+}
+.ema524_05_ih_0001 .txt2 li:nth-child(5) {
+  left: 749px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema524_05_ih_0002 .bottom {
   margin-top: 60px;
 }
@@ -68,7 +101,13 @@
   width: 120px;
 }
 
+<<<<<<< HEAD
 .ema524_05_ih_0003 .solve_area .calc_vertical {width:112px;}
+=======
+.ema524_05_ih_0003 .solve_area .calc_vertical {
+  width: 112px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema524_05_ih_0004 .connect_wrap {
   height: auto;
@@ -184,8 +223,21 @@
   height: 42px;
 }
 .ema524_05_ih_0007 .tabbox .input_wrap .example_box {
+<<<<<<< HEAD
   display:none;
 }
 .ema524_05_ih_0007 .tabbox .input_wrap .example_box.on {
   display:block;
+=======
+  display: none;
+}
+.ema524_05_ih_0007 .tabbox .input_wrap .example_box.on {
+  display: block;
+}
+.ema524_05_ih_0007 .tabbox .input_wrap .example_box.e2 {
+  position: absolute;
+  width: 180px;
+  top: -29px;
+  left: 184px;
+>>>>>>> b1dd6843 (초기 커밋)
 }

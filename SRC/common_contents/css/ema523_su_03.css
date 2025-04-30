@@ -75,7 +75,11 @@
 .ema523_03_su_0003 .start_group, .ema523_03_su_0003 .end_group {
   gap: 67px;
 }
+<<<<<<< HEAD
 
+=======
+.ema523_03_su_0003[data-current-page='page_1'] .btnCheck,
+>>>>>>> b1dd6843 (초기 커밋)
 .ema523_03_su_0003[data-current-page='page_5'] section.title,
 .ema523_03_su_0003[data-current-page='page_5'] .btnType,
 .ema523_03_su_0003 .btnType {
@@ -120,6 +124,14 @@
   margin: 0 auto;
   background: url(../img/EMA523_03_SU/0004_bg.png) no-repeat 0 0;
 }
+<<<<<<< HEAD
+=======
+
+.ema523_03_su_000 .custom_select {
+  width: 200px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema523_03_su_0004[data-current-page='page_4'] section.title,
 .ema523_03_su_0004[data-current-page='page_4'] .btnType,
 .ema523_03_su_0004 .btnType {

@@ -39,4 +39,48 @@
   80% { transform:translateY(5px); }
   100% { transform:translateY(0); }
 }
+<<<<<<< HEAD
 .ema511_09_ih_0001 .map_area.result .obj_arrival {opacity:1; animation: arrival 1s ease-in-out;}
+=======
+.ema511_09_ih_0001 .map_area.result .obj_arrival {opacity:1; animation: arrival 1s ease-in-out;}
+.ema511_09_ih_0002 .review_box {
+  padding: 0 3.943%;
+}
+.ema511_09_ih_0002 .review_box .input_wrap math-field.textarea {
+  height: 100%;
+  max-height: 400px;
+  min-height: 360px;
+}
+#obj_move {
+  cursor: pointer;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+#obj_move_blink {
+  cursor: pointer;
+  animation: blink 1.0s infinite;
+}
+.hidden {
+  display: none;
+}
+.quiz_instruction {
+  font-size: 32px; 
+  margin-bottom: 10px; 
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) scale(0.9);
+  }
+  50% {
+    transform: translateY(-20px) scale(0.9); 
+  }
+}
+.bounce {
+  animation: bounce 0.6s ease-in-out 2; /* 0.6초 걸려서 2번 튕기게 */
+}
+>>>>>>> b1dd6843 (초기 커밋)

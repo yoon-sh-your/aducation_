@@ -45,6 +45,20 @@
   width: 32px;
 }
 
+<<<<<<< HEAD
+=======
+.ema524_03_ih_0001 .img {
+  position: relative;
+}
+.ema524_03_ih_0001 .txt_wrap {
+  position: absolute;
+  top: 78px;
+  left: 1px;
+  display: flex;
+  align-items: center;
+  gap: 162px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema524_03_ih_0002 .bottom {
   margin-top: 60px;
 }
@@ -74,7 +88,10 @@
 .ema524_03_ih_0003 .question_box > div {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   gap: 20px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema524_03_ih_0003 .question_box .row {
   display: flex;

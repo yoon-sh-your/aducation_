@@ -128,20 +128,34 @@ h3.title:before {
   position: absolute;
 }
 .ema515_03_ih_0004 .img_box > .fraction_box {
+<<<<<<< HEAD
   top: 0;
   left: 54px;
   transform: translateX(-50%);
 }
 .ema515_03_ih_0004 .img_box > .flex {
   top: 182px;
+=======
+  top: 115px;
+  left: -25px;
+  transform: translateX(-50%);
+}
+.ema515_03_ih_0004 .img_box > .flex {
+  top: 115px;
+>>>>>>> b1dd6843 (초기 커밋)
   left: 50%;
   transform: translateX(-50%);
   margin-left: -4px;
 }
 .ema515_03_ih_0004 .img_box > .mixed_fraction {
   position: absolute;
+<<<<<<< HEAD
   bottom: -10;
   right: 53px;
+=======
+  top: 80px;
+  right: -196px;
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   align-items: center;
 }
@@ -224,7 +238,10 @@ h3.title:before {
 }
 .ema515_03_ih_0006 .tabbox .conts_box .fraction_box {
   vertical-align: middle;
+<<<<<<< HEAD
   gap: 8px;
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_03_ih_0006 .tabbox .conts_box .fraction_box:before {
   background-color: #1454b9;
@@ -290,7 +307,11 @@ h3.title:before {
 }
 .ema515_03_ih_0007 .question_box .img_box span {
   font-size: 24px;
+<<<<<<< HEAD
   line-height: 30px;
+=======
+  /* line-height: 30px; */
+>>>>>>> b1dd6843 (초기 커밋)
   background: #f3c9ca;
   border-radius: 30px;
   padding: 0 5px;

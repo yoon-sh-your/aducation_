@@ -77,7 +77,11 @@
 .ema611_04_su_0003 .page_4 .question_box > .fraction_box span {
   font-weight: 700;
   font-size: 32px;
+<<<<<<< HEAD
   line-height: 48px;
+=======
+  /* line-height: 48px; */
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -1px;
   text-align: center;
 }
@@ -99,7 +103,11 @@
   font-weight: 400;
   font-size: 24px;
   color: rgba(106, 106, 106, 1);
+<<<<<<< HEAD
   line-height: 36px;
+=======
+  line-height: 26px;
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -0.5px;
 }
 
@@ -153,7 +161,11 @@
 .ema611_04_su_0004 .page_2 .mid_top_box span {
   font-weight: 700;
   font-size: 32px;
+<<<<<<< HEAD
   line-height: 48px;
+=======
+  /* line-height: 48px; */
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -1px;
 }
 
@@ -194,7 +206,11 @@
 
 .ema611_04_su_0004 .page_2 .left_top_box .text_box > div,
 .ema611_04_su_0004 .page_2 .mid_top_box .text_box > div {
+<<<<<<< HEAD
   padding: 0 20px;
+=======
+  padding: 10px 20px;
+>>>>>>> b1dd6843 (초기 커밋)
   background-color: rgba(254, 233, 223, 1);
   border-radius: 13px;
 }
@@ -222,7 +238,11 @@
 .ema611_04_su_0004 .page_2 .mid_btm_box span {
   font-weight: 700;
   font-size: 24px;
+<<<<<<< HEAD
   line-height: 36px;
+=======
+  /* line-height: 36px; */
+>>>>>>> b1dd6843 (초기 커밋)
   letter-spacing: -0.5px;
 }
 
@@ -289,8 +309,14 @@
 }
 
 .ema611_04_su_0004 .page_2 .mid_btm_box {
+<<<<<<< HEAD
   height: 158px;
   margin-top: -2px;
+=======
+  height: 119px;
+  margin-top: -2px;
+  padding-left: 15px;
+>>>>>>> b1dd6843 (초기 커밋)
   justify-content: center;
 }
 
@@ -402,4 +428,15 @@
   font-size: 32px;
   line-height: 48px;
   letter-spacing: -1px;
+<<<<<<< HEAD
+=======
+}
+
+svg text {
+  font-family: 'Pretendard', '맑은 고딕', 'Malgun Gothic', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  white-space: pre;
+>>>>>>> b1dd6843 (초기 커밋)
 }

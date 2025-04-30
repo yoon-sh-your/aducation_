@@ -234,7 +234,11 @@
   gap: 56px;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   padding-top: 120px;
+=======
+  padding-top: 170px; /* 다음 시간에 공부할 내용 두번째 스프링에 맞춰 여백 수정 (250428) */
+>>>>>>> b1dd6843 (초기 커밋)
   padding-left: 169px;
   border-radius: 12px;
   background-color: #f7dad5;
@@ -243,6 +247,10 @@
 
 .to_be.pre .inwrap {
   background-color: var(--primary-blue-200);
+<<<<<<< HEAD
+=======
+  padding-top: 120px; /* 이번 시간에 공부할 내용 기존 여백 유지 (250428) */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .to_be .inwrap::before {
@@ -479,6 +487,13 @@
   color: #d1232a; /* 색자 처리 (250423) */
 }
 
+<<<<<<< HEAD
+=======
+.summarize .reveal_btn .fraction_box::before {
+  background-color: #d1232a; /* 색자 처리 (250429) */
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .summarize .reveal_btn:not(:disabled):after {
   bottom: -16px;
 }

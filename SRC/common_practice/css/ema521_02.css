@@ -14,7 +14,11 @@
   vertical-align: middle;
 }
 math-field.has_ex_text + .text_hint:before {
+<<<<<<< HEAD
   content: "예";
+=======
+  content: '예';
+>>>>>>> b1dd6843 (초기 커밋)
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -30,8 +34,12 @@ math-field.has_ex_text + .text_hint:before {
 .ema521_02_ih_0001 h4 {
   width: 307px;
   height: 68px;
+<<<<<<< HEAD
   background: url(./../../common_practice/img/EMA521_02_IH/0001_01.png)
     no-repeat 50% / cover;
+=======
+  background: url(./../../common_practice/img/EMA521_02_IH/0001_01.png) no-repeat 50% / cover;
+>>>>>>> b1dd6843 (초기 커밋)
   color: #4d76b7;
   font-weight: 700;
   font-size: 32px;
@@ -89,7 +97,11 @@ math-field.has_ex_text + .text_hint:before {
 	border-color: var(--font-main);
 } */
 
+<<<<<<< HEAD
 .boolean_wrap button[data-answer-single="true"].correct {
+=======
+.boolean_wrap button[data-answer-single='true'].correct {
+>>>>>>> b1dd6843 (초기 커밋)
   border-color: var(--primary-blue) !important;
   background-color: rgba(59, 113, 254, 0.3);
 }
@@ -105,11 +117,15 @@ math-field.has_ex_text + .text_hint:before {
 .ema521_02_ih_0001 .page_3 .input_area {
   width: 736px;
   height: 270px;
+<<<<<<< HEAD
   background: url(./../../common_practice/img/EMA521_02_IH/0001_02.png)
     no-repeat 50% / 100% auto;
 }
 .empty_box.nemo {
   margin-right: 4px;
+=======
+  background: url(./../../common_practice/img/EMA521_02_IH/0001_02.png) no-repeat 50% / 100% auto;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .btnType {
@@ -126,8 +142,12 @@ math-field.has_ex_text + .text_hint:before {
 .ema521_02_ih_0002 .boolean_wrap {
   width: 935px;
   height: 203px;
+<<<<<<< HEAD
   background: url(./../../common_practice/img/EMA521_02_IH/0002_01.png)
     no-repeat 50% / 100% auto;
+=======
+  background: url(./../../common_practice/img/EMA521_02_IH/0002_01.png) no-repeat 50% / 100% auto;
+>>>>>>> b1dd6843 (초기 커밋)
   margin: 0 auto;
 }
 .ema521_02_ih_0002 .button_box {
@@ -148,8 +168,12 @@ math-field.has_ex_text + .text_hint:before {
   position: relative;
   width: 577px;
   height: 358px;
+<<<<<<< HEAD
   background: url(../img/EMA521_02_IH/0003_box.png) no-repeat center / 577px
     358px;
+=======
+  background: url(../img/EMA521_02_IH/0003_box.png) no-repeat center / 577px 358px;
+>>>>>>> b1dd6843 (초기 커밋)
   margin-left: 530px;
 }
 .ema521_02_ih_0003 .tit {
@@ -261,7 +285,11 @@ math-field.has_ex_text + .text_hint:before {
   padding-left: 10px !important;
 }
 .ema521_02_ih_0003 .select_options li:before {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> b1dd6843 (초기 커밋)
   display: block;
   width: 24px;
   height: 24px;
@@ -299,8 +327,12 @@ math-field.has_ex_text + .text_hint:before {
 .ema521_02_ih_0005 h4 {
   /* width: 394px;
 	height: 68px; */
+<<<<<<< HEAD
   background: url(./../../common_practice/img/EMA521_02_IH/0005_01.png)
     no-repeat 50% / cover;
+=======
+  background: url(./../../common_practice/img/EMA521_02_IH/0005_01.png) no-repeat 50% / cover;
+>>>>>>> b1dd6843 (초기 커밋)
   margin: 0 auto;
   padding: 13px 58px;
   font-weight: 700;
@@ -343,7 +375,11 @@ math-field.has_ex_text + .text_hint:before {
 }
 
 /* ema521_02_ih_0006 */
+<<<<<<< HEAD
 .ema521_02_ih_0006 [class^="text"]:not(.text_hint) {
+=======
+.ema521_02_ih_0006 [class^='text']:not(.text_hint) {
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -372,7 +408,11 @@ math-field.has_ex_text + .text_hint:before {
   left: 440px;
   top: 19px;
 }
+<<<<<<< HEAD
 .ema521_02_ih_0006 [class^="name"] {
+=======
+.ema521_02_ih_0006 [class^='name'] {
+>>>>>>> b1dd6843 (초기 커밋)
   font-size: 32px;
   font-weight: 700;
   color: #fff;
@@ -396,6 +436,7 @@ math-field.has_ex_text + .text_hint:before {
   position: absolute;
   width: 110px;
   height: 110px;
+<<<<<<< HEAD
   top: 265px;
   background: none;
 }
@@ -412,6 +453,24 @@ math-field.has_ex_text + .text_hint:before {
 }
 .ema521_02_ih_0006 .boolean_wrap button:nth-of-type(3) {
   left: 909px;
+=======
+  top: 405px;
+  background: none;
+}
+.result .ema521_02_ih_0006 .boolean_wrap button[data-answer-single='true'] {
+  border-color: var(--primary-blue);
+  background-color: rgba(59, 113, 254, 0.3);
+}
+
+.ema521_02_ih_0006 .boolean_wrap button:first-of-type {
+  left: 350px;
+}
+.ema521_02_ih_0006 .boolean_wrap button:nth-of-type(2) {
+  left: 562px;
+}
+.ema521_02_ih_0006 .boolean_wrap button:nth-of-type(3) {
+  left: 799px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema521_02_ih_0006 math-field {
   width: 336px !important;

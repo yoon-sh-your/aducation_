@@ -85,14 +85,22 @@
 .ema511_04_ih_0002 .connection_label {
   font-size: 16px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema511_04_ih_0002 .bogi_box {
   width: 660px;
 }
 .ema511_04_ih_0002 .bogi_box .conts_bogi {
+<<<<<<< HEAD
   height: 430px;
 }
 
+=======
+  height: 340px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema511_04_ih_0002 .bogi_box .drawing_area_ex {
   position: relative;
   min-height: 214px;
@@ -200,6 +208,12 @@
 .ema511_04_ih_0002 .area3 .dot_4 {
   left: 201px;
 }
+<<<<<<< HEAD
+=======
+.ema511_04_ih_0002 .solve_area .conts_solve {
+  display: flex;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 
 .ema511_04_ih_0004 .connect_line_box {
   text-align: center;
@@ -296,6 +310,13 @@
 .ema511_04_ih_0006 .input_wrap.answer1 math-field:not(.textarea) {
   width: 350px;
 }
+<<<<<<< HEAD
+=======
+.ema511_04_ih_0006 .input_wrap.answer3 {
+  padding-left: 12px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema511_04_ih_0007 .contents h3 {
   width: 100%;
 }

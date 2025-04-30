@@ -42,11 +42,19 @@
   border: 1px solid #d3d3d3;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: center;
+=======
+  align-items: flex-start;
+>>>>>>> b1dd6843 (초기 커밋)
   justify-content: center;
   gap: 50px;
   margin-top: 20px;
   border-radius: 30px;
+<<<<<<< HEAD
+=======
+  padding-left: 75px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 
 .ema616_11_su_0002 .top_a {
@@ -109,6 +117,14 @@
   /*  gap: 10px; */
 }
 
+<<<<<<< HEAD
+=======
+.ema616_11_su_0003 .answer2 math-field:not(.textarea),
+.ema616_11_su_0003 .answer3 math-field:not(.textarea) {
+  width: 197px;
+}
+
+>>>>>>> b1dd6843 (초기 커밋)
 .ema616_11_su_0003 .input_wrap span {
   font-size: 32px;
 }
@@ -460,7 +476,11 @@
 }
 
 .ema616_11_su_0007 .answer2 math-field.hint + .text_hint {
+<<<<<<< HEAD
   left: -15px;
+=======
+  left: -33px;
+>>>>>>> b1dd6843 (초기 커밋)
   top: calc(100% + -4px);
 }
 
@@ -482,7 +502,11 @@
 .ema616_11_su_0007 .unit7 span,
 .ema616_11_su_0007 .unit8 span,
 .ema616_11_su_0007 .unit9 span {
+<<<<<<< HEAD
   font-size: 23px;
+=======
+  font-size: 24px;
+>>>>>>> b1dd6843 (초기 커밋)
   font-weight: 700;
 }
 
@@ -527,7 +551,11 @@
 .ema616_11_su_0008 .txt5 {
   position: absolute;
   top: 461px;
+<<<<<<< HEAD
   right: 397px;
+=======
+  right: 375px;
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema616_11_su_0008 .txt6 {
   position: absolute;
@@ -568,11 +596,35 @@
   font-size: 32px;
 }
 
+<<<<<<< HEAD
 .ema616_11_su_0008 .txt8 {
   font-size: 32px;
   position: absolute;
   top: 757px;
   left: 798px;
+=======
+.ema616_11_su_0008 .unita {
+  position: absolute;
+  top: 506px;
+  left: 535px;
+}
+.ema616_11_su_0008 .unitb {
+  position: absolute;
+  top: 578px;
+  left: 504px;
+}
+.ema616_11_su_0008 .unitc {
+  position: absolute;
+  top: 553px;
+  left: 566px;
+}
+
+.ema616_11_su_0008 .txt8 {
+  font-size: 32px;
+  position: absolute;
+  top: 807px;
+  left: 799px;
+>>>>>>> b1dd6843 (초기 커밋)
   display: flex;
   flex-direction: column;
 }

@@ -33,10 +33,14 @@ section.title.type2 + section.contents {
   gap: 26px;
 }
 
+<<<<<<< HEAD
 .ema516_00_su_0004 .video_wrap {
   background: url(../../common_contents/img/EMA516_05_SU/004img.png.png)
     no-repeat center right -35px / 110%;
 }
+=======
+
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* .ema516_00_su_0004 .input_wrap {
   width: 100%;

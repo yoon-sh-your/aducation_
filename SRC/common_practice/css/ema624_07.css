@@ -108,3 +108,16 @@ math-field.w_large {
 	display: flex;
 	align-items: center;
 }
+<<<<<<< HEAD
+=======
+.ema624_07_ih_0007 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+>>>>>>> b1dd6843 (초기 커밋)

@@ -128,8 +128,13 @@ h3.title:before {
   overflow: hidden;
   border-radius: 50%;
 }
+<<<<<<< HEAD
 .ema515_04_ih_0001 .boolean_count_wrap:before,
 .ema515_04_ih_0001 .boolean_count_wrap:after {
+=======
+.ema515_04_ih_0001 .boolean_count_wrap::before,
+.ema515_04_ih_0001 .boolean_count_wrap::after {
+>>>>>>> b1dd6843 (초기 커밋)
   content: '';
   position: absolute;
   top: 50%;
@@ -285,7 +290,11 @@ h3.title:before {
   font-size: 24px;
 }
 .ema515_04_ih_0005 .question_box .fraction_box {
+<<<<<<< HEAD
   min-width: 40px;
+=======
+  /* min-width: 40px; */
+>>>>>>> b1dd6843 (초기 커밋)
 }
 .ema515_04_ih_0005 .boolean_wrap button {
   position: absolute;
@@ -335,10 +344,13 @@ h3.title:before {
 .ema515_04_ih_0006 .title h2 {
   line-height: 1;
 }
+<<<<<<< HEAD
 .ema515_04_ih_0006 .title h2 .fraction_box {
   vertical-align: middle;
   gap: 8px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .ema515_04_ih_0006 .label_gray {
   width: 50px;
   height: 48px;
@@ -355,6 +367,12 @@ h3.title:before {
   width: 286px;
 }
 
+<<<<<<< HEAD
+=======
+.ema515_04_ih_0007 .contents .mixed_fraction{
+  margin: 0 2px 0 2px;
+}
+>>>>>>> b1dd6843 (초기 커밋)
 .ema515_04_ih_0007 .question_box {
   justify-content: center;
   align-items: flex-start;

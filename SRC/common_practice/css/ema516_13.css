@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nemo {
   display: inline-block;
   width: 32px;
@@ -5,6 +6,8 @@
   border: 2px solid var(--primary-blue);
   border-radius: 4px;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 .contents h3:has(.nemo) {
   align-items: center;
 }
@@ -61,11 +64,14 @@ math-field.has_ex_text + .text_hint:before {
   color: #fff;
   line-height: 42px;
 }
+<<<<<<< HEAD
 .solve_area .nemo {
   position: relative;
   top: 4px;
   background: #fff;
 }
+=======
+>>>>>>> b1dd6843 (초기 커밋)
 
 /* ema516_13_ih_0001 */
 .ema516_13_ih_0001 .icon_badge {
@@ -197,20 +203,35 @@ body.result .ema516_13_ih_0001 .solve_area .inner_solve {
   top: 68px;
   bottom: unset;
 }
+<<<<<<< HEAD
 .ema516_13_ih_0001 .canvas_wrap{
+=======
+.ema516_13_ih_0001 .canvas_wrap {
+>>>>>>> b1dd6843 (초기 커밋)
   position: absolute;
   top: 121px;
   left: 703px;
 }
+<<<<<<< HEAD
 .ema516_13_ih_0001 .canvas-container:nth-of-type(2){
   transform: translateX(59px);
 }
 .ema516_13_ih_0001 .drawing-container{
+=======
+.ema516_13_ih_0001 .canvas-container:nth-of-type(2) {
+  transform: translateX(59px);
+}
+.ema516_13_ih_0001 .drawing-container {
+>>>>>>> b1dd6843 (초기 커밋)
   position: absolute;
   bottom: 30px;
   left: 40px;
 }
+<<<<<<< HEAD
 .ema516_13_ih_0001 .etc_area{
+=======
+.ema516_13_ih_0001 .etc_area {
+>>>>>>> b1dd6843 (초기 커밋)
   position: relative;
   width: fit-content;
   margin-top: 120px;
@@ -225,7 +246,11 @@ body.result .ema516_13_ih_0001 .solve_area .inner_solve {
   height: 400px; */
   display: none;
 }
+<<<<<<< HEAD
 .ema516_13_ih_0001 .etc_area::before{
+=======
+.ema516_13_ih_0001 .etc_area::before {
+>>>>>>> b1dd6843 (초기 커밋)
   content: '예';
   position: absolute;
   display: block;
@@ -240,6 +265,7 @@ body.result .ema516_13_ih_0001 .solve_area .inner_solve {
   /* top: 50px;
   left: 50px; */
 }
+<<<<<<< HEAD
 .ema516_13_ih_0001 .etc_area p{
   position: absolute;
   font-size: 24px;
@@ -260,25 +286,64 @@ body.result .ema516_13_ih_0001 .solve_area .inner_solve {
   right: 105px;
 }
 .ema516_13_ih_0001 .etc_area .rightDiagram:nth-of-type(4){
+=======
+.ema516_13_ih_0001 .etc_area p {
+  position: absolute;
+  font-size: 24px;
+  color: #e4007f;
+  text-align: center;
+  width: 80px;
+}
+.ema516_13_ih_0001 .etc_area .leftDiagram {
+  top: 20px;
+  left: 135px;
+}
+.ema516_13_ih_0001 .etc_area .leftDiagram:nth-of-type(2) {
+  top: 245px;
+  left: 88px;
+}
+.ema516_13_ih_0001 .etc_area .rightDiagram {
+  top: 20px;
+  right: 105px;
+}
+.ema516_13_ih_0001 .etc_area .rightDiagram:nth-of-type(4) {
+>>>>>>> b1dd6843 (초기 커밋)
   top: 245px;
   right: 105px;
 }
 /* 제출시 버튼 및 힌트 비활성화 */
+<<<<<<< HEAD
 .ema516_13_ih_0001 .custom_dropdown.hint~.custom_select .text_hint{
   color: transparent;
 }
 .ema516_13_ih_0001 .custom_dropdown.correct + .custom_select .select_trigger{
+=======
+.ema516_13_ih_0001 .custom_dropdown.hint ~ .custom_select .text_hint {
+  color: transparent;
+}
+.ema516_13_ih_0001 .custom_dropdown.correct + .custom_select .select_trigger {
+>>>>>>> b1dd6843 (초기 커밋)
   border: 2px solid var(--stroke-default);
   background: var(--btn-disabled-bg);
   color: var(--font-disabled);
 }
+<<<<<<< HEAD
 .ema516_13_ih_0001 .custom_dropdown.disabled.hint + .custom_select .select_trigger{
+=======
+.ema516_13_ih_0001 .custom_dropdown.disabled.hint + .custom_select .select_trigger {
+>>>>>>> b1dd6843 (초기 커밋)
   border: 2px solid var(--stroke-default);
   background: var(--btn-disabled-bg);
   color: var(--font-disabled);
 }
 /* 대발문 채점 비활성화 */
+<<<<<<< HEAD
 body.failed .ema516_13_ih_0001 .title h2[data-head]:after, body.success .ema516_13_ih_0001 .title h2[data-head]:after, body.failed-all .ema516_13_ih_0001 .title h2[data-head]:after{
+=======
+body.failed .ema516_13_ih_0001 .title h2[data-head]:after,
+body.success .ema516_13_ih_0001 .title h2[data-head]:after,
+body.failed-all .ema516_13_ih_0001 .title h2[data-head]:after {
+>>>>>>> b1dd6843 (초기 커밋)
   display: none;
 }
 

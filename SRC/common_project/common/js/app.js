@@ -114,14 +114,26 @@ const scriptPaths = [
     "../../common_project/common/js/drawline.js",
     "../../common_project/common/js/drag_drop.js",
     "../../common_project/common/js/image_zoom.js",
+<<<<<<< HEAD
+=======
+    "../../common_project/common/js/supplies_zoom.js",
+>>>>>>> b1dd6843 (초기 커밋)
     "../../common_project/common/js/problem_generator.js",
     "../../common_project/common/js/badwords.js",
     "../../common_project/common/js/tools.js",
     "../../common_project/common/js/fabricModule/drawPopup.js",
     "../../common_project/common/js/fabricModule/canvas_init.js",
+<<<<<<< HEAD
     //키패드기능
     "../../common_project/common/js/keypad/selvypen-math-keyboard.min.js",
     "../../common_project/common/js/keypad/keypad.js",
+=======
+
+    //키패드기능
+    "../../common_project/common/js/keypad/selvypen-math-keyboard.min.js",
+    "../../common_project/common/js/keypad/keypad.js",
+    "../../common_project/common/js/keypad/math_compare.js",
+>>>>>>> b1dd6843 (초기 커밋)
 ];
 
 // 전체 스크립트 리스트
